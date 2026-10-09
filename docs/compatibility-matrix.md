@@ -14,7 +14,7 @@ Hasta la prueba en Prism, ningún mod tiene arranque de **cliente** comprobado (
 | Mod | Versión | Fuente | Dependencias obligatorias | Side | Estado | Evidencia |
 |---|---|---|---|---|---|---|
 | Aaron | 1.21.0 | [Modrinth](https://modrinth.com/mod/aaron) | Kotlin for Forge | both | Launch tested | Servidor carga |
-| Applied Create | 1.1.7 | [Modrinth](https://modrinth.com/mod/applied-create) | Applied Energistics 2, Create, Kotlin for Forge | both | Launch tested | Servidor: kinetic_energy_acceptor entra en la red de estrés (16 RPM, 64 SU) |
+| Applied Create | 1.1.7 | [Modrinth](https://modrinth.com/mod/applied-create) | Applied Energistics 2, Create, Kotlin for Forge | both | Launch tested | Servidor: la rotación de Create (16 RPM) enciende un controlador AE2 vía kinetic_energy_acceptor, sin celda de energía |
 | Applied Energistics 2 | 19.2.18 | [Modrinth](https://modrinth.com/mod/ae2) | GuideME | both | Launch tested | Servidor: controlador online con celda creativa |
 | Applied Energistics 2 Wireless Terminals | 19.5.1 | [Modrinth](https://modrinth.com/mod/applied-energistics-2-wireless-terminals) | Applied Energistics 2 | both | Launch tested | Servidor carga; Quantum Bridge Card y receta presentes en el JAR |
 | Architectury API | 13.0.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | — | both | Launch tested | Servidor carga |
@@ -40,7 +40,7 @@ Hasta la prueba en Prism, ningún mod tiene arranque de **cliente** comprobado (
 | GuideME | 21.1.19 | [Modrinth](https://modrinth.com/mod/guideme) | — | both | Launch tested | Servidor carga |
 | ImmediatelyFast | 1.6.14+1.21.1 | [Modrinth](https://modrinth.com/mod/immediatelyfast) | — | client | Verified | Solo cliente; arranque de cliente pendiente |
 | Inventory Profiles Next | 2.2.5 | [Modrinth](https://modrinth.com/mod/inventory-profiles-next) | libIPN | client | Verified | Solo cliente; arranque de cliente pendiente |
-| Just Enough Items (JEI) | 19.51.0.418 | [Modrinth](https://modrinth.com/mod/jei) | — | both | Launch tested | Servidor carga con la regla de alias 1.21 de FML |
+| Just Enough Items (JEI) | 19.51.0.418 | [Modrinth](https://modrinth.com/mod/jei) | — | both | Launch tested | Servidor carga (regla de alias 1.21 de FML); habilita traslado de recetas |
 | Kotlin for Forge | kotlinforforge-5.12.0-all.jar | [Modrinth](https://modrinth.com/mod/kotlin-for-forge) | — | both | Launch tested | Servidor carga |
 | libIPN | 6.6.3 | [Modrinth](https://modrinth.com/mod/libipn) | — | client | Verified | Solo cliente; arranque de cliente pendiente |
 | Lithium | 0.15.4+mc1.21.1 | [Modrinth](https://modrinth.com/mod/lithium) | — | both | Launch tested | Servidor carga |

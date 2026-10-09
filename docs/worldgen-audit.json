@@ -186,6 +186,11 @@
     "vanilla_overrides": []
   },
   {
+    "mod": "Just Enough Items (JEI)",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
     "mod": "Kotlin for Forge",
     "worldgen_paths": [],
     "vanilla_overrides": []

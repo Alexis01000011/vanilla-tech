@@ -76,7 +76,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu√
 | Balm | 21.0.66 | [Modrinth](https://modrinth.com/mod/balm) | both | Waystones, Crafting Tweaks |
 | libIPN | 6.6.3 | [Modrinth](https://modrinth.com/mod/libipn) | client | Inventory Profiles Next |
 | YUNG's API | 1.21.1-5.1.9 | [Modrinth](https://modrinth.com/mod/yungs-api) | both | YUNG's Extras, YUNG's Bridges |
-| FTB Library | 2101.1.37 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge) | both | FTB Chunks, FTB Teams, FTB JEI Extras |
+| FTB Library | 2101.1.37 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge) | both | FTB Chunks, FTB Teams (FTB JEI Extras no la declara ni la usa en su c√≥digo) |
 | FTB Teams | 2101.1.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge) | both | FTB Chunks |
 | Architectury API | 13.0.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | both | FTB Library, FTB Chunks, FTB Teams |
 
