@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-09, release **0.2.0-alpha.1** (línea base: 0.1.0-rc.5).
+Estado a 2026-10-09, release **0.2.0** (estable).
 
 ## Pruebas pendientes
 
@@ -21,10 +21,10 @@ Estado a 2026-10-09, release **0.2.0-alpha.1** (línea base: 0.1.0-rc.5).
 | P13 | **Just Zoom**: zoom con C y rueda del mouse. | Solo cliente. |
 | P14 | **Sophisticated Backpacks**: abrir con B desde la ranura de Curios y el imán (Z). | Requiere un jugador. |
 | P15 | **GraveStone**: morir, comprobar que la lápida guarda inventario + Curios y recuperarlo. | Requiere un jugador. |
-| P16 | **Cliente rc.4**: Sodium 0.6.13 (bajado desde 0.8.13), Iris 1.8.12, Controlling y AE2 JEI Integration. | Requiere volver a importar en Prism. |
+| P16 | ~~Cliente con Sodium 0.6.13, Iris 1.8.12, Controlling y AE2 JEI Integration~~ — **hecho con 0.2.0-alpha.1**: arranque y mundo sin errores. | — |
 | P17 | **Shaders**: activar MakeUp/Miniature con K, comprobar FPS y que Create (contraptions) se vea bien. | Opcional; en la iGPU puede no ser jugable con los pesados. |
-| P18 | **JEI ↔ AE2**: botón "+" en la terminal de codificación de patrones y sin el error del plugin JEI de Applied Create en el log. | Lo debe arreglar AE2 JEI Integration (rc.4). |
-| P20 | **The Aether en el cliente**: portal (marco de glowstone + agua), entrar y volver, cielo y nubes con Sodium, Iris y shaders; dungeons y jefes; botón de accesorios del inventario. | El servidor ya carga la dimensión y ubica los 3 dungeons (alpha.1). |
+| P18 | **JEI ↔ AE2**: botón "+" en la terminal de codificación de patrones y sin el error del plugin JEI de Applied Create en el log. | **Parcial (0.2.0-alpha.1)**: el error del plugin JEI de Applied Create ya no aparece y AE2 JEI Integration registra su plugin. Falta probar el botón "+". |
+| P20 | **The Aether en el cliente**: portal (marco de glowstone + agua), entrar y volver, cielo y nubes con Sodium, Iris y shaders; dungeons y jefes; botón de accesorios del inventario. | **Parcial (0.2.0-alpha.1)**: el usuario entró al Aether y volvió (log: 16:06 → 16:17). Faltan shaders, dungeons y el botón de accesorios. El servidor ya ubica los 3 dungeons. |
 | P21 | **Dos sistemas de accesorios**: Curios (G) y Accessories del Aether (botón en el inventario). Hay que ver dónde se puede equipar la mochila, que B la abra desde ahí y que GraveStone guarde los ítems de ambos al morir. | Sophisticated Backpacks trae integración con Curios y con Accessories; GraveStone no tiene integración específica con ninguno de los dos. |
 | P19 | **Jade**: el HUD muestra el bloque que se mira y la información de AE2 y Create. | Solo cliente; en el servidor ya cargan los plugins de AE2, Extended AE, Waystones, GraveStone y Balm (rc.5). |
 
@@ -45,7 +45,7 @@ Estado a 2026-10-09, release **0.2.0-alpha.1** (línea base: 0.1.0-rc.5).
 - **Advertencias de mixin inofensivas al arrancar** (`functionalstorage/world/EnderSavedData`, `ApiStatus$ScheduledForRemoval`): integraciones opcionales con mods que no están instalados. Ya aparecían en la rc.1.
 
 - **AE2 1.21.1 no integra JEI** (solo EMI/REI). Desde la rc.4 lo cubre AE2 JEI Integration; sin ella, el plugin JEI de Applied Create lanza `NoClassDefFoundError: tamaized/ae2jeiintegration/...` (visto en el cliente rc.3).
-- **Errores inofensivos en el log del cliente**: `Error while loading the narrator` (no hay narrador en Linux), `Couldn't connect to realms` y `Online mod data expired` de Xaero (consulta de versiones en línea).
+- **Errores inofensivos en el log del cliente**: `GL ERROR 65547: X11: Standard cursor shape unavailable` (GLFW no encuentra algunas formas de cursor en este escritorio), `Error while loading the narrator` (no hay narrador en Linux), `Couldn't connect to realms` y `Online mod data expired` de Xaero (consulta de versiones en línea).
 - **Prism usa por defecto su memoria global** (3900 MiB en esta máquina) si la instancia no marca *Memory*. El `.mrpack` no puede fijar la memoria; hay que hacerlo en la instancia.
 - **Iris con Sodium 0.6.13**: se bajó Sodium para usar la Iris estable. Si en el futuro sale una Iris estable para Sodium 0.8 en 1.21.1, se puede volver a subir los dos juntos.
 

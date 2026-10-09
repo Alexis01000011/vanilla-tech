@@ -1,4 +1,4 @@
-# Catálogo de mods — Vanilla Tech 0.2.0-alpha.1
+# Catálogo de mods — Vanilla Tech 0.2.0
 
 Minecraft **1.21.1** · NeoForge **21.1.257** · 57 artefactos fijados (52 mods + 5 shaderpacks) (`pin = true`).
 Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qué* aporta cada mod y *por qué* está en el pack.
@@ -43,7 +43,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | YUNG's Extras | 1.21.1-5.1.1 | [Modrinth](https://modrinth.com/mod/yungs-extras) | both | Pequeños detalles de worldgen. |
 | YUNG's Bridges | 1.21.1-5.1.1 | [Modrinth](https://modrinth.com/mod/yungs-bridges) | both | Puentes sobre ríos. |
 
-## D2. Dimensiones (línea 0.2, en pruebas)
+## D2. Dimensiones
 
 | Mod | Versión | Fuente | Side | Para qué |
 |---|---|---|---|---|

@@ -4,13 +4,13 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 
 | | |
 |---|---|
-| Versión del pack | **0.2.0-alpha.1** (pruebas de dimensiones: The Aether). Línea base estable: **0.1.0-rc.5**. Ver [Versiones](#versiones-y-ramas) |
+| Versión del pack | **0.2.0** (estable: base + The Aether). Ver [Versiones](#versiones-y-ramas) |
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
 | Launcher | Prism Launcher (`.mrpack`) |
 | Mods | 57 artefactos fijados (52 mods + 5 shaderpacks): 56 en el cliente, 38 en el servidor |
-| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente rc.3 probado en Prism (arranque y mundo nuevo); los cambios de rc.4 en adelante (incluido The Aether) están pendientes de probar en el cliente. |
+| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente **0.2.0-alpha.1** (mismos mods que 0.2.0) probado en Prism por el usuario: arranque, mundo nuevo, entrada y vuelta del Aether. Faltan las pruebas en juego de [known-issues.md](docs/known-issues.md). |
 
 Contenido principal: Create · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · **The Aether** (alpha) · Explorify + YUNG's Extras/Bridges · JEI · Jade · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Just Zoom · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
 La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/mod-catalog.md).
@@ -83,12 +83,13 @@ python3 scripts/test-server.py --directory .cache/server-test --name local-integ
 
 | Línea | Rama | Para qué |
 |---|---|---|
-| `0.1.x` | `release/0.1` | Línea base estable: Create + AE2 + calidad de vida, **sin dimensiones nuevas**. |
-| `0.2.0-alpha.N` | `main` | Pruebas de dimensiones (primero The Aether). Entre una alpha y otra se pueden agregar o quitar mods. |
+| `0.1.x` | `release/0.1` | Línea base: Create + AE2 + calidad de vida, **sin dimensiones nuevas** (última: 0.1.0-rc.5). |
+| `0.2.x` | `release/0.2` | **Estable actual**: la base + The Aether (0.2.0, validada por el usuario en el cliente). |
+| `0.3.0-alpha.N` | `main` | Siguiente paso: Deep Aether y Deeper and Darker. Entre una alpha y otra se pueden agregar o quitar mods. |
 
 - Cada release lleva una etiqueta anotada `v<versión>` (`git tag -n1` las lista) y una entrada en [CHANGELOG.md](CHANGELOG.md) con el SHA-256 del `.mrpack`.
 - Para volver a una versión: usa su archivo en `releases/`, o `git checkout v<versión> && bash scripts/build.sh`, que lo reconstruye idéntico.
-- Orden de madurez: `alpha` (en pruebas) → `beta` (contenido cerrado) → `rc` (probado en cliente y servidor) → versión final.
+- Orden de madurez: `alpha` (en pruebas) → `beta` (contenido cerrado) → `rc` (probado en cliente y servidor) → versión final. Cuando el usuario valida una alpha en el cliente, se publica como versión estable con los mismos archivos; solo cambia el número.
 
 **Mundos y versiones**
 - Cada import en Prism crea una instancia aparte con el número de versión en el nombre. Las versiones anteriores siguen ahí para comparar.

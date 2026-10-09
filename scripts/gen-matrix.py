@@ -32,7 +32,7 @@ Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `do
 - **Gameplay tested**: funcionalidad probada por un jugador dentro del juego.
 - **Blocked**: problema abierto.
 
-El cliente **rc.3** arrancó en Prism y entró a un mundo nuevo (2026-10-09); los mods nuevos o cambiados desde rc.4 (incluido The Aether) siguen pendientes de esa prueba ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
+El cliente **0.2.0-alpha.1** (mismos mods que 0.2.0) arrancó en Prism, entró a un mundo nuevo y al Aether (2026-10-09); las pruebas en juego siguen pendientes ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
 
 | Mod | Versión | Fuente | Dependencias obligatorias | Side | Estado | Evidencia |
 |---|---|---|---|---|---|---|

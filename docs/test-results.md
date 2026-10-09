@@ -69,7 +69,7 @@ La EULA se aceptó solo para estos servidores de prueba locales, desechables (ma
 
 Que una estructura se genere **no prueba** que las granjas funcionen: las condiciones de spawn se comprueban jugando (pendiente P11).
 
-## Etapa 5 — Cliente 🟡 parcial
+## Etapa 5 — Cliente ✅ arranque y dimensión (pruebas en juego pendientes)
 
 **rc.3, 2026-10-09** (usuario en la laptop; Prism con Java 21.0.7 gestionado por Prism):
 
@@ -80,4 +80,14 @@ Que una estructura se genere **no prueba** que las granjas funcionen: las condic
 | Errores en el log | Solo el plugin JEI de Applied Create (falta AE2 JEI Integration, añadida en rc.4) y avisos inofensivos (narrador, realms, consulta de versiones de Xaero) |
 | Memoria (heap de 3900 MiB, el default global de Prism) | RSS de la JVM 2.7 GiB en el mundo; al sistema le quedaban 0.9 GiB; swap usada 2.2 GiB |
 
-**rc.4 y rc.5**: pendientes de importar (rc.4 no llegó a probarse en el cliente; basta con probar la versión más nueva) (P16–P18 en [known-issues.md](known-issues.md)). Siguen pendientes las pruebas en juego P5–P11 y P13–P15.
+**0.2.0-alpha.1, 2026-10-09** (usuario; mismos archivos que la estable **0.2.0**):
+
+| Comprobación | Resultado |
+|---|---|
+| Import y arranque | ✅ Prism carga los 67 mods que lista (incluye los que vienen dentro de otros JARs) |
+| Mundo nuevo, entrar al Aether y volver | ✅ Log: entrada a `aether:the_aether` a las 16:06:52 y vuelta al Overworld a las 16:17:18 |
+| AE2 JEI Integration | ✅ Registra su plugin y ya no aparece el error del plugin JEI de Applied Create |
+| Errores en el log | Solo avisos inofensivos: narrador, realms, consulta de versiones de Xaero y 96 `X11: Standard cursor shape unavailable` |
+| Memoria | La instancia seguía usando 3900 MiB (Prism global). RSS 2.7 GiB y 1.8 GiB de swap |
+
+El usuario declaró estable esta versión y se publicó como **0.2.0**. Siguen pendientes las pruebas en juego P5–P11 y P13–P15.

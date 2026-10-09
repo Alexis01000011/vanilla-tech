@@ -1,4 +1,4 @@
-# Matriz de compatibilidad — Vanilla Tech 0.2.0-alpha.1
+# Matriz de compatibilidad — Vanilla Tech 0.2.0
 
 Minecraft 1.21.1 · NeoForge 21.1.257 · 52 artefactos fijados.
 Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `docs/test-status.toml`.
@@ -9,12 +9,12 @@ Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `do
 - **Gameplay tested**: funcionalidad probada por un jugador dentro del juego.
 - **Blocked**: problema abierto.
 
-El cliente **rc.3** arrancó en Prism y entró a un mundo nuevo (2026-10-09); los mods nuevos o cambiados desde rc.4 (incluido The Aether) siguen pendientes de esa prueba ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
+El cliente **0.2.0-alpha.1** (mismos mods que 0.2.0) arrancó en Prism, entró a un mundo nuevo y al Aether (2026-10-09); las pruebas en juego siguen pendientes ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
 
 | Mod | Versión | Fuente | Dependencias obligatorias | Side | Estado | Evidencia |
 |---|---|---|---|---|---|---|
 | Aaron | 1.21.0 | [Modrinth](https://modrinth.com/mod/aaron) | Kotlin for Forge | both | Launch tested | Servidor carga |
-| AE2 JEI Integration | 1.2.1 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ae2-jei-integration) | Applied Energistics 2, Just Enough Items (JEI) | both | Launch tested | Servidor rc.4 carga; en cliente debe arreglar el plugin JEI de Applied Create |
+| AE2 JEI Integration | 1.2.1 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ae2-jei-integration) | Applied Energistics 2, Just Enough Items (JEI) | both | Launch tested | Servidor y cliente 0.2.0-alpha.1: registra su plugin JEI; desaparece el error de Applied Create. Botón + sin probar |
 | Applied Create | 1.1.7 | [Modrinth](https://modrinth.com/mod/applied-create) | Applied Energistics 2, Create, Kotlin for Forge | both | Launch tested | Servidor: la rotación de Create (16 RPM) enciende un controlador AE2 vía kinetic_energy_acceptor, sin celda de energía |
 | Applied Energistics 2 | 19.2.18 | [Modrinth](https://modrinth.com/mod/ae2) | GuideME | both | Launch tested | Servidor: controlador online con celda creativa |
 | Applied Energistics 2 Wireless Terminals | 19.5.1 | [Modrinth](https://modrinth.com/mod/applied-energistics-2-wireless-terminals) | Applied Energistics 2 | both | Launch tested | Servidor carga; Quantum Bridge Card y receta presentes en el JAR |
@@ -23,7 +23,7 @@ El cliente **rc.3** arrancó en Prism y entró a un mundo nuevo (2026-10-09); lo
 | Building Gadgets | 1.3.9 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/building-gadgets) | — | both | Launch tested | Servidor carga |
 | Charging Gadgets | 1.14.1 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/charging-gadgets) | — | both | Launch tested | Servidor: estación colocada |
 | Chunky | 1.4.23 | [Modrinth](https://modrinth.com/mod/chunky) | — | server | Launch tested | Servidor: pregeneración de 1681 chunks |
-| Controlling | 19.0.5 | [Modrinth](https://modrinth.com/mod/controlling) | Searchables | client | Verified | Solo cliente; probar en cliente rc.4 |
+| Controlling | 19.0.5 | [Modrinth](https://modrinth.com/mod/controlling) | Searchables | client | Launch tested | Cliente 0.2.0-alpha.1 arranca |
 | Crafting Tweaks | 21.1.11 | [Modrinth](https://modrinth.com/mod/crafting-tweaks) | Balm | both | Launch tested | Servidor carga |
 | Create | 6.0.10 | [Modrinth](https://modrinth.com/mod/create) | — | both | Launch tested | Servidor: red cinética, eje a 16 RPM desde motor creativo |
 | Curios API | 9.5.1+1.21.1 | [Modrinth](https://modrinth.com/mod/curios) | — | both | Launch tested | Servidor carga |
@@ -43,8 +43,8 @@ El cliente **rc.3** arrancó en Prism y entró a un mundo nuevo (2026-10-09); lo
 | GuideME | 21.1.19 | [Modrinth](https://modrinth.com/mod/guideme) | — | both | Launch tested | Servidor carga |
 | ImmediatelyFast | 1.6.14+1.21.1 | [Modrinth](https://modrinth.com/mod/immediatelyfast) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | Inventory Profiles Next | 2.2.5 | [Modrinth](https://modrinth.com/mod/inventory-profiles-next) | libIPN | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
-| Iris Shaders | 1.8.12-snapshot+mc1.21.1-local | [Modrinth](https://modrinth.com/mod/iris) | Sodium | client | Verified | Solo cliente; shaders apagados por defecto; probar en cliente rc.4 |
-| Jade | 15.10.6+neoforge | [Modrinth](https://modrinth.com/mod/jade) | — | both | Launch tested | Servidor rc.5 carga con plugins de AE2, Extended AE, Waystones, GraveStone y Balm; HUD pendiente en cliente |
+| Iris Shaders | 1.8.12-snapshot+mc1.21.1-local | [Modrinth](https://modrinth.com/mod/iris) | Sodium | client | Launch tested | Cliente 0.2.0-alpha.1: arranca; cambia de pipeline al entrar al Aether. Shaders sin probar |
+| Jade | 15.10.6+neoforge | [Modrinth](https://modrinth.com/mod/jade) | — | both | Launch tested | Servidor rc.5 carga con plugins de AE2, Extended AE, Waystones, GraveStone y Balm; cliente 0.2.0-alpha.1 arranca; HUD sin confirmar |
 | Just Enough Items (JEI) | 19.51.0.418 | [Modrinth](https://modrinth.com/mod/jei) | — | both | Launch tested | Servidor carga (regla de alias 1.21 de FML); habilita traslado de recetas |
 | Just Zoom | 2.1.0 | [Modrinth](https://modrinth.com/mod/just-zoom) | Konkrete | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente; zoom en la tecla C) |
 | Konkrete | 1.9.9 | [Modrinth](https://modrinth.com/mod/konkrete) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente (biblioteca de Just Zoom)) |
@@ -54,11 +54,11 @@ El cliente **rc.3** arrancó en Prism y entró a un mundo nuevo (2026-10-09); lo
 | ModernFix | 5.27.26+mc1.21.1 | [Modrinth](https://modrinth.com/mod/modernfix) | — | both | Launch tested | Servidor carga; 2 mixins desactivados por conflicto con Lithium |
 | owo-lib | 0.12.15.5-beta.1+1.21 | [Modrinth](https://modrinth.com/mod/owo-lib) | — | both | Launch tested | Servidor alpha.1 carga (requerida por Accessories, que viene dentro de Aether) |
 | Searchables | 1.0.2 | [Modrinth](https://modrinth.com/mod/searchables) | — | client | Verified | Solo cliente (biblioteca de Controlling) |
-| Sodium | 0.6.13+mc1.21.1 | [Modrinth](https://modrinth.com/mod/sodium) | — | client | Verified | Solo cliente; bajado de 0.8.13 a 0.6.13 en rc.4 para usar Iris estable; probar en cliente rc.4 |
+| Sodium | 0.6.13+mc1.21.1 | [Modrinth](https://modrinth.com/mod/sodium) | — | client | Launch tested | Cliente 0.2.0-alpha.1: arranque, mundo y Aether (bajado a 0.6.13 en rc.4 para usar Iris estable) |
 | Sophisticated Backpacks | 3.26.9 | [Modrinth](https://modrinth.com/mod/sophisticated-backpacks) | Sophisticated Core | both | Launch tested | Servidor: mochila colocada como bloque |
 | Sophisticated Core | 1.5.7 | [Modrinth](https://modrinth.com/mod/sophisticated-core) | — | both | Launch tested | Servidor carga |
 | spark | 1.10.124 | [Modrinth](https://modrinth.com/mod/spark) | — | both | Launch tested | Servidor: spark tps / health |
-| The Aether | 1.5.10 | [Modrinth](https://modrinth.com/mod/aether) | — | both | Launch tested | Servidor alpha.1: dimensión cargada, bronze/silver/gold dungeon y large_aercloud ubicados, Freezer colocado |
+| The Aether | 1.5.10 | [Modrinth](https://modrinth.com/mod/aether) | — | both | Gameplay tested | Cliente 0.2.0-alpha.1 (usuario): entrada al Aether y vuelta. Servidor: dimensión y 3 dungeons + large_aercloud ubicados |
 | Waystones | 21.1.46 | [Modrinth](https://modrinth.com/mod/waystones) | Balm | both | Launch tested | Servidor: bloque colocado |
 | Xaero's Minimap | 26.6.0 | [Modrinth](https://modrinth.com/mod/xaeros-minimap) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | Xaero's World Map | 1.47.0 | [Modrinth](https://modrinth.com/mod/xaeros-world-map) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |

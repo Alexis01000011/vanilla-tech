@@ -82,8 +82,8 @@ evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente)"
 status = "Launch tested"
 evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente)"
 [sodium]
-status = "Verified"
-evidence = "Solo cliente; bajado de 0.8.13 a 0.6.13 en rc.4 para usar Iris estable; probar en cliente rc.4"
+status = "Launch tested"
+evidence = "Cliente 0.2.0-alpha.1: arranque, mundo y Aether (bajado a 0.6.13 en rc.4 para usar Iris estable)"
 [lithium]
 status = "Launch tested"
 evidence = "Servidor carga"
@@ -142,23 +142,23 @@ evidence = "Servidor carga"
 status = "Launch tested"
 evidence = "Servidor: bloque de lápida colocado"
 [iris]
-status = "Verified"
-evidence = "Solo cliente; shaders apagados por defecto; probar en cliente rc.4"
+status = "Launch tested"
+evidence = "Cliente 0.2.0-alpha.1: arranca; cambia de pipeline al entrar al Aether. Shaders sin probar"
 [controlling]
-status = "Verified"
-evidence = "Solo cliente; probar en cliente rc.4"
+status = "Launch tested"
+evidence = "Cliente 0.2.0-alpha.1 arranca"
 [searchables]
 status = "Verified"
 evidence = "Solo cliente (biblioteca de Controlling)"
 [ae2-jei-integration]
 status = "Launch tested"
-evidence = "Servidor rc.4 carga; en cliente debe arreglar el plugin JEI de Applied Create"
+evidence = "Servidor y cliente 0.2.0-alpha.1: registra su plugin JEI; desaparece el error de Applied Create. Botón + sin probar"
 [jade]
 status = "Launch tested"
-evidence = "Servidor rc.5 carga con plugins de AE2, Extended AE, Waystones, GraveStone y Balm; HUD pendiente en cliente"
+evidence = "Servidor rc.5 carga con plugins de AE2, Extended AE, Waystones, GraveStone y Balm; cliente 0.2.0-alpha.1 arranca; HUD sin confirmar"
 [aether]
-status = "Launch tested"
-evidence = "Servidor alpha.1: dimensión cargada, bronze/silver/gold dungeon y large_aercloud ubicados, Freezer colocado"
+status = "Gameplay tested"
+evidence = "Cliente 0.2.0-alpha.1 (usuario): entrada al Aether y vuelta. Servidor: dimensión y 3 dungeons + large_aercloud ubicados"
 [owo-lib]
 status = "Launch tested"
 evidence = "Servidor alpha.1 carga (requerida por Accessories, que viene dentro de Aether)"

@@ -4,7 +4,13 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 
 **Líneas**
 - **0.1.x**: línea base (Create + AE2 + calidad de vida), sin dimensiones nuevas. Rama `release/0.1`.
-- **0.2.0-alpha.N**: pruebas de dimensiones nuevas, en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
+- **0.2.x**: la base + The Aether. Rama `release/0.2`. **Estable actual.**
+- **0.3.0-alpha.N**: siguiente paso (Deep Aether, Deeper and Darker), en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
+
+## 0.2.0 — 2026-10-09 (estable)
+- **Mismo contenido que 0.2.0-alpha.1**: los archivos y overrides de `modrinth.index.json` son idénticos; solo cambia el número de versión.
+- **Validado por el usuario en el cliente (Prism)**: se cargaron los 67 mods que lista Prism (incluye los que vienen dentro de otros JARs), mundo nuevo, entrada al Aether y vuelta al Overworld. El log ya no muestra el error del plugin JEI de Applied Create.
+- 57 artefactos (56 en el cliente, 38 en el servidor). `sha256 60b6799616b1f21771788bbf8f94c8107394680a8d93d8fdc4b1347b081b6892`
 
 ## 0.2.0-alpha.1 — 2026-10-09
 - **Agregado**: The Aether 1.21.1-1.5.10 (trae dentro Accessories, Cumulus y Nitrogen) + owo-lib 0.12.15.5-beta.1.
