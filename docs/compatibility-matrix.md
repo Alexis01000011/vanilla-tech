@@ -1,6 +1,6 @@
-# Matriz de compatibilidad — Vanilla Tech 0.4.0
+# Matriz de compatibilidad — Vanilla Tech 0.5.0-alpha.1
 
-Minecraft 1.21.1 · NeoForge 21.1.257 · 69 artefactos fijados.
+Minecraft 1.21.1 · NeoForge 21.1.257 · 72 artefactos fijados.
 Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `docs/test-status.toml`.
 
 **Estados**
@@ -9,7 +9,7 @@ Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `do
 - **Gameplay tested**: funcionalidad probada por un jugador dentro del juego.
 - **Blocked**: problema abierto.
 
-El cliente **0.4.0-alpha.1** (mismos mods que 0.4.0) arrancó en Prism y entró al mundo; antes, 0.3.0-alpha.1 entró al Aether y al Otherside (2026-10-09). Las pruebas en juego siguen pendientes ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
+El cliente **0.4.0-alpha.1** (mismos mods que 0.4.0) arrancó en Prism y entró al mundo; antes, 0.3.0-alpha.1 entró al Aether y al Otherside (2026-10-09). Los mods agregados en 0.5.0-alpha.1 solo están probados en el servidor; las pruebas en juego siguen pendientes ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
 
 | Mod | Versión | Fuente | Dependencias obligatorias | Side | Estado | Evidencia |
 |---|---|---|---|---|---|---|
@@ -58,10 +58,13 @@ El cliente **0.4.0-alpha.1** (mismos mods que 0.4.0) arrancó en Prism y entró 
 | It Takes a Pillage | 1.0.13 | [Modrinth](https://modrinth.com/mod/it-takes-a-pillage-continuation) | Resourceful Lib | both | Launch tested | Servidor 0.4.0-alpha.1: bastille ubicada; cliente 0.4.0-alpha.1 arranca y entra al mundo |
 | Jade | 15.10.6+neoforge | [Modrinth](https://modrinth.com/mod/jade) | — | both | Launch tested | Servidor rc.5 carga con plugins de AE2, Extended AE, Waystones, GraveStone y Balm; cliente 0.2.0-alpha.1 arranca; HUD sin confirmar |
 | Just Enough Items (JEI) | 19.51.0.418 | [Modrinth](https://modrinth.com/mod/jei) | — | both | Launch tested | Servidor carga (regla de alias 1.21 de FML); habilita traslado de recetas |
+| Just Hammers | 21.1.4 | [Modrinth](https://modrinth.com/mod/just-hammers) | — | both | Launch tested | Servidor 0.5.0-alpha.1 carga (solo ítems) |
 | Just Zoom | 2.1.0 | [Modrinth](https://modrinth.com/mod/just-zoom) | Konkrete | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente; zoom en la tecla C) |
 | Konkrete | 1.9.9 | [Modrinth](https://modrinth.com/mod/konkrete) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente (biblioteca de Just Zoom)) |
 | Kotlin for Forge | kotlinforforge-5.12.0-all.jar | [Modrinth](https://modrinth.com/mod/kotlin-for-forge) | — | both | Launch tested | Servidor carga |
+| L_Ender's Cataclysm | 3.33 | [Modrinth](https://modrinth.com/mod/l_enders-cataclysm) | Curios API, Lionfish-API | both | Launch tested | Servidor 0.5.0-alpha.1: soul_black_smith, burning_arena, ancient_factory y sunken_city ubicadas |
 | libIPN | 6.6.3 | [Modrinth](https://modrinth.com/mod/libipn) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
+| Lionfish-API | 3.1 | [Modrinth](https://modrinth.com/mod/lionfish-api) | — | both | Launch tested | Servidor 0.5.0-alpha.1 carga (L_Ender's Cataclysm) |
 | Lithium | 0.15.4+mc1.21.1 | [Modrinth](https://modrinth.com/mod/lithium) | — | both | Launch tested | Servidor carga |
 | ModernFix | 5.27.26+mc1.21.1 | [Modrinth](https://modrinth.com/mod/modernfix) | — | both | Launch tested | Servidor carga; 2 mixins desactivados por conflicto con Lithium |
 | Not Enough Animations | 1.12.6 | [Modrinth](https://modrinth.com/mod/not-enough-animations) | — | client | Launch tested | Solo cliente; cliente 0.4.0-alpha.1 arranca y entra al mundo |

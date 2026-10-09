@@ -23,6 +23,12 @@ execute in minecraft:overworld run locate structure illagerinvasion:illager_fort
 execute in minecraft:overworld run locate structure takesapillage:bastille
 execute in minecraft:overworld run locate structure friendsandfoes:iceologer_cabin
 execute in minecraft:overworld run locate structure friendsandfoes:citadel
+## L_Ender's Cataclysm (0.5.x): boss structures generate
+execute in minecraft:overworld run locate structure cataclysm:ruined_citadel
+execute in minecraft:overworld run locate structure cataclysm:sunken_city
+execute in minecraft:overworld run locate structure cataclysm:ancient_factory
+execute in minecraft:the_nether run locate structure cataclysm:soul_black_smith
+execute in minecraft:the_nether run locate structure cataclysm:burning_arena
 ## The Aether (0.2.x): dimension loads and its dungeons generate
 execute in aether:the_aether run locate structure aether:bronze_dungeon
 execute in aether:the_aether run locate structure aether:silver_dungeon

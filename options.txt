@@ -30,3 +30,10 @@ key_key.deep_aether.toggle_skyjade_transparency:key.keyboard.unknown
 key_key.deeperdarker.boost:key.keyboard.y
 key_gui.xaero_minimap_settings:key.keyboard.unknown
 key_key.deeperdarker.transmit:key.keyboard.unknown
+key_key.cataclysm.ability:key.keyboard.l
+key_key.cataclysm.boots_ability:key.keyboard.l
+key_key.advancements:key.keyboard.unknown
+key_key.cataclysm.chestplate_ability:key.keyboard.p
+key_key.socialInteractions:key.keyboard.unknown
+key_key.cataclysm.helmet_ability:key.keyboard.i
+key_key.dankstorage.construction:key.keyboard.unknown

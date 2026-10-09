@@ -162,14 +162,22 @@ client:takesapillage->resourcefullib	3.0.12	[3.0.12,)	required
 client:jade->neoforge	21.1.257	[21.0.143, )	required
 client:jei->neoforge	21.1.257	[21.1.238,)	required
 client:jei->minecraft	1.21.1	[1.21, 1.21.1)	required
+client:justhammers->neoforge	21.1.257	[21.0,)	required
+client:justhammers->minecraft	1.21.1	[1.21,)	required
 client:justzoom->konkrete	1.9.9	[1.9.0,)	required
 client:justzoom->neoforge	21.1.257	[21.1.47,)	required
 client:justzoom->minecraft	1.21.1	[1.21.1,)	required
 client:konkrete->neoforge	21.1.257	[21.0.20-beta,)	required
 client:konkrete->minecraft	1.21.1	[1.21,)	required
 client:kotlinforforge->minecraft	1.21.1	[1.20.6,1.21.9)	required
+client:cataclysm->neoforge	21.1.257	[21.1.0,)	required
+client:cataclysm->minecraft	1.21.1	1.21.1	required
+client:cataclysm->curios	9.5.1+1.21.1	[9.2.2+1.21.1,)	required
+client:cataclysm->lionfishapi	3.1	3.1	required
 client:libipn->neoforge	21.1.257	[21.1,)	required
 client:libipn->minecraft	1.21.1	[1.21.1, 1.21.2)	required
+client:lionfishapi->neoforge	21.1.257	[21.1.219,)	required
+client:lionfishapi->minecraft	1.21.1	1.21.1	required
 client:lithium->minecraft	1.21.1	[1.21, 1.21.1]	required
 client:modernfix->neoforge	21.1.257	[21.0.111-beta,)	required
 client:modernfix->minecraft	1.21.1	[1.21, 1.22)	required
@@ -360,7 +368,15 @@ server:takesapillage->resourcefullib	3.0.12	[3.0.12,)	required
 server:jade->neoforge	21.1.257	[21.0.143, )	required
 server:jei->neoforge	21.1.257	[21.1.238,)	required
 server:jei->minecraft	1.21.1	[1.21, 1.21.1)	required
+server:justhammers->neoforge	21.1.257	[21.0,)	required
+server:justhammers->minecraft	1.21.1	[1.21,)	required
 server:kotlinforforge->minecraft	1.21.1	[1.20.6,1.21.9)	required
+server:cataclysm->neoforge	21.1.257	[21.1.0,)	required
+server:cataclysm->minecraft	1.21.1	1.21.1	required
+server:cataclysm->curios	9.5.1+1.21.1	[9.2.2+1.21.1,)	required
+server:cataclysm->lionfishapi	3.1	3.1	required
+server:lionfishapi->neoforge	21.1.257	[21.1.219,)	required
+server:lionfishapi->minecraft	1.21.1	1.21.1	required
 server:lithium->minecraft	1.21.1	[1.21, 1.21.1]	required
 server:modernfix->neoforge	21.1.257	[21.0.111-beta,)	required
 server:modernfix->minecraft	1.21.1	[1.21, 1.22)	required

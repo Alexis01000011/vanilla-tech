@@ -213,3 +213,12 @@ evidence = "Solo cliente; cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [not-enough-animations-emf-compat]
 status = "Launch tested"
 evidence = "Solo cliente; cliente 0.4.0-alpha.1 arranca y entra al mundo"
+[l_enders-cataclysm]
+status = "Launch tested"
+evidence = "Servidor 0.5.0-alpha.1: soul_black_smith, burning_arena, ancient_factory y sunken_city ubicadas"
+[lionfish-api]
+status = "Launch tested"
+evidence = "Servidor 0.5.0-alpha.1 carga (L_Ender's Cataclysm)"
+[just-hammers]
+status = "Launch tested"
+evidence = "Servidor 0.5.0-alpha.1 carga (solo ítems)"

@@ -1,6 +1,6 @@
-# Catálogo de mods — Vanilla Tech 0.4.0
+# Catálogo de mods — Vanilla Tech 0.5.0-alpha.1
 
-Minecraft **1.21.1** · NeoForge **21.1.257** · 75 artefactos fijados (69 mods + 5 shaderpacks + 1 resource pack) (`pin = true`).
+Minecraft **1.21.1** · NeoForge **21.1.257** · 78 artefactos fijados (72 mods + 5 shaderpacks + 1 resource pack) (`pin = true`).
 Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qué* aporta cada mod y *por qué* está en el pack.
 
 **Side**: `both` = cliente y servidor · `client` = solo cliente (el servidor no lo instala) · `server` = solo servidor.
@@ -29,6 +29,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Mod | Versión | Fuente | Side | Para qué |
 |---|---|---|---|---|
 | Waystones | 21.1.46 | [Modrinth](https://modrinth.com/mod/waystones) | both | Teletransporte entre piedras activadas. Requiere Balm. |
+| Just Hammers | 21.1.4 | [Modrinth](https://modrinth.com/mod/just-hammers) | both | Martillos que minan en 3×3 (y versiones más grandes y reforzadas). Sin dependencias. |
 | Storage Drawers | 13.11.4 | [Modrinth](https://modrinth.com/mod/storagedrawers) | both | Cajones de almacenamiento masivo de un solo ítem, compactadores y controlador de cajones. Un Storage Bus de AE2 puede leerlos. Sin dependencias. |
 | Dank Storage | 20 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/dank-storage) | both | Contenedores portátiles de gran capacidad. |
 | Building Gadgets 2 | 1.3.9 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/building-gadgets) | both | Herramientas de construcción, copia/pega y destrucción por área. Funcionan con energía FE. |
@@ -61,6 +62,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Friends & Foes | 4.0.27 | [Modrinth](https://modrinth.com/mod/friends-and-foes-forge) | both | Mobs del *mob vote*: copper golem, tuff golem, glare, moobloom, mauler, crab, rascal, wildfire; Iceologer e Illusioner mejorado (entran a las raids). Botones de cobre, colmenas de madera y profesión de **apicultor**. Agrega casas a las aldeas y estructuras (Citadel, Iceologer Cabin, Illusioner Shack). Requiere Resourceful Lib. Se fija la 4.0.27: la 5.0 salió hace dos días y ya tuvo dos hotfixes (uno por un crash con Curios). |
 | Illager Invasion | 21.1.6 | [Modrinth](https://modrinth.com/mod/illager-invasion) | both | Illagers nuevos: Basher, Provoker, Sorcerer, Archivist, Inquisitor, Marauder, Alchemist, Firecaller, Necromancer, Surrendered y el jefe Invoker. Estructuras: Illager Fort, Labyrinth, Illusioner Tower, cabañas de Sorcerer y Firecaller. Agrega marcadores de spawn y cofres a 13 piezas de la woodland mansion sin cambiar su forma. Requiere Puzzles Lib. |
 | It Takes a Pillage | 1.0.13 | [Modrinth](https://modrinth.com/mod/it-takes-a-pillage-continuation) | both | Archer, Skirmisher y Legioner (también en raids), Clay Golem, **asedios de pillagers** a aldeas, Bastille y Pillager Camp. En el outpost vanilla solo marca como liberable al gólem de la jaula. Requiere Resourceful Lib. |
+| L_Ender's Cataclysm | 1.21.1-3.33 | [Modrinth](https://modrinth.com/mod/l_enders-cataclysm) | both | Jefes con arena propia (Ender Guardian, Netherite Monstrosity, Ignis, The Harbinger, The Leviathan, Ancient Remnant, Maledictus, Scylla…) en estructuras nuevas: Ruined Citadel, Sunken City, Ancient Factory, Frosted Prison, Cursed Pyramid y Acropolis en el Overworld; Soul Black Smith y Burning Arena en el Nether. Equipo con habilidades activables. No reemplaza piezas vanilla ni agrega dimensiones. Requiere Lionfish API 3.1 (rango exacto) y Curios. Licencia CC-BY-NC-ND (el pack solo lo referencia). |
 | Artifacts | 13.2.5 | [Modrinth](https://modrinth.com/mod/artifacts) | both | Artefactos equipables con efectos (botas, guantes, collares, cinturones…) en cofres, arqueología y campamentos con mimics. **Solo en ranuras de Curios** (`enableAccessoriesCompat = false`), para que no se equipen dos veces en Curios y en Accessories. |
 
 ## E. Inventario, recetas y navegación
@@ -119,6 +121,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | FTB Library | 2101.1.37 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge) | both | FTB Chunks, FTB Teams (FTB JEI Extras no la declara ni la usa en su código) |
 | FTB Teams | 2101.1.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge) | both | FTB Chunks |
 | TerraBlender | 4.1.0.8 | [Modrinth](https://modrinth.com/mod/terrablender) | both | Deep Aether, que también trae la 4.1.0.3 dentro; NeoForge elige la 4.1.0.8. No registra regiones en el Overworld: las estructuras salen en las mismas coordenadas que sin él. En Modrinth, todas sus versiones para 1.21.1 están marcadas como beta. |
+| Lionfish API | 3.1 | [Modrinth](https://modrinth.com/mod/lionfish-api) | both | L_Ender's Cataclysm (exige exactamente la 3.1) |
 | Puzzles Lib | 21.1.63 | [Modrinth](https://modrinth.com/mod/puzzles-lib) | both | Illager Invasion |
 | Resourceful Lib | 3.0.12 | [Modrinth](https://modrinth.com/mod/resourceful-lib) | both | Friends & Foes, It Takes a Pillage |
 | EMF Compat: Core | 2.3.0 | [Modrinth](https://modrinth.com/mod/emf-compat-core) | client | EMF Compat: Not Enough Animations |

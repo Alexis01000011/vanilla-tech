@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-09, release **0.4.0** (estable).
+Estado a 2026-10-09, release **0.5.0-alpha.1** (estable: 0.4.0).
 
 ## Pruebas pendientes
 
@@ -32,6 +32,8 @@ Estado a 2026-10-09, release **0.4.0** (estable).
 | P25 | **Artifacts en Curios**: equipar un artefacto en Curios (G) y confirmar que no aparece en el menú de Accessories. | Config `enableAccessoriesCompat = false` instalada. |
 | P26 | **Animaciones**: Not Enough Animations + Fresh Animations: Player Extension en tercera persona (F5), con y sin shaders; medir FPS. | Solo cliente. |
 | P27 | **Storage Drawers con AE2** (Storage Bus sobre un cajón) y **Create Crafts & Additions** (alternador → FE → máquina). | En el servidor se colocan los bloques. |
+| P28 | **L_Ender's Cataclysm**: encontrar una estructura, pelear un jefe y usar las habilidades del equipo (L, P, I). Medir FPS en las arenas. | En el servidor se ubican sus estructuras (0.5.0-alpha.1). |
+| P29 | **Just Hammers**: minar 3×3 y que no rompa bloques protegidos ni de máquinas por accidente. | Solo ítems; el servidor carga el mod. |
 | P19 | **Jade**: el HUD muestra el bloque que se mira y la información de AE2 y Create. | Solo cliente; en el servidor ya cargan los plugins de AE2, Extended AE, Waystones, GraveStone y Balm (rc.5). |
 
 ## Problemas conocidos
@@ -78,6 +80,25 @@ Estado a 2026-10-09, release **0.4.0** (estable).
 - **Errores inofensivos en el log del servidor**: 16 tablas de loot `create_connected:blocks/dye_depot_*`, de la integración con Dye Depot, que no está instalado; y avisos de mixin de clases de Copycats+ y Create Simulated, integraciones opcionales.
 - **EMF Compat: Core 2.3.0 y EMF Compat: NEA 1.2.1** se publicaron el 2026-10-08 y el 2026-10-09. Son la pareja que exige el EMF actual; si fallan, la versión anterior (1.2.0 + core 1.1.x) es de antes del cambio de arquitectura de EMF Compat.
 - **El arranque del servidor tarda más**: `Done` en 39–66 s en 0.4.0-alpha.1 (dos corridas), en la máquina de prueba con 2 núcleos.
+
+### Auditoría de incompatibilidades (2026-10-09, sobre 0.4.0-alpha.1 + Cataclysm + Just Hammers)
+Análisis estático de 1781 clases de mixin en 101 JARs (incluidos los internos), logs reales y issues públicos. No hay conflictos de mixin graves ni incompatibilidades declaradas activas. Hallazgos:
+- **Lithium 0.15.4 pierde memoria al descargar chunks** ([CaffeineMC/lithium#783](https://github.com/CaffeineMC/lithium/issues/783): abierto, confirmado, arreglo pendiente de publicar). El mixin `world.game_events.dispatch` retiene los `LevelChunk` descargados; en el reporte, ~41k chunks generados dejaron 12 GB retenidos. Es grave para pregenerar con Chunky. **Corregido en 0.5.0-alpha.1** con `config/lithium.properties` (`mixin.world.game_events.dispatch=false`). Quitar esa línea cuando salga una Lithium posterior a 0.15.4.
+- **Cataclysm congela el servidor al buscar sus estructuras**: `locate` tardó 5–17 s por estructura en la prueba ("Can't keep up" de 54 s). Sus ítems tipo "ojo" (`DungeonEyeItem`) hacen la misma búsqueda en el hilo del servidor: cada uso puede congelar unos segundos el servidor para los dos jugadores. Pregenerar reduce el costo.
+- **ImmediatelyFast + Iris: la pantalla de shaders puede salir invisible dentro del mundo** ([RaphiMC/ImmediatelyFast#512](https://github.com/RaphiMC/ImmediatelyFast/issues/512), abierto; mismas versiones con Create y Xaero). Si pasa: abrir *Shader Packs* desde el menú principal, o `"hud_batching": false` en la config de ImmediatelyFast.
+- **Aether 1.5.10 en servidor dedicado: un jugador puede quedar en "Joining world…" hasta reiniciar** ([The-Aether#2770](https://github.com/The-Aether-Team/The-Aether/issues/2770), abierto). En el log aparece `Failed to serialize ResourceKey[aether:moa_type …]: Item must not be minecraft:air`; parece ligado a moas con armadura. Solución temporal: reiniciar el servidor o eliminar la moa.
+- **Flywheel (Create) se apaga con un shader activo** (backend "off"): con muchos bloques cinéticos bajan mucho los FPS en la iGPU. Create Crafts & Additions tiene un crash reportado con ese backend al mirar un Liquid Blaze Burner encendido (mrh0/createaddition#1020, abierto; no se verificó si afecta a 1.6.0).
+- **Duplicación Storage Drawers + AE2** (jaquadro/StorageDrawers#1243, AE2#8592, abiertos): Import Bus con lista negra y tarjetas de aceleración sobre un cajón de varias ranuras. Es un exploit; basta con no usarlo.
+- **Animaciones**: Not Enough Animations tiene issues abiertos con Fresh Animations: Player Extension (#315, #331: *Animation smoothing* rompe las animaciones del arco y los brazos; se arregla desactivándolo en la config de NEA). El Umbrella de Artifacts se ve al revés con FA:PE (artifacts#473).
+- **Menores, sin verificar**: un martillo de Just Hammers con Silk Touch permite XP infinita (#108); Entity Culling no tiene a los jefes de Cataclysm en su whitelist (si parpadean, agregarlos a `entityWhitelist`); la Frosted Prison y la Cursed Pyramid no tienen lista de exclusión y pueden quedar pegadas a aldeas nevadas o de desierto.
+- **Revisado y OK**: Friends & Foes e It Takes a Pillage extienden las raids y las patrullas sin pisarse; el Clay Golem no reemplaza a los gólems de hierro; Sunken City y Acropolis se alejan 10 chunks de los monumentos oceánicos; Cataclysm no toca `data/minecraft`. Ningún log tiene `InvalidInjectionException` ni `MixinTransformerError`.
+
+### L_Ender's Cataclysm (0.5.0-alpha)
+- **Ignited Berserker fuera de las fortalezas del Nether** (`ignited_berserker_spawn_weight = 0` en `config/cataclysm-common.toml`). Cataclysm lo agregaba a los spawns de la fortaleza con peso 7 (contra 28 del total vanilla), lo que restaba ~20 % de wither skeletons y blazes en las granjas. Se puede volver a 7 si se quiere el mob.
+- **Los jefes rompen bloques aunque `mobGriefing` esté apagado** (`ignore_mobgriefing = true` en Ender Guardian, Netherite Monstrosity, Ignis, Harbinger, Leviathan, Ancient Remnant, Maledictus y Scylla). Están pensados para pelear en sus arenas: no hay que llevarlos cerca de construcciones. Se cambia por jefe en `config/cataclysm-common.toml`.
+- **Mobs nuevos en el océano** (Deepling y variantes, Coral Golem), Amethyst Crab y Koboleton (desierto, sabana, badlands), con impacto despreciable en las granjas. Las granjas de guardianes no se ven afectadas: sus spawns salen del monumento.
+- **El RSS del servidor de prueba subió a 1.97–2.39 GiB** (con heap de 2 GiB y sin jugadores). En el servidor real conviene mantener el heap recomendado (5 GiB en 8 GiB de RAM, 8 GiB en 16 GiB).
+- Aviso inofensivo al arrancar: `Not all defined tags for registry ... block are present` (tags propios de Cataclysm como `needs_black_steel_tool`).
 
 ### Distribución y reproducibilidad
 - **packwiz se obtiene de un artefacto de CI de GitHub** (`nightly.link`, commit `ef87d96`), verificado por SHA-256. Ese artefacto **caduca el 2026-12-05** (según la API de GitHub); después, `scripts/bootstrap-tools.py` no podrá descargarlo en otra computadora. Alternativas:

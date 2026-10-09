@@ -7,7 +7,14 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.2.x**: la base + The Aether. Rama `release/0.2`.
 - **0.3.x**: + Deep Aether + Deeper and Darker. Rama `release/0.3`.
 - **0.4.x**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Rama `release/0.4`. **Estable actual.**
-- **0.5.0-alpha.N**: L_Ender's Cataclysm y Just Hammers, en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
+- **0.5.0-alpha.N**: L_Ender's Cataclysm y Just Hammers, sobre 0.4, en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
+
+## 0.5.0-alpha.1 — 2026-10-09
+- **Agregado**: L_Ender's Cataclysm 3.33 (+ Lionfish API 3.1) y Just Hammers 21.1.4.
+- **Teclas**: habilidades de Cataclysm en L (ítem y botas), P (peto) e I (casco); sin tecla: *Progresos*, *Interacciones sociales* y el modo construcción de Dank Storage.
+- **Configs** (de la auditoría de incompatibilidades): Lithium sin el mixin `world.game_events.dispatch` (fuga de memoria #783); Cataclysm sin Ignited Berserker en las fortalezas del Nether (protege las granjas de wither skeletons y blazes).
+- **Probado**: servidor (`docs/0.5.0-alpha.1-integration.json`).
+- 78 artefactos (77 en el cliente, 53 en el servidor). `sha256 3578edc3e150256613f6a8fb08849f9ec130c00c7c7d2a80861d57b797273466`
 
 ## 0.4.0 — 2026-10-09 (estable)
 - **Mismo contenido que 0.4.0-alpha.1**: los archivos y overrides son idénticos; solo cambia el número de versión.

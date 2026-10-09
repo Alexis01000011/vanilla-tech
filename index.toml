@@ -5,6 +5,10 @@ file = "config/artifacts/general.toml"
 hash = "89914268eb2411fa4b644ba77da79f558d2b1bca69810004dad1a0589596684a"
 
 [[files]]
+file = "config/cataclysm-common.toml"
+hash = "3e8e543fe00d18ff68a01389862e09290fe558c9941959ae107a58ccd27c11f6"
+
+[[files]]
 file = "config/excessive_utilities-server.toml"
 hash = "c773741af7d93f3f624aef7cd0cb8bfef7c604ac48a577187be1390b96803569"
 
@@ -15,6 +19,10 @@ hash = "2b05ce349f0da4ee35eeee9331046cddc41adbe9d8813bf31f53e8f7e50f5985"
 [[files]]
 file = "config/illagerinvasion-server.toml"
 hash = "0c06bc454067939e9ad9e801c40f787437519dcbac669d84c73833a083f37323"
+
+[[files]]
+file = "config/lithium.properties"
+hash = "ef94b8241f8b99e9b43fa51d1c677181fbd8f33d7625d7b52875fb5dc1c4e42b"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
@@ -246,6 +254,11 @@ hash = "3001811c5bcc2e0edd3f2b6e865dcf2e9e8959508a139e5490d5d061031ec2bc"
 metafile = true
 
 [[files]]
+file = "mods/just-hammers.pw.toml"
+hash = "55f69fbd3b9614181915b651b9de5e6431d93f0535da0ef2a95358440dc8a65c"
+metafile = true
+
+[[files]]
 file = "mods/just-zoom.pw.toml"
 hash = "5c332f67954c628a837c85e4e9a590462916f163e7445da7f17ef7e33f60d2e7"
 metafile = true
@@ -261,8 +274,18 @@ hash = "c5886cdeb8094e40830655703a846c8f6a116d1e9cbc2d0e8109489533730f1b"
 metafile = true
 
 [[files]]
+file = "mods/l_enders-cataclysm.pw.toml"
+hash = "cddcd5e874139b9dd065e877207b6d6b3b7aa4b1aa7a2805a6ce1c767885844a"
+metafile = true
+
+[[files]]
 file = "mods/libipn.pw.toml"
 hash = "e5eae873c66754e90d457311711243cc6e350d73f93fc6935c42ffb7de2ee69a"
+metafile = true
+
+[[files]]
+file = "mods/lionfish-api.pw.toml"
+hash = "7d5f7ad9d5ec9f46b20bc2f2c66fc46abfa14c64446b6cc371179144371e60d3"
 metafile = true
 
 [[files]]
@@ -367,7 +390,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "c221cb031ab707a16399ffeb8bab008dfcbbb0bd5c90fa43249898dfe54bcca1"
+hash = "0052e427dda7b47cb56230efb44b9ac6be716abf31cd8e5beec953810d71728a"
 
 [[files]]
 file = "resourcepacks/fa-player-extension.pw.toml"
