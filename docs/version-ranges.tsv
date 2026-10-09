@@ -61,6 +61,17 @@ client:curios->neoforge	21.1.257	[21.1.60,)	required
 client:curios->minecraft	1.21.1	[1.21, 1.22)	required
 client:dankstorage->neoforge	21.1.257	[21.1.35,)	required
 client:dankstorage->minecraft	1.21.1	[1.21, 1.22)	required
+client:deep_aether->neoforge	21.1.257	[20.4.167,)	required
+client:deep_aether->minecraft	1.21.1	[1.21,1.21.1)	required
+client:deep_aether->aether	1.5.10	[1.2.0,)	required
+client:deep_aether->aeroblender	1.0.0	[1.0.0,)	required
+client:aeroblender->neoforge	21.1.257	[21.1.72,)	required
+client:aeroblender->minecraft	1.21.1	[1.21.1,1.21.2)	required
+client:aeroblender->terrablender	4.1.0.8	[1.21.1-4.1.0.0,)	required
+client:aeroblender->aether	1.5.10	1.21.1-1.5.0-neoforge,)	required
+client:terrablender->neoforge	21.1.257	[20.4,)	required
+client:deeperdarker->minecraft	1.21.1	[1.21.1]	required
+client:deeperdarker->neoforge	21.1.257	[21.1,)	required
 client:dynamic_fps->minecraft	1.21.1	[1.21.0,1.21.1]	required
 client:entityculling->minecraft	1.21.1	[1.21.1]	required
 client:entityculling->neoforge	21.1.257	[20.2,)	required
@@ -149,6 +160,7 @@ client:sophisticatedcore->jei	19.51.0.418	[19.32.0.359,)	optional
 client:sophisticatedcore->neoforge	21.1.257	[21.1.229,)	required
 client:sophisticatedcore->minecraft	1.21.1	[1.21.1,1.21.2)	required
 client:spark->neoforge	21.1.257	[20,)	required
+client:terrablender->neoforge	21.1.257	[20.4,)	required
 client:waystones->neoforge	21.1.257	[21-beta,)	required
 client:waystones->minecraft	1.21.1	[1.21,)	required
 client:waystones->balm	21.0.66	[21.0.39,)	required
@@ -224,6 +236,17 @@ server:curios->neoforge	21.1.257	[21.1.60,)	required
 server:curios->minecraft	1.21.1	[1.21, 1.22)	required
 server:dankstorage->neoforge	21.1.257	[21.1.35,)	required
 server:dankstorage->minecraft	1.21.1	[1.21, 1.22)	required
+server:deep_aether->neoforge	21.1.257	[20.4.167,)	required
+server:deep_aether->minecraft	1.21.1	[1.21,1.21.1)	required
+server:deep_aether->aether	1.5.10	[1.2.0,)	required
+server:deep_aether->aeroblender	1.0.0	[1.0.0,)	required
+server:aeroblender->neoforge	21.1.257	[21.1.72,)	required
+server:aeroblender->minecraft	1.21.1	[1.21.1,1.21.2)	required
+server:aeroblender->terrablender	4.1.0.8	[1.21.1-4.1.0.0,)	required
+server:aeroblender->aether	1.5.10	1.21.1-1.5.0-neoforge,)	required
+server:terrablender->neoforge	21.1.257	[20.4,)	required
+server:deeperdarker->minecraft	1.21.1	[1.21.1]	required
+server:deeperdarker->neoforge	21.1.257	[21.1,)	required
 server:excessive_utilities->neoforge	21.1.257	[21.1.0,)	required
 server:excessive_utilities->curios	9.5.1+1.21.1	[9.0.5,)	required
 server:excessive_utilities->kotlinforforge	5.12.0	[5.12.0,6.0.0)	required
@@ -271,6 +294,7 @@ server:sophisticatedbackpacks->minecraft	1.21.1	[1.21.1,1.21.2)	required
 server:sophisticatedcore->neoforge	21.1.257	[21.1.229,)	required
 server:sophisticatedcore->minecraft	1.21.1	[1.21.1,1.21.2)	required
 server:spark->neoforge	21.1.257	[20,)	required
+server:terrablender->neoforge	21.1.257	[20.4,)	required
 server:waystones->neoforge	21.1.257	[21-beta,)	required
 server:waystones->minecraft	1.21.1	[1.21,)	required
 server:waystones->balm	21.0.66	[21.0.39,)	required

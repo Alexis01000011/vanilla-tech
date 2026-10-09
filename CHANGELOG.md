@@ -7,6 +7,13 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.2.x**: la base + The Aether. Rama `release/0.2`. **Estable actual.**
 - **0.3.0-alpha.N**: siguiente paso (Deep Aether, Deeper and Darker), en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
 
+## 0.3.0-alpha.1 — 2026-10-09
+- **Agregado**: Deep Aether 1.21.1-1.1.5.1 (trae AeroBlender dentro), Deeper and Darker 1.4.1 y TerraBlender 4.1.0.8.
+- **Teclas**: Stratus Dash R (Iris *recargar* sin tecla), Slider Slam Alt izquierdo, Soul Elytra Y (*ajustes del minimapa* de Xaero sin tecla); transparencia del skyjade y Sculk Transmitter sin asignar.
+- **Herramientas**: `worldgen-audit.py` detecta también piezas `.nbt`, template pools y processor lists vanilla.
+- **Probado**: servidor; las estructuras previas salen en las mismas coordenadas (`docs/0.3.0-alpha.1-integration.json`).
+- 60 artefactos (59 en el cliente, 41 en el servidor). `sha256 e9e885f6fd92a6fd77c08a75db43f8f5e1eedbffb224041991ba5e0e0214bc3c`
+
 ## 0.2.0 — 2026-10-09 (estable)
 - **Mismo contenido que 0.2.0-alpha.1**: los archivos y overrides de `modrinth.index.json` son idénticos; solo cambia el número de versión.
 - **Validado por el usuario en el cliente (Prism)**: se cargaron los 67 mods que lista Prism (incluye los que vienen dentro de otros JARs), mundo nuevo, entrada al Aether y vuelta al Overworld. El log ya no muestra el error del plugin JEI de Applied Create.

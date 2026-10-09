@@ -751,6 +751,119 @@
     ]
   },
   {
+    "id": "deep_aether",
+    "version": "1.21.1-1.1.5.1",
+    "jar": "deep_aether-1.21.1-1.1.5.1.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[20.4.167,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21,1.21.1)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "aether",
+        "type": "required",
+        "versionRange": "[1.2.0,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      },
+      {
+        "modId": "aeroblender",
+        "type": "required",
+        "versionRange": "[1.0.0,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "aeroblender",
+    "version": "1.0.0",
+    "jar": "deep_aether-1.21.1-1.1.5.1.jar!/META-INF/jarjar/aeroblender-1.21.1-1.0.0-neoforge.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.72,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.21.2)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "terrablender",
+        "type": "required",
+        "versionRange": "[1.21.1-4.1.0.0,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "aether",
+        "type": "required",
+        "versionRange": "1.21.1-1.5.0-neoforge,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "terrablender",
+    "version": "4.1.0.3",
+    "jar": "deep_aether-1.21.1-1.1.5.1.jar!/META-INF/jarjar/TerraBlender-neoforge-1.21.1-4.1.0.3.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "required": true,
+        "versionRange": "[20.4,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "deeperdarker",
+    "version": "1.4.1",
+    "jar": "deeperdarker-neoforge-1.21.1-1.4.1.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "dynamic_fps",
     "version": "3.11.4",
     "jar": "dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar",
@@ -1785,6 +1898,22 @@
         "modId": "neoforge",
         "mandatory": true,
         "versionRange": "[20,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "terrablender",
+    "version": "4.1.0.8",
+    "jar": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "required": true,
+        "versionRange": "[20.4,)",
         "ordering": "NONE",
         "side": "BOTH"
       }

@@ -2,12 +2,14 @@
   {
     "mod": "Aaron",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "AE2 JEI Integration",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Applied Energistics 2",
@@ -17,7 +19,8 @@
       "data/ae2/worldgen/biome/spatial_storage.json",
       "data/ae2/tags/worldgen/biome/has_meteorites.json"
     ],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "The Aether",
@@ -60,62 +63,148 @@
     ],
     "vanilla_overrides": [
       "data/minecraft/tags/worldgen/biome/spawns_cold_variant_frogs.json"
-    ]
+    ],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Applied Create",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Applied Energistics 2 Wireless Terminals",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Architectury API",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Balm",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Building Gadgets",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Charging Gadgets",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Chunky",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Crafting Tweaks",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Create",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Curios API",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Dank Storage",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
+    "mod": "Deep Aether",
+    "worldgen_paths": [
+      "data/aether/tags/worldgen/biome/is_aether.json",
+      "data/deep_aether/tags/worldgen/biome/can_quail_spawn.json",
+      "data/deep_aether/tags/worldgen/biome/has_aether_extra_flowers.json",
+      "data/deep_aether/tags/worldgen/biome/has_brass_dungeon.json",
+      "data/deep_aether/tags/worldgen/biome/has_structure/altar_camp.json",
+      "data/deep_aether/tags/worldgen/biome/has_structure/campfire.json",
+      "data/deep_aether/tags/worldgen/biome/has_structure/combiner_corridor.json",
+      "data/deep_aether/tags/worldgen/biome/is_cloud.json",
+      "data/deep_aether/tags/worldgen/biome/is_not_swamp.json",
+      "data/deep_aether/worldgen/biome/aerglow_forest.json",
+      "data/deep_aether/worldgen/biome/aerlavender_fields.json",
+      "data/deep_aether/worldgen/biome/blue_aerglow_forest.json",
+      "data/deep_aether/worldgen/biome/cloud.json",
+      "data/deep_aether/worldgen/biome/golden_grove.json",
+      "data/deep_aether/worldgen/biome/golden_heights.json",
+      "data/deep_aether/worldgen/biome/luminescent_forest.json",
+      "data/deep_aether/worldgen/biome/mystic_aerglow_forest.json",
+      "data/deep_aether/worldgen/biome/overgrown_cloud.json",
+      "data/deep_aether/worldgen/biome/sacred_lands.json",
+      "data/deep_aether/worldgen/biome/yagroot_swamp.json",
+      "data/deep_aether/worldgen/structure/altar_camp.json",
+      "data/deep_aether/worldgen/structure/brass_dungeon.json",
+      "data/deep_aether/worldgen/structure/campfire.json",
+      "data/deep_aether/worldgen/structure/combiner_corridor.json",
+      "data/deep_aether/worldgen/structure_set/altar_camp.json",
+      "data/deep_aether/worldgen/structure_set/brass_dungeon.json",
+      "data/deep_aether/worldgen/structure_set/campfire.json",
+      "data/deep_aether/worldgen/structure_set/combiner_corridor.json"
+    ],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
+    "mod": "Deeper and Darker",
+    "worldgen_paths": [
+      "data/alexsmobs/tags/worldgen/biome/skreechers_can_spawn_wardens.json",
+      "data/deeperdarker/dimension/otherside.json",
+      "data/deeperdarker/tags/worldgen/biome/has_structure/ancient_temple.json",
+      "data/deeperdarker/tags/worldgen/biome/has_structure/gloomaze.json",
+      "data/deeperdarker/tags/worldgen/structure/ancient_temple.json",
+      "data/deeperdarker/worldgen/biome/blooming_caverns.json",
+      "data/deeperdarker/worldgen/biome/deeplands.json",
+      "data/deeperdarker/worldgen/biome/echoing_forest.json",
+      "data/deeperdarker/worldgen/biome/overcast_columns.json",
+      "data/deeperdarker/worldgen/noise_settings/otherside.json",
+      "data/deeperdarker/worldgen/structure/ancient_temple.json",
+      "data/deeperdarker/worldgen/structure_set/ancient_temples.json",
+      "data/geode_plus/tags/worldgen/biome/has_echo_crystal.json",
+      "data/geode_plus/tags/worldgen/biome/has_echo_geode.json"
+    ],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": [
+      "data/minecraft/structure/ancient_city/walls/intact_corner_wall_1.nbt",
+      "data/minecraft/structure/ancient_city/walls/intact_horizontal_wall_1.nbt",
+      "data/minecraft/structure/ancient_city/walls/intact_horizontal_wall_2.nbt",
+      "data/minecraft/structure/ancient_city/walls/intact_horizontal_wall_bridge.nbt",
+      "data/minecraft/structure/ancient_city/walls/intact_horizontal_wall_passage_1.nbt",
+      "data/minecraft/structure/ancient_city/walls/intact_horizontal_wall_stairs_1.nbt",
+      "data/minecraft/structure/ancient_city/walls/intact_horizontal_wall_stairs_2.nbt",
+      "data/minecraft/structure/ancient_city/walls/intact_horizontal_wall_stairs_3.nbt",
+      "data/minecraft/structure/ancient_city/walls/intact_horizontal_wall_stairs_4.nbt",
+      "data/minecraft/structure/ancient_city/walls/intact_intersection_wall_1.nbt",
+      "data/minecraft/structure/ancient_city/walls/intact_lshape_wall_1.nbt",
+      "data/minecraft/structure/ancient_city/walls/ruined_corner_wall_1.nbt",
+      "data/minecraft/structure/ancient_city/walls/ruined_corner_wall_2.nbt",
+      "data/minecraft/structure/ancient_city/walls/ruined_horizontal_wall_stairs_1.nbt",
+      "data/minecraft/structure/ancient_city/walls/ruined_horizontal_wall_stairs_2.nbt",
+      "data/minecraft/structure/ancient_city/walls/ruined_horizontal_wall_stairs_3.nbt",
+      "data/minecraft/structure/ancient_city/walls/ruined_horizontal_wall_stairs_4.nbt"
+    ]
   },
   {
     "mod": "Excessive Utilities",
@@ -130,7 +219,8 @@
       "data/excessive_utilities/tags/worldgen/biome/biome_marker_blacklist.json",
       "data/c/tags/worldgen/biome/is_overworld.json"
     ],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Explorify",
@@ -196,92 +286,118 @@
       "data/explorify/worldgen/structure_set/taverns.json",
       "data/explorify/worldgen/structure_set/watchtowers.json"
     ],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Extended AE",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "FerriteCore",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "FTB Chunks (NeoForge)",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "FTB Library (NeoForge)",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "FTB Teams (NeoForge)",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Glodium",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "GraveStone Mod",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "GuideME",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Jade",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Just Enough Items (JEI)",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Kotlin for Forge",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Lithium",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "ModernFix",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "owo-lib",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Sophisticated Backpacks",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Sophisticated Core",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "spark",
     "worldgen_paths": [],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
+    "mod": "TerraBlender",
+    "worldgen_paths": [
+      "data/terrablender/worldgen/biome/deferred_placeholder.json"
+    ],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "Waystones",
@@ -297,7 +413,8 @@
       "data/waystones/tags/worldgen/biome/has_structure/sandy_waystone.json",
       "data/waystones/tags/worldgen/biome/has_structure/waystone.json"
     ],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "YUNG's API",
@@ -307,7 +424,8 @@
       "data/yungsapi/tags/worldgen/structure/remove_vines_feature_in.json",
       "data/yungsapi/tags/worldgen/structure/remove_delta_feature_in.json"
     ],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "YUNG's Bridges",
@@ -318,7 +436,8 @@
       "data/yungsbridges/tags/worldgen/biome/collections/taiga.json",
       "data/yungsbridges/tags/worldgen/biome/has_structure/bridge.json"
     ],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   },
   {
     "mod": "YUNG's Extras",
@@ -327,6 +446,7 @@
       "data/yungsextras/tags/worldgen/biome/has_structure/swamp_structures.json",
       "data/yungsextras/tags/worldgen/biome/has_structure/vanilla_desert_well.json"
     ],
-    "vanilla_overrides": []
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
   }
 ]

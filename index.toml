@@ -93,6 +93,16 @@ hash = "fa2d3417e8b1ef2ce4f070fb27bf40662af469ac2d740d850fcb715da712f50d"
 metafile = true
 
 [[files]]
+file = "mods/deep-aether.pw.toml"
+hash = "bcede429fbf66b2f7a4b5af2e1be572b5b2f5a3ba856e17a99c6844f4fd29508"
+metafile = true
+
+[[files]]
+file = "mods/deeperdarker.pw.toml"
+hash = "0c199f0385999e75453cb54f484dc5f3df2c5b093d49e969da875bdfc68c0654"
+metafile = true
+
+[[files]]
 file = "mods/dynamic-fps.pw.toml"
 hash = "9a79884afb70df8a6b2e0e1a202d6917035dd302c664dae544f1050ffc305ee5"
 metafile = true
@@ -243,6 +253,11 @@ hash = "55276157b0d0ad40200a7d6d6c356c0bac173ce788d5e6c5615bf3e70fec8105"
 metafile = true
 
 [[files]]
+file = "mods/terrablender.pw.toml"
+hash = "8c9c42ad121f7d946012ec1b7c3dd91c2ae6bec4416bc4fbb11747a7cf2a4805"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
 hash = "13a876e650ae6a2d6d9efed2a3f00f6592c1fb0ce9077ff03bd71a04ba8fae1c"
 metafile = true
@@ -274,7 +289,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "0ac9e148218afdfa5de7cbfbe02c3cec5cc7112c50479de23e1a85b1aabf430d"
+hash = "4c572cecd032ab786726af58a775d21a69cb9b9d32eaef88c4aa8465ab0cd889"
 
 [[files]]
 file = "shaderpacks/MakeUp-UltraFast-9.5a.zip.txt"
