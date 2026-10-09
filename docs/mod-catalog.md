@@ -1,4 +1,4 @@
-# Catálogo de mods — Vanilla Tech 0.3.0-alpha.1
+# Catálogo de mods — Vanilla Tech 0.3.0
 
 Minecraft **1.21.1** · NeoForge **21.1.257** · 60 artefactos fijados (55 mods + 5 shaderpacks) (`pin = true`).
 Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qué* aporta cada mod y *por qué* está en el pack.

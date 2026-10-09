@@ -91,4 +91,15 @@ Que una estructura se genere **no prueba** que las granjas funcionen: las condic
 | Errores en el log | Solo avisos inofensivos: narrador, realms, consulta de versiones de Xaero y 96 `X11: Standard cursor shape unavailable` |
 | Memoria | La instancia seguía usando 3900 MiB (Prism global). RSS 2.7 GiB y 1.8 GiB de swap |
 
-El usuario declaró estable esta versión y se publicó como **0.2.0**. Siguen pendientes las pruebas en juego P5–P11 y P13–P15.
+El usuario declaró estable esta versión y se publicó como **0.2.0**.
+
+**0.3.0-alpha.1, 2026-10-09** (usuario; mismos archivos que la estable **0.3.0**):
+
+| Comprobación | Resultado |
+|---|---|
+| Aether con Deep Aether | ✅ "todo funciona bien", según el usuario. Log: entrada al Aether y vuelta |
+| Otherside (Deeper and Darker) | ✅ Log: entrada a `deeperdarker:otherside` a las 16:49 |
+| Errores en el log | Ninguno nuevo; solo advertencias de modelos faltantes en 4 ítems de Deep Aether y el chequeo de versión de AeroBlender |
+| Memoria | La instancia seguía usando 3900 MiB (Prism global) |
+
+El usuario declaró estable esta versión y se publicó como **0.3.0**. Siguen pendientes las pruebas en juego P5–P11 y P13–P15.

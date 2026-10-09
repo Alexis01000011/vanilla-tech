@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-09, release **0.3.0-alpha.1** (estable: 0.2.0).
+Estado a 2026-10-09, release **0.3.0** (estable).
 
 ## Pruebas pendientes
 
@@ -26,8 +26,8 @@ Estado a 2026-10-09, release **0.3.0-alpha.1** (estable: 0.2.0).
 | P18 | **JEI ↔ AE2**: botón "+" en la terminal de codificación de patrones y sin el error del plugin JEI de Applied Create en el log. | **Parcial (0.2.0-alpha.1)**: el error del plugin JEI de Applied Create ya no aparece y AE2 JEI Integration registra su plugin. Falta probar el botón "+". |
 | P20 | **The Aether en el cliente**: portal (marco de glowstone + agua), entrar y volver, cielo y nubes con Sodium, Iris y shaders; dungeons y jefes; botón de accesorios del inventario. | **Parcial (0.2.0-alpha.1)**: el usuario entró al Aether y volvió (log: 16:06 → 16:17). Faltan shaders, dungeons y el botón de accesorios. El servidor ya ubica los 3 dungeons. |
 | P21 | **Dos sistemas de accesorios**: Curios (G) y Accessories del Aether (botón en el inventario). Hay que ver dónde se puede equipar la mochila, que B la abra desde ahí y que GraveStone guarde los ítems de ambos al morir. | Sophisticated Backpacks trae integración con Curios y con Accessories; GraveStone no tiene integración específica con ninguno de los dos. |
-| P22 | **Deep Aether**: biomas nuevos al explorar el Aether, Brass Dungeon y teclas de habilidades (Stratus Dash R, Slider Slam Alt). | En el servidor se ubica el Brass Dungeon y el bioma aerglow_forest (0.3.0-alpha.1). |
-| P23 | **Deeper and Darker**: activar el portal de una ancient city, entrar al Otherside y volver; Soul Elytra con Y. | En el servidor carga la dimensión `deeperdarker:otherside` y se ubica el Ancient Temple (0.3.0-alpha.1). |
+| P22 | **Deep Aether**: biomas nuevos al explorar el Aether, Brass Dungeon y teclas de habilidades (Stratus Dash R, Slider Slam Alt). | **Parcial (0.3.0-alpha.1)**: el usuario exploró el Aether con el contenido nuevo; todo funciona. Faltan el Brass Dungeon y las teclas de habilidades. |
+| P23 | **Deeper and Darker**: activar el portal de una ancient city, entrar al Otherside y volver; Soul Elytra con Y. | **Hecho en lo principal (0.3.0-alpha.1)**: el usuario entró al Otherside y todo funciona (log: 16:49). Falta probar la Soul Elytra con Y. |
 | P19 | **Jade**: el HUD muestra el bloque que se mira y la información de AE2 y Create. | Solo cliente; en el servidor ya cargan los plugins de AE2, Extended AE, Waystones, GraveStone y Balm (rc.5). |
 
 ## Problemas conocidos
@@ -58,6 +58,7 @@ Estado a 2026-10-09, release **0.3.0-alpha.1** (estable: 0.2.0).
 - **Avisos `Reference map ... could not be read`** de Aether, Accessories, Cumulus y Nitrogen al arrancar: son normales en NeoForge y no indican un problema.
 - **Deeper and Darker modifica las ancient cities vanilla**: agrega vasijas (`ancient_vase`) en 17 piezas de muro. Algunas son falsas y sueltan un mob (`fakeVaseChance = 0.16`). La forma de la ciudad no cambia y las ancient cities no se usan para granjas.
 - **El arranque del servidor tarda más** con tres dimensiones nuevas: `Done` en 57.6 s en 0.3.0-alpha.1, contra 27 s en 0.2.0-alpha.1, en la máquina de prueba con 2 núcleos.
+- **Deep Aether: faltan los modelos de 4 ítems** (`magnetic_staff`, `magnetic_cog`, `sentry_alarm`, `mimic_eye`, drops de jefes); el log del cliente lo avisa con `Unable to load model`. En el juego se verán con la textura de "falta textura". Es un problema del propio mod.
 - **Aviso al arrancar `Failed to process update information`** (AeroBlender): su URL de comprobación de versiones no devuelve JSON. Es inofensivo.
 - **Quitar Aether de un mundo donde ya se usó** borra sus bloques e ítems. Ver *Versiones y ramas* en el README.
 

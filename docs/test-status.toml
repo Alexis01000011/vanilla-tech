@@ -163,11 +163,11 @@ evidence = "Cliente 0.2.0-alpha.1 (usuario): entrada al Aether y vuelta. Servido
 status = "Launch tested"
 evidence = "Servidor alpha.1 carga (requerida por Accessories, que viene dentro de Aether)"
 [deep-aether]
-status = "Launch tested"
-evidence = "Servidor 0.3.0-alpha.1: brass_dungeon y bioma aerglow_forest ubicados en el Aether"
+status = "Gameplay tested"
+evidence = "Cliente 0.3.0-alpha.1 (usuario): Aether con contenido nuevo. Servidor: brass_dungeon y aerglow_forest ubicados"
 [deeperdarker]
-status = "Launch tested"
-evidence = "Servidor 0.3.0-alpha.1: dimensión otherside cargada y ancient_temple ubicado"
+status = "Gameplay tested"
+evidence = "Cliente 0.3.0-alpha.1 (usuario): entrada al Otherside. Servidor: dimensión cargada y ancient_temple ubicado"
 [terrablender]
 status = "Launch tested"
-evidence = "Servidor 0.3.0-alpha.1: las 18 estructuras previas salen en las mismas coordenadas que en 0.2.0-alpha.1 (misma semilla)"
+evidence = "Cliente 0.3.0-alpha.1 arranca. Servidor: las 18 estructuras previas salen en las mismas coordenadas que en 0.2.0-alpha.1"

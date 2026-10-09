@@ -4,13 +4,13 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 
 | | |
 |---|---|
-| Versión del pack | **0.3.0-alpha.1** (pruebas: Deep Aether y Deeper and Darker). Estable actual: **0.2.0** (base + The Aether). Ver [Versiones](#versiones-y-ramas) |
+| Versión del pack | **0.3.0** (estable: base + The Aether + Deep Aether + Deeper and Darker). Ver [Versiones](#versiones-y-ramas) |
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
 | Launcher | Prism Launcher (`.mrpack`) |
 | Mods | 60 artefactos fijados (55 mods + 5 shaderpacks): 59 en el cliente, 41 en el servidor |
-| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente **0.2.0-alpha.1** (mismos mods que 0.2.0) probado en Prism por el usuario: arranque, mundo nuevo, entrada y vuelta del Aether. Los mods nuevos de 0.3.0-alpha.1 solo están probados en el servidor. Faltan las pruebas en juego de [known-issues.md](docs/known-issues.md). |
+| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente **0.3.0-alpha.1** (mismos mods que 0.3.0) probado en Prism por el usuario: el Aether con el contenido de Deep Aether y el Otherside de Deeper and Darker. Faltan las pruebas en juego de [known-issues.md](docs/known-issues.md). |
 
 Contenido principal: Create · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · **The Aether + Deep Aether + Deeper and Darker** (alpha) · Explorify + YUNG's Extras/Bridges · JEI · Jade · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Just Zoom · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
 La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/mod-catalog.md).
@@ -84,8 +84,9 @@ python3 scripts/test-server.py --directory .cache/server-test --name local-integ
 | Línea | Rama | Para qué |
 |---|---|---|
 | `0.1.x` | `release/0.1` | Línea base: Create + AE2 + calidad de vida, **sin dimensiones nuevas** (última: 0.1.0-rc.5). |
-| `0.2.x` | `release/0.2` | **Estable actual**: la base + The Aether (0.2.0, validada por el usuario en el cliente). |
-| `0.3.0-alpha.N` | `main` | Siguiente paso: Deep Aether y Deeper and Darker. Entre una alpha y otra se pueden agregar o quitar mods. |
+| `0.2.x` | `release/0.2` | La base + The Aether (0.2.0). |
+| `0.3.x` | `release/0.3` | **Estable actual**: + Deep Aether + Deeper and Darker (0.3.0, validada por el usuario en el cliente). |
+| `0.4.0-alpha.N` | `main` | Siguiente paso: lote de mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Entre una alpha y otra se pueden agregar o quitar mods. |
 
 - Cada release lleva una etiqueta anotada `v<versión>` (`git tag -n1` las lista) y una entrada en [CHANGELOG.md](CHANGELOG.md) con el SHA-256 del `.mrpack`.
 - Para volver a una versión: usa su archivo en `releases/`, o `git checkout v<versión> && bash scripts/build.sh`, que lo reconstruye idéntico.

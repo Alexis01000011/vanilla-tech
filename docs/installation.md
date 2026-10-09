@@ -15,7 +15,7 @@ El `.mrpack` solo contiene el manifiesto y las configs: los launchers descargan 
 - Sodium e Iris ya vienen incluidos. Los shaders vienen **apagados** (ver "Shaders" abajo).
 
 ### Importar
-1. En Prism: **Add Instance → Import** y elige el archivo `vanilla-tech-0.3.0-alpha.1.mrpack` (pruebas: Deep Aether y Deeper and Darker), `vanilla-tech-0.2.0.mrpack` (estable: base + The Aether) o `vanilla-tech-0.1.0-rc.5.mrpack` (línea base, sin dimensiones nuevas). **Elige NeoForge, no Forge**: el import ya configura Minecraft 1.21.1 + NeoForge 21.1.257; no hace falta crear la instancia a mano.
+1. En Prism: **Add Instance → Import** y elige el archivo `vanilla-tech-0.3.0.mrpack` (estable: base + The Aether + Deep Aether + Deeper and Darker), `vanilla-tech-0.2.0.mrpack` (base + The Aether) o `vanilla-tech-0.1.0-rc.5.mrpack` (línea base, sin dimensiones nuevas). **Elige NeoForge, no Forge**: el import ya configura Minecraft 1.21.1 + NeoForge 21.1.257; no hace falta crear la instancia a mano.
 2. Prism descarga 54 mods y 5 shaderpacks (51 en 0.2.0, 49 en rc.5) (Chunky es solo de servidor). Nueve mods vienen de `edge.forgecdn.net` (CurseForge): Building Gadgets 2, Charging Gadgets, Dank Storage, FTB Chunks, FTB Teams, FTB Library, FTB JEI Extras, Architectury y AE2 JEI Integration. En la prueba con rc.3, Prism **no** mostró avisos de dominios no permitidos. Si alguna vez lo hace, acepta: son las URLs oficiales de CurseForge y cada archivo se verifica por hash.
 3. **Edit Instance → Settings → Java**:
    - Marca **Memory** para que la instancia no use el valor global de Prism (en la prueba de rc.3 era 3900 MiB, demasiado para esta laptop).
@@ -37,7 +37,7 @@ Distancia de renderizado 8, simulación 6, 60 FPS con VSync, gráficos *Fast* y 
 | Abrir mochila (Sophisticated Backpacks) | B | Default del mod. |
 | Alternar mejora 1 / 2 de la mochila | Z / X | Defaults del mod; se quitó "agrandar minimapa" de Xaero (Z). |
 | Nuevo waypoint (Xaero) | N | B lo usa la mochila. |
-| Activar o desactivar shaders (Iris) | K | Default de Iris. Desde 0.3.0-alpha.1, *recargar shaders* (R) queda sin tecla. |
+| Activar o desactivar shaders (Iris) | K | Default de Iris. Desde 0.3.0, *recargar shaders* (R) queda sin tecla. |
 | Elegir shader (Iris) | sin tecla | O lo usa Dank Storage; se elige en *Opciones → Video → Shader Packs*. |
 | Accesorios del Aether | sin tecla | I lo usa Dank Storage; se abren con el botón que Aether añade en el inventario. |
 | Activar o desactivar la capa de invisibilidad (Aether) | sin tecla | V lo usa la terminal inalámbrica de AE2. Si no se asigna tecla, la capa siempre hace invisible. |

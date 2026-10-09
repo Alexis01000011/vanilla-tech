@@ -4,8 +4,14 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 
 **Líneas**
 - **0.1.x**: línea base (Create + AE2 + calidad de vida), sin dimensiones nuevas. Rama `release/0.1`.
-- **0.2.x**: la base + The Aether. Rama `release/0.2`. **Estable actual.**
-- **0.3.0-alpha.N**: siguiente paso (Deep Aether, Deeper and Darker), en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
+- **0.2.x**: la base + The Aether. Rama `release/0.2`.
+- **0.3.x**: + Deep Aether + Deeper and Darker. Rama `release/0.3`. **Estable actual.**
+- **0.4.0-alpha.N**: siguiente paso, en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
+
+## 0.3.0 — 2026-10-09 (estable)
+- **Mismo contenido que 0.3.0-alpha.1**: los archivos y overrides son idénticos; solo cambia el número de versión.
+- **Validado por el usuario en el cliente**: el Aether con el contenido de Deep Aether, entrada al Otherside de Deeper and Darker y vuelta, sin errores nuevos en el log.
+- 60 artefactos (59 en el cliente, 41 en el servidor). `sha256 17aba260df95c1deb5b38a571313558932a890b343da60fc3d9b8d1664b9b6c4`
 
 ## 0.3.0-alpha.1 — 2026-10-09
 - **Agregado**: Deep Aether 1.21.1-1.1.5.1 (trae AeroBlender dentro), Deeper and Darker 1.4.1 y TerraBlender 4.1.0.8.

@@ -1,4 +1,4 @@
-# Matriz de compatibilidad — Vanilla Tech 0.3.0-alpha.1
+# Matriz de compatibilidad — Vanilla Tech 0.3.0
 
 Minecraft 1.21.1 · NeoForge 21.1.257 · 55 artefactos fijados.
 Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `docs/test-status.toml`.
@@ -9,7 +9,7 @@ Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `do
 - **Gameplay tested**: funcionalidad probada por un jugador dentro del juego.
 - **Blocked**: problema abierto.
 
-El cliente **0.2.0-alpha.1** (mismos mods que 0.2.0) arrancó en Prism, entró a un mundo nuevo y al Aether (2026-10-09); los mods agregados en 0.3.0 (Deep Aether, Deeper and Darker, TerraBlender) solo están probados en el servidor; las pruebas en juego siguen pendientes ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
+El cliente **0.3.0-alpha.1** (mismos mods que 0.3.0) arrancó en Prism y entró al Aether y al Otherside (2026-10-09); las pruebas en juego siguen pendientes ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
 
 | Mod | Versión | Fuente | Dependencias obligatorias | Side | Estado | Evidencia |
 |---|---|---|---|---|---|---|
@@ -28,8 +28,8 @@ El cliente **0.2.0-alpha.1** (mismos mods que 0.2.0) arrancó en Prism, entró a
 | Create | 6.0.10 | [Modrinth](https://modrinth.com/mod/create) | — | both | Launch tested | Servidor: red cinética, eje a 16 RPM desde motor creativo |
 | Curios API | 9.5.1+1.21.1 | [Modrinth](https://modrinth.com/mod/curios) | — | both | Launch tested | Servidor carga |
 | Dank Storage | 20 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/dank-storage) | — | both | Launch tested | Servidor carga |
-| Deep Aether | 1.21.1-1.1.5.1 | [Modrinth](https://modrinth.com/mod/deep-aether) | The Aether | both | Launch tested | Servidor 0.3.0-alpha.1: brass_dungeon y bioma aerglow_forest ubicados en el Aether |
-| Deeper and Darker | 1.4.1 | [Modrinth](https://modrinth.com/mod/deeperdarker) | — | both | Launch tested | Servidor 0.3.0-alpha.1: dimensión otherside cargada y ancient_temple ubicado |
+| Deep Aether | 1.21.1-1.1.5.1 | [Modrinth](https://modrinth.com/mod/deep-aether) | The Aether | both | Gameplay tested | Cliente 0.3.0-alpha.1 (usuario): Aether con contenido nuevo. Servidor: brass_dungeon y aerglow_forest ubicados |
+| Deeper and Darker | 1.4.1 | [Modrinth](https://modrinth.com/mod/deeperdarker) | — | both | Gameplay tested | Cliente 0.3.0-alpha.1 (usuario): entrada al Otherside. Servidor: dimensión cargada y ancient_temple ubicado |
 | Dynamic FPS | 3.11.4 | [Modrinth](https://modrinth.com/mod/dynamic-fps) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | Entity Culling | 1.11.3 | [Modrinth](https://modrinth.com/mod/entityculling) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | Excessive Utilities | 1.10.0 | [Modrinth](https://modrinth.com/mod/excessive-utilities) | Aaron, Curios API, Kotlin for Forge | both | Launch tested | Servidor: generador colocado; quarries a 0 bloques/tick |
@@ -60,7 +60,7 @@ El cliente **0.2.0-alpha.1** (mismos mods que 0.2.0) arrancó en Prism, entró a
 | Sophisticated Backpacks | 3.26.9 | [Modrinth](https://modrinth.com/mod/sophisticated-backpacks) | Sophisticated Core | both | Launch tested | Servidor: mochila colocada como bloque |
 | Sophisticated Core | 1.5.7 | [Modrinth](https://modrinth.com/mod/sophisticated-core) | — | both | Launch tested | Servidor carga |
 | spark | 1.10.124 | [Modrinth](https://modrinth.com/mod/spark) | — | both | Launch tested | Servidor: spark tps / health |
-| TerraBlender | 4.1.0.8 | [Modrinth](https://modrinth.com/mod/terrablender) | — | both | Launch tested | Servidor 0.3.0-alpha.1: las 18 estructuras previas salen en las mismas coordenadas que en 0.2.0-alpha.1 (misma semilla) |
+| TerraBlender | 4.1.0.8 | [Modrinth](https://modrinth.com/mod/terrablender) | — | both | Launch tested | Cliente 0.3.0-alpha.1 arranca. Servidor: las 18 estructuras previas salen en las mismas coordenadas que en 0.2.0-alpha.1 |
 | The Aether | 1.5.10 | [Modrinth](https://modrinth.com/mod/aether) | — | both | Gameplay tested | Cliente 0.2.0-alpha.1 (usuario): entrada al Aether y vuelta. Servidor: dimensión y 3 dungeons + large_aercloud ubicados |
 | Waystones | 21.1.46 | [Modrinth](https://modrinth.com/mod/waystones) | Balm | both | Launch tested | Servidor: bloque colocado |
 | Xaero's Minimap | 26.6.0 | [Modrinth](https://modrinth.com/mod/xaeros-minimap) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
