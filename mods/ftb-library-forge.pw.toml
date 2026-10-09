@@ -1,6 +1,6 @@
 name = "FTB Library (NeoForge)"
 filename = "ftb-library-neoforge-2101.1.37.jar"
-side = "client"
+side = "both"
 
 pin = true
 

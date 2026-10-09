@@ -242,7 +242,7 @@
     "id": "architectury",
     "version": "13.0.11",
     "jar": "architectury-13.0.11-neoforge.jar",
-    "side": "client",
+    "side": "both",
     "loader": "javafml",
     "dependencies": [
       {
@@ -808,6 +808,57 @@
     ]
   },
   {
+    "id": "ftbchunks",
+    "version": "2101.1.22",
+    "jar": "ftb-chunks-neoforge-2101.1.22.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.0,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "architectury",
+        "type": "required",
+        "versionRange": "[13.0.8,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      },
+      {
+        "modId": "ftblibrary",
+        "type": "required",
+        "versionRange": "[2101.1.34,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      },
+      {
+        "modId": "ftbteams",
+        "type": "required",
+        "versionRange": "[2101.1.9,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      },
+      {
+        "modId": "ftbbackups3",
+        "type": "optional",
+        "versionRange": "[21.1.3,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "ftbjeiextras",
     "version": "21.1.7",
     "jar": "ftb-jei-extras-21.1.7.jar",
@@ -834,7 +885,7 @@
     "id": "ftblibrary",
     "version": "2101.1.37",
     "jar": "ftb-library-neoforge-2101.1.37.jar",
-    "side": "client",
+    "side": "both",
     "loader": "javafml",
     "dependencies": [
       {
@@ -855,6 +906,43 @@
         "modId": "architectury",
         "type": "required",
         "versionRange": "[13.0.6,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "ftbteams",
+    "version": "2101.1.11",
+    "jar": "ftb-teams-neoforge-2101.1.11.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.0,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "architectury",
+        "type": "required",
+        "versionRange": "[13.0.8,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      },
+      {
+        "modId": "ftblibrary",
+        "type": "required",
+        "versionRange": "[2101.1.30,)",
         "ordering": "AFTER",
         "side": "BOTH"
       }
@@ -953,7 +1041,7 @@
     "id": "jei",
     "version": "19.51.0.418",
     "jar": "jei-1.21.1-neoforge-19.51.0.418.jar",
-    "side": "client",
+    "side": "both",
     "loader": "javafml",
     "dependencies": [
       {

@@ -1,0 +1,21 @@
+{
+  "ready": true,
+  "exit_code": 0,
+  "timeout": false,
+  "elapsed_seconds": 80.5,
+  "peak_rss_mib": 1086.1,
+  "heap": "2G",
+  "active_processors": 2,
+  "port": 25575,
+  "bind": "127.0.0.1",
+  "players": 0,
+  "directory": ".cache/server-clean",
+  "waits": [],
+  "commands_sent": [
+    "list",
+    "datapack list enabled",
+    "spark tps",
+    "save-all flush",
+    "stop"
+  ]
+}

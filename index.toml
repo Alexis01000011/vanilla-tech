@@ -5,6 +5,10 @@ file = "config/excessive_utilities-server.toml"
 hash = "c773741af7d93f3f624aef7cd0cb8bfef7c604ac48a577187be1390b96803569"
 
 [[files]]
+file = "config/ftbchunks-world.snbt"
+hash = "2b05ce349f0da4ee35eeee9331046cddc41adbe9d8813bf31f53e8f7e50f5985"
+
+[[files]]
 file = "config/modernfix-mixins.properties"
 hash = "198cde513054d17cb57d1844eb0cba67c505a1b3f1425da6967fc8e18eb5f8f7"
 
@@ -30,7 +34,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "6b93713a1fd77ec95d5098668966090140227cf2c903dfbcca450847c1808c46"
+hash = "4f731604821942ffa951d7405f36b97c3c92137975938e2a2c869439981b091d"
 metafile = true
 
 [[files]]
@@ -104,13 +108,23 @@ hash = "8c1007fe73c350fc21333aa28fce400dbc7b1fa5bbb2d7e3c9fe074e9ea7cc7c"
 metafile = true
 
 [[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "6121111fd1be93d2f753cfd61a24d1cf08229fc0d7879aa2267c40af2961b85d"
+metafile = true
+
+[[files]]
 file = "mods/ftb-jei-extras.pw.toml"
 hash = "86019b7956d07cdde9d719a378faad84a7b6b3e99903191c1df868341ba0c291"
 metafile = true
 
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
-hash = "c8447182daf5a36cedb7868d868fee1a8d9b6bedc5167e2575b859f179cf002d"
+hash = "f2ce90a4c2dc094e5bb5618aabae3880c041c91613d0ea3f918640ffde981fdd"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "324d350192f4298befd701f0a9c2bc8b0e3424d3703ea288d72b2879132296b3"
 metafile = true
 
 [[files]]
@@ -135,7 +149,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "fcc31a07d0bf90552800cfeb04d5e5b456e48cddcc640adb72b894647ed5663c"
+hash = "3001811c5bcc2e0edd3f2b6e865dcf2e9e8959508a139e5490d5d061031ec2bc"
 metafile = true
 
 [[files]]
@@ -200,4 +214,4 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "5a00da3cb9613ab3b00b725b900d2ad1cac5cb56f5990c2f0bc5bfd5007ace77"
+hash = "903ac8819ed5b31530c48ef5b240c4333babf5bc90b0d36aa79d81d046918c8b"

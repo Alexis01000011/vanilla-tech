@@ -1,0 +1,12 @@
+## Pregeneration benchmark (no players). Usage:
+##   python3 scripts/test-server.py --directory <test dir> --name <name> --timeout 1800 --commands scripts/pregen-commands.txt
+## Controlled pregeneration: 41x41 chunks around spawn
+chunky world minecraft:overworld
+chunky center 0 0
+chunky radius 320
+chunky start
+#wait Task finished 1500
+spark tps
+spark health
+save-all flush
+stop

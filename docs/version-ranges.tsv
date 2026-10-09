@@ -62,11 +62,20 @@ client:extendedae->ae2wtlib	19.5.1	[19.2.0,)	optional
 client:ae2wtlib_api->ae2	19.2.18	[19.1.2-beta,20.0.0)	required
 client:ferritecore->neoforge	21.1.257	[21.1.218,)	required
 client:ferritecore->minecraft	1.21.1	[1.21.1,1.22)	required
+client:ftbchunks->neoforge	21.1.257	[21.1.0,)	required
+client:ftbchunks->minecraft	1.21.1	[1.21.1,)	required
+client:ftbchunks->architectury	13.0.11	[13.0.8,)	required
+client:ftbchunks->ftblibrary	2101.1.37	[2101.1.34,)	required
+client:ftbchunks->ftbteams	2101.1.11	[2101.1.9,)	required
 client:ftbjeiextras->neoforge	21.1.257	[21.1.0,)	required
 client:ftbjeiextras->minecraft	1.21.1	[1.21.1, 1.22)	required
 client:ftblibrary->neoforge	21.1.257	[21.1.0,)	required
 client:ftblibrary->minecraft	1.21.1	[1.21.1,)	required
 client:ftblibrary->architectury	13.0.11	[13.0.6,)	required
+client:ftbteams->neoforge	21.1.257	[21.1.0,)	required
+client:ftbteams->minecraft	1.21.1	[1.21.1,)	required
+client:ftbteams->architectury	13.0.11	[13.0.8,)	required
+client:ftbteams->ftblibrary	2101.1.37	[2101.1.30,)	required
 client:glodium->neoforge	21.1.257	[21.1.1,)	required
 client:glodium->minecraft	1.21.1	[1.21.1,)	required
 client:guideme->neoforge	21.1.257	[21.1.1,)	required
@@ -136,6 +145,8 @@ server:ae2wtlib->ae2wtlib_api	19.5.1	[19.5.1]	required
 server:ae2wtlib->ae2	19.2.18	[19.2.17,20.0.0)	required
 server:ae2wtlib->extendedae	1.21-2.2.35-neoforge	(,1.21-1.1.4-neoforge]	incompatible
 server:ae2wtlib_api->ae2	19.2.18	[19.2.17,20.0.0)	required
+server:architectury->minecraft	1.21.1	[1.21,)	required
+server:architectury->neoforge	21.1.257	[21.0.110-beta,)	required
 server:balm->neoforge	21.1.257	[21.0.82-beta,)	required
 server:balm->minecraft	1.21.1	[1.21.1,)	required
 server:kuma_api->neoforge	21.1.257	[21-beta,)	required
@@ -173,10 +184,24 @@ server:extendedae->ae2wtlib	19.5.1	[19.2.0,)	optional
 server:ae2wtlib_api->ae2	19.2.18	[19.1.2-beta,20.0.0)	required
 server:ferritecore->neoforge	21.1.257	[21.1.218,)	required
 server:ferritecore->minecraft	1.21.1	[1.21.1,1.22)	required
+server:ftbchunks->neoforge	21.1.257	[21.1.0,)	required
+server:ftbchunks->minecraft	1.21.1	[1.21.1,)	required
+server:ftbchunks->architectury	13.0.11	[13.0.8,)	required
+server:ftbchunks->ftblibrary	2101.1.37	[2101.1.34,)	required
+server:ftbchunks->ftbteams	2101.1.11	[2101.1.9,)	required
+server:ftblibrary->neoforge	21.1.257	[21.1.0,)	required
+server:ftblibrary->minecraft	1.21.1	[1.21.1,)	required
+server:ftblibrary->architectury	13.0.11	[13.0.6,)	required
+server:ftbteams->neoforge	21.1.257	[21.1.0,)	required
+server:ftbteams->minecraft	1.21.1	[1.21.1,)	required
+server:ftbteams->architectury	13.0.11	[13.0.8,)	required
+server:ftbteams->ftblibrary	2101.1.37	[2101.1.30,)	required
 server:glodium->neoforge	21.1.257	[21.1.1,)	required
 server:glodium->minecraft	1.21.1	[1.21.1,)	required
 server:guideme->neoforge	21.1.257	[21.1.1,)	required
 server:guideme->minecraft	1.21.1	[1.21.1]	required
+server:jei->neoforge	21.1.257	[21.1.238,)	required
+server:jei->minecraft	1.21.1	[1.21, 1.21.1)	required
 server:kotlinforforge->minecraft	1.21.1	[1.20.6,1.21.9)	required
 server:lithium->minecraft	1.21.1	[1.21, 1.21.1]	required
 server:modernfix->neoforge	21.1.257	[21.0.111-beta,)	required

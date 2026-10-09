@@ -25,6 +25,11 @@
     "vanilla_overrides": []
   },
   {
+    "mod": "Architectury API",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
     "mod": "Balm",
     "worldgen_paths": [],
     "vanilla_overrides": []
@@ -152,6 +157,21 @@
   },
   {
     "mod": "FerriteCore",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "FTB Chunks (NeoForge)",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "FTB Library (NeoForge)",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "FTB Teams (NeoForge)",
     "worldgen_paths": [],
     "vanilla_overrides": []
   },

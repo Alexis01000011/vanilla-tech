@@ -1,20 +1,46 @@
+## Server-side integration probe (no players). Usage:
+##   python3 scripts/test-server.py --directory <test dir> --name <name> --timeout 900 --commands scripts/integration-commands.txt
 list
+datapack list enabled
+## Vanilla structures that farms depend on must still generate
 execute in minecraft:overworld run locate structure minecraft:monument
 execute in minecraft:the_nether run locate structure minecraft:fortress
+execute in minecraft:the_nether run locate structure minecraft:bastion_remnant
 execute in minecraft:overworld run locate structure minecraft:stronghold
 execute in minecraft:overworld run locate structure minecraft:mineshaft
 execute in minecraft:overworld run locate structure minecraft:village_plains
+execute in minecraft:overworld run locate structure minecraft:pillager_outpost
+execute in minecraft:overworld run locate structure minecraft:swamp_hut
+execute in minecraft:overworld run locate structure minecraft:ancient_city
+execute in minecraft:overworld run locate structure minecraft:trial_chambers
+execute in minecraft:the_end run locate structure minecraft:end_city
+## Explorify
 execute in minecraft:overworld run locate structure explorify:ruins
-forceload add 0 0
+execute in minecraft:overworld run locate structure explorify:tavern
+execute in minecraft:overworld run locate structure explorify:farmstead
+forceload add 0 0 31 15
+## AE2 network on a creative cell
 setblock 0 100 0 ae2:creative_energy_cell
 setblock 1 100 0 ae2:controller
 setblock 2 100 0 ae2:drive
-setblock 4 100 0 create:creative_motor
-setblock 5 100 0 create:shaft
+## Create kinetics: creative motor drives two shafts
+setblock 4 100 0 create:creative_motor[facing=east]
+setblock 5 100 0 create:shaft[axis=x]
+setblock 6 100 0 create:shaft[axis=x]
+## Applied Create: Create rotation -> AE2 power. Per its guide, AE2 connects on the faces
+## perpendicular to the shaft axis, so the controller sits south of the acceptor.
+setblock 20 110 0 create:creative_motor[facing=east]
+setblock 21 110 0 appliedcreate:kinetic_energy_acceptor[facing=west]
+setblock 21 110 1 ae2:controller
+## Placement of the remaining tech blocks
 setblock 8 100 0 charginggadgets:charging_station
 setblock 10 100 0 waystones:waystone
 setblock 12 100 0 excessive_utilities:furnace_generator
+#sleep 15
 execute if block 1 100 0 ae2:controller[state=online] run say VT_AE2_CONTROLLER_ONLINE
+data get block 6 100 0 Speed
+execute if block 21 110 1 ae2:controller[state=online] run say VT_APPLIEDCREATE_ACCEPTOR_POWERS_AE2
+data get block 21 110 0
 spark tps
 save-all flush
 forceload remove all

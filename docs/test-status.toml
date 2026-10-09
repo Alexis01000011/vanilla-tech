@@ -1,0 +1,128 @@
+# Test status per metafile (mods/<key>.pw.toml), consumed by scripts/gen-matrix.py.
+# status: Verified | Launch tested | Gameplay tested | Blocked
+#   Verified        = metadata, hashes and version ranges checked (validate.py, check-ranges.py)
+#   Launch tested   = loaded without errors on a real NeoForge launch (server or client)
+#   Gameplay tested = feature exercised by a player in game
+#   Blocked         = open problem
+# `client` tracks the client launch separately; it stays "pending" until Prism is tested.
+
+[create]
+status = "Launch tested"
+evidence = "Servidor: red cinética, eje a 16 RPM desde motor creativo"
+[ae2]
+status = "Launch tested"
+evidence = "Servidor: controlador online con celda creativa"
+[applied-create]
+status = "Launch tested"
+evidence = "Servidor: la rotación de Create (16 RPM) enciende un controlador AE2 vía kinetic_energy_acceptor, sin celda de energía"
+[applied-energistics-2-wireless-terminals]
+status = "Launch tested"
+evidence = "Servidor carga; Quantum Bridge Card y receta presentes en el JAR"
+[extended-ae]
+status = "Launch tested"
+evidence = "Servidor carga; aviso inofensivo de loot table EMC (ProjectE ausente)"
+[ftb-jei-extras]
+status = "Verified"
+evidence = "Solo cliente"
+[waystones]
+status = "Launch tested"
+evidence = "Servidor: bloque colocado"
+[dank-storage]
+status = "Launch tested"
+evidence = "Servidor carga"
+[building-gadgets]
+status = "Launch tested"
+evidence = "Servidor carga"
+[charging-gadgets]
+status = "Launch tested"
+evidence = "Servidor: estación colocada"
+[excessive-utilities]
+status = "Launch tested"
+evidence = "Servidor: generador colocado; quarries a 0 bloques/tick"
+[ftb-chunks-forge]
+status = "Launch tested"
+evidence = "Servidor: config del pack cargada sin reescritura"
+[ftb-teams-forge]
+status = "Launch tested"
+evidence = "Servidor carga"
+[ftb-library-forge]
+status = "Launch tested"
+evidence = "Servidor carga"
+[architectury-api]
+status = "Launch tested"
+evidence = "Servidor carga"
+[explorify]
+status = "Launch tested"
+evidence = "Servidor: locate de ruins, tavern y farmstead"
+[yungs-extras]
+status = "Launch tested"
+evidence = "Servidor carga"
+[yungs-bridges]
+status = "Launch tested"
+evidence = "Servidor carga"
+[yungs-api]
+status = "Launch tested"
+evidence = "Servidor carga"
+[jei]
+status = "Launch tested"
+evidence = "Servidor carga (regla de alias 1.21 de FML); habilita traslado de recetas"
+[inventory-profiles-next]
+status = "Verified"
+evidence = "Solo cliente"
+[libipn]
+status = "Verified"
+evidence = "Solo cliente"
+[crafting-tweaks]
+status = "Launch tested"
+evidence = "Servidor carga"
+[xaeros-minimap]
+status = "Verified"
+evidence = "Solo cliente"
+[xaeros-world-map]
+status = "Verified"
+evidence = "Solo cliente"
+[sodium]
+status = "Verified"
+evidence = "Solo cliente"
+[lithium]
+status = "Launch tested"
+evidence = "Servidor carga"
+[ferrite-core]
+status = "Launch tested"
+evidence = "Servidor carga"
+[modernfix]
+status = "Launch tested"
+evidence = "Servidor carga; 2 mixins desactivados por conflicto con Lithium"
+[immediatelyfast]
+status = "Verified"
+evidence = "Solo cliente"
+[entityculling]
+status = "Verified"
+evidence = "Solo cliente"
+[dynamic-fps]
+status = "Verified"
+evidence = "Solo cliente"
+[spark]
+status = "Launch tested"
+evidence = "Servidor: spark tps / health"
+[chunky]
+status = "Launch tested"
+evidence = "Servidor: pregeneración de 1681 chunks"
+[guideme]
+status = "Launch tested"
+evidence = "Servidor carga"
+[glodium]
+status = "Launch tested"
+evidence = "Servidor carga"
+[kotlin-for-forge]
+status = "Launch tested"
+evidence = "Servidor carga"
+[aaron]
+status = "Launch tested"
+evidence = "Servidor carga"
+[curios]
+status = "Launch tested"
+evidence = "Servidor carga"
+[balm]
+status = "Launch tested"
+evidence = "Servidor carga"
