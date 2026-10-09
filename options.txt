@@ -8,7 +8,7 @@ particles:1
 entityDistanceScaling:0.75
 mipmapLevels:2
 key_key.ae2.wireless_terminal:key.keyboard.v
-key_key.buildinggadgets2.settings_menu:key.keyboard.k
+key_key.buildinggadgets2.settings_menu:key.keyboard.h
 key_key.buildinggadgets2.undo:key.keyboard.backspace
 key_key.buildinggadgets2.anchor:key.keyboard.home
 key_key.buildinggadgets2.range:key.keyboard.end
@@ -19,3 +19,4 @@ key_gui.xaero_new_waypoint:key.keyboard.n
 key_gui.xaero_enlarge_map:key.keyboard.unknown
 key_key.saveToolbarActivator:key.keyboard.unknown
 key_key.loadToolbarActivator:key.keyboard.unknown
+key_iris.keybind.shaderPackSelection:key.keyboard.unknown

@@ -2,17 +2,17 @@
 
 Cada corrida deja un resumen JSON versionado en `docs/<nombre>.json`. Los logs completos (`docs/<nombre>.log`) se generan en local y no se versionan (`*.log` está en `.gitignore`).
 
-## Etapa 1 — Dependencias (rc.3, 2026-10-09) ✅
+## Etapa 1 — Dependencias (rc.4, 2026-10-09) ✅
 
 `bash scripts/check.sh`:
 
 | Comprobación | Resultado |
 |---|---|
-| Hashes de `index.toml`/`pack.toml` y de los 45 JARs descargados | PASS |
+| Hashes de `index.toml`/`pack.toml` y de los 54 artefactos descargados (49 JARs + 5 shaderpacks) | PASS |
 | Paridad metafiles ↔ `modrinth.index.json` (URL, lado cliente/servidor) | PASS |
 | Ningún JAR embebido en el `.mrpack` | PASS |
 | Dependencias obligatorias por lado, incluidas las de JARs anidados (jar-in-jar) | PASS |
-| 240 rangos de versión con Maven `VersionRange` y la regla de alias de FML para 1.21.1 | PASS |
+| 258 rangos de versión con Maven `VersionRange` y la regla de alias de FML para 1.21.1 | PASS |
 | Ningún archivo `data/minecraft/worldgen/**` sobrescrito por mods de servidor | PASS (no descarta cambios por código) |
 
 ## Etapa 2 — Servidor dedicado ✅
@@ -25,6 +25,7 @@ Cada corrida deja un resumen JSON versionado en `docs/<nombre>.json`. Los logs c
 | Integración + pregeneración | rc.2 | Todo OK salvo el montaje inicial de Applied Create (error de la prueba; ver abajo) | `rc2-integration.json` |
 | Actualización in situ con `prepare-server.py` (agrega JEI, respeta la config reescrita por ModernFix) + integración corregida en mundo nuevo | rc.2 | Todo OK | `rc2-integration-2.json` |
 | Actualización in situ a rc.3 (agrega Sophisticated Backpacks/Core y GraveStone) + integración en mundo nuevo | rc.3 | Todo OK; `Done` en 28.7 s; RSS 1224 MiB; 34 JARs | `rc3-integration.json` |
+| Actualización in situ a rc.4 (agrega AE2 JEI Integration) + integración en mundo nuevo | rc.4 | Todo OK; `Done` en 29.5 s; RSS 1408 MiB; 35 JARs | `rc4-integration.json` |
 
 La EULA se aceptó solo para estos servidores de prueba locales, desechables (marcados con `.vanilla-tech-test-only` y con autorización del propietario). Escuchan únicamente en `127.0.0.1`.
 
@@ -66,6 +67,15 @@ La EULA se aceptó solo para estos servidores de prueba locales, desechables (ma
 
 Que una estructura se genere **no prueba** que las granjas funcionen: las condiciones de spawn se comprueban jugando (pendiente P11).
 
-## Etapa 5 — Cliente ⏳ pendiente
+## Etapa 5 — Cliente 🟡 parcial
 
-Requiere al usuario frente a la laptop. Plan: importar el `.mrpack` en Prism, arrancar, revisar controles, entrar a un mundo nuevo, medir según [performance.md](performance.md#cómo-medir-en-la-prueba-de-cliente-p2) y probar en juego P5–P11.
+**rc.3, 2026-10-09** (usuario en la laptop; Prism con Java 21.0.7 gestionado por Prism):
+
+| Comprobación | Resultado |
+|---|---|
+| Import del `.mrpack` en Prism y arranque | ✅ ~36 s desde el lanzamiento hasta el menú (log: 20:25:20 → 20:25:56) |
+| Crear y entrar a un mundo nuevo | ✅ "todo perfecto", según el usuario |
+| Errores en el log | Solo el plugin JEI de Applied Create (falta AE2 JEI Integration, añadida en rc.4) y avisos inofensivos (narrador, realms, consulta de versiones de Xaero) |
+| Memoria (heap de 3900 MiB, el default global de Prism) | RSS de la JVM 2.7 GiB en el mundo; al sistema le quedaban 0.9 GiB; swap usada 2.2 GiB |
+
+**rc.4**: pendiente de volver a importar (P16–P18 en [known-issues.md](known-issues.md)). Siguen pendientes las pruebas en juego P5–P11 y P13–P15.

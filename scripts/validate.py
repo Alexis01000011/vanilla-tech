@@ -18,7 +18,7 @@ with zipfile.ZipFile(mr) as z:
  assert len(exported)==len(metas)
  for path,m in metas:
   assert m.get('pin') is True,path
-  e=exported['mods/'+m['filename']];assert e['downloads']==[m['download']['url']]
+  e=exported[str(pathlib.PurePosixPath(path).parent/m['filename'])];assert e['downloads']==[m['download']['url']]
   for side in ['client','server']:
    assert e['env'][side]==('unsupported' if m['side'] not in ['both',side] else 'required'),(path,side)
   assert not any(x in m['filename'].lower() for x in ['terralith','tectonic','structory','lootr','advancedae','aeinfinity'])

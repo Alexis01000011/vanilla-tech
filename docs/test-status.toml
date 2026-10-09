@@ -22,8 +22,8 @@ evidence = "Servidor carga; Quantum Bridge Card y receta presentes en el JAR"
 status = "Launch tested"
 evidence = "Servidor carga; aviso inofensivo de loot table EMC (ProjectE ausente)"
 [ftb-jei-extras]
-status = "Verified"
-evidence = "Solo cliente"
+status = "Launch tested"
+evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente)"
 [waystones]
 status = "Launch tested"
 evidence = "Servidor: bloque colocado"
@@ -67,23 +67,23 @@ evidence = "Servidor carga"
 status = "Launch tested"
 evidence = "Servidor carga (regla de alias 1.21 de FML); habilita traslado de recetas"
 [inventory-profiles-next]
-status = "Verified"
-evidence = "Solo cliente"
+status = "Launch tested"
+evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente)"
 [libipn]
-status = "Verified"
-evidence = "Solo cliente"
+status = "Launch tested"
+evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente)"
 [crafting-tweaks]
 status = "Launch tested"
 evidence = "Servidor carga"
 [xaeros-minimap]
-status = "Verified"
-evidence = "Solo cliente"
+status = "Launch tested"
+evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente)"
 [xaeros-world-map]
-status = "Verified"
-evidence = "Solo cliente"
+status = "Launch tested"
+evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente)"
 [sodium]
 status = "Verified"
-evidence = "Solo cliente"
+evidence = "Solo cliente; bajado de 0.8.13 a 0.6.13 en rc.4 para usar Iris estable; probar en cliente rc.4"
 [lithium]
 status = "Launch tested"
 evidence = "Servidor carga"
@@ -94,14 +94,14 @@ evidence = "Servidor carga"
 status = "Launch tested"
 evidence = "Servidor carga; 2 mixins desactivados por conflicto con Lithium"
 [immediatelyfast]
-status = "Verified"
-evidence = "Solo cliente"
+status = "Launch tested"
+evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente)"
 [entityculling]
-status = "Verified"
-evidence = "Solo cliente"
+status = "Launch tested"
+evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente)"
 [dynamic-fps]
-status = "Verified"
-evidence = "Solo cliente"
+status = "Launch tested"
+evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente)"
 [spark]
 status = "Launch tested"
 evidence = "Servidor: spark tps / health"
@@ -127,11 +127,11 @@ evidence = "Servidor carga"
 status = "Launch tested"
 evidence = "Servidor carga"
 [just-zoom]
-status = "Verified"
-evidence = "Solo cliente; zoom en la tecla C"
+status = "Launch tested"
+evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente; zoom en la tecla C)"
 [konkrete]
-status = "Verified"
-evidence = "Solo cliente (biblioteca de Just Zoom)"
+status = "Launch tested"
+evidence = "Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente (biblioteca de Just Zoom))"
 [sophisticated-backpacks]
 status = "Launch tested"
 evidence = "Servidor: mochila colocada como bloque"
@@ -141,3 +141,15 @@ evidence = "Servidor carga"
 [gravestone-mod]
 status = "Launch tested"
 evidence = "Servidor: bloque de lápida colocado"
+[iris]
+status = "Verified"
+evidence = "Solo cliente; shaders apagados por defecto; probar en cliente rc.4"
+[controlling]
+status = "Verified"
+evidence = "Solo cliente; probar en cliente rc.4"
+[searchables]
+status = "Verified"
+evidence = "Solo cliente (biblioteca de Controlling)"
+[ae2-jei-integration]
+status = "Launch tested"
+evidence = "Servidor rc.4 carga; en cliente debe arreglar el plugin JEI de Applied Create"

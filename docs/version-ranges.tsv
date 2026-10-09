@@ -1,6 +1,8 @@
 client:aaron->neoforge	21.1.257	[21.1.0,)	required
 client:aaron->minecraft	1.21.1	[1.21.1,1.22)	required
 client:aaron->kotlinforforge	5.12.0	[5.12.0,)	required
+client:ae2jeiintegration->ae2	19.2.18	[19.0.22-beta,)	required
+client:ae2jeiintegration->jei	19.51.0.418	[19.19.3,)	required
 client:ae2->neoforge	21.1.257	[21.1.169,)	required
 client:ae2->minecraft	1.21.1	[1.21.1]	required
 client:ae2->guideme	21.1.19	[21.1.1,)	required
@@ -10,6 +12,7 @@ client:appliedcreate->create	6.0.10	[6.0,)	required
 client:appliedcreate->kotlinforforge	5.12.0	[5,)	required
 client:appliedcreate->ae2	19.2.18	[19.0,)	required
 client:appliedcreate->jei	19.51.0.418	[19,)	optional
+client:appliedcreate->ae2jeiintegration	1.2.1	[1.0,)	optional
 client:appliedcreate->extendedae	1.21-2.2.35-neoforge	[1.0,)	optional
 client:ae2wtlib->ae2wtlib_api	19.5.1	[19.5.1]	required
 client:ae2wtlib->ae2	19.2.18	[19.2.17,20.0.0)	required
@@ -25,6 +28,9 @@ client:buildinggadgets2->neoforge	21.1.257	[21.0,)	required
 client:buildinggadgets2->minecraft	1.21.1	[1.21,1.22)	required
 client:charginggadgets->neoforge	21.1.257	[21.0,)	required
 client:charginggadgets->minecraft	1.21.1	[1.21,1.22)	required
+client:controlling->neoforge	21.1.257	[21.1.94,)	required
+client:controlling->minecraft	1.21.1	[1.21.1]	required
+client:controlling->searchables	1.0.2	[1.0.1,)	required
 client:craftingtweaks->neoforge	21.1.257	[21-beta,)	required
 client:craftingtweaks->minecraft	1.21.1	[1.21,)	required
 client:craftingtweaks->balm	21.0.66	[21.0.48,)	required
@@ -32,12 +38,12 @@ client:create->neoforge	21.1.257	[21.1.219,)	required
 client:create->minecraft	1.21.1	[1.21.1]	required
 client:create->flywheel	1.0.6	[1.0.0,2.0)	required
 client:create->ponder	1.0.82+mc1.21.1	[1.0.82,)	required
-client:create->sodium	0.8.13+mc1.21.1	[0.6.9,)	optional
+client:create->sodium	0.6.13+mc1.21.1	[0.6.9,)	optional
 client:create->lithium	0.15.4+mc1.21.1	[0.14.7,)	optional
 client:create->xaeroworldmap	1.47.0	[1.40.2,)	optional
 client:flywheel->minecraft	1.21.1	[1.21.1,1.21.2)	required
 client:flywheel->neoforge	21.1.257	[21.1.66,)	required
-client:flywheel->sodium	0.8.13+mc1.21.1	[0.6.0-beta.2,)	optional
+client:flywheel->sodium	0.6.13+mc1.21.1	[0.6.0-beta.2,)	optional
 client:ponder->neoforge	21.1.257	[21.1.206,)	required
 client:ponder->minecraft	1.21.1	[1.21.1]	required
 client:ponder->flywheel	1.0.6	[1.0.0,2.0)	required
@@ -87,6 +93,16 @@ client:immediatelyfast->neoforge	21.1.257	[21.0.0,)	required
 client:inventoryprofilesnext->neoforge	21.1.257	[21, 22.2)	required
 client:inventoryprofilesnext->minecraft	1.21.1	[1.21.1, 1.21.2)	required
 client:inventoryprofilesnext->libipn	6.6.3	[6.6.3, 6.7)	required
+client:iris->minecraft	1.21.1	[1.21,1.21.1)	required
+client:iris->sodium	0.6.13+mc1.21.1	[0.6,)	required
+client:fabric_api_base->neoforge	21.1.257	[21.1.169,)	required
+client:fabric_api_base->minecraft	1.21.1	[1.21.1,1.22)	required
+client:fabric_block_view_api_v2->neoforge	21.1.257	[21.1.115,)	required
+client:fabric_block_view_api_v2->minecraft	1.21.1	[1.21.1,1.22)	required
+client:fabric_renderer_api_v1->neoforge	21.1.257	[21.1.57,)	required
+client:fabric_renderer_api_v1->minecraft	1.21.1	[1.21.1,1.22)	required
+client:fabric_rendering_data_attachment_v1->neoforge	21.1.257	[21.1.115,)	required
+client:fabric_rendering_data_attachment_v1->minecraft	1.21.1	[1.21.1,1.22)	required
 client:jei->neoforge	21.1.257	[21.1.238,)	required
 client:jei->minecraft	1.21.1	[1.21, 1.21.1)	required
 client:justzoom->konkrete	1.9.9	[1.9.0,)	required
@@ -101,18 +117,18 @@ client:lithium->minecraft	1.21.1	[1.21, 1.21.1]	required
 client:modernfix->neoforge	21.1.257	[21.0.111-beta,)	required
 client:modernfix->minecraft	1.21.1	[1.21, 1.22)	required
 client:modernfix->jei	19.51.0.418	[15.8.0.11,)	optional
+client:searchables->neoforge	21.1.257	[4,)	required
+client:searchables->minecraft	1.21.1	[1.21.1]	required
 client:sodium->minecraft	1.21.1	1.21.1	required
 client:sodium->neoforge	21.1.257	[21.1.82,)	required
-client:fabric_api_base->neoforge	21.1.257	[21.1.219,)	required
+client:fabric_api_base->neoforge	21.1.257	[21.1.115,)	required
 client:fabric_api_base->minecraft	1.21.1	[1.21.1,1.22)	required
-client:fabric_block_view_api_v2->neoforge	21.1.257	[21.1.115,)	required
-client:fabric_block_view_api_v2->minecraft	1.21.1	[1.21.1,1.22)	required
-client:fabric_renderer_api_v1->neoforge	21.1.257	[21.1.219,)	required
-client:fabric_renderer_api_v1->minecraft	1.21.1	[1.21.1,1.22)	required
 client:fabric_rendering_data_attachment_v1->neoforge	21.1.257	[21.1.115,)	required
 client:fabric_rendering_data_attachment_v1->minecraft	1.21.1	[1.21.1,1.22)	required
-client:sodium->minecraft	1.21.1	1.21.1	required
-client:sodium->neoforge	21.1.257	[21.1.82,)	required
+client:fabric_renderer_api_v1->neoforge	21.1.257	[21.1.115,)	required
+client:fabric_renderer_api_v1->minecraft	1.21.1	[1.21.1,1.22)	required
+client:fabric_block_view_api_v2->neoforge	21.1.257	[21.1.115,)	required
+client:fabric_block_view_api_v2->minecraft	1.21.1	[1.21.1,1.22)	required
 client:sophisticatedbackpacks->sophisticatedcore	1.5.7	[1.5.6,)	required
 client:sophisticatedbackpacks->neoforge	21.1.257	[21.1.229,)	required
 client:sophisticatedbackpacks->minecraft	1.21.1	[1.21.1,1.21.2)	required
@@ -145,6 +161,8 @@ client:yungsextras->yungsapi	1.21.1-NeoForge-5.1.9	[1.21.1-NeoForge-5.1.2,)	requ
 server:aaron->neoforge	21.1.257	[21.1.0,)	required
 server:aaron->minecraft	1.21.1	[1.21.1,1.22)	required
 server:aaron->kotlinforforge	5.12.0	[5.12.0,)	required
+server:ae2jeiintegration->ae2	19.2.18	[19.0.22-beta,)	required
+server:ae2jeiintegration->jei	19.51.0.418	[19.19.3,)	required
 server:ae2->neoforge	21.1.257	[21.1.169,)	required
 server:ae2->minecraft	1.21.1	[1.21.1]	required
 server:ae2->guideme	21.1.19	[21.1.1,)	required

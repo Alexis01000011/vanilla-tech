@@ -18,6 +18,11 @@ hash = "b98d1d67a07b6db14512d2fe2d19c58e3cb9039c299e1a98089fa89bae1230ef"
 metafile = true
 
 [[files]]
+file = "mods/ae2-jei-integration.pw.toml"
+hash = "ec29290092161272dbdfe089373b0fef0213cd20f8585f0668db646562a229ab"
+metafile = true
+
+[[files]]
 file = "mods/ae2.pw.toml"
 hash = "7b59da2b03882393dc84191c125cdfc2e0abc3230a297ebc7586b1234d67800d"
 metafile = true
@@ -55,6 +60,11 @@ metafile = true
 [[files]]
 file = "mods/chunky.pw.toml"
 hash = "1fda56abb587d1a3a721058f1bcb082776d1e9464d8e8c8916f47d33b4a77754"
+metafile = true
+
+[[files]]
+file = "mods/controlling.pw.toml"
+hash = "a704303711d84707e58377f50f349bb5ede80f43a6a4a6d2af89dd00315cc115"
 metafile = true
 
 [[files]]
@@ -153,6 +163,11 @@ hash = "134e2eafd2447ace3a006dbff668c3959bae0968cc98328d8c6207a7a57891f7"
 metafile = true
 
 [[files]]
+file = "mods/iris.pw.toml"
+hash = "9bd7cacb2c283fa85feb10d3af39c153ff03c5041216e49eb2c419facfc6f98d"
+metafile = true
+
+[[files]]
 file = "mods/jei.pw.toml"
 hash = "3001811c5bcc2e0edd3f2b6e865dcf2e9e8959508a139e5490d5d061031ec2bc"
 metafile = true
@@ -188,8 +203,13 @@ hash = "f1d9d20d3d7762c313fbd165346fe908dd1ffb686eaca305a1762ec33c69157d"
 metafile = true
 
 [[files]]
+file = "mods/searchables.pw.toml"
+hash = "5b2f94dc5ef8ba453fa2820c87c4db376125cfca016f265649106919f15852aa"
+metafile = true
+
+[[files]]
 file = "mods/sodium.pw.toml"
-hash = "695374f11bf65d0a6e6f244857cce0e62801c965ca36fd018699eb372a7837ae"
+hash = "e98bda75aeb473349c35cb8c4573db60984b836f3839d55c03081a929c2bd11e"
 metafile = true
 
 [[files]]
@@ -239,4 +259,37 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "3f41d4c0c031fad3f01cf4ef4f2065446d09e4fd20b7122124358458708233f1"
+hash = "35a51ee35d72fd9bf38d9505b73c8af1528e440b31c9ea258d70edabac5d043b"
+
+[[files]]
+file = "shaderpacks/MakeUp-UltraFast-9.5a.zip.txt"
+hash = "580271d86f52d2d9a684da02936da7a62e9045fb5618f7f625c84e40048c33f1"
+
+[[files]]
+file = "shaderpacks/Mellow Shader v3.2.zip.txt"
+hash = "8b749eb015b08dad9e5d5121254f4e661957e6a3c75383909bef10d329ce85f8"
+
+[[files]]
+file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"
+hash = "c11d685691d7743b5bb6664379c95443d975e344cd73eb41389d7c3462b80c5f"
+metafile = true
+
+[[files]]
+file = "shaderpacks/mellow.pw.toml"
+hash = "355024a3ba199cc786aae3bc2c38f2f5f8424b613bd5957150039d8843d359d0"
+metafile = true
+
+[[files]]
+file = "shaderpacks/miniature-shader.pw.toml"
+hash = "d0d427c3c4e5b353c50faf4730de88ecd011078e40852330d1136da4d0550441"
+metafile = true
+
+[[files]]
+file = "shaderpacks/sildurs-basic-shaders.pw.toml"
+hash = "7819e71c1e0cdd85cb94c0e37290e18c261a1464c5a4447884aa741bd5c45724"
+metafile = true
+
+[[files]]
+file = "shaderpacks/sildurs-vibrant-shaders.pw.toml"
+hash = "7f1e53e431a09afbc0e93609e0e9140c03a8602789b6d78132559d4a1626ce10"
+metafile = true

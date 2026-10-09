@@ -30,6 +30,29 @@
     ]
   },
   {
+    "id": "ae2jeiintegration",
+    "version": "1.2.1",
+    "jar": "ae2jeiintegration-1.2.1.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "ae2",
+        "type": "required",
+        "versionRange": "[19.0.22-beta,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "jei",
+        "type": "required",
+        "versionRange": "[19.19.3,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "ae2",
     "version": "19.2.18",
     "jar": "appliedenergistics2-19.2.18.jar",
@@ -373,6 +396,36 @@
         "versionRange": "[1.21,1.22)",
         "ordering": "NONE",
         "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "controlling",
+    "version": "19.0.5",
+    "jar": "Controlling-neoforge-1.21.1-19.0.5.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.94,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "searchables",
+        "type": "required",
+        "versionRange": "[1.0.1,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
       }
     ]
   },
@@ -1068,6 +1121,144 @@
     ]
   },
   {
+    "id": "iris",
+    "version": "1.8.12-snapshot+mc1.21.1-local",
+    "jar": "iris-neoforge-1.8.12+mc1.21.1.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21,1.21.1)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "embeddium",
+        "type": "incompatible",
+        "reason": "Iris and Embeddium cannot be used together. Please use Sodium 0.6 instead.",
+        "versionRange": "[0.0.1,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "sodium",
+        "type": "required",
+        "reason": "Iris requires Sodium. Please install Sodium 0.6 for Iris to work.",
+        "versionRange": "[0.6,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      }
+    ]
+  },
+  {
+    "id": "fabric_api_base",
+    "version": "${file.jarVersion}",
+    "jar": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-api-base-0.4.42+d1308ded19.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.169,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "fabric_block_view_api_v2",
+    "version": "${file.jarVersion}",
+    "jar": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.115,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "fabric_renderer_api_v1",
+    "version": "${file.jarVersion}",
+    "jar": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-renderer-api-v1-3.4.0+acb05a3919.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.57,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "fabric_api_base",
+        "type": "required",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "fabric_rendering_data_attachment_v1",
+    "version": "${file.jarVersion}",
+    "jar": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.115,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "fabric_block_view_api_v2",
+        "type": "required",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "jei",
     "version": "19.51.0.418",
     "jar": "jei-1.21.1-neoforge-19.51.0.418.jar",
@@ -1226,9 +1417,32 @@
     ]
   },
   {
+    "id": "searchables",
+    "version": "1.0.2",
+    "jar": "Searchables-neoforge-1.21.1-1.0.2.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[4,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "sodium",
-    "version": "0.8.13+mc1.21.1",
-    "jar": "sodium-neoforge-0.8.13+mc1.21.1.jar",
+    "version": "0.6.13+mc1.21.1",
+    "jar": "sodium-neoforge-0.6.13+mc1.21.1.jar",
     "side": "client",
     "loader": "javafml",
     "dependencies": [
@@ -1259,30 +1473,7 @@
   {
     "id": "fabric_api_base",
     "version": "${file.jarVersion}",
-    "jar": "sodium-neoforge-0.8.13+mc1.21.1.jar!/META-INF/jarjar/fabric-api-base-0.4.42+d1308ded19.jar",
-    "side": "client",
-    "loader": "javafml",
-    "dependencies": [
-      {
-        "modId": "neoforge",
-        "type": "required",
-        "versionRange": "[21.1.219,)",
-        "ordering": "NONE",
-        "side": "BOTH"
-      },
-      {
-        "modId": "minecraft",
-        "type": "required",
-        "versionRange": "[1.21.1,1.22)",
-        "ordering": "NONE",
-        "side": "BOTH"
-      }
-    ]
-  },
-  {
-    "id": "fabric_block_view_api_v2",
-    "version": "${file.jarVersion}",
-    "jar": "sodium-neoforge-0.8.13+mc1.21.1.jar!/META-INF/jarjar/fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+    "jar": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-api-base-0.4.42+d1308ded19.jar",
     "side": "client",
     "loader": "javafml",
     "dependencies": [
@@ -1303,39 +1494,9 @@
     ]
   },
   {
-    "id": "fabric_renderer_api_v1",
-    "version": "${file.jarVersion}",
-    "jar": "sodium-neoforge-0.8.13+mc1.21.1.jar!/META-INF/jarjar/fabric-renderer-api-v1-3.4.1+9125b6dc19.jar",
-    "side": "client",
-    "loader": "javafml",
-    "dependencies": [
-      {
-        "modId": "neoforge",
-        "type": "required",
-        "versionRange": "[21.1.219,)",
-        "ordering": "NONE",
-        "side": "BOTH"
-      },
-      {
-        "modId": "minecraft",
-        "type": "required",
-        "versionRange": "[1.21.1,1.22)",
-        "ordering": "NONE",
-        "side": "BOTH"
-      },
-      {
-        "modId": "fabric_api_base",
-        "type": "required",
-        "versionRange": "*",
-        "ordering": "NONE",
-        "side": "BOTH"
-      }
-    ]
-  },
-  {
     "id": "fabric_rendering_data_attachment_v1",
     "version": "${file.jarVersion}",
-    "jar": "sodium-neoforge-0.8.13+mc1.21.1.jar!/META-INF/jarjar/fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
+    "jar": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
     "side": "client",
     "loader": "javafml",
     "dependencies": [
@@ -1363,33 +1524,55 @@
     ]
   },
   {
-    "id": "sodium",
-    "version": "0.8.13+mc1.21.1",
-    "jar": "sodium-neoforge-0.8.13+mc1.21.1.jar!/META-INF/jarjar/net.caffeinemc.sodium-neoforge-0.8.13+mc1.21.1-mod.jar",
+    "id": "fabric_renderer_api_v1",
+    "version": "${file.jarVersion}",
+    "jar": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-renderer-api-v1-3.4.0+9c40919e19.jar",
     "side": "client",
     "loader": "javafml",
     "dependencies": [
       {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.115,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
         "modId": "minecraft",
         "type": "required",
-        "versionRange": "1.21.1",
+        "versionRange": "[1.21.1,1.22)",
         "ordering": "NONE",
-        "side": "CLIENT"
+        "side": "BOTH"
       },
+      {
+        "modId": "fabric_api_base",
+        "type": "required",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "fabric_block_view_api_v2",
+    "version": "${file.jarVersion}",
+    "jar": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
       {
         "modId": "neoforge",
         "type": "required",
-        "versionRange": "[21.1.82,)",
+        "versionRange": "[21.1.115,)",
         "ordering": "NONE",
-        "side": "CLIENT"
+        "side": "BOTH"
       },
       {
-        "modId": "embeddium",
-        "type": "incompatible",
-        "reason": "Sodium and Embeddium cannot be used together. Please remove Embeddium.",
-        "versionRange": "[0.0.1,)",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
         "ordering": "NONE",
-        "side": "CLIENT"
+        "side": "BOTH"
       }
     ]
   },

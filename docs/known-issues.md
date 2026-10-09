@@ -1,13 +1,13 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-09, release **0.1.0-rc.3**.
+Estado a 2026-10-09, release **0.1.0-rc.4**.
 
 ## Pruebas pendientes
 
 | # | Prueba | Por qué sigue pendiente |
 |---|---|---|
-| P1 | **Cliente en Prism Launcher**: importar el `.mrpack`, arrancar y entrar a un mundo. | Requiere al usuario frente a la laptop (sesión gráfica y cuenta de Microsoft). |
-| P2 | **FPS y memoria reales del cliente** con distancia 8 y heap de 3 GiB. | No se afirma rendimiento estable sin medirlo. Ver [performance.md](performance.md). |
+| P1 | ~~Cliente en Prism Launcher~~ — **hecho con rc.3**: importó, arrancó en ~36 s y entró a un mundo nuevo. | Repetir con rc.4 (P16). |
+| P2 | **FPS y memoria reales del cliente** con distancia 8 y heap de 3 GiB. | Primera muestra (rc.3, heap de 3900 MiB por el default de Prism): RSS de la JVM 2.7 GiB en el mundo; al sistema le quedaban 0.9 GiB y había 2.2 GiB en swap. Falta medir con 3072 MiB y anotar FPS. |
 | P3 | **Conflictos de teclas** en *Opciones → Controles*. | Los defaults de Xaero, IPN y Excessive Utilities no se pudieron leer del bytecode; hay que revisarlos dentro del juego. |
 | P4 | **Aviso de dominios no permitidos** de Prism con las 8 descargas de `edge.forgecdn.net`. | Hay que confirmar si aparece y si el import termina bien. |
 | P5 | **Terminal inalámbrica + Quantum Bridge Card**: alcance infinito e interdimensional. | Requiere un jugador. Solo se verificó que el ítem y su receta existen. |
@@ -21,6 +21,9 @@ Estado a 2026-10-09, release **0.1.0-rc.3**.
 | P13 | **Just Zoom**: zoom con C y rueda del mouse. | Solo cliente. |
 | P14 | **Sophisticated Backpacks**: abrir con B desde la ranura de Curios y el imán (Z). | Requiere un jugador. |
 | P15 | **GraveStone**: morir, comprobar que la lápida guarda inventario + Curios y recuperarlo. | Requiere un jugador. |
+| P16 | **Cliente rc.4**: Sodium 0.6.13 (bajado desde 0.8.13), Iris 1.8.12, Controlling y AE2 JEI Integration. | Requiere volver a importar en Prism. |
+| P17 | **Shaders**: activar MakeUp/Miniature con K, comprobar FPS y que Create (contraptions) se vea bien. | Opcional; en la iGPU puede no ser jugable con los pesados. |
+| P18 | **JEI ↔ AE2**: botón "+" en la terminal de codificación de patrones y sin el error del plugin JEI de Applied Create en el log. | Lo debe arreglar AE2 JEI Integration (rc.4). |
 
 ## Problemas conocidos
 
@@ -38,11 +41,16 @@ Estado a 2026-10-09, release **0.1.0-rc.3**.
 - **Sophisticated Backpacks y Sophisticated Core publican versiones casi a diario.** Están fijadas en una pareja compatible (Backpacks 3.26.9 requiere Core ≥ 1.5.6). Al actualizar, súbelas juntas.
 - **Advertencias de mixin inofensivas al arrancar** (`functionalstorage/world/EnderSavedData`, `ApiStatus$ScheduledForRemoval`): integraciones opcionales con mods que no están instalados. Ya aparecían en la rc.1.
 
+- **AE2 1.21.1 no integra JEI** (solo EMI/REI). Desde la rc.4 lo cubre AE2 JEI Integration; sin ella, el plugin JEI de Applied Create lanza `NoClassDefFoundError: tamaized/ae2jeiintegration/...` (visto en el cliente rc.3).
+- **Errores inofensivos en el log del cliente**: `Error while loading the narrator` (no hay narrador en Linux), `Couldn't connect to realms` y `Online mod data expired` de Xaero (consulta de versiones en línea).
+- **Prism usa por defecto su memoria global** (3900 MiB en esta máquina) si la instancia no marca *Memory*. El `.mrpack` no puede fijar la memoria; hay que hacerlo en la instancia.
+- **Iris con Sodium 0.6.13**: se bajó Sodium para usar la Iris estable. Si en el futuro sale una Iris estable para Sodium 0.8 en 1.21.1, se puede volver a subir los dos juntos.
+
 ### Distribución y reproducibilidad
 - **packwiz se obtiene de un artefacto de CI de GitHub** (`nightly.link`, commit `ef87d96`), verificado por SHA-256. Ese artefacto **caduca el 2026-12-05** (según la API de GitHub); después, `scripts/bootstrap-tools.py` no podrá descargarlo en otra computadora. Alternativas:
   - `go install github.com/packwiz/packwiz@ef87d964f8cbd52b3b13ea42453ef322290e2b9e` y copiar el binario a `.tools/packwiz`, o
   - conservar una copia del binario fuera de git; el script lo acepta si coincide el SHA-256.
-- **8 mods vienen de CurseForge** (`edge.forgecdn.net`). Las URLs están fijadas en los metafiles; si CurseForge las retirara, habría que actualizar el metafile.
+- **9 mods vienen de CurseForge** (`edge.forgecdn.net`). Las URLs están fijadas en los metafiles; si CurseForge las retirara, habría que actualizar el metafile.
 - **El rango de versiones solo se verifica para las dependencias que se pueden leer en los metadatos del JAR.** Las incompatibilidades por código (mixins) solo se detectan al arrancar el juego.
 
 ### Rendimiento

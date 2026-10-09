@@ -1,6 +1,6 @@
-# Catálogo de mods — Vanilla Tech 0.1.0-rc.3
+# Catálogo de mods — Vanilla Tech 0.1.0-rc.4
 
-Minecraft **1.21.1** · NeoForge **21.1.257** · 45 artefactos fijados (`pin = true`).
+Minecraft **1.21.1** · NeoForge **21.1.257** · 54 artefactos fijados (49 mods + 5 shaderpacks) (`pin = true`).
 Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qué* aporta cada mod y *por qué* está en el pack.
 
 **Side**: `both` = cliente y servidor · `client` = solo cliente (el servidor no lo instala) · `server` = solo servidor.
@@ -20,6 +20,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | AE2 Wireless Terminals (ae2wtlib) | 19.5.1 | [Modrinth](https://modrinth.com/mod/applied-energistics-2-wireless-terminals) | both | Terminal universal, terminales inalámbricas de patrones, **Quantum Bridge Card** (alcance infinito e interdimensional), Magnet Card, restock. |
 | Extended AE | 1.21-2.2.35 | [Modrinth](https://modrinth.com/mod/extended-ae) | both | Pattern Providers/Interfaces de 36 slots, Extended Pattern Access Terminal, Pattern Modifier, ensambladores paralelos, buses avanzados. Requiere Glodium. |
 | FTB JEI Extras | 21.1.7 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-jei-extras) | client | Recetas de Extended AE en JEI (Extended AE dejó de integrarse con JEI en 1.21). |
+| AE2 JEI Integration | 1.2.1 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ae2-jei-integration) | both | Integración AE2 ↔ JEI (AE2 para 1.21.1 solo integra EMI/REI): traslado de recetas con "+" a las terminales de crafteo y codificación de patrones; también la necesita el plugin JEI de Applied Create. |
 
 ## C. Utilidades, construcción y chunkloading
 
@@ -49,6 +50,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Just Enough Items (JEI) | 19.51.0.418 | [Modrinth](https://modrinth.com/mod/jei) | both | Consulta de recetas. En el servidor habilita el traslado de recetas (botón "+"). |
 | Inventory Profiles Next | 2.2.5 | [Modrinth](https://modrinth.com/mod/inventory-profiles-next) | client | Ordenamiento de inventario y perfiles. Requiere libIPN. |
 | Crafting Tweaks | 21.1.11 | [Modrinth](https://modrinth.com/mod/crafting-tweaks) | both | Rotar, balancear y limpiar la cuadrícula de crafteo. Requiere Balm. |
+| Controlling | 19.0.5 | [Modrinth](https://modrinth.com/mod/controlling) | client | Buscador y filtro de conflictos en *Opciones → Controles*, para que cada jugador cambie atajos con facilidad. Requiere Searchables. |
 | Xaero's Minimap | 26.6.0 | [Modrinth](https://modrinth.com/mod/xaeros-minimap) | client | Minimapa (el único activo: el de FTB Chunks se desactiva desde el servidor). |
 | Just Zoom | 2.1.0 | [Modrinth](https://modrinth.com/mod/just-zoom) | client | Zoom simple (tecla **C**, rueda para acercar o alejar). Requiere Konkrete. |
 | Xaero's World Map | 1.47.0 | [Modrinth](https://modrinth.com/mod/xaeros-world-map) | client | Mapa del mundo (tecla M). |
@@ -57,7 +59,8 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 
 | Mod | Versión | Fuente | Side | Para qué |
 |---|---|---|---|---|
-| Sodium | 0.8.13 | [Modrinth](https://modrinth.com/mod/sodium) | client | Motor de renderizado. Create (Flywheel) lo soporta oficialmente. |
+| Sodium | 0.6.13 | [Modrinth](https://modrinth.com/mod/sodium) | client | Motor de renderizado. Create (Flywheel) lo soporta oficialmente. Se usa la 0.6.13 (y no la 0.8.13) porque es la que soporta Iris estable. |
+| Iris Shaders | 1.8.12 | [Modrinth](https://modrinth.com/mod/iris) | client | Soporte de shaders. **Apagados por defecto**; K los activa o desactiva. Flywheel (Create) detecta Iris y cambia de backend cuando hay un shader activo. |
 | Lithium | 0.15.4 | [Modrinth](https://modrinth.com/mod/lithium) | both | Optimización de lógica de servidor (ticks, IA, colisiones). |
 | FerriteCore | 7.0.3 | [Modrinth](https://modrinth.com/mod/ferrite-core) | both | Reduce memoria de estados de bloque y modelos. |
 | ModernFix | 5.27.26 | [Modrinth](https://modrinth.com/mod/modernfix) | both | Arranque más rápido y menos memoria. Dos mixins desactivados por conflicto con Lithium. |
@@ -73,6 +76,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 |---|---|---|---|---|
 | Sophisticated Core | 1.21.1-1.5.7.2381 | [Modrinth](https://modrinth.com/mod/sophisticated-core) | both | Sophisticated Backpacks |
 | Konkrete | 1.9.9 | [Modrinth](https://modrinth.com/mod/konkrete) | client | Just Zoom |
+| Searchables | 1.0.2 | [Modrinth](https://modrinth.com/mod/searchables) | client | Controlling |
 | GuideME | 21.1.19 | [Modrinth](https://modrinth.com/mod/guideme) | both | AE2 |
 | Glodium | 1.21-2.2 | [Modrinth](https://modrinth.com/mod/glodium) | both | Extended AE |
 | Kotlin for Forge | 5.12.0 | [Modrinth](https://modrinth.com/mod/kotlin-for-forge) | both | Applied Create, Excessive Utilities, Aaron |
@@ -85,6 +89,18 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | FTB Teams | 2101.1.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge) | both | FTB Chunks |
 | Architectury API | 13.0.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | both | FTB Library, FTB Chunks, FTB Teams |
 
+## H. Shaderpacks (solo cliente, apagados por defecto)
+
+Los mismos que el usuario tenía en su instancia 1.21.11, identificados en Modrinth por hash (misma versión exacta). Se descargan de Modrinth; el pack solo incluye los ajustes guardados de MakeUp y Mellow (`shaderpacks/*.zip.txt`).
+
+| Shaderpack | Versión | Fuente | Licencia | Nota |
+|---|---|---|---|---|
+| MakeUp – Ultra Fast | 9.5a | [Modrinth](https://modrinth.com/shader/makeup-ultra-fast-shaders) | LGPL-3.0 | Ligero; con los ajustes del usuario. |
+| Mellow | 3.2 | [Modrinth](https://modrinth.com/shader/mellow) | MIT | Con los ajustes del usuario (SSAO, reflejos, TAA). |
+| Miniature | 2.18.11 | [Modrinth](https://modrinth.com/shader/miniature-shader) | MIT | Ligero. |
+| Sildur's Basic Shaders | 2.6 Fancy | [Modrinth](https://modrinth.com/shader/sildurs-basic-shaders) | ARR | Ligero. |
+| Sildur's Vibrant Shaders | 1.56 Extreme | [Modrinth](https://modrinth.com/shader/sildurs-vibrant-shaders) | ARR | **Pesado** para una iGPU. |
+
 ## Rechazados o no incluidos
 
 | Mod | Motivo |
@@ -92,7 +108,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Create: Applied Kinetics | Redundante con Applied Create, que funciona en las versiones fijadas. No se instalan ambos. |
 | AEInfinityBooster | Redundante: la Quantum Bridge Card de ae2wtlib ya da alcance infinito e interdimensional. |
 | Advanced AE | Sin necesidad funcional que Extended AE no cubra. |
-| EMI, REI | JEI es el visor elegido; no se instalan dos visores de recetas. |
+| EMI, REI | JEI es el visor elegido; no se instalan dos visores de recetas. AE2 1.21.1 integra EMI de forma nativa, pero se mantuvo JEI y se añadió AE2 JEI Integration para no cambiar de visor. |
 | Terralith, Tectonic, Structory | Excluidos por el plan: cambian el terreno o los biomas vanilla. |
 | Lootr | Excluido por el plan. |
 | YUNG's Better Ocean Monuments / Nether Fortresses / Mineshafts / Strongholds y similares | Reemplazan estructuras vanilla de las que dependen las granjas. |
@@ -101,4 +117,5 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Just Zoom 3.x | La 3.0.0 es una reescritura publicada el 2026-10-03, con un crash corregido en 3.0.1 al día siguiente, y agrega una tecla de configuración en **B**, que ya está ocupada. Se fijó la 2.1.0 (marzo de 2025). |
 | Ok Zoomer | Solo hay versión beta para NeoForge 1.21.1. |
 | Sophisticated Backpacks Create Integration | No se pidió; se puede añadir si se quieren mochilas en contraptions. |
+| Iris 1.8.14-beta.1 + Sodium 0.8.13 | La única Iris para Sodium 0.8 en 1.21.1 es beta y no declara rango contra Sodium 0.8.13. Se eligió la pareja estable Sodium 0.6.13 + Iris 1.8.12. |
 | Open Parties and Claims | Alternativa a FTB Chunks con integración nativa en Xaero; el usuario prefirió FTB Chunks. |

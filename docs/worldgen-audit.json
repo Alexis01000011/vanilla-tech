@@ -5,6 +5,11 @@
     "vanilla_overrides": []
   },
   {
+    "mod": "AE2 JEI Integration",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
     "mod": "Applied Energistics 2",
     "worldgen_paths": [
       "data/ae2/worldgen/structure_set/meteorite.json",

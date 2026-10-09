@@ -1,6 +1,6 @@
 # Instalación y actualización
 
-Release actual: `releases/vanilla-tech-0.1.0-rc.3.mrpack` (Minecraft 1.21.1, NeoForge 21.1.257, Java 21).
+Release actual: `releases/vanilla-tech-0.1.0-rc.4.mrpack` (Minecraft 1.21.1, NeoForge 21.1.257, Java 21).
 El `.mrpack` solo contiene el manifiesto y las configs: los launchers descargan cada JAR de Modrinth o CurseForge y verifican su hash.
 
 > Si no tienes el `.mrpack`, genéralo con `bash scripts/build.sh` (ver [README](../README.md)).
@@ -12,12 +12,13 @@ El `.mrpack` solo contiene el manifiesto y las configs: los launchers descargan 
 ### Requisitos
 - Prism Launcher y una cuenta de Microsoft con Minecraft Java.
 - Java 21. Prism puede descargarlo solo; en Arch también sirve `pacman -S jre21-openjdk`.
-- Sin shaders. Sodium ya viene incluido.
+- Sodium e Iris ya vienen incluidos. Los shaders vienen **apagados** (ver "Shaders" abajo).
 
 ### Importar
-1. En Prism: **Add Instance → Import** y elige el archivo `vanilla-tech-0.1.0-rc.3.mrpack`.
-2. Prism descarga 44 mods (Chunky es solo de servidor). Ocho vienen de `edge.forgecdn.net` (CurseForge): Building Gadgets 2, Charging Gadgets, Dank Storage, FTB Chunks, FTB Teams, FTB Library, FTB JEI Extras y Architectury. Si Prism avisa de descargas desde dominios fuera de su lista blanca, acepta: son las URLs oficiales de CurseForge y cada archivo se verifica por hash. *(Aviso pendiente de confirmar en la prueba de cliente.)*
+1. En Prism: **Add Instance → Import** y elige el archivo `vanilla-tech-0.1.0-rc.4.mrpack`. **Elige NeoForge, no Forge**: el import ya configura Minecraft 1.21.1 + NeoForge 21.1.257; no hace falta crear la instancia a mano.
+2. Prism descarga 48 mods y 5 shaderpacks (Chunky es solo de servidor). Nueve mods vienen de `edge.forgecdn.net` (CurseForge): Building Gadgets 2, Charging Gadgets, Dank Storage, FTB Chunks, FTB Teams, FTB Library, FTB JEI Extras, Architectury y AE2 JEI Integration. Si Prism avisa de descargas desde dominios fuera de su lista blanca, acepta: son las URLs oficiales de CurseForge y cada archivo se verifica por hash. *(Aviso pendiente de confirmar en la prueba de cliente.)*
 3. **Edit Instance → Settings → Java**:
+   - Marca **Memory** para que la instancia no use el valor global de Prism (en la prueba de rc.3 era 3900 MiB, demasiado para esta laptop).
    - Memoria máxima: **3072 MiB** en la laptop de 8 GB, porque la iGPU reserva 2 GiB y el sistema solo ve 5.7 GiB. Sube a 3584 MiB solo si `/spark health` muestra presión de memoria y el sistema no está usando swap. Detalles en [performance.md](performance.md).
    - Memoria mínima: 1024 MiB.
    - Argumentos JVM: no hacen falta (Java 21 usa G1 por defecto).
@@ -29,15 +30,20 @@ Distancia de renderizado 8, simulación 6, 60 FPS con VSync, gráficos *Fast* y 
 | Acción | Tecla | Motivo |
 |---|---|---|
 | Terminal inalámbrica AE2 | V | Sin asignar por defecto. |
-| Building Gadgets: menú | K | G lo usa Curios. |
+| Building Gadgets: menú | H | G lo usa Curios y K lo usa Iris. |
 | Building Gadgets: deshacer / ancla / rango | Retroceso / Inicio / Fin | Sin asignar por defecto. |
 | Mapa de FTB Chunks (reclamar y forzar chunks) | J | M lo usa el World Map de Xaero. |
 | Zoom (Just Zoom; rueda del mouse para acercar o alejar) | C | Tecla clásica de zoom; se quitaron las teclas de barras guardadas de creativo (C/X). |
 | Abrir mochila (Sophisticated Backpacks) | B | Default del mod. |
 | Alternar mejora 1 / 2 de la mochila | Z / X | Defaults del mod; se quitó "agrandar minimapa" de Xaero (Z). |
 | Nuevo waypoint (Xaero) | N | B lo usa la mochila. |
+| Activar o desactivar shaders / recargarlos (Iris) | K / R | Defaults de Iris. |
+| Elegir shader (Iris) | sin tecla | O lo usa Dank Storage; se elige en *Opciones → Video → Shader Packs*. |
 
-Para revisar conflictos: **Opciones → Controles**; las teclas repetidas aparecen en rojo.
+Para revisar o cambiar atajos: **Opciones → Controles**. Con **Controlling** hay un buscador y un filtro para mostrar solo los conflictos. Cada jugador puede cambiar sus teclas sin afectar a los demás.
+
+### Shaders (opcionales)
+Vienen 5 shaderpacks, apagados: MakeUp – Ultra Fast, Mellow, Miniature, Sildur's Basic y Sildur's Vibrant (Extreme). Para usarlos: *Opciones → Video → Shader Packs*, elige uno y después usa **K** para activarlos o desactivarlos. En la laptop con iGPU empieza por **MakeUp – Ultra Fast** o **Miniature**; Sildur's Vibrant Extreme es pesado. Con shaders, Create (Flywheel) cambia a un modo de render compatible, que es más lento con muchos contraptions.
 
 ### Unirse al servidor
 **Multiplayer → Add Server** con la IP o el DNS del servidor (puerto 25565). El servidor tiene whitelist activada, así que el admin debe añadirte antes.
@@ -62,7 +68,7 @@ python3 scripts/prepare-server.py --directory /srv/minecraft/vanilla-tech --heap
 ```
 `prepare-server.py` hace lo siguiente:
 - Verifica el instalador de NeoForge por SHA-256 e instala el servidor.
-- Descarga solo los mods de servidor (34 JARs; omite los 11 de solo cliente) y verifica sus hashes.
+- Descarga solo los mods de servidor (35 JARs; omite los 14 mods y 5 shaderpacks de solo cliente) y verifica sus hashes.
 - Copia las configs del pack.
 - Escribe `server.properties` y `user_jvm_args.txt` a partir de `server-template/`, solo si no existen.
 - **No acepta la EULA.**

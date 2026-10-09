@@ -8,7 +8,7 @@ Todo lo de este documento son **mediciones reales sin jugadores conectados** o r
 |---|---|
 | Máquina | Laptop con AMD Ryzen 5 3500U (4 núcleos / 8 hilos) y 8 GB físicos (5.7 GiB visibles) |
 | JVM | OpenJDK 21.0.12, G1, `-Xms512m -Xmx2G`, `-XX:ActiveProcessorCount=2` (la JVM dimensiona sus hilos como si hubiera 2 núcleos, para aproximar una instancia pequeña) |
-| Servidor | NeoForge 21.1.257, 31 mods de servidor (rc.2) y 34 (rc.3), `view-distance=4`, `simulation-distance=4`, semilla `20261009` |
+| Servidor | NeoForge 21.1.257, 31 mods de servidor (rc.2), 34 (rc.3) y 35 (rc.4), `view-distance=4`, `simulation-distance=4`, semilla `20261009` |
 | Herramientas | `scripts/test-server.py` (RSS leído de `/proc`), `spark tps/health`, log de GC (`-Xlog:gc*`) |
 
 ## Servidor: resultados
@@ -20,6 +20,7 @@ Todo lo de este documento son **mediciones reales sin jugadores conectados** o r
 | rc.2, integración + pregeneración de **1681 chunks** con Chunky | 30 s | **1665 MiB** | Prueba más pesada realizada. |
 | rc.2, integración corregida (con JEI en servidor) | 30.1 s | 1269 MiB | Mundo nuevo. |
 | rc.3, integración (con Sophisticated Backpacks y GraveStone) | 28.7 s | 1224 MiB | Mundo nuevo. |
+| rc.4, integración (con AE2 JEI Integration) | 29.5 s | 1408 MiB | Mundo nuevo. |
 
 Detalle de la prueba con pregeneración (`docs/rc2-integration.json`):
 
@@ -51,13 +52,26 @@ Detalle de la prueba con pregeneración (`docs/rc2-integration.json`):
 - **FTB Chunks**: el peor caso son 200 chunks forzados (100 por jugador) activos mientras alguien juega. Con `force_load_mode = "never"` no consumen nada sin jugadores conectados.
 - **Backups**: ver [installation.md](installation.md#backups). Un mundo pregenerado ocupa espacio; dimensiona el volumen EBS con margen.
 
-## Cliente: recomendaciones iniciales (sin medir todavía)
+## Cliente: primera medición (rc.3)
+
+Laptop del usuario, Prism con Java 21.0.7 y heap de **3900 MiB** (el default global de Prism; la instancia no tenía su propio valor), distancia 8, sin shaders:
+
+| Medida | Valor |
+|---|---|
+| Arranque hasta el menú | ~36 s |
+| RSS de la JVM dentro de un mundo | **2.7 GiB** |
+| Memoria disponible para el sistema | 0.9 GiB (de 5.7 GiB) |
+| Swap en uso | 2.2 GiB |
+
+Aún sin FPS medidos. Con tan poca memoria libre, bajar el heap a 3072 MiB es lo primero que hay que probar.
+
+## Cliente: recomendaciones
 
 | Parámetro | Valor | Motivo |
 |---|---|---|
 | Heap | **3 GiB** (3072 MiB en Prism) | La laptop ve solo 5.7 GiB porque la iGPU reserva 2 GiB. Con 3 GiB de heap más ~1–1.5 GiB nativos de la JVM, quedan ~1.5 GiB para el sistema. Usar 3.5 GiB solo si spark muestra presión de heap y el sistema no está usando swap. |
 | Render / simulación | 8 / 6 | Configurado en `options.txt` del pack. |
-| Shaders | No | Requisito del plan. |
+| Shaders | Apagados por defecto | Iris viene incluido (rc.4). En la iGPU, probar primero MakeUp – Ultra Fast o Miniature. Los shaders suben el consumo de memoria de video y de RAM. |
 | FPS máx. / VSync | 60 / sí | Menos calor y consumo; Dynamic FPS los baja aún más con la ventana sin foco. |
 | Mapas | Xaero (minimapa + world map) | El minimapa de FTB está desactivado para no duplicar el costo de renderizado de mapas. |
 

@@ -20,7 +20,6 @@ for p in sorted((ROOT/'mods').glob('*.pw.toml'),key=lambda p:tomllib.loads(p.rea
  version=top[0]['version'] if top and not top[0]['version'].startswith('$') else m['filename']
  deps=sorted({names.get(d['modId'],d['modId']) for r in top for d in r['dependencies'] if d.get('type','required').lower()=='required' and d['modId'] not in ('minecraft','neoforge') and d['modId'] not in {x['id'] for x in by_jar.get(m['filename'],[])}})
  s=status.get(key,{'status':'Verified','evidence':''})
- if m['side']=='client':s=dict(s,status='Verified',evidence=(s['evidence']+'; arranque de cliente pendiente').lstrip('; '))
  rows.append(f"| {m['name']} | {version} | {src} | {', '.join(deps) or '—'} | {m['side']} | {s['status']} | {s['evidence']} |")
 out=f"""# Matriz de compatibilidad — Vanilla Tech {pack['version']}
 
@@ -29,13 +28,17 @@ Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `do
 
 **Estados**
 - **Verified**: hashes, metadatos, lado (cliente/servidor) y rangos de versión comprobados (`validate.py`, `check-ranges.py`).
-- **Launch tested**: cargó sin errores en un arranque real de NeoForge (servidor dedicado). La columna *Evidencia* indica qué más se comprobó por comandos.
+- **Launch tested**: cargó sin errores en un arranque real de NeoForge (servidor dedicado o cliente en Prism). La columna *Evidencia* indica qué más se comprobó por comandos.
 - **Gameplay tested**: funcionalidad probada por un jugador dentro del juego.
 - **Blocked**: problema abierto.
 
-Hasta la prueba en Prism, ningún mod tiene arranque de **cliente** comprobado ([known-issues.md](known-issues.md), P1). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
+El cliente **rc.3** arrancó en Prism y entró a un mundo nuevo (2026-10-09); los mods nuevos o cambiados en rc.4 siguen pendientes de esa prueba ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
 
 | Mod | Versión | Fuente | Dependencias obligatorias | Side | Estado | Evidencia |
 |---|---|---|---|---|---|---|
 """ + '\n'.join(rows) + '\n'
+shaders=[tomllib.loads(p.read_text()) for p in sorted((ROOT/'shaderpacks').glob('*.pw.toml'))]
+if shaders:
+ out+='\n## Shaderpacks (solo cliente, apagados por defecto)\n\n| Shaderpack | Archivo | Fuente |\n|---|---|---|\n'
+ out+='\n'.join(f"| {m['name']} | {m['filename']} | [Modrinth](https://modrinth.com/shader/{m['update']['modrinth']['mod-id']}) |" for m in shaders)+'\n'
 (ROOT/'docs/compatibility-matrix.md').write_text(out);print('wrote docs/compatibility-matrix.md',len(rows),'rows')

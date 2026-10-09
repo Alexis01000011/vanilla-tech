@@ -4,15 +4,15 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 
 | | |
 |---|---|
-| Versión del pack | **0.1.0-rc.3** |
+| Versión del pack | **0.1.0-rc.4** |
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
 | Launcher | Prism Launcher (`.mrpack`) |
-| Mods | 45 artefactos fijados: 44 en el cliente, 34 en el servidor |
-| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). **Cliente pendiente** de prueba en Prism. |
+| Mods | 54 artefactos fijados (49 mods + 5 shaderpacks): 53 en el cliente, 35 en el servidor |
+| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente rc.3 probado en Prism (arranque y mundo nuevo); rc.4 pendiente de reimportar. |
 
-Contenido principal: Create · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE · Waystones · Dank Storage · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · Explorify + YUNG's Extras/Bridges · JEI · Inventory Profiles Next · Crafting Tweaks · Xaero's Minimap/World Map · Just Zoom · Sodium, Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
+Contenido principal: Create · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · Explorify + YUNG's Extras/Bridges · JEI · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Just Zoom · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
 La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/mod-catalog.md).
 
 ## Documentación
@@ -32,7 +32,8 @@ La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/
 ```
 vanilla-tech/
 ├── pack.toml, index.toml     # proyecto packwiz (fuente de verdad)
-├── mods/*.pw.toml            # 45 metafiles con versión, URL y hash fijados (sin JARs)
+├── mods/*.pw.toml            # 49 metafiles con versión, URL y hash fijados (sin JARs)
+├── shaderpacks/              # 5 metafiles de shaders (Modrinth) + ajustes .txt → client-overrides/
 ├── config/                   # configs del pack (EU, ModernFix, FTB Chunks) → overrides/
 ├── options.txt               # opciones y atajos de cliente → client-overrides/
 ├── server-template/          # server.properties y user_jvm_args.txt de partida
@@ -50,7 +51,7 @@ Requisitos: Linux x86-64, git, Python ≥ 3.11, **JDK 21 completo** (con `javac`
 ```bash
 git clone <este-repo> vanilla-tech && cd vanilla-tech
 bash scripts/build.sh    # descarga packwiz verificado, refresca el índice, exporta y empaqueta
-bash scripts/check.sh    # descarga los 45 JARs a .cache y valida todo; regenera la matriz
+bash scripts/check.sh    # descarga los 54 artefactos a .cache y valida todo; regenera la matriz
 ```
 El resultado queda en `releases/vanilla-tech-<versión>.mrpack` (+ `.sha256`). El empaquetado es determinista: mismas entradas, mismo archivo.
 
@@ -60,7 +61,7 @@ El resultado queda en `releases/vanilla-tech-<versión>.mrpack` (+ `.sha256`). E
 
 | Script | Qué hace |
 |---|---|
-| `scripts/build.sh` | `bootstrap-tools.py` → `packwiz refresh` → `packwiz modrinth export` → `package.py` (mueve `options.txt` a `client-overrides/`, ordena el manifiesto y rechaza JARs embebidos). |
+| `scripts/build.sh` | `bootstrap-tools.py` → `packwiz refresh` → `packwiz modrinth export` → `package.py` (mueve `options.txt` y los ajustes de shaders a `client-overrides/`, ordena el manifiesto y rechaza JARs embebidos). |
 | `scripts/check.sh` | `fetch-artifacts.py`, `validate.py`, `check-ranges.py`, `worldgen-audit.py` y `gen-matrix.py`. |
 | `scripts/prepare-server.sh` | Instala o actualiza un servidor desde la release (`--directory`, `--heap 3G…10G`, `--replace-configs`). Idempotente. Nunca acepta la EULA. |
 | `scripts/test-server.sh` | Arranque acotado en `127.0.0.1:25575` sobre un directorio marcado con `.vanilla-tech-test-only`. Envía comandos de un archivo (`#sleep`, `#wait REGEX`) y guarda `docs/<name>.json`. |
