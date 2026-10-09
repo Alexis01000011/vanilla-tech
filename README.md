@@ -4,15 +4,15 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 
 | | |
 |---|---|
-| Versión del pack | **0.1.0-rc.4** |
+| Versión del pack | **0.1.0-rc.5** (línea base sin dimensiones nuevas; ver [Versiones](#versiones-y-ramas)) |
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
 | Launcher | Prism Launcher (`.mrpack`) |
-| Mods | 54 artefactos fijados (49 mods + 5 shaderpacks): 53 en el cliente, 35 en el servidor |
-| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente rc.3 probado en Prism (arranque y mundo nuevo); rc.4 pendiente de reimportar. |
+| Mods | 55 artefactos fijados (50 mods + 5 shaderpacks): 54 en el cliente, 36 en el servidor |
+| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente rc.3 probado en Prism (arranque y mundo nuevo); los cambios de rc.4 y rc.5 están pendientes de probar en el cliente. |
 
-Contenido principal: Create · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · Explorify + YUNG's Extras/Bridges · JEI · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Just Zoom · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
+Contenido principal: Create · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · Explorify + YUNG's Extras/Bridges · JEI · Jade · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Just Zoom · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
 La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/mod-catalog.md).
 
 ## Documentación
@@ -26,13 +26,14 @@ La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/
 | [docs/test-results.md](docs/test-results.md) | Resultados reales de cada etapa de validación. |
 | [docs/known-issues.md](docs/known-issues.md) | Problemas conocidos y pruebas pendientes. |
 | [docs/decisions.md](docs/decisions.md) | Bitácora de decisiones técnicas. |
+| [CHANGELOG.md](CHANGELOG.md) | Cambios de cada versión, con el SHA-256 de cada `.mrpack`. |
 
 ## Estructura del repositorio
 
 ```
 vanilla-tech/
 ├── pack.toml, index.toml     # proyecto packwiz (fuente de verdad)
-├── mods/*.pw.toml            # 49 metafiles con versión, URL y hash fijados (sin JARs)
+├── mods/*.pw.toml            # 50 metafiles con versión, URL y hash fijados (sin JARs)
 ├── shaderpacks/              # 5 metafiles de shaders (Modrinth) + ajustes .txt → client-overrides/
 ├── config/                   # configs del pack (EU, ModernFix, FTB Chunks) → overrides/
 ├── options.txt               # opciones y atajos de cliente → client-overrides/
@@ -51,7 +52,7 @@ Requisitos: Linux x86-64, git, Python ≥ 3.11, **JDK 21 completo** (con `javac`
 ```bash
 git clone <este-repo> vanilla-tech && cd vanilla-tech
 bash scripts/build.sh    # descarga packwiz verificado, refresca el índice, exporta y empaqueta
-bash scripts/check.sh    # descarga los 54 artefactos a .cache y valida todo; regenera la matriz
+bash scripts/check.sh    # descarga los 55 artefactos a .cache y valida todo; regenera la matriz
 ```
 El resultado queda en `releases/vanilla-tech-<versión>.mrpack` (+ `.sha256`). El empaquetado es determinista: mismas entradas, mismo archivo.
 
@@ -78,6 +79,23 @@ python3 scripts/test-server.py --directory .cache/server-test --name local-integ
   --accept-eula --timeout 900 --commands scripts/integration-commands.txt
 ```
 
+## Versiones y ramas
+
+| Línea | Rama | Para qué |
+|---|---|---|
+| `0.1.x` | `release/0.1` | Línea base estable: Create + AE2 + calidad de vida, **sin dimensiones nuevas**. |
+| `0.2.0-alpha.N` | `main` | Pruebas de dimensiones (primero The Aether). Entre una alpha y otra se pueden agregar o quitar mods. |
+
+- Cada release lleva una etiqueta anotada `v<versión>` (`git tag -n1` las lista) y una entrada en [CHANGELOG.md](CHANGELOG.md) con el SHA-256 del `.mrpack`.
+- Para volver a una versión: usa su archivo en `releases/`, o `git checkout v<versión> && bash scripts/build.sh`, que lo reconstruye idéntico.
+- Orden de madurez: `alpha` (en pruebas) → `beta` (contenido cerrado) → `rc` (probado en cliente y servidor) → versión final.
+
+**Mundos y versiones**
+- Cada import en Prism crea una instancia aparte con el número de versión en el nombre. Las versiones anteriores siguen ahí para comparar.
+- Los mundos creados con una **alpha** son de prueba. Si una versión posterior quita un mod de dimensión, Minecraft borra de ese mundo los bloques, ítems y entidades del mod, y el jugador que estaba en esa dimensión aparece en el Overworld.
+- No abras un mundo con una versión **más vieja** que la última que lo guardó.
+- El servidor real solo recibe versiones `rc` o finales, y siempre con backup previo ([installation.md](docs/installation.md#backups)).
+
 ## Actualizar o agregar un mod
 
 Nunca uses versiones "latest" dinámicas en una release cerrada.
@@ -91,7 +109,7 @@ Nunca uses versiones "latest" dinámicas en una release cerrada.
 5. `bash scripts/build.sh && bash scripts/check.sh`.
 6. Prueba el servidor (arriba) y, si el cambio afecta al cliente, también en Prism.
 7. Actualiza `docs/test-status.toml`, `docs/decisions.md` y `docs/mod-catalog.md`; regenera la matriz con `check.sh`.
-8. Haz commit y etiqueta la release (`git tag v<versión>`).
+8. Anota el cambio en `CHANGELOG.md`, haz commit y etiqueta la release (`git tag -a v<versión>`).
 
 ## Licencias y distribución
 

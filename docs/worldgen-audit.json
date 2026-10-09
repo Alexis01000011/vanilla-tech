@@ -196,6 +196,11 @@
     "vanilla_overrides": []
   },
   {
+    "mod": "Jade",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
     "mod": "Just Enough Items (JEI)",
     "worldgen_paths": [],
     "vanilla_overrides": []

@@ -15,8 +15,8 @@ El `.mrpack` solo contiene el manifiesto y las configs: los launchers descargan 
 - Sodium e Iris ya vienen incluidos. Los shaders vienen **apagados** (ver "Shaders" abajo).
 
 ### Importar
-1. En Prism: **Add Instance → Import** y elige el archivo `vanilla-tech-0.1.0-rc.4.mrpack`. **Elige NeoForge, no Forge**: el import ya configura Minecraft 1.21.1 + NeoForge 21.1.257; no hace falta crear la instancia a mano.
-2. Prism descarga 48 mods y 5 shaderpacks (Chunky es solo de servidor). Nueve mods vienen de `edge.forgecdn.net` (CurseForge): Building Gadgets 2, Charging Gadgets, Dank Storage, FTB Chunks, FTB Teams, FTB Library, FTB JEI Extras, Architectury y AE2 JEI Integration. Si Prism avisa de descargas desde dominios fuera de su lista blanca, acepta: son las URLs oficiales de CurseForge y cada archivo se verifica por hash. *(Aviso pendiente de confirmar en la prueba de cliente.)*
+1. En Prism: **Add Instance → Import** y elige el archivo `vanilla-tech-0.1.0-rc.5.mrpack`. **Elige NeoForge, no Forge**: el import ya configura Minecraft 1.21.1 + NeoForge 21.1.257; no hace falta crear la instancia a mano.
+2. Prism descarga 49 mods y 5 shaderpacks (Chunky es solo de servidor). Nueve mods vienen de `edge.forgecdn.net` (CurseForge): Building Gadgets 2, Charging Gadgets, Dank Storage, FTB Chunks, FTB Teams, FTB Library, FTB JEI Extras, Architectury y AE2 JEI Integration. En la prueba con rc.3, Prism **no** mostró avisos de dominios no permitidos. Si alguna vez lo hace, acepta: son las URLs oficiales de CurseForge y cada archivo se verifica por hash.
 3. **Edit Instance → Settings → Java**:
    - Marca **Memory** para que la instancia no use el valor global de Prism (en la prueba de rc.3 era 3900 MiB, demasiado para esta laptop).
    - Memoria máxima: **3072 MiB** en la laptop de 8 GB, porque la iGPU reserva 2 GiB y el sistema solo ve 5.7 GiB. Sube a 3584 MiB solo si `/spark health` muestra presión de memoria y el sistema no está usando swap. Detalles en [performance.md](performance.md).
@@ -39,6 +39,8 @@ Distancia de renderizado 8, simulación 6, 60 FPS con VSync, gráficos *Fast* y 
 | Nuevo waypoint (Xaero) | N | B lo usa la mochila. |
 | Activar o desactivar shaders / recargarlos (Iris) | K / R | Defaults de Iris. |
 | Elegir shader (Iris) | sin tecla | O lo usa Dank Storage; se elige en *Opciones → Video → Shader Packs*. |
+
+**Jade** (información del bloque que miras) usa por defecto el teclado numérico (`0` configuración, `1` mostrar u ocultar) y **Shift** para ver más detalles. En una laptop sin teclado numérico, su configuración está en *Mods → Jade → Config*.
 
 Para revisar o cambiar atajos: **Opciones → Controles**. Con **Controlling** hay un buscador y un filtro para mostrar solo los conflictos. Cada jugador puede cambiar sus teclas sin afectar a los demás.
 

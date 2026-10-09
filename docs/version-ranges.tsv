@@ -6,6 +6,7 @@ client:ae2jeiintegration->jei	19.51.0.418	[19.19.3,)	required
 client:ae2->neoforge	21.1.257	[21.1.169,)	required
 client:ae2->minecraft	1.21.1	[1.21.1]	required
 client:ae2->guideme	21.1.19	[21.1.1,)	required
+client:ae2->jade	15.10.6+neoforge	[15.0.0,)	optional
 client:appliedcreate->neoforge	21.1.257	[21.1,)	required
 client:appliedcreate->minecraft	1.21.1	[1.21.1,1.22)	required
 client:appliedcreate->create	6.0.10	[6.0,)	required
@@ -103,6 +104,7 @@ client:fabric_renderer_api_v1->neoforge	21.1.257	[21.1.57,)	required
 client:fabric_renderer_api_v1->minecraft	1.21.1	[1.21.1,1.22)	required
 client:fabric_rendering_data_attachment_v1->neoforge	21.1.257	[21.1.115,)	required
 client:fabric_rendering_data_attachment_v1->minecraft	1.21.1	[1.21.1,1.22)	required
+client:jade->neoforge	21.1.257	[21.0.143, )	required
 client:jei->neoforge	21.1.257	[21.1.238,)	required
 client:jei->minecraft	1.21.1	[1.21, 1.21.1)	required
 client:justzoom->konkrete	1.9.9	[1.9.0,)	required
@@ -166,6 +168,7 @@ server:ae2jeiintegration->jei	19.51.0.418	[19.19.3,)	required
 server:ae2->neoforge	21.1.257	[21.1.169,)	required
 server:ae2->minecraft	1.21.1	[1.21.1]	required
 server:ae2->guideme	21.1.19	[21.1.1,)	required
+server:ae2->jade	15.10.6+neoforge	[15.0.0,)	optional
 server:appliedcreate->neoforge	21.1.257	[21.1,)	required
 server:appliedcreate->minecraft	1.21.1	[1.21.1,1.22)	required
 server:appliedcreate->create	6.0.10	[6.0,)	required
@@ -233,6 +236,7 @@ server:gravestone->neoforge	21.1.257	[21.0.0-beta,)	required
 server:gravestone->minecraft	1.21.1	[1.21,1.21.1]	required
 server:guideme->neoforge	21.1.257	[21.1.1,)	required
 server:guideme->minecraft	1.21.1	[1.21.1]	required
+server:jade->neoforge	21.1.257	[21.0.143, )	required
 server:jei->neoforge	21.1.257	[21.1.238,)	required
 server:jei->minecraft	1.21.1	[1.21, 1.21.1)	required
 server:kotlinforforge->minecraft	1.21.1	[1.20.6,1.21.9)	required

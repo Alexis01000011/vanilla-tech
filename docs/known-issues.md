@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-09, release **0.1.0-rc.4**.
+Estado a 2026-10-09, release **0.1.0-rc.5**.
 
 ## Pruebas pendientes
 
@@ -9,7 +9,7 @@ Estado a 2026-10-09, release **0.1.0-rc.4**.
 | P1 | ~~Cliente en Prism Launcher~~ — **hecho con rc.3**: importó, arrancó en ~36 s y entró a un mundo nuevo. | Repetir con rc.4 (P16). |
 | P2 | **FPS y memoria reales del cliente** con distancia 8 y heap de 3 GiB. | Primera muestra (rc.3, heap de 3900 MiB por el default de Prism): RSS de la JVM 2.7 GiB en el mundo; al sistema le quedaban 0.9 GiB y había 2.2 GiB en swap. Falta medir con 3072 MiB y anotar FPS. |
 | P3 | **Conflictos de teclas** en *Opciones → Controles*. | Los defaults de Xaero, IPN y Excessive Utilities no se pudieron leer del bytecode; hay que revisarlos dentro del juego. |
-| P4 | **Aviso de dominios no permitidos** de Prism con las 8 descargas de `edge.forgecdn.net`. | Hay que confirmar si aparece y si el import termina bien. |
+| P4 | ~~Aviso de dominios no permitidos~~ — **hecho**: Prism importó rc.3 (8 descargas de `edge.forgecdn.net`) sin ningún aviso. | — |
 | P5 | **Terminal inalámbrica + Quantum Bridge Card**: alcance infinito e interdimensional. | Requiere un jugador. Solo se verificó que el ítem y su receta existen. |
 | P6 | **Building Gadgets 2**: uso y recarga en la Charging Station. | Requiere un jugador. La estación se coloca sin errores en el servidor. |
 | P7 | **Waystones**: activar dos piedras y teletransportarse. | Requiere un jugador. |
@@ -24,6 +24,7 @@ Estado a 2026-10-09, release **0.1.0-rc.4**.
 | P16 | **Cliente rc.4**: Sodium 0.6.13 (bajado desde 0.8.13), Iris 1.8.12, Controlling y AE2 JEI Integration. | Requiere volver a importar en Prism. |
 | P17 | **Shaders**: activar MakeUp/Miniature con K, comprobar FPS y que Create (contraptions) se vea bien. | Opcional; en la iGPU puede no ser jugable con los pesados. |
 | P18 | **JEI ↔ AE2**: botón "+" en la terminal de codificación de patrones y sin el error del plugin JEI de Applied Create en el log. | Lo debe arreglar AE2 JEI Integration (rc.4). |
+| P19 | **Jade**: el HUD muestra el bloque que se mira y la información de AE2 y Create. | Solo cliente; en el servidor ya cargan los plugins de AE2, Extended AE, Waystones, GraveStone y Balm (rc.5). |
 
 ## Problemas conocidos
 

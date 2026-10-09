@@ -1,6 +1,6 @@
-# Catálogo de mods — Vanilla Tech 0.1.0-rc.4
+# Catálogo de mods — Vanilla Tech 0.1.0-rc.5
 
-Minecraft **1.21.1** · NeoForge **21.1.257** · 54 artefactos fijados (49 mods + 5 shaderpacks) (`pin = true`).
+Minecraft **1.21.1** · NeoForge **21.1.257** · 55 artefactos fijados (50 mods + 5 shaderpacks) (`pin = true`).
 Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qué* aporta cada mod y *por qué* está en el pack.
 
 **Side**: `both` = cliente y servidor · `client` = solo cliente (el servidor no lo instala) · `server` = solo servidor.
@@ -50,6 +50,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Just Enough Items (JEI) | 19.51.0.418 | [Modrinth](https://modrinth.com/mod/jei) | both | Consulta de recetas. En el servidor habilita el traslado de recetas (botón "+"). |
 | Inventory Profiles Next | 2.2.5 | [Modrinth](https://modrinth.com/mod/inventory-profiles-next) | client | Ordenamiento de inventario y perfiles. Requiere libIPN. |
 | Crafting Tweaks | 21.1.11 | [Modrinth](https://modrinth.com/mod/crafting-tweaks) | both | Rotar, balancear y limpiar la cuadrícula de crafteo. Requiere Balm. |
+| Jade | 15.10.6 | [Modrinth](https://modrinth.com/mod/jade) | both | Muestra qué bloque o entidad estás mirando, de qué mod es, la herramienta necesaria y su estado (progreso del horno, contenido de inventarios, energía). Trae soporte para AE2, Extended AE, Waystones, GraveStone y Balm. En el servidor es opcional, pero envía datos extra (contenido de inventarios). |
 | Controlling | 19.0.5 | [Modrinth](https://modrinth.com/mod/controlling) | client | Buscador y filtro de conflictos en *Opciones → Controles*, para que cada jugador cambie atajos con facilidad. Requiere Searchables. |
 | Xaero's Minimap | 26.6.0 | [Modrinth](https://modrinth.com/mod/xaeros-minimap) | client | Minimapa (el único activo: el de FTB Chunks se desactiva desde el servidor). |
 | Just Zoom | 2.1.0 | [Modrinth](https://modrinth.com/mod/just-zoom) | client | Zoom simple (tecla **C**, rueda para acercar o alejar). Requiere Konkrete. |
@@ -118,4 +119,5 @@ Los mismos que el usuario tenía en su instancia 1.21.11, identificados en Modri
 | Ok Zoomer | Solo hay versión beta para NeoForge 1.21.1. |
 | Sophisticated Backpacks Create Integration | No se pidió; se puede añadir si se quieren mochilas en contraptions. |
 | Iris 1.8.14-beta.1 + Sodium 0.8.13 | La única Iris para Sodium 0.8 en 1.21.1 es beta y no declara rango contra Sodium 0.8.13. Se eligió la pareja estable Sodium 0.6.13 + Iris 1.8.12. |
+| WTHIT, The One Probe | Alternativas a Jade. Jade es el más usado en 1.21.1 y AE2, Waystones y GraveStone ya traen su integración. |
 | Open Parties and Claims | Alternativa a FTB Chunks con integración nativa en Xaero; el usuario prefirió FTB Chunks. |

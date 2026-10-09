@@ -26,6 +26,7 @@ Cada corrida deja un resumen JSON versionado en `docs/<nombre>.json`. Los logs c
 | Actualización in situ con `prepare-server.py` (agrega JEI, respeta la config reescrita por ModernFix) + integración corregida en mundo nuevo | rc.2 | Todo OK | `rc2-integration-2.json` |
 | Actualización in situ a rc.3 (agrega Sophisticated Backpacks/Core y GraveStone) + integración en mundo nuevo | rc.3 | Todo OK; `Done` en 28.7 s; RSS 1224 MiB; 34 JARs | `rc3-integration.json` |
 | Actualización in situ a rc.4 (agrega AE2 JEI Integration) + integración en mundo nuevo | rc.4 | Todo OK; `Done` en 29.5 s; RSS 1408 MiB; 35 JARs | `rc4-integration.json` |
+| Actualización in situ a rc.5 (agrega Jade) + integración en mundo nuevo | rc.5 | Todo OK (14 estructuras, AE2, Create a 16 RPM, Applied Create, lápida y mochila); `Done` en 23.3 s; RSS 1364 MiB; 36 JARs. Jade carga los plugins de AE2, Extended AE, Waystones, GraveStone y Balm | `rc5-integration.json` |
 
 La EULA se aceptó solo para estos servidores de prueba locales, desechables (marcados con `.vanilla-tech-test-only` y con autorización del propietario). Escuchan únicamente en `127.0.0.1`.
 
@@ -78,4 +79,4 @@ Que una estructura se genere **no prueba** que las granjas funcionen: las condic
 | Errores en el log | Solo el plugin JEI de Applied Create (falta AE2 JEI Integration, añadida en rc.4) y avisos inofensivos (narrador, realms, consulta de versiones de Xaero) |
 | Memoria (heap de 3900 MiB, el default global de Prism) | RSS de la JVM 2.7 GiB en el mundo; al sistema le quedaban 0.9 GiB; swap usada 2.2 GiB |
 
-**rc.4**: pendiente de volver a importar (P16–P18 en [known-issues.md](known-issues.md)). Siguen pendientes las pruebas en juego P5–P11 y P13–P15.
+**rc.4 y rc.5**: pendientes de importar (rc.4 no llegó a probarse en el cliente; basta con probar la versión más nueva) (P16–P18 en [known-issues.md](known-issues.md)). Siguen pendientes las pruebas en juego P5–P11 y P13–P15.

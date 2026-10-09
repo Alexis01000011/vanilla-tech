@@ -1,6 +1,6 @@
-# Matriz de compatibilidad — Vanilla Tech 0.1.0-rc.4
+# Matriz de compatibilidad — Vanilla Tech 0.1.0-rc.5
 
-Minecraft 1.21.1 · NeoForge 21.1.257 · 49 artefactos fijados.
+Minecraft 1.21.1 · NeoForge 21.1.257 · 50 artefactos fijados.
 Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `docs/test-status.toml`.
 
 **Estados**
@@ -44,6 +44,7 @@ El cliente **rc.3** arrancó en Prism y entró a un mundo nuevo (2026-10-09); lo
 | ImmediatelyFast | 1.6.14+1.21.1 | [Modrinth](https://modrinth.com/mod/immediatelyfast) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | Inventory Profiles Next | 2.2.5 | [Modrinth](https://modrinth.com/mod/inventory-profiles-next) | libIPN | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | Iris Shaders | 1.8.12-snapshot+mc1.21.1-local | [Modrinth](https://modrinth.com/mod/iris) | Sodium | client | Verified | Solo cliente; shaders apagados por defecto; probar en cliente rc.4 |
+| Jade | 15.10.6+neoforge | [Modrinth](https://modrinth.com/mod/jade) | — | both | Launch tested | Servidor rc.5 carga con plugins de AE2, Extended AE, Waystones, GraveStone y Balm; HUD pendiente en cliente |
 | Just Enough Items (JEI) | 19.51.0.418 | [Modrinth](https://modrinth.com/mod/jei) | — | both | Launch tested | Servidor carga (regla de alias 1.21 de FML); habilita traslado de recetas |
 | Just Zoom | 2.1.0 | [Modrinth](https://modrinth.com/mod/just-zoom) | Konkrete | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente; zoom en la tecla C) |
 | Konkrete | 1.9.9 | [Modrinth](https://modrinth.com/mod/konkrete) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente (biblioteca de Just Zoom)) |

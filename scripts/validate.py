@@ -28,7 +28,10 @@ def inspect(data,where,side):
  n=next((n for n in ['META-INF/neoforge.mods.toml','META-INF/mods.toml'] if n in names),None)
  if n:
   raw=z.read(n).decode();d=tomllib.loads(raw)
-  for m in d.get('mods',[]):records.append({'id':m['modId'],'version':m.get('version','?'),'jar':where,'side':side,'loader':d.get('modLoader'),'dependencies':d.get('dependencies',{}).get(m['modId'],[])})
+  # FML expands ${file.jarVersion} from the jar manifest's Implementation-Version.
+  mf=z.read('META-INF/MANIFEST.MF').decode('utf-8','replace') if 'META-INF/MANIFEST.MF' in names else ''
+  jv=next((l.split(':',1)[1].strip() for l in mf.splitlines() if l.startswith('Implementation-Version:')),None)
+  for m in d.get('mods',[]):records.append({'id':m['modId'],'version':jv if m.get('version')=='${file.jarVersion}' and jv else m.get('version','?'),'jar':where,'side':side,'loader':d.get('modLoader'),'dependencies':d.get('dependencies',{}).get(m['modId'],[])})
  for n in names:
   if n.startswith('META-INF/jarjar/') and n.endswith('.jar'):inspect(z.read(n),where+'!/'+n,side)
 for path,m in metas:
