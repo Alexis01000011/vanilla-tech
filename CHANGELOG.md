@@ -6,7 +6,14 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.1.x**: línea base (Create + AE2 + calidad de vida), sin dimensiones nuevas. Rama `release/0.1`.
 - **0.2.x**: la base + The Aether. Rama `release/0.2`.
 - **0.3.x**: + Deep Aether + Deeper and Darker. Rama `release/0.3`. **Estable actual.**
-- **0.4.0-alpha.N**: siguiente paso, en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
+- **0.4.0-alpha.N**: lote de mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones, en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
+
+## 0.4.0-alpha.1 — 2026-10-09
+- **Agregado**: Storage Drawers, Friends & Foes, Illager Invasion, It Takes a Pillage, Artifacts, Create: Connected, Create Crafts & Additions, Not Enough Animations, Fresh Animations: Player Extension (activado) con EMF, ETF y EMF Compat (NEA + Core). Bibliotecas: Puzzles Lib y Resourceful Lib.
+- **Configs**: Artifacts solo en Curios; sin Illusioner duplicado en raids (Illager Invasion).
+- **Herramientas**: `validate.py` sigue los JARs internos de `metadata.json` (`META-INF/jars/`).
+- **Probado**: servidor; las estructuras previas salen en las mismas coordenadas (`docs/0.4.0-alpha.1-integration.json`).
+- 75 artefactos (74 en el cliente, 50 en el servidor). `sha256 19594aa33244b6d899182937bceb833e62a92dae554e95bd1fa5b5507851ffd0`
 
 ## 0.3.0 — 2026-10-09 (estable)
 - **Mismo contenido que 0.3.0-alpha.1**: los archivos y overrides son idénticos; solo cambia el número de versión.

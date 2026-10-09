@@ -171,3 +171,45 @@ evidence = "Cliente 0.3.0-alpha.1 (usuario): entrada al Otherside. Servidor: dim
 [terrablender]
 status = "Launch tested"
 evidence = "Cliente 0.3.0-alpha.1 arranca. Servidor: las 18 estructuras previas salen en las mismas coordenadas que en 0.2.0-alpha.1"
+[storagedrawers]
+status = "Launch tested"
+evidence = "Servidor 0.4.0-alpha.1: cajón colocado"
+[friends-and-foes-forge]
+status = "Launch tested"
+evidence = "Servidor 0.4.0-alpha.1: botón de cobre colocado; iceologer_cabin ubicada (citadel no aparece cerca de la semilla)"
+[illager-invasion]
+status = "Launch tested"
+evidence = "Servidor 0.4.0-alpha.1: illager_fort ubicado; config sin Illusioner en raids aceptada"
+[it-takes-a-pillage-continuation]
+status = "Launch tested"
+evidence = "Servidor 0.4.0-alpha.1: bastille ubicada"
+[artifacts]
+status = "Launch tested"
+evidence = "Servidor 0.4.0-alpha.1 carga con Curios y sin compatibilidad con Accessories"
+[create-connected]
+status = "Launch tested"
+evidence = "Servidor 0.4.0-alpha.1: caja de engranajes de latón colocada"
+[createaddition]
+status = "Launch tested"
+evidence = "Servidor 0.4.0-alpha.1: motor eléctrico colocado"
+[puzzles-lib]
+status = "Launch tested"
+evidence = "Servidor 0.4.0-alpha.1 carga (Illager Invasion)"
+[resourceful-lib]
+status = "Launch tested"
+evidence = "Servidor 0.4.0-alpha.1 carga (Friends & Foes, It Takes a Pillage)"
+[not-enough-animations]
+status = "Verified"
+evidence = "Solo cliente; pendiente en Prism"
+[entity-model-features]
+status = "Verified"
+evidence = "Solo cliente; pendiente en Prism"
+[entitytexturefeatures]
+status = "Verified"
+evidence = "Solo cliente; pendiente en Prism"
+[emf-compat-core]
+status = "Verified"
+evidence = "Solo cliente; pendiente en Prism"
+[not-enough-animations-emf-compat]
+status = "Verified"
+evidence = "Solo cliente; pendiente en Prism"

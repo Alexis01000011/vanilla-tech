@@ -8,7 +8,7 @@ Todo lo de este documento son **mediciones reales sin jugadores conectados** o r
 |---|---|
 | Máquina | Laptop con AMD Ryzen 5 3500U (4 núcleos / 8 hilos) y 8 GB físicos (5.7 GiB visibles) |
 | JVM | OpenJDK 21.0.12, G1, `-Xms512m -Xmx2G`, `-XX:ActiveProcessorCount=2` (la JVM dimensiona sus hilos como si hubiera 2 núcleos, para aproximar una instancia pequeña) |
-| Servidor | NeoForge 21.1.257, 31 mods de servidor (rc.2), 34 (rc.3), 35 (rc.4), 36 (rc.5), 38 (0.2.0) y 41 (0.3.0-alpha.1), `view-distance=4`, `simulation-distance=4`, semilla `20261009` |
+| Servidor | NeoForge 21.1.257, 31 mods de servidor (rc.2), 34 (rc.3), 35 (rc.4), 36 (rc.5), 38 (0.2.0), 41 (0.3.0) y 50 (0.4.0-alpha.1), `view-distance=4`, `simulation-distance=4`, semilla `20261009` |
 | Herramientas | `scripts/test-server.py` (RSS leído de `/proc`), `spark tps/health`, log de GC (`-Xlog:gc*`) |
 
 ## Servidor: resultados
@@ -24,6 +24,7 @@ Todo lo de este documento son **mediciones reales sin jugadores conectados** o r
 | rc.5, integración (con Jade) | 23.3 s | 1364 MiB | Mundo nuevo. |
 | 0.2.0-alpha.1, integración (con The Aether) | 27.2 s | 1395 MiB | Mundo nuevo; también se generaron chunks en el Aether. |
 | 0.3.0-alpha.1, integración (+ Deep Aether, Deeper and Darker) | 57.6 s | 1487 MiB | Mundo nuevo; chunks generados en el Aether y en el Otherside. |
+| 0.4.0-alpha.1, integración (+ lote de mobs, illagers, Artifacts, Storage Drawers, addons de Create) | 39.2 s (66.4 s en la primera corrida) | 1679 MiB | Mundo nuevo. |
 
 Detalle de la prueba con pregeneración (`docs/rc2-integration.json`):
 

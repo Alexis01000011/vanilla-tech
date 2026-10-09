@@ -1,12 +1,12 @@
 name = "Vanilla Tech"
 author = "Alexis"
-version = "0.3.0"
+version = "0.4.0-alpha.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "bd101490aefdfa3379320c6137cf4236ed18829ccdf155ab8207fd87dc9a36af"
+hash = "4efdd65d8a739b99a65a99fccd4843167788086fdb3c9a48c4e919de250a9de4"
 
 [versions]
 minecraft = "1.21.1"

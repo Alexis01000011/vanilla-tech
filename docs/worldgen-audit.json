@@ -85,6 +85,12 @@
     "vanilla_structure_pieces": []
   },
   {
+    "mod": "Artifacts",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
     "mod": "Balm",
     "worldgen_paths": [],
     "vanilla_overrides": [],
@@ -115,7 +121,19 @@
     "vanilla_structure_pieces": []
   },
   {
+    "mod": "Create: Connected",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
     "mod": "Create",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
+    "mod": "Create Crafts & Additions",
     "worldgen_paths": [],
     "vanilla_overrides": [],
     "vanilla_structure_pieces": []
@@ -302,6 +320,41 @@
     "vanilla_structure_pieces": []
   },
   {
+    "mod": "Friends & Foes",
+    "worldgen_paths": [
+      "data/friendsandfoes/tags/worldgen/biome/has_badlands_mauler.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_buttercup_patch.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_crab.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_desert_mauler.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_glare.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_iceologer.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_illusioner.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_rascal.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_savanna_mauler.json",
+      "data/friendsandfoes/tags/worldgen/biome/collections/snowy.json",
+      "data/friendsandfoes/tags/worldgen/biome/collections/snowy_forest.json",
+      "data/friendsandfoes/tags/worldgen/biome/collections/snowy_mountains.json",
+      "data/friendsandfoes/tags/worldgen/biome/collections/snowy_plains.json",
+      "data/friendsandfoes/tags/worldgen/biome/collections/taigas.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_moobloom/any.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_moobloom/buttercup.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_structure/citadel.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_structure/iceologer_cabin.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_structure/illusioner_shack.json",
+      "data/friendsandfoes/tags/worldgen/biome/has_structure/illusioner_training_grounds.json",
+      "data/friendsandfoes/worldgen/structure/citadel.json",
+      "data/friendsandfoes/worldgen/structure/iceologer_cabin.json",
+      "data/friendsandfoes/worldgen/structure/illusioner_shack.json",
+      "data/friendsandfoes/worldgen/structure/illusioner_training_grounds.json",
+      "data/friendsandfoes/worldgen/structure_set/citadel.json",
+      "data/friendsandfoes/worldgen/structure_set/iceologer_cabin.json",
+      "data/friendsandfoes/worldgen/structure_set/illusioner_shack.json",
+      "data/friendsandfoes/worldgen/structure_set/illusioner_training_grounds.json"
+    ],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
     "mod": "FTB Chunks (NeoForge)",
     "worldgen_paths": [],
     "vanilla_overrides": [],
@@ -336,6 +389,55 @@
     "worldgen_paths": [],
     "vanilla_overrides": [],
     "vanilla_structure_pieces": []
+  },
+  {
+    "mod": "Illager Invasion",
+    "worldgen_paths": [
+      "data/illagerinvasion/tags/worldgen/biome/has_structure/firecaller_hut.json",
+      "data/illagerinvasion/tags/worldgen/biome/has_structure/illager_fort.json",
+      "data/illagerinvasion/tags/worldgen/biome/has_structure/illusioner_tower.json",
+      "data/illagerinvasion/tags/worldgen/biome/has_structure/labyrinth.json",
+      "data/illagerinvasion/tags/worldgen/biome/has_structure/sorcerer_hut.json",
+      "data/illagerinvasion/worldgen/structure/firecaller_hut.json",
+      "data/illagerinvasion/worldgen/structure/illager_fort.json",
+      "data/illagerinvasion/worldgen/structure/illusioner_tower.json",
+      "data/illagerinvasion/worldgen/structure/labyrinth.json",
+      "data/illagerinvasion/worldgen/structure/sorcerer_hut.json",
+      "data/illagerinvasion/worldgen/structure_set/firecaller_hut.json",
+      "data/illagerinvasion/worldgen/structure_set/illager_fort.json",
+      "data/illagerinvasion/worldgen/structure_set/illusioner_tower.json",
+      "data/illagerinvasion/worldgen/structure_set/labyrinth.json",
+      "data/illagerinvasion/worldgen/structure_set/sorcerer_hut.json"
+    ],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": [
+      "data/minecraft/structure/woodland_mansion/1x2_a4.nbt",
+      "data/minecraft/structure/woodland_mansion/1x2_a9.nbt",
+      "data/minecraft/structure/woodland_mansion/1x2_b3.nbt",
+      "data/minecraft/structure/woodland_mansion/1x2_c1.nbt",
+      "data/minecraft/structure/woodland_mansion/1x2_c4.nbt",
+      "data/minecraft/structure/woodland_mansion/1x2_c_stairs.nbt",
+      "data/minecraft/structure/woodland_mansion/1x2_d5.nbt",
+      "data/minecraft/structure/woodland_mansion/1x2_d_stairs.nbt",
+      "data/minecraft/structure/woodland_mansion/2x2_a3.nbt",
+      "data/minecraft/structure/woodland_mansion/2x2_b1.nbt",
+      "data/minecraft/structure/woodland_mansion/2x2_b2.nbt",
+      "data/minecraft/structure/woodland_mansion/2x2_b3.nbt",
+      "data/minecraft/structure/woodland_mansion/2x2_b5.nbt"
+    ]
+  },
+  {
+    "mod": "It Takes a Pillage",
+    "worldgen_paths": [
+      "data/takesapillage/tags/worldgen/biome/has_structure/pillager_structure.json",
+      "data/takesapillage/worldgen/structure/bastille.json",
+      "data/takesapillage/worldgen/structure/pillager_camp.json",
+      "data/takesapillage/worldgen/structure_set/pillager_structure.json"
+    ],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": [
+      "data/minecraft/structure/pillager_outpost/feature_cage1.nbt"
+    ]
   },
   {
     "mod": "Jade",
@@ -374,6 +476,18 @@
     "vanilla_structure_pieces": []
   },
   {
+    "mod": "Puzzles Lib",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
+    "mod": "Resourceful Lib",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
     "mod": "Sophisticated Backpacks",
     "worldgen_paths": [],
     "vanilla_overrides": [],
@@ -387,6 +501,12 @@
   },
   {
     "mod": "spark",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
+    "mod": "Storage Drawers",
     "worldgen_paths": [],
     "vanilla_overrides": [],
     "vanilla_structure_pieces": []

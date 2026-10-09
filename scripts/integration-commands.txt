@@ -18,6 +18,11 @@ execute in minecraft:the_end run locate structure minecraft:end_city
 execute in minecraft:overworld run locate structure explorify:ruins
 execute in minecraft:overworld run locate structure explorify:tavern
 execute in minecraft:overworld run locate structure explorify:farmstead
+## Illager and mob mods (0.4.x): their overworld structures generate
+execute in minecraft:overworld run locate structure illagerinvasion:illager_fort
+execute in minecraft:overworld run locate structure takesapillage:bastille
+execute in minecraft:overworld run locate structure friendsandfoes:iceologer_cabin
+execute in minecraft:overworld run locate structure friendsandfoes:citadel
 ## The Aether (0.2.x): dimension loads and its dungeons generate
 execute in aether:the_aether run locate structure aether:bronze_dungeon
 execute in aether:the_aether run locate structure aether:silver_dungeon
@@ -53,6 +58,10 @@ setblock 12 100 0 excessive_utilities:furnace_generator
 setblock 14 100 0 gravestone:gravestone
 setblock 16 100 0 sophisticatedbackpacks:backpack
 setblock 18 100 0 aether:freezer
+setblock 22 100 0 storagedrawers:oak_full_drawers_1
+setblock 24 100 0 createaddition:electric_motor
+setblock 26 100 0 create_connected:brass_gearbox
+setblock 28 100 0 friendsandfoes:copper_button
 #sleep 15
 execute if block 1 100 0 ae2:controller[state=online] run say VT_AE2_CONTROLLER_ONLINE
 data get block 6 100 0 Speed
@@ -62,6 +71,10 @@ execute if block 14 100 0 gravestone:gravestone run say VT_GRAVESTONE_PLACED
 execute if block 16 100 0 sophisticatedbackpacks:backpack run say VT_BACKPACK_PLACED
 execute in aether:the_aether if block 0 100 0 aether:holystone run say VT_AETHER_DIMENSION_LOADED
 execute if block 18 100 0 aether:freezer run say VT_AETHER_FREEZER_PLACED
+execute if block 22 100 0 storagedrawers:oak_full_drawers_1 run say VT_DRAWER_PLACED
+execute if block 24 100 0 createaddition:electric_motor run say VT_CREATEADDITION_PLACED
+execute if block 26 100 0 create_connected:brass_gearbox run say VT_CREATECONNECTED_PLACED
+execute if block 28 100 0 friendsandfoes:copper_button run say VT_FRIENDSANDFOES_PLACED
 execute in deeperdarker:otherside if block 0 100 0 deeperdarker:sculk_stone run say VT_OTHERSIDE_DIMENSION_LOADED
 spark tps
 save-all flush

@@ -32,8 +32,10 @@ def inspect(data,where,side):
   mf=z.read('META-INF/MANIFEST.MF').decode('utf-8','replace') if 'META-INF/MANIFEST.MF' in names else ''
   jv=next((l.split(':',1)[1].strip() for l in mf.splitlines() if l.startswith('Implementation-Version:')),None)
   for m in d.get('mods',[]):records.append({'id':m['modId'],'version':jv if m.get('version')=='${file.jarVersion}' and jv else m.get('version','?'),'jar':where,'side':side,'loader':d.get('modLoader'),'dependencies':d.get('dependencies',{}).get(m['modId'],[])})
- for n in names:
-  if n.startswith('META-INF/jarjar/') and n.endswith('.jar'):inspect(z.read(n),where+'!/'+n,side)
+ # JarJar lists nested jars in metadata.json; some mods keep them under META-INF/jars/ instead of META-INF/jarjar/.
+ nested={n for n in names if n.startswith('META-INF/jarjar/') and n.endswith('.jar')}
+ if 'META-INF/jarjar/metadata.json' in names:nested|={j['path'] for j in json.loads(z.read('META-INF/jarjar/metadata.json'))['jars'] if j['path'] in names}
+ for n in sorted(nested):inspect(z.read(n),where+'!/'+n,side)
 for path,m in metas:
  jar=ROOT/'.cache/artifacts'/m['filename']
  if not jar.exists():raise SystemExit('Run fetch-artifacts.py before JAR validation: '+str(jar))

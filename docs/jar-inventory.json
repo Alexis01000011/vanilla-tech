@@ -130,29 +130,6 @@
     ]
   },
   {
-    "id": "cumulus_menus",
-    "version": "2.0.7",
-    "jar": "aether-1.21.1-1.5.10-neoforge.jar!/META-INF/jarjar/cumulus_menus-1.21.1-2.0.7-neoforge.jar",
-    "side": "both",
-    "loader": "javafml",
-    "dependencies": [
-      {
-        "modId": "neoforge",
-        "type": "required",
-        "versionRange": "[21.1.47,)",
-        "ordering": "NONE",
-        "side": "BOTH"
-      },
-      {
-        "modId": "minecraft",
-        "type": "required",
-        "versionRange": "[1.21.1,1.21.2)",
-        "ordering": "NONE",
-        "side": "BOTH"
-      }
-    ]
-  },
-  {
     "id": "accessories",
     "version": "1.1.0-beta.48+1.21.1",
     "jar": "aether-1.21.1-1.5.10-neoforge.jar!/META-INF/jarjar/accessories-neoforge-1.1.0-beta.48+1.21.1.jar",
@@ -177,6 +154,29 @@
         "modId": "owo",
         "required": true,
         "versionRange": "[0.12.15.0+1.21,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "cumulus_menus",
+    "version": "2.0.7",
+    "jar": "aether-1.21.1-1.5.10-neoforge.jar!/META-INF/jarjar/cumulus_menus-1.21.1-2.0.7-neoforge.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.47,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.21.2)",
         "ordering": "NONE",
         "side": "BOTH"
       }
@@ -384,6 +384,52 @@
     ]
   },
   {
+    "id": "artifacts",
+    "version": "13.2.5",
+    "jar": "artifacts-neoforge-13.2.5.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.0.133-beta,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "1.21.1",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "expandability",
+    "version": "12.0.0",
+    "jar": "artifacts-neoforge-13.2.5.jar!/META-INF/jars/expandability-neoforge-12.0.0.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[20,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.20.6,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "balm",
     "version": "21.0.66",
     "jar": "balm-neoforge-1.21.1-21.0.66.jar",
@@ -559,6 +605,59 @@
     ]
   },
   {
+    "id": "create_connected",
+    "version": "1.3.3-mc1.21.1",
+    "jar": "create_connected-1.3.3-mc1.21.1.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "mandatory": true,
+        "versionRange": "[21.1.200,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "mandatory": true,
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "create",
+        "mandatory": true,
+        "versionRange": "[6.0.10,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "sablecompanion",
+    "version": "1.6.0",
+    "jar": "create_connected-1.3.3-mc1.21.1.jar!/META-INF/jarjar/sable-companion-common-1.21.1-1.6.0.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.80,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "create",
     "version": "6.0.10",
     "jar": "create-1.21.1-6.0.10.jar",
@@ -705,6 +804,77 @@
     ]
   },
   {
+    "id": "createaddition",
+    "version": "1.6.0",
+    "jar": "createaddition-1.6.0.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.219,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "create",
+        "type": "required",
+        "versionRange": "[6.0.7,6.1.0)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "jei",
+        "type": "optional",
+        "versionRange": "[15.0.0.0,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "computercraft",
+        "type": "optional",
+        "versionRange": "[0,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "simulated",
+        "type": "optional",
+        "ordering": "AFTER"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE"
+      }
+    ]
+  },
+  {
+    "id": "sablecompanion",
+    "version": "1.6.0",
+    "jar": "createaddition-1.6.0.jar!/META-INF/jarjar/sable-companion-common-1.21.1-1.6.0.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.80,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "curios",
     "version": "9.5.1+1.21.1",
     "jar": "curios-neoforge-9.5.1+1.21.1.jar",
@@ -788,6 +958,22 @@
     ]
   },
   {
+    "id": "terrablender",
+    "version": "4.1.0.3",
+    "jar": "deep_aether-1.21.1-1.1.5.1.jar!/META-INF/jarjar/TerraBlender-neoforge-1.21.1-4.1.0.3.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "required": true,
+        "versionRange": "[20.4,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "aeroblender",
     "version": "1.0.0",
     "jar": "deep_aether-1.21.1-1.1.5.1.jar!/META-INF/jarjar/aeroblender-1.21.1-1.0.0-neoforge.jar",
@@ -819,22 +1005,6 @@
         "modId": "aether",
         "type": "required",
         "versionRange": "1.21.1-1.5.0-neoforge,)",
-        "ordering": "NONE",
-        "side": "BOTH"
-      }
-    ]
-  },
-  {
-    "id": "terrablender",
-    "version": "4.1.0.3",
-    "jar": "deep_aether-1.21.1-1.1.5.1.jar!/META-INF/jarjar/TerraBlender-neoforge-1.21.1-4.1.0.3.jar",
-    "side": "both",
-    "loader": "javafml",
-    "dependencies": [
-      {
-        "modId": "neoforge",
-        "required": true,
-        "versionRange": "[20.4,)",
         "ordering": "NONE",
         "side": "BOTH"
       }
@@ -880,6 +1050,66 @@
     ]
   },
   {
+    "id": "emf_compat_core",
+    "version": "2.3.0",
+    "jar": "emf_compat_core_neoforge_1.21.1_2.3.0.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "entity_model_features",
+        "type": "required",
+        "versionRange": "[3.3.2,)",
+        "ordering": "AFTER",
+        "side": "CLIENT"
+      }
+    ]
+  },
+  {
+    "id": "entity_model_features",
+    "version": "3.3.11",
+    "jar": "entity_model_features-3.3.11-1.21-neoforge.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "mandatory": true,
+        "versionRange": "[1,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "minecraft",
+        "mandatory": true,
+        "versionRange": "[1,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "entity_texture_features",
+        "mandatory": true,
+        "versionRange": "[7.2.0,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      }
+    ]
+  },
+  {
     "id": "entityculling",
     "version": "1.11.3",
     "jar": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
@@ -899,6 +1129,68 @@
         "versionRange": "[20.2,)",
         "ordering": "NONE",
         "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "transition",
+    "version": "1.0.26",
+    "jar": "entityculling-neoforge-1.11.3-mc1.21.1.jar!/META-INF/jars/TRansition-1.0.26-1.21.1-neoforge-SNAPSHOT.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[20.2,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "trender",
+    "version": "1.0.17",
+    "jar": "entityculling-neoforge-1.11.3-mc1.21.1.jar!/META-INF/jars/TRender-1.0.17-1.21.1-neoforge-SNAPSHOT.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[20.2,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "entity_texture_features",
+    "version": "7.2.5",
+    "jar": "entity_texture_features-7.2.5-1.21-neoforge.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "mandatory": true,
+        "versionRange": "[1,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
       }
     ]
   },
@@ -1069,6 +1361,53 @@
         "versionRange": "[1.21.1,1.22)",
         "ordering": "NONE",
         "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "friendsandfoes",
+    "version": "4.0.27",
+    "jar": "friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "yet_another_config_lib_v3",
+        "type": "optional",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH",
+        "mc-publish": {
+          "ignore": false,
+          "modrinth": "yacl",
+          "curseforge": "yacl"
+        }
+      },
+      {
+        "modId": "resourcefullib",
+        "type": "required",
+        "versionRange": "[3.0.12,)",
+        "ordering": "NONE",
+        "side": "BOTH",
+        "mc-publish": {
+          "ignore": false,
+          "modrinth": "resourceful-lib",
+          "curseforge": "resourceful-lib"
+        }
       }
     ]
   },
@@ -1290,6 +1629,72 @@
     ]
   },
   {
+    "id": "illagerinvasion",
+    "version": "21.1.6",
+    "jar": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "mandatory": true,
+        "type": "required",
+        "versionRange": "[21.1.21,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "mandatory": true,
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "puzzleslib",
+        "mandatory": true,
+        "type": "required",
+        "versionRange": "[21.1.7,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "extensibleenums",
+        "mandatory": true,
+        "type": "required",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "extensibleenums",
+    "version": "21.1.1",
+    "jar": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar!/META-INF/jars/extensibleenums-neoforge-21.1.1.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "mandatory": true,
+        "type": "required",
+        "versionRange": "[21.1.21,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "mandatory": true,
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "immediatelyfast",
     "version": "1.6.14+1.21.1",
     "jar": "ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar",
@@ -1471,6 +1876,53 @@
     ]
   },
   {
+    "id": "takesapillage",
+    "version": "1.0.13",
+    "jar": "takesapillage-neoforge-1.0.13+mc1.21.1.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "yet_another_config_lib_v3",
+        "type": "optional",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH",
+        "mc-publish": {
+          "ignore": false,
+          "modrinth": "yacl",
+          "curseforge": "yacl"
+        }
+      },
+      {
+        "modId": "resourcefullib",
+        "type": "required",
+        "versionRange": "[3.0.12,)",
+        "ordering": "NONE",
+        "side": "BOTH",
+        "mc-publish": {
+          "ignore": false,
+          "modrinth": "resourceful-lib",
+          "curseforge": "resourceful-lib"
+        }
+      }
+    ]
+  },
+  {
     "id": "jade",
     "version": "15.10.6+neoforge",
     "jar": "Jade-1.21.1-NeoForge-15.10.6.jar",
@@ -1645,6 +2097,119 @@
     ]
   },
   {
+    "id": "emf_compat_not_enough_animations",
+    "version": "1.2.1",
+    "jar": "emf_compat_not_enough_animations_neoforge_1.21.1_1.2.1.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "notenoughanimations",
+        "type": "required",
+        "versionRange": "[1.8,)",
+        "ordering": "AFTER",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "emf_compat_core",
+        "type": "required",
+        "versionRange": "[2.3.0,)",
+        "ordering": "AFTER",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "entity_model_features",
+        "type": "required",
+        "versionRange": "[3.2.4,)",
+        "ordering": "AFTER",
+        "side": "CLIENT"
+      }
+    ]
+  },
+  {
+    "id": "notenoughanimations",
+    "version": "1.12.6",
+    "jar": "notenoughanimations-neoforge-1.12.6-mc1.21.1.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[20.2,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "transition",
+    "version": "1.0.25",
+    "jar": "notenoughanimations-neoforge-1.12.6-mc1.21.1.jar!/META-INF/jars/TRansition-1.0.25-1.21.1-neoforge-SNAPSHOT.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[20.2,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "trender",
+    "version": "1.0.17",
+    "jar": "notenoughanimations-neoforge-1.12.6-mc1.21.1.jar!/META-INF/jars/TRender-1.0.17-1.21.1-neoforge-SNAPSHOT.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[20.2,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "owo",
     "version": "0.12.15.5-beta.1+1.21",
     "jar": "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
@@ -1661,6 +2226,75 @@
       {
         "modId": "minecraft",
         "required": true,
+        "versionRange": "[1.21,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "fabric_api_base",
+    "version": "0.4.42+d1308dedd1",
+    "jar": "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar!/META-INF/jars/fabric-api-base-0.4.42+d1308dedd1.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.0.133-beta,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "puzzleslib",
+    "version": "21.1.63",
+    "jar": "puzzleslib-v21.1.63-mc1.21.1+neoforge.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "mandatory": true,
+        "type": "REQUIRED",
+        "versionRange": "[1.21.1,1.21.2)",
+        "referralUrl": "https://www.minecraft.net/"
+      },
+      {
+        "modId": "neoforge",
+        "mandatory": true,
+        "type": "REQUIRED",
+        "versionRange": "[21.1.21,)",
+        "referralUrl": "https://neoforged.net/"
+      }
+    ]
+  },
+  {
+    "id": "resourcefullib",
+    "version": "3.0.12",
+    "jar": "resourcefullib-neoforge-1.21-3.0.12.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.0.0-beta,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
         "versionRange": "[1.21,)",
         "ordering": "NONE",
         "side": "BOTH"
@@ -1745,9 +2379,9 @@
     ]
   },
   {
-    "id": "fabric_rendering_data_attachment_v1",
-    "version": "0.3.48+73761d2e19",
-    "jar": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
+    "id": "fabric_block_view_api_v2",
+    "version": "1.0.10+9afaaf8c19",
+    "jar": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
     "side": "client",
     "loader": "javafml",
     "dependencies": [
@@ -1762,13 +2396,6 @@
         "modId": "minecraft",
         "type": "required",
         "versionRange": "[1.21.1,1.22)",
-        "ordering": "NONE",
-        "side": "BOTH"
-      },
-      {
-        "modId": "fabric_block_view_api_v2",
-        "type": "required",
-        "versionRange": "*",
         "ordering": "NONE",
         "side": "BOTH"
       }
@@ -1805,9 +2432,9 @@
     ]
   },
   {
-    "id": "fabric_block_view_api_v2",
-    "version": "1.0.10+9afaaf8c19",
-    "jar": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+    "id": "fabric_rendering_data_attachment_v1",
+    "version": "0.3.48+73761d2e19",
+    "jar": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
     "side": "client",
     "loader": "javafml",
     "dependencies": [
@@ -1822,6 +2449,13 @@
         "modId": "minecraft",
         "type": "required",
         "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "fabric_block_view_api_v2",
+        "type": "required",
+        "versionRange": "*",
         "ordering": "NONE",
         "side": "BOTH"
       }
@@ -1898,6 +2532,29 @@
         "modId": "neoforge",
         "mandatory": true,
         "versionRange": "[20,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "storagedrawers",
+    "version": "13.11.4",
+    "jar": "StorageDrawers-neoforge-1.21.1-13.11.4.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21,1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.0.0,)",
         "ordering": "NONE",
         "side": "BOTH"
       }

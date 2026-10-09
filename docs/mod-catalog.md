@@ -1,6 +1,6 @@
-# Catálogo de mods — Vanilla Tech 0.3.0
+# Catálogo de mods — Vanilla Tech 0.4.0-alpha.1
 
-Minecraft **1.21.1** · NeoForge **21.1.257** · 60 artefactos fijados (55 mods + 5 shaderpacks) (`pin = true`).
+Minecraft **1.21.1** · NeoForge **21.1.257** · 75 artefactos fijados (69 mods + 5 shaderpacks + 1 resource pack) (`pin = true`).
 Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qué* aporta cada mod y *por qué* está en el pack.
 
 **Side**: `both` = cliente y servidor · `client` = solo cliente (el servidor no lo instala) · `server` = solo servidor.
@@ -12,6 +12,8 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Create | 6.0.10 | [Modrinth](https://modrinth.com/mod/create) | both | Mecánica rotacional, contraptions y automatización. Incluye internamente Flywheel 1.0.6 y Ponder 1.0.82. |
 | Applied Energistics 2 | 19.2.18 | [Modrinth](https://modrinth.com/mod/ae2) | both | Almacenamiento digital y autocrafteo. Requiere GuideME. |
 | Applied Create | 1.1.7 | [Modrinth](https://modrinth.com/mod/applied-create) | both | Puente AE2–Create: `kinetic_energy_acceptor` (rotación → energía AE2), Pattern Providers de andesita/latón, ME Gearbox, ME Blueprint Cannon, Spatial Assembler. |
+| Create: Connected | 1.3.3 | [Modrinth](https://modrinth.com/mod/create-connected) | both | Piezas extra para Create: caja de engranajes de latón, embragues y cajas invertidas, frenos, chute de latón, catalizadores de tintado para ventiladores, Sequenced Pulse Generator, etc. Requiere Create ≥ 6.0.10. |
+| Create Crafts & Additions | 1.6.0 | [Modrinth](https://modrinth.com/mod/createaddition) | both | Electricidad FE para Create: **alternador** (rotación → FE), **motor eléctrico** (FE → rotación), cables y conectores, rolling mill, cargador y acumuladores. Une Create con la energía FE de Excessive Utilities. Se usa la 1.6.0, la última estable: la 1.7.x sigue en beta. |
 
 ## B. Addons de AE2
 
@@ -27,6 +29,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Mod | Versión | Fuente | Side | Para qué |
 |---|---|---|---|---|
 | Waystones | 21.1.46 | [Modrinth](https://modrinth.com/mod/waystones) | both | Teletransporte entre piedras activadas. Requiere Balm. |
+| Storage Drawers | 13.11.4 | [Modrinth](https://modrinth.com/mod/storagedrawers) | both | Cajones de almacenamiento masivo de un solo ítem, compactadores y controlador de cajones. Un Storage Bus de AE2 puede leerlos. Sin dependencias. |
 | Dank Storage | 20 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/dank-storage) | both | Contenedores portátiles de gran capacidad. |
 | Building Gadgets 2 | 1.3.9 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/building-gadgets) | both | Herramientas de construcción, copia/pega y destrucción por área. Funcionan con energía FE. |
 | Charging Gadgets | 1.14.1 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/charging-gadgets) | both | Estación de carga para los gadgets (con combustible o FE). |
@@ -50,6 +53,15 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | The Aether | 1.21.1-1.5.10 | [Modrinth](https://modrinth.com/mod/aether) | both | Dimensión de islas flotantes con portal de **marco de glowstone + agua**. Trae ores, mobs, 3 dungeons con jefes (bronce, plata y oro) y accesorios (guantes, anillos, colgantes, capas). No modifica el Overworld: solo agrega un tag aditivo de biomas para las ranas. Trae dentro Accessories 1.1.0-beta.48, Cumulus 2.0.7 y Nitrogen 1.1.25; requiere owo-lib. Licencia: código LGPL-3.0, assets ARR (el pack solo lo referencia, no lo redistribuye). |
 | Deep Aether | 1.21.1-1.1.5.1 | [Modrinth](https://modrinth.com/mod/deep-aether) | both | Expansión del Aether: 11 biomas nuevos (bosques de aerglow, pantano de yagroot, golden heights, sacred lands…), materiales (skyjade, stratus), mobs, el Brass Dungeon y drops extra de los jefes. Sus biomas se reparten dentro del Aether con AeroBlender (incluido en su JAR); solo agrega features y mobs a biomas del Aether. Licencia LGPL-3.0. |
 | Deeper and Darker | 1.4.1 | [Modrinth](https://modrinth.com/mod/deeperdarker) | both | Dimensión **Otherside**, a la que se llega activando el portal de reinforced deepslate de las ancient cities. Trae biomas, mobs, el Ancient Temple y equipo (Soul Elytra, Sculk Transmitter, armadura de warden). En el Overworld solo agrega **vasijas decorativas** (`ancient_vase`) a 17 piezas de muro de las ancient cities: la forma de la ciudad no cambia. No tiene dependencias. Licencia AGPL-3.0. |
+
+## D3. Mobs, illagers y aventura (línea 0.4, en pruebas)
+
+| Mod | Versión | Fuente | Side | Para qué |
+|---|---|---|---|---|
+| Friends & Foes | 4.0.27 | [Modrinth](https://modrinth.com/mod/friends-and-foes-forge) | both | Mobs del *mob vote*: copper golem, tuff golem, glare, moobloom, mauler, crab, rascal, wildfire; Iceologer e Illusioner mejorado (entran a las raids). Botones de cobre, colmenas de madera y profesión de **apicultor**. Agrega casas a las aldeas y estructuras (Citadel, Iceologer Cabin, Illusioner Shack). Requiere Resourceful Lib. Se fija la 4.0.27: la 5.0 salió hace dos días y ya tuvo dos hotfixes (uno por un crash con Curios). |
+| Illager Invasion | 21.1.6 | [Modrinth](https://modrinth.com/mod/illager-invasion) | both | Illagers nuevos: Basher, Provoker, Sorcerer, Archivist, Inquisitor, Marauder, Alchemist, Firecaller, Necromancer, Surrendered y el jefe Invoker. Estructuras: Illager Fort, Labyrinth, Illusioner Tower, cabañas de Sorcerer y Firecaller. Agrega marcadores de spawn y cofres a 13 piezas de la woodland mansion sin cambiar su forma. Requiere Puzzles Lib. |
+| It Takes a Pillage | 1.0.13 | [Modrinth](https://modrinth.com/mod/it-takes-a-pillage-continuation) | both | Archer, Skirmisher y Legioner (también en raids), Clay Golem, **asedios de pillagers** a aldeas, Bastille y Pillager Camp. En el outpost vanilla solo marca como liberable al gólem de la jaula. Requiere Resourceful Lib. |
+| Artifacts | 13.2.5 | [Modrinth](https://modrinth.com/mod/artifacts) | both | Artefactos equipables con efectos (botas, guantes, collares, cinturones…) en cofres, arqueología y campamentos con mimics. **Solo en ranuras de Curios** (`enableAccessoriesCompat = false`), para que no se equipen dos veces en Curios y en Accessories. |
 
 ## E. Inventario, recetas y navegación
 
@@ -79,6 +91,16 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | spark | 1.10.124 | [Modrinth](https://modrinth.com/mod/spark) | both | Perfilador: `/spark tps`, `/spark profiler`, `/spark health`. |
 | Chunky | 1.4.23 | [Modrinth](https://modrinth.com/mod/chunky) | server | Pregeneración controlada de chunks. |
 
+## F2. Animaciones (solo cliente)
+
+| Mod / pack | Versión | Fuente | Side | Para qué |
+|---|---|---|---|---|
+| Not Enough Animations | 1.12.6 | [Modrinth](https://modrinth.com/mod/not-enough-animations) | client | Animaciones de jugador en tercera persona: comer, beber, sostener mapas, escalar, montar, etc. Configurable en *Mods*. |
+| Fresh Animations: Player Extension | 1.1 | [Modrinth](https://modrinth.com/resourcepack/fa-player-extension) | client | Resource pack de animaciones del jugador (FreshLX), **activado por defecto** en `options.txt`. Requiere EMF y ETF. Elegido en lugar de *Fresh Moves*: Fresh Moves es beta, no se actualiza desde enero de 2025 y tiene licencia propia. |
+| Entity Model Features (EMF) | 3.3.11 | [Modrinth](https://modrinth.com/mod/entity-model-features) | client | Modelos de entidades animados por resource pack. Requiere ETF. |
+| Entity Texture Features (ETF) | 7.2.5 | [Modrinth](https://modrinth.com/mod/entitytexturefeatures) | client | Texturas de entidades por resource pack (variantes, emisivas). |
+| EMF Compat: Not Enough Animations | 1.2.1 | [Modrinth](https://modrinth.com/mod/not-enough-animations-emf-compat) | client | Evita que EMF y Not Enough Animations se peleen por la pose del jugador. Probado por su autor con Fresh Animations: Player Extension. Requiere EMF Compat: Core. |
+
 ## G. Bibliotecas (dependencias obligatorias verificadas en los JARs)
 
 | Biblioteca | Versión | Fuente | Side | Requerida por |
@@ -97,6 +119,9 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | FTB Library | 2101.1.37 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge) | both | FTB Chunks, FTB Teams (FTB JEI Extras no la declara ni la usa en su código) |
 | FTB Teams | 2101.1.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge) | both | FTB Chunks |
 | TerraBlender | 4.1.0.8 | [Modrinth](https://modrinth.com/mod/terrablender) | both | Deep Aether, que también trae la 4.1.0.3 dentro; NeoForge elige la 4.1.0.8. No registra regiones en el Overworld: las estructuras salen en las mismas coordenadas que sin él. En Modrinth, todas sus versiones para 1.21.1 están marcadas como beta. |
+| Puzzles Lib | 21.1.63 | [Modrinth](https://modrinth.com/mod/puzzles-lib) | both | Illager Invasion |
+| Resourceful Lib | 3.0.12 | [Modrinth](https://modrinth.com/mod/resourceful-lib) | both | Friends & Foes, It Takes a Pillage |
+| EMF Compat: Core | 2.3.0 | [Modrinth](https://modrinth.com/mod/emf-compat-core) | client | EMF Compat: Not Enough Animations |
 | owo-lib | 0.12.15.5-beta.1+1.21 | [Modrinth](https://modrinth.com/mod/owo-lib) | both | Accessories (que viene dentro de The Aether). Solo hay versiones beta para NeoForge; es la que exige la página de The Aether. |
 | Architectury API | 13.0.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | both | FTB Library, FTB Chunks, FTB Teams |
 
@@ -130,4 +155,8 @@ Los mismos que el usuario tenía en su instancia 1.21.11, identificados en Modri
 | Sophisticated Backpacks Create Integration | No se pidió; se puede añadir si se quieren mochilas en contraptions. |
 | Iris 1.8.14-beta.1 + Sodium 0.8.13 | La única Iris para Sodium 0.8 en 1.21.1 es beta y no declara rango contra Sodium 0.8.13. Se eligió la pareja estable Sodium 0.6.13 + Iris 1.8.12. |
 | WTHIT, The One Probe | Alternativas a Jade. Jade es el más usado en 1.21.1 y AE2, Waystones y GraveStone ya traen su integración. |
+| Fresh Moves | Beta, sin actualizar desde enero de 2025 y con licencia propia. Se usa Fresh Animations: Player Extension, que el usuario aceptó como alternativa. |
+| Friends & Foes 5.0.x | Publicada el 2026-10-07, con hotfixes el 08 y el 09 (uno por un crash con Curios). Se fija la 4.0.27 (agosto). |
+| Create Crafts & Additions 1.7.x | Marcada como beta en Modrinth. Se fija la 1.6.0, la última estable. |
+| YACL, Forge Config Screens | Opcionales: solo agregan pantallas de configuración dentro del juego a Friends & Foes, It Takes a Pillage e Illager Invasion. |
 | Open Parties and Claims | Alternativa a FTB Chunks con integración nativa en Xaero; el usuario prefirió FTB Chunks. |

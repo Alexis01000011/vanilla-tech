@@ -1,12 +1,20 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/artifacts/general.toml"
+hash = "89914268eb2411fa4b644ba77da79f558d2b1bca69810004dad1a0589596684a"
+
+[[files]]
 file = "config/excessive_utilities-server.toml"
 hash = "c773741af7d93f3f624aef7cd0cb8bfef7c604ac48a577187be1390b96803569"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
 hash = "2b05ce349f0da4ee35eeee9331046cddc41adbe9d8813bf31f53e8f7e50f5985"
+
+[[files]]
+file = "config/illagerinvasion-server.toml"
+hash = "0c06bc454067939e9ad9e801c40f787437519dcbac669d84c73833a083f37323"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
@@ -48,6 +56,11 @@ hash = "4f731604821942ffa951d7405f36b97c3c92137975938e2a2c869439981b091d"
 metafile = true
 
 [[files]]
+file = "mods/artifacts.pw.toml"
+hash = "d51212eb609a943619754d31012cf7cb3c77c349eacd1b89c7d0a0d3ba85cd59"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "f4f380a35d7071cef66b71e59dca2043917b0500fbe29efdd73d6c8e2762afc6"
 metafile = true
@@ -78,8 +91,18 @@ hash = "85c7c943a4c1ced6e89c378162ccf873218f208eadf7e63c523b1b670371d044"
 metafile = true
 
 [[files]]
+file = "mods/create-connected.pw.toml"
+hash = "f6e500911e240a3b71b57a92df3f63c09787529ca86cc6b52e80e40e68cd4de4"
+metafile = true
+
+[[files]]
 file = "mods/create.pw.toml"
 hash = "ea6fe0472a366254a2749ba72a1e42f0ba05114bfbd807a6ccafb46a53af03c1"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
+hash = "0ff66dbd8cb0ca81b25690892968bf32dc5eb96021727dde768cd6c3389f9fbd"
 metafile = true
 
 [[files]]
@@ -108,8 +131,23 @@ hash = "9a79884afb70df8a6b2e0e1a202d6917035dd302c664dae544f1050ffc305ee5"
 metafile = true
 
 [[files]]
+file = "mods/emf-compat-core.pw.toml"
+hash = "9a7f2621ca48c0805aec45b496b502ebffa390f195ff5b48a7144915408051c7"
+metafile = true
+
+[[files]]
+file = "mods/entity-model-features.pw.toml"
+hash = "7d8566f6d49e62f37220d2443c2c39da4b316ea9b42341b285931e1cfe203a73"
+metafile = true
+
+[[files]]
 file = "mods/entityculling.pw.toml"
 hash = "93794b4db8b4fd7e69ff79f0f6b8baa0b29a0578a86e23d4121db5ac80a8b6cd"
+metafile = true
+
+[[files]]
+file = "mods/entitytexturefeatures.pw.toml"
+hash = "152a0d51d4896141a91fd005eae5d3810be3879c03652791ad3755ad43384650"
 metafile = true
 
 [[files]]
@@ -130,6 +168,11 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "8c1007fe73c350fc21333aa28fce400dbc7b1fa5bbb2d7e3c9fe074e9ea7cc7c"
+metafile = true
+
+[[files]]
+file = "mods/friends-and-foes-forge.pw.toml"
+hash = "e34f1ef76c0e47cee0528b8f194f8c4810badc9f59b3128619394f680ba7e2a9"
 metafile = true
 
 [[files]]
@@ -168,6 +211,11 @@ hash = "da6c02d23fa5a00ecff17981ac05bf500d55ef0e069b632c232696c09870907b"
 metafile = true
 
 [[files]]
+file = "mods/illager-invasion.pw.toml"
+hash = "31654ac32b7d6a6784f61914335710c29be93e60fe957e7dcba80d4bdbc955ad"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "eaa5a989845e486c017eee7c2e101597e4240c5437c8fcf084cf088e50b21edf"
 metafile = true
@@ -180,6 +228,11 @@ metafile = true
 [[files]]
 file = "mods/iris.pw.toml"
 hash = "9bd7cacb2c283fa85feb10d3af39c153ff03c5041216e49eb2c419facfc6f98d"
+metafile = true
+
+[[files]]
+file = "mods/it-takes-a-pillage-continuation.pw.toml"
+hash = "e321d9325552e9c9bc8aafe279e4f2453e2d2a5db59383026de5a1c55fed8565"
 metafile = true
 
 [[files]]
@@ -223,8 +276,28 @@ hash = "f1d9d20d3d7762c313fbd165346fe908dd1ffb686eaca305a1762ec33c69157d"
 metafile = true
 
 [[files]]
+file = "mods/not-enough-animations-emf-compat.pw.toml"
+hash = "4f6fc2936365a9474d3c9c001575ce4195f9ce02028aa4a239df1ce915fad3c1"
+metafile = true
+
+[[files]]
+file = "mods/not-enough-animations.pw.toml"
+hash = "44a38a9452e61f30ba6633a10c5b66b9f374908609bb5d7b53a8c0473b394b72"
+metafile = true
+
+[[files]]
 file = "mods/owo-lib.pw.toml"
 hash = "c8213098e376ad2a3ac5748257e1b5bde3c7520b877dc199efc7c92c13fe0fe6"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "6163bb406f894e9135354da7dff4a2193766abe475442b470262a43dcc27ca76"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-lib.pw.toml"
+hash = "833cd378e86612f5d5da89db48ac408dd97d1037f7e998f9e373e36fdf2c9e74"
 metafile = true
 
 [[files]]
@@ -250,6 +323,11 @@ metafile = true
 [[files]]
 file = "mods/spark.pw.toml"
 hash = "55276157b0d0ad40200a7d6d6c356c0bac173ce788d5e6c5615bf3e70fec8105"
+metafile = true
+
+[[files]]
+file = "mods/storagedrawers.pw.toml"
+hash = "674479146d17f13ce06f084cc38108a5e4e57aeb90321ed2a99e9c10c963657e"
 metafile = true
 
 [[files]]
@@ -289,7 +367,12 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "4c572cecd032ab786726af58a775d21a69cb9b9d32eaef88c4aa8465ab0cd889"
+hash = "c221cb031ab707a16399ffeb8bab008dfcbbb0bd5c90fa43249898dfe54bcca1"
+
+[[files]]
+file = "resourcepacks/fa-player-extension.pw.toml"
+hash = "0f4f19676d3864838a8d65294fb5bb5794377af422487a89db1e6cd5bb24eff2"
+metafile = true
 
 [[files]]
 file = "shaderpacks/MakeUp-UltraFast-9.5a.zip.txt"

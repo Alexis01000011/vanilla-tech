@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-09, release **0.3.0** (estable).
+Estado a 2026-10-09, release **0.4.0-alpha.1** (estable: 0.3.0).
 
 ## Pruebas pendientes
 
@@ -28,6 +28,10 @@ Estado a 2026-10-09, release **0.3.0** (estable).
 | P21 | **Dos sistemas de accesorios**: Curios (G) y Accessories del Aether (botón en el inventario). Hay que ver dónde se puede equipar la mochila, que B la abra desde ahí y que GraveStone guarde los ítems de ambos al morir. | Sophisticated Backpacks trae integración con Curios y con Accessories; GraveStone no tiene integración específica con ninguno de los dos. |
 | P22 | **Deep Aether**: biomas nuevos al explorar el Aether, Brass Dungeon y teclas de habilidades (Stratus Dash R, Slider Slam Alt). | **Parcial (0.3.0-alpha.1)**: el usuario exploró el Aether con el contenido nuevo; todo funciona. Faltan el Brass Dungeon y las teclas de habilidades. |
 | P23 | **Deeper and Darker**: activar el portal de una ancient city, entrar al Otherside y volver; Soul Elytra con Y. | **Hecho en lo principal (0.3.0-alpha.1)**: el usuario entró al Otherside y todo funciona (log: 16:49). Falta probar la Soul Elytra con Y. |
+| P24 | **Raids con los illagers nuevos** (Friends & Foes, Illager Invasion, It Takes a Pillage): que una raid completa funcione y ver si una granja de raids vanilla los aguanta. | En el servidor solo se comprobó que cargan y se ubican sus estructuras. |
+| P25 | **Artifacts en Curios**: equipar un artefacto en Curios (G) y confirmar que no aparece en el menú de Accessories. | Config `enableAccessoriesCompat = false` instalada. |
+| P26 | **Animaciones**: Not Enough Animations + Fresh Animations: Player Extension en tercera persona (F5), con y sin shaders; medir FPS. | Solo cliente. |
+| P27 | **Storage Drawers con AE2** (Storage Bus sobre un cajón) y **Create Crafts & Additions** (alternador → FE → máquina). | En el servidor se colocan los bloques. |
 | P19 | **Jade**: el HUD muestra el bloque que se mira y la información de AE2 y Create. | Solo cliente; en el servidor ya cargan los plugins de AE2, Extended AE, Waystones, GraveStone y Balm (rc.5). |
 
 ## Problemas conocidos
@@ -61,6 +65,19 @@ Estado a 2026-10-09, release **0.3.0** (estable).
 - **Deep Aether: faltan los modelos de 4 ítems** (`magnetic_staff`, `magnetic_cog`, `sentry_alarm`, `mimic_eye`, drops de jefes); el log del cliente lo avisa con `Unable to load model`. En el juego se verán con la textura de "falta textura". Es un problema del propio mod.
 - **Aviso al arrancar `Failed to process update information`** (AeroBlender): su URL de comprobación de versiones no devuelve JSON. Es inofensivo.
 - **Quitar Aether de un mundo donde ya se usó** borra sus bloques e ítems. Ver *Versiones y ramas* en el README.
+
+### Mobs e illagers (0.4.0-alpha)
+- **Las raids cambian**. Entran Iceologer e Illusioner (Friends & Foes); Alchemist, Sorcerer, Basher, Necromancer, Inquisitor, Provoker, Archivist y Marauder (Illager Invasion); Archer, Skirmisher y Legioner (It Takes a Pillage). Una granja de raids diseñada para vanilla puede no aguantarlos. Cada mob se puede sacar de las raids por config sin quitar el mod:
+  - `config/illagerinvasion-server.toml`: `participate_in_raids` de cada mob.
+  - `config/friendsandfoes.json`: `enableIceologerInRaids`, `enableIllusionerInRaids`.
+  - `config/takesapillage.json`: `enable…InRaids`.
+- **Illusioner duplicado (corregido)**: Friends & Foes e Illager Invasion lo metían los dos en las raids. Se apagó el de Illager Invasion (`[illusioner] participate_in_raids = false`) y queda la versión mejorada de Friends & Foes.
+- **Asedios de pillagers** (`enablePillageSieges = true` en It Takes a Pillage): grupos de pillagers pueden atacar aldeas. Conviene proteger las salas de comercio y las granjas de hierro hechas en aldeas.
+- **Apicultor** (Friends & Foes): su estación es la colmena vanilla. Un aldeano sin trabajo junto a una colmena puede volverse apicultor; ojo al montar criaderos o salas de comercio cerca de granjas de miel. Se apaga con `enableBeekeeperVillagerProfession`.
+- **Estructuras vanilla tocadas sin cambiar su forma**: woodland mansion (Illager Invasion: marcadores de spawn y cofres en 13 piezas) y pillager outpost (It Takes a Pillage: el gólem de la jaula queda marcado como liberable). `worldgen-audit.py` las lista.
+- **Errores inofensivos en el log del servidor**: 16 tablas de loot `create_connected:blocks/dye_depot_*`, de la integración con Dye Depot, que no está instalado; y avisos de mixin de clases de Copycats+ y Create Simulated, integraciones opcionales.
+- **EMF Compat: Core 2.3.0 y EMF Compat: NEA 1.2.1** se publicaron el 2026-10-08 y el 2026-10-09. Son la pareja que exige el EMF actual; si fallan, la versión anterior (1.2.0 + core 1.1.x) es de antes del cambio de arquitectura de EMF Compat.
+- **El arranque del servidor tarda más**: `Done` en 39–66 s en 0.4.0-alpha.1 (dos corridas), en la máquina de prueba con 2 núcleos.
 
 ### Distribución y reproducibilidad
 - **packwiz se obtiene de un artefacto de CI de GitHub** (`nightly.link`, commit `ef87d96`), verificado por SHA-256. Ese artefacto **caduca el 2026-12-05** (según la API de GitHub); después, `scripts/bootstrap-tools.py` no podrá descargarlo en otra computadora. Alternativas:

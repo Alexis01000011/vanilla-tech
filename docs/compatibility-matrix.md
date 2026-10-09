@@ -1,6 +1,6 @@
-# Matriz de compatibilidad — Vanilla Tech 0.3.0
+# Matriz de compatibilidad — Vanilla Tech 0.4.0-alpha.1
 
-Minecraft 1.21.1 · NeoForge 21.1.257 · 55 artefactos fijados.
+Minecraft 1.21.1 · NeoForge 21.1.257 · 69 artefactos fijados.
 Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `docs/test-status.toml`.
 
 **Estados**
@@ -9,7 +9,7 @@ Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `do
 - **Gameplay tested**: funcionalidad probada por un jugador dentro del juego.
 - **Blocked**: problema abierto.
 
-El cliente **0.3.0-alpha.1** (mismos mods que 0.3.0) arrancó en Prism y entró al Aether y al Otherside (2026-10-09); las pruebas en juego siguen pendientes ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
+El cliente **0.3.0-alpha.1** (mismos mods que 0.3.0) arrancó en Prism y entró al Aether y al Otherside (2026-10-09); los mods agregados en 0.4.0-alpha.1 solo están probados en el servidor; las pruebas en juego siguen pendientes ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
 
 | Mod | Versión | Fuente | Dependencias obligatorias | Side | Estado | Evidencia |
 |---|---|---|---|---|---|---|
@@ -19,6 +19,7 @@ El cliente **0.3.0-alpha.1** (mismos mods que 0.3.0) arrancó en Prism y entró 
 | Applied Energistics 2 | 19.2.18 | [Modrinth](https://modrinth.com/mod/ae2) | GuideME | both | Launch tested | Servidor: controlador online con celda creativa |
 | Applied Energistics 2 Wireless Terminals | 19.5.1 | [Modrinth](https://modrinth.com/mod/applied-energistics-2-wireless-terminals) | Applied Energistics 2 | both | Launch tested | Servidor carga; Quantum Bridge Card y receta presentes en el JAR |
 | Architectury API | 13.0.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | — | both | Launch tested | Servidor carga |
+| Artifacts | 13.2.5 | [Modrinth](https://modrinth.com/mod/artifacts) | — | both | Launch tested | Servidor 0.4.0-alpha.1 carga con Curios y sin compatibilidad con Accessories |
 | Balm | 21.0.66 | [Modrinth](https://modrinth.com/mod/balm) | — | both | Launch tested | Servidor carga |
 | Building Gadgets | 1.3.9 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/building-gadgets) | — | both | Launch tested | Servidor carga |
 | Charging Gadgets | 1.14.1 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/charging-gadgets) | — | both | Launch tested | Servidor: estación colocada |
@@ -26,16 +27,23 @@ El cliente **0.3.0-alpha.1** (mismos mods que 0.3.0) arrancó en Prism y entró 
 | Controlling | 19.0.5 | [Modrinth](https://modrinth.com/mod/controlling) | Searchables | client | Launch tested | Cliente 0.2.0-alpha.1 arranca |
 | Crafting Tweaks | 21.1.11 | [Modrinth](https://modrinth.com/mod/crafting-tweaks) | Balm | both | Launch tested | Servidor carga |
 | Create | 6.0.10 | [Modrinth](https://modrinth.com/mod/create) | — | both | Launch tested | Servidor: red cinética, eje a 16 RPM desde motor creativo |
+| Create Crafts & Additions | 1.6.0 | [Modrinth](https://modrinth.com/mod/createaddition) | Create | both | Launch tested | Servidor 0.4.0-alpha.1: motor eléctrico colocado |
+| Create: Connected | 1.3.3-mc1.21.1 | [Modrinth](https://modrinth.com/mod/create-connected) | Create | both | Launch tested | Servidor 0.4.0-alpha.1: caja de engranajes de latón colocada |
 | Curios API | 9.5.1+1.21.1 | [Modrinth](https://modrinth.com/mod/curios) | — | both | Launch tested | Servidor carga |
 | Dank Storage | 20 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/dank-storage) | — | both | Launch tested | Servidor carga |
 | Deep Aether | 1.21.1-1.1.5.1 | [Modrinth](https://modrinth.com/mod/deep-aether) | The Aether | both | Gameplay tested | Cliente 0.3.0-alpha.1 (usuario): Aether con contenido nuevo. Servidor: brass_dungeon y aerglow_forest ubicados |
 | Deeper and Darker | 1.4.1 | [Modrinth](https://modrinth.com/mod/deeperdarker) | — | both | Gameplay tested | Cliente 0.3.0-alpha.1 (usuario): entrada al Otherside. Servidor: dimensión cargada y ancient_temple ubicado |
 | Dynamic FPS | 3.11.4 | [Modrinth](https://modrinth.com/mod/dynamic-fps) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
+| EMF Compat: Core | 2.3.0 | [Modrinth](https://modrinth.com/mod/emf-compat-core) | Entity Model Features | client | Verified | Solo cliente; pendiente en Prism |
+| EMF Compat: Not Enough Animations | 1.2.1 | [Modrinth](https://modrinth.com/mod/not-enough-animations-emf-compat) | EMF Compat: Core, Entity Model Features, Not Enough Animations | client | Verified | Solo cliente; pendiente en Prism |
 | Entity Culling | 1.11.3 | [Modrinth](https://modrinth.com/mod/entityculling) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
+| Entity Model Features | 3.3.11 | [Modrinth](https://modrinth.com/mod/entity-model-features) | Entity Texture Features | client | Verified | Solo cliente; pendiente en Prism |
+| Entity Texture Features | 7.2.5 | [Modrinth](https://modrinth.com/mod/entitytexturefeatures) | — | client | Verified | Solo cliente; pendiente en Prism |
 | Excessive Utilities | 1.10.0 | [Modrinth](https://modrinth.com/mod/excessive-utilities) | Aaron, Curios API, Kotlin for Forge | both | Launch tested | Servidor: generador colocado; quarries a 0 bloques/tick |
 | Explorify | 1.6.5 | [Modrinth](https://modrinth.com/mod/explorify) | — | both | Launch tested | Servidor: locate de ruins, tavern y farmstead |
 | Extended AE | 1.21-2.2.35-neoforge | [Modrinth](https://modrinth.com/mod/extended-ae) | Applied Energistics 2, Glodium, GuideME | both | Launch tested | Servidor carga; aviso inofensivo de loot table EMC (ProjectE ausente) |
 | FerriteCore | 7.0.3 | [Modrinth](https://modrinth.com/mod/ferrite-core) | — | both | Launch tested | Servidor carga |
+| Friends & Foes | 4.0.27 | [Modrinth](https://modrinth.com/mod/friends-and-foes-forge) | Resourceful Lib | both | Launch tested | Servidor 0.4.0-alpha.1: botón de cobre colocado; iceologer_cabin ubicada (citadel no aparece cerca de la semilla) |
 | FTB Chunks (NeoForge) | 2101.1.22 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-forge) | Architectury API, FTB Library (NeoForge), FTB Teams (NeoForge) | both | Launch tested | Servidor: config del pack cargada sin reescritura |
 | FTB JEI Extras | 21.1.7 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-jei-extras) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | FTB Library (NeoForge) | 2101.1.37 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge) | Architectury API | both | Launch tested | Servidor carga |
@@ -43,9 +51,11 @@ El cliente **0.3.0-alpha.1** (mismos mods que 0.3.0) arrancó en Prism y entró 
 | Glodium | 1.21-2.2-neoforge | [Modrinth](https://modrinth.com/mod/glodium) | — | both | Launch tested | Servidor carga |
 | GraveStone Mod | 1.21.1-1.0.40 | [Modrinth](https://modrinth.com/mod/gravestone-mod) | — | both | Launch tested | Servidor: bloque de lápida colocado |
 | GuideME | 21.1.19 | [Modrinth](https://modrinth.com/mod/guideme) | — | both | Launch tested | Servidor carga |
+| Illager Invasion | 21.1.6 | [Modrinth](https://modrinth.com/mod/illager-invasion) | Puzzles Lib | both | Launch tested | Servidor 0.4.0-alpha.1: illager_fort ubicado; config sin Illusioner en raids aceptada |
 | ImmediatelyFast | 1.6.14+1.21.1 | [Modrinth](https://modrinth.com/mod/immediatelyfast) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | Inventory Profiles Next | 2.2.5 | [Modrinth](https://modrinth.com/mod/inventory-profiles-next) | libIPN | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | Iris Shaders | 1.8.12-snapshot+mc1.21.1-local | [Modrinth](https://modrinth.com/mod/iris) | Sodium | client | Launch tested | Cliente 0.2.0-alpha.1: arranca; cambia de pipeline al entrar al Aether. Shaders sin probar |
+| It Takes a Pillage | 1.0.13 | [Modrinth](https://modrinth.com/mod/it-takes-a-pillage-continuation) | Resourceful Lib | both | Launch tested | Servidor 0.4.0-alpha.1: bastille ubicada |
 | Jade | 15.10.6+neoforge | [Modrinth](https://modrinth.com/mod/jade) | — | both | Launch tested | Servidor rc.5 carga con plugins de AE2, Extended AE, Waystones, GraveStone y Balm; cliente 0.2.0-alpha.1 arranca; HUD sin confirmar |
 | Just Enough Items (JEI) | 19.51.0.418 | [Modrinth](https://modrinth.com/mod/jei) | — | both | Launch tested | Servidor carga (regla de alias 1.21 de FML); habilita traslado de recetas |
 | Just Zoom | 2.1.0 | [Modrinth](https://modrinth.com/mod/just-zoom) | Konkrete | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente; zoom en la tecla C) |
@@ -54,12 +64,16 @@ El cliente **0.3.0-alpha.1** (mismos mods que 0.3.0) arrancó en Prism y entró 
 | libIPN | 6.6.3 | [Modrinth](https://modrinth.com/mod/libipn) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | Lithium | 0.15.4+mc1.21.1 | [Modrinth](https://modrinth.com/mod/lithium) | — | both | Launch tested | Servidor carga |
 | ModernFix | 5.27.26+mc1.21.1 | [Modrinth](https://modrinth.com/mod/modernfix) | — | both | Launch tested | Servidor carga; 2 mixins desactivados por conflicto con Lithium |
+| Not Enough Animations | 1.12.6 | [Modrinth](https://modrinth.com/mod/not-enough-animations) | — | client | Verified | Solo cliente; pendiente en Prism |
 | owo-lib | 0.12.15.5-beta.1+1.21 | [Modrinth](https://modrinth.com/mod/owo-lib) | — | both | Launch tested | Servidor alpha.1 carga (requerida por Accessories, que viene dentro de Aether) |
+| Puzzles Lib | 21.1.63 | [Modrinth](https://modrinth.com/mod/puzzles-lib) | — | both | Launch tested | Servidor 0.4.0-alpha.1 carga (Illager Invasion) |
+| Resourceful Lib | 3.0.12 | [Modrinth](https://modrinth.com/mod/resourceful-lib) | — | both | Launch tested | Servidor 0.4.0-alpha.1 carga (Friends & Foes, It Takes a Pillage) |
 | Searchables | 1.0.2 | [Modrinth](https://modrinth.com/mod/searchables) | — | client | Verified | Solo cliente (biblioteca de Controlling) |
 | Sodium | 0.6.13+mc1.21.1 | [Modrinth](https://modrinth.com/mod/sodium) | — | client | Launch tested | Cliente 0.2.0-alpha.1: arranque, mundo y Aether (bajado a 0.6.13 en rc.4 para usar Iris estable) |
 | Sophisticated Backpacks | 3.26.9 | [Modrinth](https://modrinth.com/mod/sophisticated-backpacks) | Sophisticated Core | both | Launch tested | Servidor: mochila colocada como bloque |
 | Sophisticated Core | 1.5.7 | [Modrinth](https://modrinth.com/mod/sophisticated-core) | — | both | Launch tested | Servidor carga |
 | spark | 1.10.124 | [Modrinth](https://modrinth.com/mod/spark) | — | both | Launch tested | Servidor: spark tps / health |
+| Storage Drawers | 13.11.4 | [Modrinth](https://modrinth.com/mod/storagedrawers) | — | both | Launch tested | Servidor 0.4.0-alpha.1: cajón colocado |
 | TerraBlender | 4.1.0.8 | [Modrinth](https://modrinth.com/mod/terrablender) | — | both | Launch tested | Cliente 0.3.0-alpha.1 arranca. Servidor: las 18 estructuras previas salen en las mismas coordenadas que en 0.2.0-alpha.1 |
 | The Aether | 1.5.10 | [Modrinth](https://modrinth.com/mod/aether) | — | both | Gameplay tested | Cliente 0.2.0-alpha.1 (usuario): entrada al Aether y vuelta. Servidor: dimensión y 3 dungeons + large_aercloud ubicados |
 | Waystones | 21.1.46 | [Modrinth](https://modrinth.com/mod/waystones) | Balm | both | Launch tested | Servidor: bloque colocado |
