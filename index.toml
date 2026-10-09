@@ -1,6 +1,14 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/excessive_utilities-server.toml"
+hash = "c773741af7d93f3f624aef7cd0cb8bfef7c604ac48a577187be1390b96803569"
+
+[[files]]
+file = "config/modernfix-mixins.properties"
+hash = "198cde513054d17cb57d1844eb0cba67c505a1b3f1425da6967fc8e18eb5f8f7"
+
+[[files]]
 file = "mods/aaron.pw.toml"
 hash = "b98d1d67a07b6db14512d2fe2d19c58e3cb9039c299e1a98089fa89bae1230ef"
 metafile = true
@@ -192,4 +200,4 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "47b5cbc68fef9a139e924002c79c2451bbd9e9b3be6acb36b66f530d6442991c"
+hash = "5a00da3cb9613ab3b00b725b900d2ad1cac5cb56f5990c2f0bc5bfd5007ace77"
