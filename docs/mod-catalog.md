@@ -1,6 +1,6 @@
-# Catálogo de mods — Vanilla Tech 0.1.0-rc.5
+# Catálogo de mods — Vanilla Tech 0.2.0-alpha.1
 
-Minecraft **1.21.1** · NeoForge **21.1.257** · 55 artefactos fijados (50 mods + 5 shaderpacks) (`pin = true`).
+Minecraft **1.21.1** · NeoForge **21.1.257** · 57 artefactos fijados (52 mods + 5 shaderpacks) (`pin = true`).
 Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qué* aporta cada mod y *por qué* está en el pack.
 
 **Side**: `both` = cliente y servidor · `client` = solo cliente (el servidor no lo instala) · `server` = solo servidor.
@@ -42,6 +42,12 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Explorify | 1.6.5 | [Modrinth](https://modrinth.com/mod/explorify) | both | Estructuras pequeñas estilo vanilla (ruinas, tabernas, granjas, torres de vigilancia, campamentos…). Se instala como mod; no hace falta datapack. |
 | YUNG's Extras | 1.21.1-5.1.1 | [Modrinth](https://modrinth.com/mod/yungs-extras) | both | Pequeños detalles de worldgen. |
 | YUNG's Bridges | 1.21.1-5.1.1 | [Modrinth](https://modrinth.com/mod/yungs-bridges) | both | Puentes sobre ríos. |
+
+## D2. Dimensiones (línea 0.2, en pruebas)
+
+| Mod | Versión | Fuente | Side | Para qué |
+|---|---|---|---|---|
+| The Aether | 1.21.1-1.5.10 | [Modrinth](https://modrinth.com/mod/aether) | both | Dimensión de islas flotantes con portal de **marco de glowstone + agua**. Trae ores, mobs, 3 dungeons con jefes (bronce, plata y oro) y accesorios (guantes, anillos, colgantes, capas). No modifica el Overworld: solo agrega un tag aditivo de biomas para las ranas. Trae dentro Accessories 1.1.0-beta.48, Cumulus 2.0.7 y Nitrogen 1.1.25; requiere owo-lib. Licencia: código LGPL-3.0, assets ARR (el pack solo lo referencia, no lo redistribuye). |
 
 ## E. Inventario, recetas y navegación
 
@@ -88,6 +94,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | YUNG's API | 1.21.1-5.1.9 | [Modrinth](https://modrinth.com/mod/yungs-api) | both | YUNG's Extras, YUNG's Bridges |
 | FTB Library | 2101.1.37 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge) | both | FTB Chunks, FTB Teams (FTB JEI Extras no la declara ni la usa en su código) |
 | FTB Teams | 2101.1.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge) | both | FTB Chunks |
+| owo-lib | 0.12.15.5-beta.1+1.21 | [Modrinth](https://modrinth.com/mod/owo-lib) | both | Accessories (que viene dentro de The Aether). Solo hay versiones beta para NeoForge; es la que exige la página de The Aether. |
 | Architectury API | 13.0.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | both | FTB Library, FTB Chunks, FTB Teams |
 
 ## H. Shaderpacks (solo cliente, apagados por defecto)

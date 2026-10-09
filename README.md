@@ -4,15 +4,15 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 
 | | |
 |---|---|
-| Versión del pack | **0.1.0-rc.5** (línea base sin dimensiones nuevas; ver [Versiones](#versiones-y-ramas)) |
+| Versión del pack | **0.2.0-alpha.1** (pruebas de dimensiones: The Aether). Línea base estable: **0.1.0-rc.5**. Ver [Versiones](#versiones-y-ramas) |
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
 | Launcher | Prism Launcher (`.mrpack`) |
-| Mods | 55 artefactos fijados (50 mods + 5 shaderpacks): 54 en el cliente, 36 en el servidor |
-| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente rc.3 probado en Prism (arranque y mundo nuevo); los cambios de rc.4 y rc.5 están pendientes de probar en el cliente. |
+| Mods | 57 artefactos fijados (52 mods + 5 shaderpacks): 56 en el cliente, 38 en el servidor |
+| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente rc.3 probado en Prism (arranque y mundo nuevo); los cambios de rc.4 en adelante (incluido The Aether) están pendientes de probar en el cliente. |
 
-Contenido principal: Create · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · Explorify + YUNG's Extras/Bridges · JEI · Jade · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Just Zoom · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
+Contenido principal: Create · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · **The Aether** (alpha) · Explorify + YUNG's Extras/Bridges · JEI · Jade · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Just Zoom · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
 La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/mod-catalog.md).
 
 ## Documentación
@@ -33,7 +33,7 @@ La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/
 ```
 vanilla-tech/
 ├── pack.toml, index.toml     # proyecto packwiz (fuente de verdad)
-├── mods/*.pw.toml            # 50 metafiles con versión, URL y hash fijados (sin JARs)
+├── mods/*.pw.toml            # 52 metafiles con versión, URL y hash fijados (sin JARs)
 ├── shaderpacks/              # 5 metafiles de shaders (Modrinth) + ajustes .txt → client-overrides/
 ├── config/                   # configs del pack (EU, ModernFix, FTB Chunks) → overrides/
 ├── options.txt               # opciones y atajos de cliente → client-overrides/
@@ -52,7 +52,7 @@ Requisitos: Linux x86-64, git, Python ≥ 3.11, **JDK 21 completo** (con `javac`
 ```bash
 git clone <este-repo> vanilla-tech && cd vanilla-tech
 bash scripts/build.sh    # descarga packwiz verificado, refresca el índice, exporta y empaqueta
-bash scripts/check.sh    # descarga los 55 artefactos a .cache y valida todo; regenera la matriz
+bash scripts/check.sh    # descarga los 57 artefactos a .cache y valida todo; regenera la matriz
 ```
 El resultado queda en `releases/vanilla-tech-<versión>.mrpack` (+ `.sha256`). El empaquetado es determinista: mismas entradas, mismo archivo.
 
@@ -66,7 +66,7 @@ El resultado queda en `releases/vanilla-tech-<versión>.mrpack` (+ `.sha256`). E
 | `scripts/check.sh` | `fetch-artifacts.py`, `validate.py`, `check-ranges.py`, `worldgen-audit.py` y `gen-matrix.py`. |
 | `scripts/prepare-server.sh` | Instala o actualiza un servidor desde la release (`--directory`, `--heap 3G…10G`, `--replace-configs`). Idempotente. Nunca acepta la EULA. |
 | `scripts/test-server.sh` | Arranque acotado en `127.0.0.1:25575` sobre un directorio marcado con `.vanilla-tech-test-only`. Envía comandos de un archivo (`#sleep`, `#wait REGEX`) y guarda `docs/<name>.json`. |
-| `scripts/integration-commands.txt` | Prueba de integración: estructuras vanilla y de Explorify, AE2, Create, Applied Create y colocación de bloques de los demás mods. |
+| `scripts/integration-commands.txt` | Prueba de integración: estructuras vanilla, de Explorify y de The Aether, dimensión del Aether, AE2, Create, Applied Create y colocación de bloques de los demás mods. |
 | `scripts/pregen-commands.txt` | Benchmark de pregeneración con Chunky. |
 | `scripts/research.py` | Vuelve a consultar Modrinth para ver versiones nuevas (no modifica el pack). |
 

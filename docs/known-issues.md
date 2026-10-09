@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-09, release **0.1.0-rc.5**.
+Estado a 2026-10-09, release **0.2.0-alpha.1** (línea base: 0.1.0-rc.5).
 
 ## Pruebas pendientes
 
@@ -24,6 +24,8 @@ Estado a 2026-10-09, release **0.1.0-rc.5**.
 | P16 | **Cliente rc.4**: Sodium 0.6.13 (bajado desde 0.8.13), Iris 1.8.12, Controlling y AE2 JEI Integration. | Requiere volver a importar en Prism. |
 | P17 | **Shaders**: activar MakeUp/Miniature con K, comprobar FPS y que Create (contraptions) se vea bien. | Opcional; en la iGPU puede no ser jugable con los pesados. |
 | P18 | **JEI ↔ AE2**: botón "+" en la terminal de codificación de patrones y sin el error del plugin JEI de Applied Create en el log. | Lo debe arreglar AE2 JEI Integration (rc.4). |
+| P20 | **The Aether en el cliente**: portal (marco de glowstone + agua), entrar y volver, cielo y nubes con Sodium, Iris y shaders; dungeons y jefes; botón de accesorios del inventario. | El servidor ya carga la dimensión y ubica los 3 dungeons (alpha.1). |
+| P21 | **Dos sistemas de accesorios**: Curios (G) y Accessories del Aether (botón en el inventario). Hay que ver dónde se puede equipar la mochila, que B la abra desde ahí y que GraveStone guarde los ítems de ambos al morir. | Sophisticated Backpacks trae integración con Curios y con Accessories; GraveStone no tiene integración específica con ninguno de los dos. |
 | P19 | **Jade**: el HUD muestra el bloque que se mira y la información de AE2 y Create. | Solo cliente; en el servidor ya cargan los plugins de AE2, Extended AE, Waystones, GraveStone y Balm (rc.5). |
 
 ## Problemas conocidos
@@ -46,6 +48,13 @@ Estado a 2026-10-09, release **0.1.0-rc.5**.
 - **Errores inofensivos en el log del cliente**: `Error while loading the narrator` (no hay narrador en Linux), `Couldn't connect to realms` y `Online mod data expired` de Xaero (consulta de versiones en línea).
 - **Prism usa por defecto su memoria global** (3900 MiB en esta máquina) si la instancia no marca *Memory*. El `.mrpack` no puede fijar la memoria; hay que hacerlo en la instancia.
 - **Iris con Sodium 0.6.13**: se bajó Sodium para usar la Iris estable. Si en el futuro sale una Iris estable para Sodium 0.8 en 1.21.1, se puede volver a subir los dos juntos.
+
+### The Aether (0.2.0-alpha)
+- **Dos sistemas de accesorios**. The Aether 1.21.1 usa *Accessories* y el resto del pack usa *Curios*. Funcionan por separado: las pantallas son distintas y las ranuras no se comparten. Existe una capa de compatibilidad (cclayer) que reemplaza a Curios, pero no se usa: cambiaría la base 0.1 y también es beta.
+- **owo-lib solo tiene versiones beta para NeoForge**, y Accessories, dentro de Aether, es 1.1.0-beta.48. Es la combinación que publica el equipo de The Aether.
+- **Diseño de Aether**: en esa dimensión, las herramientas que no son del Aether minan más lento (`Debuff non-Aether tools = true`) y las camas explotan solo si se activa esa opción (por defecto no). Se dejaron los valores por defecto del mod.
+- **Avisos `Reference map ... could not be read`** de Aether, Accessories, Cumulus y Nitrogen al arrancar: son normales en NeoForge y no indican un problema.
+- **Quitar Aether de un mundo donde ya se usó** borra sus bloques e ítems. Ver *Versiones y ramas* en el README.
 
 ### Distribución y reproducibilidad
 - **packwiz se obtiene de un artefacto de CI de GitHub** (`nightly.link`, commit `ef87d96`), verificado por SHA-256. Ese artefacto **caduca el 2026-12-05** (según la API de GitHub); después, `scripts/bootstrap-tools.py` no podrá descargarlo en otra computadora. Alternativas:

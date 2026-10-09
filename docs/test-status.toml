@@ -156,3 +156,9 @@ evidence = "Servidor rc.4 carga; en cliente debe arreglar el plugin JEI de Appli
 [jade]
 status = "Launch tested"
 evidence = "Servidor rc.5 carga con plugins de AE2, Extended AE, Waystones, GraveStone y Balm; HUD pendiente en cliente"
+[aether]
+status = "Launch tested"
+evidence = "Servidor alpha.1: dimensión cargada, bronze/silver/gold dungeon y large_aercloud ubicados, Freezer colocado"
+[owo-lib]
+status = "Launch tested"
+evidence = "Servidor alpha.1 carga (requerida por Accessories, que viene dentro de Aether)"

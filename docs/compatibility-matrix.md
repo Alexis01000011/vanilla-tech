@@ -1,6 +1,6 @@
-# Matriz de compatibilidad — Vanilla Tech 0.1.0-rc.5
+# Matriz de compatibilidad — Vanilla Tech 0.2.0-alpha.1
 
-Minecraft 1.21.1 · NeoForge 21.1.257 · 50 artefactos fijados.
+Minecraft 1.21.1 · NeoForge 21.1.257 · 52 artefactos fijados.
 Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `docs/test-status.toml`.
 
 **Estados**
@@ -9,7 +9,7 @@ Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `do
 - **Gameplay tested**: funcionalidad probada por un jugador dentro del juego.
 - **Blocked**: problema abierto.
 
-El cliente **rc.3** arrancó en Prism y entró a un mundo nuevo (2026-10-09); los mods nuevos o cambiados en rc.4 siguen pendientes de esa prueba ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
+El cliente **rc.3** arrancó en Prism y entró a un mundo nuevo (2026-10-09); los mods nuevos o cambiados desde rc.4 (incluido The Aether) siguen pendientes de esa prueba ([known-issues.md](known-issues.md)). Las dependencias se leen de `META-INF/neoforge.mods.toml` en cada JAR, sin contar las bibliotecas que el propio JAR trae embebidas (jar-in-jar).
 
 | Mod | Versión | Fuente | Dependencias obligatorias | Side | Estado | Evidencia |
 |---|---|---|---|---|---|---|
@@ -52,11 +52,13 @@ El cliente **rc.3** arrancó en Prism y entró a un mundo nuevo (2026-10-09); lo
 | libIPN | 6.6.3 | [Modrinth](https://modrinth.com/mod/libipn) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | Lithium | 0.15.4+mc1.21.1 | [Modrinth](https://modrinth.com/mod/lithium) | — | both | Launch tested | Servidor carga |
 | ModernFix | 5.27.26+mc1.21.1 | [Modrinth](https://modrinth.com/mod/modernfix) | — | both | Launch tested | Servidor carga; 2 mixins desactivados por conflicto con Lithium |
+| owo-lib | 0.12.15.5-beta.1+1.21 | [Modrinth](https://modrinth.com/mod/owo-lib) | — | both | Launch tested | Servidor alpha.1 carga (requerida por Accessories, que viene dentro de Aether) |
 | Searchables | 1.0.2 | [Modrinth](https://modrinth.com/mod/searchables) | — | client | Verified | Solo cliente (biblioteca de Controlling) |
 | Sodium | 0.6.13+mc1.21.1 | [Modrinth](https://modrinth.com/mod/sodium) | — | client | Verified | Solo cliente; bajado de 0.8.13 a 0.6.13 en rc.4 para usar Iris estable; probar en cliente rc.4 |
 | Sophisticated Backpacks | 3.26.9 | [Modrinth](https://modrinth.com/mod/sophisticated-backpacks) | Sophisticated Core | both | Launch tested | Servidor: mochila colocada como bloque |
 | Sophisticated Core | 1.5.7 | [Modrinth](https://modrinth.com/mod/sophisticated-core) | — | both | Launch tested | Servidor carga |
 | spark | 1.10.124 | [Modrinth](https://modrinth.com/mod/spark) | — | both | Launch tested | Servidor: spark tps / health |
+| The Aether | 1.5.10 | [Modrinth](https://modrinth.com/mod/aether) | — | both | Launch tested | Servidor alpha.1: dimensión cargada, bronze/silver/gold dungeon y large_aercloud ubicados, Freezer colocado |
 | Waystones | 21.1.46 | [Modrinth](https://modrinth.com/mod/waystones) | Balm | both | Launch tested | Servidor: bloque colocado |
 | Xaero's Minimap | 26.6.0 | [Modrinth](https://modrinth.com/mod/xaeros-minimap) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | Xaero's World Map | 1.47.0 | [Modrinth](https://modrinth.com/mod/xaeros-world-map) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |

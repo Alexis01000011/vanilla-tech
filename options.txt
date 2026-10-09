@@ -20,3 +20,5 @@ key_gui.xaero_enlarge_map:key.keyboard.unknown
 key_key.saveToolbarActivator:key.keyboard.unknown
 key_key.loadToolbarActivator:key.keyboard.unknown
 key_iris.keybind.shaderPackSelection:key.keyboard.unknown
+key_key.aether.open_accessories.desc:key.keyboard.unknown
+key_key.aether.invisibility_toggle.desc:key.keyboard.unknown

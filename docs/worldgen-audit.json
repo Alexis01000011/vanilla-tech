@@ -20,6 +20,49 @@
     "vanilla_overrides": []
   },
   {
+    "mod": "The Aether",
+    "worldgen_paths": [
+      "data/aether/worldgen/structure/large_aercloud.json",
+      "data/aether/worldgen/structure/gold_dungeon.json",
+      "data/aether/worldgen/structure/silver_dungeon.json",
+      "data/aether/worldgen/structure/bronze_dungeon.json",
+      "data/aether/worldgen/structure_set/large_aercloud.json",
+      "data/aether/worldgen/structure_set/bronze_dungeon.json",
+      "data/aether/worldgen/structure_set/silver_and_gold_dungeons.json",
+      "data/aether/worldgen/biome/skyroot_forest.json",
+      "data/aether/worldgen/biome/skyroot_woodland.json",
+      "data/aether/worldgen/biome/skyroot_meadow.json",
+      "data/aether/worldgen/biome/skyroot_grove.json",
+      "data/aether/worldgen/noise_settings/skylands.json",
+      "data/aether/tags/worldgen/structure/dungeons.json",
+      "data/aether/tags/worldgen/biome/has_ruined_portal_aether.json",
+      "data/aether/tags/worldgen/biome/crimson_nylium_conversion.json",
+      "data/aether/tags/worldgen/biome/has_ruined_portal_jungle.json",
+      "data/aether/tags/worldgen/biome/fall_to_overworld.json",
+      "data/aether/tags/worldgen/biome/has_ruined_portal_mountain.json",
+      "data/aether/tags/worldgen/biome/warped_nylium_conversion.json",
+      "data/aether/tags/worldgen/biome/is_aether.json",
+      "data/aether/tags/worldgen/biome/podzol_conversion.json",
+      "data/aether/tags/worldgen/biome/aether_music.json",
+      "data/aether/tags/worldgen/biome/has_ruined_portal_desert.json",
+      "data/aether/tags/worldgen/biome/has_ruined_portal_standard.json",
+      "data/aether/tags/worldgen/biome/no_wheat_seeds.json",
+      "data/aether/tags/worldgen/biome/has_large_aercloud.json",
+      "data/aether/tags/worldgen/biome/has_ruined_portal_swamp.json",
+      "data/aether/tags/worldgen/biome/ultracold.json",
+      "data/aether/tags/worldgen/biome/has_bronze_dungeon.json",
+      "data/aether/tags/worldgen/biome/mycelium_conversion.json",
+      "data/aether/tags/worldgen/biome/has_silver_dungeon.json",
+      "data/aether/tags/worldgen/biome/has_gold_dungeon.json",
+      "data/aether/tags/worldgen/biome/display_travel_text.json",
+      "data/aether/dimension/the_aether.json",
+      "data/minecraft/tags/worldgen/biome/spawns_cold_variant_frogs.json"
+    ],
+    "vanilla_overrides": [
+      "data/minecraft/tags/worldgen/biome/spawns_cold_variant_frogs.json"
+    ]
+  },
+  {
     "mod": "Applied Create",
     "worldgen_paths": [],
     "vanilla_overrides": []
@@ -217,6 +260,11 @@
   },
   {
     "mod": "ModernFix",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "owo-lib",
     "worldgen_paths": [],
     "vanilla_overrides": []
   },

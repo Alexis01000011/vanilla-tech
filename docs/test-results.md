@@ -26,6 +26,7 @@ Cada corrida deja un resumen JSON versionado en `docs/<nombre>.json`. Los logs c
 | Actualización in situ con `prepare-server.py` (agrega JEI, respeta la config reescrita por ModernFix) + integración corregida en mundo nuevo | rc.2 | Todo OK | `rc2-integration-2.json` |
 | Actualización in situ a rc.3 (agrega Sophisticated Backpacks/Core y GraveStone) + integración en mundo nuevo | rc.3 | Todo OK; `Done` en 28.7 s; RSS 1224 MiB; 34 JARs | `rc3-integration.json` |
 | Actualización in situ a rc.4 (agrega AE2 JEI Integration) + integración en mundo nuevo | rc.4 | Todo OK; `Done` en 29.5 s; RSS 1408 MiB; 35 JARs | `rc4-integration.json` |
+| Actualización in situ a **0.2.0-alpha.1** (agrega The Aether + owo-lib) + integración en mundo nuevo | alpha.1 | Todo OK: 14 estructuras de la base + 4 de Aether (bronze 96, silver 121 y gold dungeon 887 bloques; large_aercloud), dimensión `aether:the_aether` cargada, Freezer colocado y los checks de la base; `Done` en 27.2 s; RSS 1395 MiB; 38 JARs | `alpha1-integration.json` |
 | Actualización in situ a rc.5 (agrega Jade) + integración en mundo nuevo | rc.5 | Todo OK (14 estructuras, AE2, Create a 16 RPM, Applied Create, lápida y mochila); `Done` en 23.3 s; RSS 1364 MiB; 36 JARs. Jade carga los plugins de AE2, Extended AE, Waystones, GraveStone y Balm | `rc5-integration.json` |
 
 La EULA se aceptó solo para estos servidores de prueba locales, desechables (marcados con `.vanilla-tech-test-only` y con autorización del propietario). Escuchan únicamente en `127.0.0.1`.

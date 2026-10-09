@@ -7,6 +7,15 @@ client:ae2->neoforge	21.1.257	[21.1.169,)	required
 client:ae2->minecraft	1.21.1	[1.21.1]	required
 client:ae2->guideme	21.1.19	[21.1.1,)	required
 client:ae2->jade	15.10.6+neoforge	[15.0.0,)	optional
+client:aether->neoforge	21.1.257	[21.1.72,)	required
+client:aether->minecraft	1.21.1	[1.21.1,1.21.2)	required
+client:cumulus_menus->neoforge	21.1.257	[21.1.47,)	required
+client:cumulus_menus->minecraft	1.21.1	[1.21.1,1.21.2)	required
+client:accessories->neoforge	21.1.257	[21,)	required
+client:accessories->minecraft	1.21.1	[1.21,)	required
+client:accessories->owo	0.12.15.5-beta.1+1.21	[0.12.15.0+1.21,)	required
+client:nitrogen_internals->neoforge	21.1.257	[21.1.47,)	required
+client:nitrogen_internals->minecraft	1.21.1	[1.21.1,1.21.2)	required
 client:appliedcreate->neoforge	21.1.257	[21.1,)	required
 client:appliedcreate->minecraft	1.21.1	[1.21.1,1.22)	required
 client:appliedcreate->create	6.0.10	[6.0,)	required
@@ -119,6 +128,8 @@ client:lithium->minecraft	1.21.1	[1.21, 1.21.1]	required
 client:modernfix->neoforge	21.1.257	[21.0.111-beta,)	required
 client:modernfix->minecraft	1.21.1	[1.21, 1.22)	required
 client:modernfix->jei	19.51.0.418	[15.8.0.11,)	optional
+client:owo->neoforge	21.1.257	[21,)	required
+client:owo->minecraft	1.21.1	[1.21,)	required
 client:searchables->neoforge	21.1.257	[4,)	required
 client:searchables->minecraft	1.21.1	[1.21.1]	required
 client:sodium->minecraft	1.21.1	1.21.1	required
@@ -169,6 +180,15 @@ server:ae2->neoforge	21.1.257	[21.1.169,)	required
 server:ae2->minecraft	1.21.1	[1.21.1]	required
 server:ae2->guideme	21.1.19	[21.1.1,)	required
 server:ae2->jade	15.10.6+neoforge	[15.0.0,)	optional
+server:aether->neoforge	21.1.257	[21.1.72,)	required
+server:aether->minecraft	1.21.1	[1.21.1,1.21.2)	required
+server:cumulus_menus->neoforge	21.1.257	[21.1.47,)	required
+server:cumulus_menus->minecraft	1.21.1	[1.21.1,1.21.2)	required
+server:accessories->neoforge	21.1.257	[21,)	required
+server:accessories->minecraft	1.21.1	[1.21,)	required
+server:accessories->owo	0.12.15.5-beta.1+1.21	[0.12.15.0+1.21,)	required
+server:nitrogen_internals->neoforge	21.1.257	[21.1.47,)	required
+server:nitrogen_internals->minecraft	1.21.1	[1.21.1,1.21.2)	required
 server:appliedcreate->neoforge	21.1.257	[21.1,)	required
 server:appliedcreate->minecraft	1.21.1	[1.21.1,1.22)	required
 server:appliedcreate->create	6.0.10	[6.0,)	required
@@ -243,6 +263,8 @@ server:kotlinforforge->minecraft	1.21.1	[1.20.6,1.21.9)	required
 server:lithium->minecraft	1.21.1	[1.21, 1.21.1]	required
 server:modernfix->neoforge	21.1.257	[21.0.111-beta,)	required
 server:modernfix->minecraft	1.21.1	[1.21, 1.22)	required
+server:owo->neoforge	21.1.257	[21,)	required
+server:owo->minecraft	1.21.1	[1.21,)	required
 server:sophisticatedbackpacks->sophisticatedcore	1.5.7	[1.5.6,)	required
 server:sophisticatedbackpacks->neoforge	21.1.257	[21.1.229,)	required
 server:sophisticatedbackpacks->minecraft	1.21.1	[1.21.1,1.21.2)	required

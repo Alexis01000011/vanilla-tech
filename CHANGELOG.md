@@ -6,6 +6,12 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.1.x**: línea base (Create + AE2 + calidad de vida), sin dimensiones nuevas. Rama `release/0.1`.
 - **0.2.0-alpha.N**: pruebas de dimensiones nuevas, en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
 
+## 0.2.0-alpha.1 — 2026-10-09
+- **Agregado**: The Aether 1.21.1-1.5.10 (trae dentro Accessories, Cumulus y Nitrogen) + owo-lib 0.12.15.5-beta.1.
+- **Teclas**: accesorios del Aether (I) y capa de invisibilidad (V) sin asignar, porque chocaban con Dank Storage y la terminal de AE2. Los accesorios se abren con el botón del inventario.
+- **Pruebas**: la integración de servidor incluye la dimensión del Aether y sus 4 estructuras (`docs/alpha1-integration.json`).
+- 57 artefactos (56 en el cliente, 38 en el servidor). `sha256 a62e053c5af06f7d8856dec4ec7499aec5b0b3f101868d313e1713a36ca66b8f`
+
 ## 0.1.0-rc.5 — 2026-10-09
 - **Agregado**: Jade 15.10.6 (`both`): información del bloque o entidad que se mira. Integra AE2, Extended AE, Waystones, GraveStone y Balm.
 - **Herramientas**: `validate.py` resuelve `${file.jarVersion}` desde el manifest del JAR, igual que FML. Ahora se verifican los rangos de 4 bibliotecas embebidas más (262 rangos).

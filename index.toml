@@ -28,6 +28,11 @@ hash = "7b59da2b03882393dc84191c125cdfc2e0abc3230a297ebc7586b1234d67800d"
 metafile = true
 
 [[files]]
+file = "mods/aether.pw.toml"
+hash = "fc8f4590287558d0dea1c7c57b077f1e33f7f06194cdf0adad7dc41490b54cd3"
+metafile = true
+
+[[files]]
 file = "mods/applied-create.pw.toml"
 hash = "74f3591295ea0947f5227cf2626f2736aa603f2082ad6dffe357af631770b9e6"
 metafile = true
@@ -208,6 +213,11 @@ hash = "f1d9d20d3d7762c313fbd165346fe908dd1ffb686eaca305a1762ec33c69157d"
 metafile = true
 
 [[files]]
+file = "mods/owo-lib.pw.toml"
+hash = "c8213098e376ad2a3ac5748257e1b5bde3c7520b877dc199efc7c92c13fe0fe6"
+metafile = true
+
+[[files]]
 file = "mods/searchables.pw.toml"
 hash = "5b2f94dc5ef8ba453fa2820c87c4db376125cfca016f265649106919f15852aa"
 metafile = true
@@ -264,7 +274,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "35a51ee35d72fd9bf38d9505b73c8af1528e440b31c9ea258d70edabac5d043b"
+hash = "0ac9e148218afdfa5de7cbfbe02c3cec5cc7112c50479de23e1a85b1aabf430d"
 
 [[files]]
 file = "shaderpacks/MakeUp-UltraFast-9.5a.zip.txt"
