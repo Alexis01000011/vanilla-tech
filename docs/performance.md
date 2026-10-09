@@ -8,7 +8,7 @@ Todo lo de este documento son **mediciones reales sin jugadores conectados** o r
 |---|---|
 | Máquina | Laptop con AMD Ryzen 5 3500U (4 núcleos / 8 hilos) y 8 GB físicos (5.7 GiB visibles) |
 | JVM | OpenJDK 21.0.12, G1, `-Xms512m -Xmx2G`, `-XX:ActiveProcessorCount=2` (la JVM dimensiona sus hilos como si hubiera 2 núcleos, para aproximar una instancia pequeña) |
-| Servidor | NeoForge 21.1.257, 31 mods de servidor (rc.2), `view-distance=4`, `simulation-distance=4`, semilla `20261009` |
+| Servidor | NeoForge 21.1.257, 31 mods de servidor (rc.2) y 34 (rc.3), `view-distance=4`, `simulation-distance=4`, semilla `20261009` |
 | Herramientas | `scripts/test-server.py` (RSS leído de `/proc`), `spark tps/health`, log de GC (`-Xlog:gc*`) |
 
 ## Servidor: resultados
@@ -19,6 +19,7 @@ Todo lo de este documento son **mediciones reales sin jugadores conectados** o r
 | rc.2, primer arranque (instalación limpia) | 28.3 s | 1086 MiB | Mundo nuevo. |
 | rc.2, integración + pregeneración de **1681 chunks** con Chunky | 30 s | **1665 MiB** | Prueba más pesada realizada. |
 | rc.2, integración corregida (con JEI en servidor) | 30.1 s | 1269 MiB | Mundo nuevo. |
+| rc.3, integración (con Sophisticated Backpacks y GraveStone) | 28.7 s | 1224 MiB | Mundo nuevo. |
 
 Detalle de la prueba con pregeneración (`docs/rc2-integration.json`):
 

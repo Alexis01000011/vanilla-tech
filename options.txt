@@ -13,3 +13,9 @@ key_key.buildinggadgets2.undo:key.keyboard.backspace
 key_key.buildinggadgets2.anchor:key.keyboard.home
 key_key.buildinggadgets2.range:key.keyboard.end
 key_key.ftbchunks.map:key.keyboard.j
+key_justzoom.keybinds.keybind.zoom:key.keyboard.c
+key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
+key_gui.xaero_new_waypoint:key.keyboard.n
+key_gui.xaero_enlarge_map:key.keyboard.unknown
+key_key.saveToolbarActivator:key.keyboard.unknown
+key_key.loadToolbarActivator:key.keyboard.unknown

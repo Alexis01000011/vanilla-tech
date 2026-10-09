@@ -181,6 +181,11 @@
     "vanilla_overrides": []
   },
   {
+    "mod": "GraveStone Mod",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
     "mod": "GuideME",
     "worldgen_paths": [],
     "vanilla_overrides": []
@@ -202,6 +207,16 @@
   },
   {
     "mod": "ModernFix",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Sophisticated Backpacks",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Sophisticated Core",
     "worldgen_paths": [],
     "vanilla_overrides": []
   },

@@ -4,15 +4,15 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 
 | | |
 |---|---|
-| Versión del pack | **0.1.0-rc.2** |
+| Versión del pack | **0.1.0-rc.3** |
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
 | Launcher | Prism Launcher (`.mrpack`) |
-| Mods | 40 artefactos fijados: 39 en el cliente, 31 en el servidor |
+| Mods | 45 artefactos fijados: 44 en el cliente, 34 en el servidor |
 | Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). **Cliente pendiente** de prueba en Prism. |
 
-Contenido principal: Create · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE · Waystones · Dank Storage · Building Gadgets 2 · Excessive Utilities · FTB Chunks · Explorify + YUNG's Extras/Bridges · JEI · Inventory Profiles Next · Crafting Tweaks · Xaero's Minimap/World Map · Sodium, Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
+Contenido principal: Create · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE · Waystones · Dank Storage · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · Explorify + YUNG's Extras/Bridges · JEI · Inventory Profiles Next · Crafting Tweaks · Xaero's Minimap/World Map · Just Zoom · Sodium, Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
 La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/mod-catalog.md).
 
 ## Documentación
@@ -32,7 +32,7 @@ La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/
 ```
 vanilla-tech/
 ├── pack.toml, index.toml     # proyecto packwiz (fuente de verdad)
-├── mods/*.pw.toml            # 40 metafiles con versión, URL y hash fijados (sin JARs)
+├── mods/*.pw.toml            # 45 metafiles con versión, URL y hash fijados (sin JARs)
 ├── config/                   # configs del pack (EU, ModernFix, FTB Chunks) → overrides/
 ├── options.txt               # opciones y atajos de cliente → client-overrides/
 ├── server-template/          # server.properties y user_jvm_args.txt de partida
@@ -50,7 +50,7 @@ Requisitos: Linux x86-64, git, Python ≥ 3.11, **JDK 21 completo** (con `javac`
 ```bash
 git clone <este-repo> vanilla-tech && cd vanilla-tech
 bash scripts/build.sh    # descarga packwiz verificado, refresca el índice, exporta y empaqueta
-bash scripts/check.sh    # descarga los 40 JARs a .cache y valida todo; regenera la matriz
+bash scripts/check.sh    # descarga los 45 JARs a .cache y valida todo; regenera la matriz
 ```
 El resultado queda en `releases/vanilla-tech-<versión>.mrpack` (+ `.sha256`). El empaquetado es determinista: mismas entradas, mismo archivo.
 

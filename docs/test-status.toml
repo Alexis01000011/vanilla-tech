@@ -126,3 +126,18 @@ evidence = "Servidor carga"
 [balm]
 status = "Launch tested"
 evidence = "Servidor carga"
+[just-zoom]
+status = "Verified"
+evidence = "Solo cliente; zoom en la tecla C"
+[konkrete]
+status = "Verified"
+evidence = "Solo cliente (biblioteca de Just Zoom)"
+[sophisticated-backpacks]
+status = "Launch tested"
+evidence = "Servidor: mochila colocada como bloque"
+[sophisticated-core]
+status = "Launch tested"
+evidence = "Servidor carga"
+[gravestone-mod]
+status = "Launch tested"
+evidence = "Servidor: bloque de lápida colocado"

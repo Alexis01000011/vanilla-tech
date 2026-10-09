@@ -36,11 +36,15 @@ setblock 21 110 1 ae2:controller
 setblock 8 100 0 charginggadgets:charging_station
 setblock 10 100 0 waystones:waystone
 setblock 12 100 0 excessive_utilities:furnace_generator
+setblock 14 100 0 gravestone:gravestone
+setblock 16 100 0 sophisticatedbackpacks:backpack
 #sleep 15
 execute if block 1 100 0 ae2:controller[state=online] run say VT_AE2_CONTROLLER_ONLINE
 data get block 6 100 0 Speed
 execute if block 21 110 1 ae2:controller[state=online] run say VT_APPLIEDCREATE_ACCEPTOR_POWERS_AE2
 data get block 21 110 0
+execute if block 14 100 0 gravestone:gravestone run say VT_GRAVESTONE_PLACED
+execute if block 16 100 0 sophisticatedbackpacks:backpack run say VT_BACKPACK_PLACED
 spark tps
 save-all flush
 forceload remove all

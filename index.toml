@@ -133,6 +133,11 @@ hash = "787621d57595f452e90a3b765f0c918104e6115407de809f6ddb5012476fdd32"
 metafile = true
 
 [[files]]
+file = "mods/gravestone-mod.pw.toml"
+hash = "f9d113b99e07620f020c7dd603ee6e9decca0e1ab416bf38be20ada8668ec6d8"
+metafile = true
+
+[[files]]
 file = "mods/guideme.pw.toml"
 hash = "da6c02d23fa5a00ecff17981ac05bf500d55ef0e069b632c232696c09870907b"
 metafile = true
@@ -150,6 +155,16 @@ metafile = true
 [[files]]
 file = "mods/jei.pw.toml"
 hash = "3001811c5bcc2e0edd3f2b6e865dcf2e9e8959508a139e5490d5d061031ec2bc"
+metafile = true
+
+[[files]]
+file = "mods/just-zoom.pw.toml"
+hash = "5c332f67954c628a837c85e4e9a590462916f163e7445da7f17ef7e33f60d2e7"
+metafile = true
+
+[[files]]
+file = "mods/konkrete.pw.toml"
+hash = "6bd86b5e57c9595f3d02c939598da789f6ee95c9636d3e5381fd56f82d63b769"
 metafile = true
 
 [[files]]
@@ -175,6 +190,16 @@ metafile = true
 [[files]]
 file = "mods/sodium.pw.toml"
 hash = "695374f11bf65d0a6e6f244857cce0e62801c965ca36fd018699eb372a7837ae"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+hash = "7fb616042767f84096a70c20703fda8130d4441a0a774cb739c719e4d5985c0f"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "6a52ab53877e4558b432141bff2e3dea14fa3b43f05812d7530a4f65f04fa183"
 metafile = true
 
 [[files]]
@@ -214,4 +239,4 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "903ac8819ed5b31530c48ef5b240c4333babf5bc90b0d36aa79d81d046918c8b"
+hash = "3f41d4c0c031fad3f01cf4ef4f2065446d09e4fd20b7122124358458708233f1"

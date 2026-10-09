@@ -1,6 +1,6 @@
-# Catálogo de mods — Vanilla Tech 0.1.0-rc.2
+# Catálogo de mods — Vanilla Tech 0.1.0-rc.3
 
-Minecraft **1.21.1** · NeoForge **21.1.257** · 40 artefactos fijados (`pin = true`).
+Minecraft **1.21.1** · NeoForge **21.1.257** · 45 artefactos fijados (`pin = true`).
 Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qué* aporta cada mod y *por qué* está en el pack.
 
 **Side**: `both` = cliente y servidor · `client` = solo cliente (el servidor no lo instala) · `server` = solo servidor.
@@ -30,6 +30,8 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Building Gadgets 2 | 1.3.9 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/building-gadgets) | both | Herramientas de construcción, copia/pega y destrucción por área. Funcionan con energía FE. |
 | Charging Gadgets | 1.14.1 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/charging-gadgets) | both | Estación de carga para los gadgets (con combustible o FE). |
 | Excessive Utilities | 1.21.1-1.10.0-build.64 | [Modrinth](https://modrinth.com/mod/excessive-utilities) | both | Remake de Extra Utilities: Grid Power, generadores FE, Angel Ring, Transfer Nodes/tuberías, Trash Cans, etc. **Quarries desactivadas** (0 bloques/tick). Requiere Aaron, Curios y Kotlin for Forge. |
+| Sophisticated Backpacks | 1.21.1-3.26.9.2195 | [Modrinth](https://modrinth.com/mod/sophisticated-backpacks) | both | Mochilas mejorables (cobre → netherite) con upgrades (imán, restock, alimentación, etc.). Se integran con Curios (ranura de espalda), JEI y Crafting Tweaks. Requiere Sophisticated Core. |
+| GraveStone Mod | 1.21.1-1.0.40 | [Modrinth](https://modrinth.com/mod/gravestone-mod) | both | Al morir, una lápida guarda el inventario en vez de dejarlo tirado (que también guarde los Curios está pendiente de probar, P15). |
 | FTB Chunks | 2101.1.22 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-forge) | both | Claim y chunkloading desde el mapa (tecla **J**). Límite de 100 chunks reclamados y 100 forzados por jugador. Requiere FTB Teams, FTB Library y Architectury. |
 
 ## D. Exploración y estructuras
@@ -48,6 +50,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Inventory Profiles Next | 2.2.5 | [Modrinth](https://modrinth.com/mod/inventory-profiles-next) | client | Ordenamiento de inventario y perfiles. Requiere libIPN. |
 | Crafting Tweaks | 21.1.11 | [Modrinth](https://modrinth.com/mod/crafting-tweaks) | both | Rotar, balancear y limpiar la cuadrícula de crafteo. Requiere Balm. |
 | Xaero's Minimap | 26.6.0 | [Modrinth](https://modrinth.com/mod/xaeros-minimap) | client | Minimapa (el único activo: el de FTB Chunks se desactiva desde el servidor). |
+| Just Zoom | 2.1.0 | [Modrinth](https://modrinth.com/mod/just-zoom) | client | Zoom simple (tecla **C**, rueda para acercar o alejar). Requiere Konkrete. |
 | Xaero's World Map | 1.47.0 | [Modrinth](https://modrinth.com/mod/xaeros-world-map) | client | Mapa del mundo (tecla M). |
 
 ## F. Rendimiento y diagnóstico
@@ -68,6 +71,8 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 
 | Biblioteca | Versión | Fuente | Side | Requerida por |
 |---|---|---|---|---|
+| Sophisticated Core | 1.21.1-1.5.7.2381 | [Modrinth](https://modrinth.com/mod/sophisticated-core) | both | Sophisticated Backpacks |
+| Konkrete | 1.9.9 | [Modrinth](https://modrinth.com/mod/konkrete) | client | Just Zoom |
 | GuideME | 21.1.19 | [Modrinth](https://modrinth.com/mod/guideme) | both | AE2 |
 | Glodium | 1.21-2.2 | [Modrinth](https://modrinth.com/mod/glodium) | both | Extended AE |
 | Kotlin for Forge | 5.12.0 | [Modrinth](https://modrinth.com/mod/kotlin-for-forge) | both | Applied Create, Excessive Utilities, Aaron |
@@ -93,4 +98,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | YUNG's Better Ocean Monuments / Nether Fortresses / Mineshafts / Strongholds y similares | Reemplazan estructuras vanilla de las que dependen las granjas. |
 | Phosphor, Starlight | Obsoletos en 1.21.1 (el motor de luz vanilla ya incorpora esas mejoras). |
 | Mekanism, Thermal, RFTools | Sistemas industriales grandes; fuera de alcance. La energía FE sale de Excessive Utilities y la de AE2 de Create vía Applied Create. |
+| Just Zoom 3.x | La 3.0.0 es una reescritura publicada el 2026-10-03, con un crash corregido en 3.0.1 al día siguiente, y agrega una tecla de configuración en **B**, que ya está ocupada. Se fijó la 2.1.0 (marzo de 2025). |
+| Ok Zoomer | Solo hay versión beta para NeoForge 1.21.1. |
+| Sophisticated Backpacks Create Integration | No se pidió; se puede añadir si se quieren mochilas en contraptions. |
 | Open Parties and Claims | Alternativa a FTB Chunks con integración nativa en Xaero; el usuario prefirió FTB Chunks. |

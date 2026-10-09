@@ -78,6 +78,8 @@ client:ftbteams->architectury	13.0.11	[13.0.8,)	required
 client:ftbteams->ftblibrary	2101.1.37	[2101.1.30,)	required
 client:glodium->neoforge	21.1.257	[21.1.1,)	required
 client:glodium->minecraft	1.21.1	[1.21.1,)	required
+client:gravestone->neoforge	21.1.257	[21.0.0-beta,)	required
+client:gravestone->minecraft	1.21.1	[1.21,1.21.1]	required
 client:guideme->neoforge	21.1.257	[21.1.1,)	required
 client:guideme->minecraft	1.21.1	[1.21.1]	required
 client:immediatelyfast->minecraft	1.21.1	[1.21,1.21.1]	required
@@ -87,6 +89,11 @@ client:inventoryprofilesnext->minecraft	1.21.1	[1.21.1, 1.21.2)	required
 client:inventoryprofilesnext->libipn	6.6.3	[6.6.3, 6.7)	required
 client:jei->neoforge	21.1.257	[21.1.238,)	required
 client:jei->minecraft	1.21.1	[1.21, 1.21.1)	required
+client:justzoom->konkrete	1.9.9	[1.9.0,)	required
+client:justzoom->neoforge	21.1.257	[21.1.47,)	required
+client:justzoom->minecraft	1.21.1	[1.21.1,)	required
+client:konkrete->neoforge	21.1.257	[21.0.20-beta,)	required
+client:konkrete->minecraft	1.21.1	[1.21,)	required
 client:kotlinforforge->minecraft	1.21.1	[1.20.6,1.21.9)	required
 client:libipn->neoforge	21.1.257	[21.1,)	required
 client:libipn->minecraft	1.21.1	[1.21.1, 1.21.2)	required
@@ -106,6 +113,12 @@ client:fabric_rendering_data_attachment_v1->neoforge	21.1.257	[21.1.115,)	requir
 client:fabric_rendering_data_attachment_v1->minecraft	1.21.1	[1.21.1,1.22)	required
 client:sodium->minecraft	1.21.1	1.21.1	required
 client:sodium->neoforge	21.1.257	[21.1.82,)	required
+client:sophisticatedbackpacks->sophisticatedcore	1.5.7	[1.5.6,)	required
+client:sophisticatedbackpacks->neoforge	21.1.257	[21.1.229,)	required
+client:sophisticatedbackpacks->minecraft	1.21.1	[1.21.1,1.21.2)	required
+client:sophisticatedcore->jei	19.51.0.418	[19.32.0.359,)	optional
+client:sophisticatedcore->neoforge	21.1.257	[21.1.229,)	required
+client:sophisticatedcore->minecraft	1.21.1	[1.21.1,1.21.2)	required
 client:spark->neoforge	21.1.257	[20,)	required
 client:waystones->neoforge	21.1.257	[21-beta,)	required
 client:waystones->minecraft	1.21.1	[1.21,)	required
@@ -198,6 +211,8 @@ server:ftbteams->architectury	13.0.11	[13.0.8,)	required
 server:ftbteams->ftblibrary	2101.1.37	[2101.1.30,)	required
 server:glodium->neoforge	21.1.257	[21.1.1,)	required
 server:glodium->minecraft	1.21.1	[1.21.1,)	required
+server:gravestone->neoforge	21.1.257	[21.0.0-beta,)	required
+server:gravestone->minecraft	1.21.1	[1.21,1.21.1]	required
 server:guideme->neoforge	21.1.257	[21.1.1,)	required
 server:guideme->minecraft	1.21.1	[1.21.1]	required
 server:jei->neoforge	21.1.257	[21.1.238,)	required
@@ -206,6 +221,11 @@ server:kotlinforforge->minecraft	1.21.1	[1.20.6,1.21.9)	required
 server:lithium->minecraft	1.21.1	[1.21, 1.21.1]	required
 server:modernfix->neoforge	21.1.257	[21.0.111-beta,)	required
 server:modernfix->minecraft	1.21.1	[1.21, 1.22)	required
+server:sophisticatedbackpacks->sophisticatedcore	1.5.7	[1.5.6,)	required
+server:sophisticatedbackpacks->neoforge	21.1.257	[21.1.229,)	required
+server:sophisticatedbackpacks->minecraft	1.21.1	[1.21.1,1.21.2)	required
+server:sophisticatedcore->neoforge	21.1.257	[21.1.229,)	required
+server:sophisticatedcore->minecraft	1.21.1	[1.21.1,1.21.2)	required
 server:spark->neoforge	21.1.257	[20,)	required
 server:waystones->neoforge	21.1.257	[21-beta,)	required
 server:waystones->minecraft	1.21.1	[1.21,)	required

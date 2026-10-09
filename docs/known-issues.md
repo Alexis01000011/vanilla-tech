@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-09, release **0.1.0-rc.2**.
+Estado a 2026-10-09, release **0.1.0-rc.3**.
 
 ## Pruebas pendientes
 
@@ -18,6 +18,9 @@ Estado a 2026-10-09, release **0.1.0-rc.2**.
 | P10 | **Contraptions de Create** en movimiento (pistones, rodamientos, trenes) y deployers dentro de chunks reclamados. | Requiere un jugador. Con `disable_protection = true` no debería haber bloqueo de *fake players*. |
 | P11 | **Granjas vanilla** (hierro, mobs, raids, guardianes, aldeanos). | Las estructuras se generan (ver [test-results.md](test-results.md)), pero eso no prueba que las granjas funcionen. |
 | P12 | **Carga con dos jugadores** en el servidor (TPS, MSPT, memoria). | Todas las mediciones son sin jugadores conectados. |
+| P13 | **Just Zoom**: zoom con C y rueda del mouse. | Solo cliente. |
+| P14 | **Sophisticated Backpacks**: abrir con B desde la ranura de Curios y el imán (Z). | Requiere un jugador. |
+| P15 | **GraveStone**: morir, comprobar que la lápida guarda inventario + Curios y recuperarlo. | Requiere un jugador. |
 
 ## Problemas conocidos
 
@@ -31,6 +34,9 @@ Estado a 2026-10-09, release **0.1.0-rc.2**.
   - `Couldn't load tag excessive_utilities:ender_quarry_upgrade`: un tag con referencias faltantes; las quarries están desactivadas de todos modos.
 - **ModernFix y Lithium** se pisan en dos mixins (`remove_biome_temperature_cache`, `paper_chunk_patches`). Se desactivaron en ModernFix (`config/modernfix-mixins.properties`). ModernFix reescribe ese archivo con comentarios al arrancar, y es normal.
 - **El minimapa de FTB Chunks** se desactiva desde el servidor (`force_disable_minimap = true`). En un mundo de un solo jugador la config del pack también aplica, porque se instala en ambos lados.
+
+- **Sophisticated Backpacks y Sophisticated Core publican versiones casi a diario.** Están fijadas en una pareja compatible (Backpacks 3.26.9 requiere Core ≥ 1.5.6). Al actualizar, súbelas juntas.
+- **Advertencias de mixin inofensivas al arrancar** (`functionalstorage/world/EnderSavedData`, `ApiStatus$ScheduledForRemoval`): integraciones opcionales con mods que no están instalados. Ya aparecían en la rc.1.
 
 ### Distribución y reproducibilidad
 - **packwiz se obtiene de un artefacto de CI de GitHub** (`nightly.link`, commit `ef87d96`), verificado por SHA-256. Ese artefacto **caduca el 2026-12-05** (según la API de GitHub); después, `scripts/bootstrap-tools.py` no podrá descargarlo en otra computadora. Alternativas:

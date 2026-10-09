@@ -2,17 +2,17 @@
 
 Cada corrida deja un resumen JSON versionado en `docs/<nombre>.json`. Los logs completos (`docs/<nombre>.log`) se generan en local y no se versionan (`*.log` está en `.gitignore`).
 
-## Etapa 1 — Dependencias (rc.2, 2026-10-09) ✅
+## Etapa 1 — Dependencias (rc.3, 2026-10-09) ✅
 
 `bash scripts/check.sh`:
 
 | Comprobación | Resultado |
 |---|---|
-| Hashes de `index.toml`/`pack.toml` y de los 40 JARs descargados | PASS |
+| Hashes de `index.toml`/`pack.toml` y de los 45 JARs descargados | PASS |
 | Paridad metafiles ↔ `modrinth.index.json` (URL, lado cliente/servidor) | PASS |
 | Ningún JAR embebido en el `.mrpack` | PASS |
 | Dependencias obligatorias por lado, incluidas las de JARs anidados (jar-in-jar) | PASS |
-| 220 rangos de versión con Maven `VersionRange` y la regla de alias de FML para 1.21.1 | PASS |
+| 240 rangos de versión con Maven `VersionRange` y la regla de alias de FML para 1.21.1 | PASS |
 | Ningún archivo `data/minecraft/worldgen/**` sobrescrito por mods de servidor | PASS (no descarta cambios por código) |
 
 ## Etapa 2 — Servidor dedicado ✅
@@ -24,6 +24,7 @@ Cada corrida deja un resumen JSON versionado en `docs/<nombre>.json`. Los logs c
 | Primer arranque, **instalación limpia desde la release** con `prepare-server.py` | rc.2 | `Done` en 28.3 s; RSS 1086 MiB; FTB genera sus configs | `rc2-first-launch.json` |
 | Integración + pregeneración | rc.2 | Todo OK salvo el montaje inicial de Applied Create (error de la prueba; ver abajo) | `rc2-integration.json` |
 | Actualización in situ con `prepare-server.py` (agrega JEI, respeta la config reescrita por ModernFix) + integración corregida en mundo nuevo | rc.2 | Todo OK | `rc2-integration-2.json` |
+| Actualización in situ a rc.3 (agrega Sophisticated Backpacks/Core y GraveStone) + integración en mundo nuevo | rc.3 | Todo OK; `Done` en 28.7 s; RSS 1224 MiB; 34 JARs | `rc3-integration.json` |
 
 La EULA se aceptó solo para estos servidores de prueba locales, desechables (marcados con `.vanilla-tech-test-only` y con autorización del propietario). Escuchan únicamente en `127.0.0.1`.
 
@@ -37,6 +38,7 @@ La EULA se aceptó solo para estos servidores de prueba locales, desechables (ma
 | **AE2–Create (Applied Create)**: motor → `kinetic_energy_acceptor` → controlador, **sin** celda de energía | ✅ controlador online | `VT_APPLIEDCREATE_ACCEPTOR_POWERS_AE2` |
 | Waystone, Charging Station y generador de Excessive Utilities se colocan | ✅ (solo colocación) | `Changed the block` |
 | JEI carga en el servidor (rango 1.21 aceptado por FML) | ✅ | arranque sin errores |
+| Lápida (GraveStone) y mochila (Sophisticated Backpacks) se colocan como bloques (rc.3) | ✅ (solo colocación) | `VT_GRAVESTONE_PLACED`, `VT_BACKPACK_PLACED` |
 | Config de FTB Chunks del pack: instalada desde la release y **no reescrita** por FTB tras 2 arranques | ✅ (señal de que es válida) | mismo SHA-256 antes y después |
 | Config de quarries de Excessive Utilities (0 bloques/tick) instalada desde la release | ✅ | `config/excessive_utilities-server.toml` |
 | Chunky: 1681 chunks | ✅ 2 min 38 s, 20 TPS | `Task finished` |
@@ -45,7 +47,7 @@ La EULA se aceptó solo para estos servidores de prueba locales, desechables (ma
 
 ## Etapa 4 — Survival técnico: estructuras vanilla para granjas ✅ (generación)
 
-`locate` con semilla `20261009`, igual en las tres corridas:
+`locate` con semilla `20261009`, igual en todas las corridas (rc.1, rc.2 y rc.3):
 
 | Estructura | Distancia desde el origen |
 |---|---|

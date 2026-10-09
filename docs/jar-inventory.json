@@ -972,6 +972,36 @@
     ]
   },
   {
+    "id": "gravestone",
+    "version": "1.21.1-1.0.40",
+    "jar": "gravestone-neoforge-1.21.1-1.0.40.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.0.0-beta,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21,1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "jade",
+        "type": "optional",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "guideme",
     "version": "21.1.19",
     "jar": "guideme-21.1.19.jar",
@@ -1055,6 +1085,59 @@
         "modId": "minecraft",
         "type": "required",
         "versionRange": "[1.21, 1.21.1)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "justzoom",
+    "version": "2.1.0",
+    "jar": "justzoom_neoforge_2.1.0_MC_1.21.1.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "konkrete",
+        "type": "required",
+        "ordering": "NONE",
+        "versionRange": "[1.9.0,)",
+        "side": "BOTH"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.47,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "konkrete",
+    "version": "1.9.9",
+    "jar": "konkrete_neoforge_1.9.9_MC_1.21.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.0.20-beta,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21,)",
         "ordering": "NONE",
         "side": "BOTH"
       }
@@ -1307,6 +1390,66 @@
         "versionRange": "[0.0.1,)",
         "ordering": "NONE",
         "side": "CLIENT"
+      }
+    ]
+  },
+  {
+    "id": "sophisticatedbackpacks",
+    "version": "3.26.9",
+    "jar": "sophisticatedbackpacks-1.21.1-3.26.9.2195.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "sophisticatedcore",
+        "type": "required",
+        "versionRange": "[1.5.6,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.229,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.21.2)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "sophisticatedcore",
+    "version": "1.5.7",
+    "jar": "sophisticatedcore-1.21.1-1.5.7.2381.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "jei",
+        "type": "optional",
+        "versionRange": "[19.32.0.359,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.229,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.21.2)",
+        "ordering": "NONE",
+        "side": "BOTH"
       }
     ]
   },

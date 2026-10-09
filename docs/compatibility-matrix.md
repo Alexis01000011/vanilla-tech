@@ -1,6 +1,6 @@
-# Matriz de compatibilidad — Vanilla Tech 0.1.0-rc.2
+# Matriz de compatibilidad — Vanilla Tech 0.1.0-rc.3
 
-Minecraft 1.21.1 · NeoForge 21.1.257 · 40 artefactos fijados.
+Minecraft 1.21.1 · NeoForge 21.1.257 · 45 artefactos fijados.
 Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `docs/test-status.toml`.
 
 **Estados**
@@ -37,15 +37,20 @@ Hasta la prueba en Prism, ningún mod tiene arranque de **cliente** comprobado (
 | FTB Library (NeoForge) | 2101.1.37 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge) | Architectury API | both | Launch tested | Servidor carga |
 | FTB Teams (NeoForge) | 2101.1.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge) | Architectury API, FTB Library (NeoForge) | both | Launch tested | Servidor carga |
 | Glodium | 1.21-2.2-neoforge | [Modrinth](https://modrinth.com/mod/glodium) | — | both | Launch tested | Servidor carga |
+| GraveStone Mod | 1.21.1-1.0.40 | [Modrinth](https://modrinth.com/mod/gravestone-mod) | — | both | Launch tested | Servidor: bloque de lápida colocado |
 | GuideME | 21.1.19 | [Modrinth](https://modrinth.com/mod/guideme) | — | both | Launch tested | Servidor carga |
 | ImmediatelyFast | 1.6.14+1.21.1 | [Modrinth](https://modrinth.com/mod/immediatelyfast) | — | client | Verified | Solo cliente; arranque de cliente pendiente |
 | Inventory Profiles Next | 2.2.5 | [Modrinth](https://modrinth.com/mod/inventory-profiles-next) | libIPN | client | Verified | Solo cliente; arranque de cliente pendiente |
 | Just Enough Items (JEI) | 19.51.0.418 | [Modrinth](https://modrinth.com/mod/jei) | — | both | Launch tested | Servidor carga (regla de alias 1.21 de FML); habilita traslado de recetas |
+| Just Zoom | 2.1.0 | [Modrinth](https://modrinth.com/mod/just-zoom) | Konkrete | client | Verified | Solo cliente; zoom en la tecla C; arranque de cliente pendiente |
+| Konkrete | 1.9.9 | [Modrinth](https://modrinth.com/mod/konkrete) | — | client | Verified | Solo cliente (biblioteca de Just Zoom); arranque de cliente pendiente |
 | Kotlin for Forge | kotlinforforge-5.12.0-all.jar | [Modrinth](https://modrinth.com/mod/kotlin-for-forge) | — | both | Launch tested | Servidor carga |
 | libIPN | 6.6.3 | [Modrinth](https://modrinth.com/mod/libipn) | — | client | Verified | Solo cliente; arranque de cliente pendiente |
 | Lithium | 0.15.4+mc1.21.1 | [Modrinth](https://modrinth.com/mod/lithium) | — | both | Launch tested | Servidor carga |
 | ModernFix | 5.27.26+mc1.21.1 | [Modrinth](https://modrinth.com/mod/modernfix) | — | both | Launch tested | Servidor carga; 2 mixins desactivados por conflicto con Lithium |
 | Sodium | 0.8.13+mc1.21.1 | [Modrinth](https://modrinth.com/mod/sodium) | — | client | Verified | Solo cliente; arranque de cliente pendiente |
+| Sophisticated Backpacks | 3.26.9 | [Modrinth](https://modrinth.com/mod/sophisticated-backpacks) | Sophisticated Core | both | Launch tested | Servidor: mochila colocada como bloque |
+| Sophisticated Core | 1.5.7 | [Modrinth](https://modrinth.com/mod/sophisticated-core) | — | both | Launch tested | Servidor carga |
 | spark | 1.10.124 | [Modrinth](https://modrinth.com/mod/spark) | — | both | Launch tested | Servidor: spark tps / health |
 | Waystones | 21.1.46 | [Modrinth](https://modrinth.com/mod/waystones) | Balm | both | Launch tested | Servidor: bloque colocado |
 | Xaero's Minimap | 26.6.0 | [Modrinth](https://modrinth.com/mod/xaeros-minimap) | — | client | Verified | Solo cliente; arranque de cliente pendiente |
