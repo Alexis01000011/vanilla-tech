@@ -1,0 +1,269 @@
+{
+  "project": {
+    "client_side": "required",
+    "server_side": "required",
+    "game_versions": [
+      "1.21.1"
+    ],
+    "environment": [
+      "client_and_server"
+    ],
+    "id": "zI2FlF4Q",
+    "slug": "excessive-utilities",
+    "project_type": "mod",
+    "team": "D1aQCbCj",
+    "organization": null,
+    "title": "Excessive Utilities",
+    "description": "A modern remake of Extra Utilities",
+    "body": "**Excessive Utilities** is a modern remake of [Extra Utilities](https://www.curseforge.com/minecraft/mc-mods/extra-utilities) by RWTema, with features from both Extra Utilities 1 *and* 2, including all your favorites such as:\n\n- Unstable Ingots and their tools\n- The Depths and Last Millennium dimensions\n- 16 FE Generators, plus the Rainbow Generator!\n- 6 types of Angel Ring\n- A fully configurable Grid Power system\n- Both the Quantum Quarry *and* the Ender Quarry, with all its upgrades!\n- Filing Cabinets, Trash Cans, and Drums\n- Transfer/Retrieval Nodes that can move items, fluids, and energy all along the same pipes\n- Dozens of decorative blocks, many of which have connected textures (requires [Athena](https://modrinth.com/mod/athena-ctm))\n- 16 levels of compressed blocks\n- 224 colored versions of various blocks, like Planks and Lanterns!\n\nNote that as Extra Utilities does not have an open license, none of the original mods' code or textures were used to make this one. It was fully remade from the ground up, by reading wiki articles and playing the old ones to see what they did and then remaking them from scratch. There may be some inconsistencies or minor missing features due to this. ",
+    "body_url": null,
+    "published": "2026-03-31T03:50:08.046421Z",
+    "updated": "2026-10-06T23:20:51.059880Z",
+    "approved": "2026-03-31T06:17:44.365674Z",
+    "queued": "2026-03-31T04:15:02.697339Z",
+    "status": "approved",
+    "requested_status": "approved",
+    "moderator_message": null,
+    "license": {
+      "id": "LGPL-3.0-only",
+      "name": "GNU Lesser General Public License v3.0 only",
+      "url": null
+    },
+    "downloads": 7790,
+    "followers": 22,
+    "categories": [
+      "technology",
+      "transportation",
+      "utility"
+    ],
+    "additional_categories": [
+      "decoration"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "versions": [
+      "IMyobxFK",
+      "fIFLNBO6",
+      "ZLCxI9Sc",
+      "4PM4JbT2",
+      "qhUNOBGp",
+      "hFAkKIdP",
+      "hhhi6Pm5",
+      "L3WXVnSC",
+      "xxkG0Kg3",
+      "Gv2g8LVs",
+      "qUfLBSIH",
+      "JOpXJS7C",
+      "JTrHKWsM",
+      "TX75l0Qp",
+      "NkZymTsn"
+    ],
+    "icon_url": "https://cdn.modrinth.com/data/zI2FlF4Q/f34c9c15cac67291789514f111a64e5fd2018dc3.png",
+    "raw_icon_url": "https://cdn.modrinth.com/data/zI2FlF4Q/f34c9c15cac67291789514f111a64e5fd2018dc3.png",
+    "issues_url": "https://github.com/Berry-Club/Excessive-Utilities/issues",
+    "source_url": "https://github.com/Berry-Club/Excessive-Utilities",
+    "wiki_url": "https://moddedmc.wiki/en/project/excessive-utilities/latest",
+    "discord_url": "https://discord.gg/UDn4atx874",
+    "donation_urls": [],
+    "gallery": [
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/011717f25abdfeed43c1aad067ec67d841e27f1b_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/011717f25abdfeed43c1aad067ec67d841e27f1b.png",
+        "featured": false,
+        "title": "Rainbow Generator setup",
+        "description": null,
+        "created": "2026-03-31T04:12:06.308210Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/0e5075716e9e3ab9cd81fefdcfff9d00d79ca3cf_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/0e5075716e9e3ab9cd81fefdcfff9d00d79ca3cf.png",
+        "featured": false,
+        "title": "Flat Transfer Node on a Mini Chest",
+        "description": null,
+        "created": "2026-03-31T04:13:18.952890Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/31a888ad42ce22a72b1daf1ee33ebb0b94226a16_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/31a888ad42ce22a72b1daf1ee33ebb0b94226a16.png",
+        "featured": false,
+        "title": "Items 4",
+        "description": null,
+        "created": "2026-03-31T04:14:43.989752Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/37fed4a0ff9ddaeb612abd35d632474dad797f48_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/37fed4a0ff9ddaeb612abd35d632474dad797f48.png",
+        "featured": false,
+        "title": "Destruction Wand",
+        "description": null,
+        "created": "2026-03-31T04:13:46.630816Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/3c4b92c81ef4ccc36663f69dbc6a5312a403f6d5_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/3c4b92c81ef4ccc36663f69dbc6a5312a403f6d5.png",
+        "featured": false,
+        "title": "The Last Millennium",
+        "description": null,
+        "created": "2026-07-03T15:59:59.681240Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/48ff4b6f09a0b10284795de5a1a72c3dd71b2496_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/48ff4b6f09a0b10284795de5a1a72c3dd71b2496.png",
+        "featured": false,
+        "title": "The Depths",
+        "description": null,
+        "created": "2026-07-03T16:00:18.582697Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/5331205b1530387c3242ab07c4c6c4ec70ac885f_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/5331205b1530387c3242ab07c4c6c4ec70ac885f.png",
+        "featured": false,
+        "title": "Builder's Wand",
+        "description": null,
+        "created": "2026-03-31T04:13:58.687120Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/5976aec2897b84fcb8e8a65189dcc4fec9228f64_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/5976aec2897b84fcb8e8a65189dcc4fec9228f64.png",
+        "featured": false,
+        "title": "Items 3",
+        "description": null,
+        "created": "2026-03-31T04:14:34.249831Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/5d58d8a7715d9687ae3da2a9eb0f359e1267e86e_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/5d58d8a7715d9687ae3da2a9eb0f359e1267e86e.png",
+        "featured": false,
+        "title": "QED setup",
+        "description": null,
+        "created": "2026-03-31T04:12:20.971569Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/5e83bb5a33bc1db7390e6cda9d019acb695e5da7_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/5e83bb5a33bc1db7390e6cda9d019acb695e5da7.png",
+        "featured": false,
+        "title": "Items 1",
+        "description": null,
+        "created": "2026-03-31T04:14:16.476412Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/64ac8793a4169c5da9e2bbb118d37e97be3a79dc_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/64ac8793a4169c5da9e2bbb118d37e97be3a79dc.png",
+        "featured": false,
+        "title": "Items 2",
+        "description": null,
+        "created": "2026-03-31T04:14:25.704344Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/7fbc4642c1748fb4a2dcffc2a189f29d45bbf3db_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/7fbc4642c1748fb4a2dcffc2a189f29d45bbf3db.png",
+        "featured": false,
+        "title": "Angel Ring",
+        "description": null,
+        "created": "2026-03-31T04:13:34.293146Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/9a7d74b6da4695b54f87b89717a816e25887991b_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/9a7d74b6da4695b54f87b89717a816e25887991b.png",
+        "featured": false,
+        "title": "Various decorative blocks",
+        "description": null,
+        "created": "2026-03-31T04:13:01.453347Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/de54f2ce3e8f42c2982894385a8227db503281df_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/zI2FlF4Q/images/de54f2ce3e8f42c2982894385a8227db503281df.png",
+        "featured": false,
+        "title": "Transfer Node searching for a destination",
+        "description": null,
+        "created": "2026-03-31T04:12:46.089791Z",
+        "ordering": 0
+      }
+    ],
+    "color": 16565268,
+    "thread_id": "ttO0ZIKc",
+    "monetization_status": "monetized"
+  },
+  "version": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "NkZymTsn",
+    "project_id": "zI2FlF4Q",
+    "author_id": "ua4XA9pJ",
+    "featured": false,
+    "name": "Excessive Utilities 1.21.1 1.10.0-build.64",
+    "version_number": "1.10.0-build.64",
+    "changelog": "https://github.com/Berry-Club/Excessive-Utilities/blob/master/CHANGELOG.md#1100",
+    "changelog_url": null,
+    "date_published": "2026-10-06T23:20:51.059880Z",
+    "downloads": 200,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "DUOB5PVH",
+        "hashes": {
+          "sha512": "f0aa9ec602a1e73f43649583d95d9d6671a73abb05320a92f9850cc48b9ef80648c4ded10f60a932f0107a4265ef093088cdeb447669f910f4ddd661f25671c5",
+          "sha1": "8907bb5665d45cbfee75c13fa17dff8e919a3996"
+        },
+        "url": "https://cdn.modrinth.com/data/zI2FlF4Q/versions/NkZymTsn/excessive-utilities-1.21.1-1.10.0-build.64.jar",
+        "filename": "excessive-utilities-1.21.1-1.10.0-build.64.jar",
+        "primary": true,
+        "size": 17591561,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "vvuO3ImH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "J8MMsNrL",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "b1ZV3DIJ",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "usfxOp9L",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  }
+}

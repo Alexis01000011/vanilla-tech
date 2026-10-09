@@ -1,0 +1,195 @@
+client:aaron->neoforge	21.1.257	[21.1.0,)	required
+client:aaron->minecraft	1.21.1	[1.21.1,1.22)	required
+client:aaron->kotlinforforge	5.12.0	[5.12.0,)	required
+client:ae2->neoforge	21.1.257	[21.1.169,)	required
+client:ae2->minecraft	1.21.1	[1.21.1]	required
+client:ae2->guideme	21.1.19	[21.1.1,)	required
+client:appliedcreate->neoforge	21.1.257	[21.1,)	required
+client:appliedcreate->minecraft	1.21.1	[1.21.1,1.22)	required
+client:appliedcreate->create	6.0.10	[6.0,)	required
+client:appliedcreate->kotlinforforge	5.12.0	[5,)	required
+client:appliedcreate->ae2	19.2.18	[19.0,)	required
+client:appliedcreate->jei	19.51.0.418	[19,)	optional
+client:appliedcreate->extendedae	1.21-2.2.35-neoforge	[1.0,)	optional
+client:ae2wtlib->ae2wtlib_api	19.5.1	[19.5.1]	required
+client:ae2wtlib->ae2	19.2.18	[19.2.17,20.0.0)	required
+client:ae2wtlib->extendedae	1.21-2.2.35-neoforge	(,1.21-1.1.4-neoforge]	incompatible
+client:ae2wtlib_api->ae2	19.2.18	[19.2.17,20.0.0)	required
+client:architectury->minecraft	1.21.1	[1.21,)	required
+client:architectury->neoforge	21.1.257	[21.0.110-beta,)	required
+client:balm->neoforge	21.1.257	[21.0.82-beta,)	required
+client:balm->minecraft	1.21.1	[1.21.1,)	required
+client:kuma_api->neoforge	21.1.257	[21-beta,)	required
+client:kuma_api->minecraft	1.21.1	[1.21,)	required
+client:buildinggadgets2->neoforge	21.1.257	[21.0,)	required
+client:buildinggadgets2->minecraft	1.21.1	[1.21,1.22)	required
+client:charginggadgets->neoforge	21.1.257	[21.0,)	required
+client:charginggadgets->minecraft	1.21.1	[1.21,1.22)	required
+client:craftingtweaks->neoforge	21.1.257	[21-beta,)	required
+client:craftingtweaks->minecraft	1.21.1	[1.21,)	required
+client:craftingtweaks->balm	21.0.66	[21.0.48,)	required
+client:create->neoforge	21.1.257	[21.1.219,)	required
+client:create->minecraft	1.21.1	[1.21.1]	required
+client:create->flywheel	1.0.6	[1.0.0,2.0)	required
+client:create->ponder	1.0.82+mc1.21.1	[1.0.82,)	required
+client:create->sodium	0.8.13+mc1.21.1	[0.6.9,)	optional
+client:create->lithium	0.15.4+mc1.21.1	[0.14.7,)	optional
+client:create->xaeroworldmap	1.47.0	[1.40.2,)	optional
+client:flywheel->minecraft	1.21.1	[1.21.1,1.21.2)	required
+client:flywheel->neoforge	21.1.257	[21.1.66,)	required
+client:flywheel->sodium	0.8.13+mc1.21.1	[0.6.0-beta.2,)	optional
+client:ponder->neoforge	21.1.257	[21.1.206,)	required
+client:ponder->minecraft	1.21.1	[1.21.1]	required
+client:ponder->flywheel	1.0.6	[1.0.0,2.0)	required
+client:curios->neoforge	21.1.257	[21.1.60,)	required
+client:curios->minecraft	1.21.1	[1.21, 1.22)	required
+client:dankstorage->neoforge	21.1.257	[21.1.35,)	required
+client:dankstorage->minecraft	1.21.1	[1.21, 1.22)	required
+client:dynamic_fps->minecraft	1.21.1	[1.21.0,1.21.1]	required
+client:entityculling->minecraft	1.21.1	[1.21.1]	required
+client:entityculling->neoforge	21.1.257	[20.2,)	required
+client:excessive_utilities->neoforge	21.1.257	[21.1.0,)	required
+client:excessive_utilities->curios	9.5.1+1.21.1	[9.0.5,)	required
+client:excessive_utilities->kotlinforforge	5.12.0	[5.12.0,6.0.0)	required
+client:excessive_utilities->aaron	1.21.0	[1.21,)	required
+client:excessive_utilities->minecraft	1.21.1	[1.21.1,1.22)	required
+client:explorify->minecraft	1.21.1	[1.20,)	required
+client:extendedae->neoforge	21.1.257	[21.1.194,)	required
+client:extendedae->minecraft	1.21.1	[1.21.1,)	required
+client:extendedae->ae2	19.2.18	[19.2.8,)	required
+client:extendedae->glodium	1.21-2.2-neoforge	[1.21-2.0-neoforge,)	required
+client:extendedae->ae2wtlib	19.5.1	[19.2.0,)	optional
+client:ae2wtlib_api->ae2	19.2.18	[19.1.2-beta,20.0.0)	required
+client:ferritecore->neoforge	21.1.257	[21.1.218,)	required
+client:ferritecore->minecraft	1.21.1	[1.21.1,1.22)	required
+client:ftbjeiextras->neoforge	21.1.257	[21.1.0,)	required
+client:ftbjeiextras->minecraft	1.21.1	[1.21.1, 1.22)	required
+client:ftblibrary->neoforge	21.1.257	[21.1.0,)	required
+client:ftblibrary->minecraft	1.21.1	[1.21.1,)	required
+client:ftblibrary->architectury	13.0.11	[13.0.6,)	required
+client:glodium->neoforge	21.1.257	[21.1.1,)	required
+client:glodium->minecraft	1.21.1	[1.21.1,)	required
+client:guideme->neoforge	21.1.257	[21.1.1,)	required
+client:guideme->minecraft	1.21.1	[1.21.1]	required
+client:immediatelyfast->minecraft	1.21.1	[1.21,1.21.1]	required
+client:immediatelyfast->neoforge	21.1.257	[21.0.0,)	required
+client:inventoryprofilesnext->neoforge	21.1.257	[21, 22.2)	required
+client:inventoryprofilesnext->minecraft	1.21.1	[1.21.1, 1.21.2)	required
+client:inventoryprofilesnext->libipn	6.6.3	[6.6.3, 6.7)	required
+client:jei->neoforge	21.1.257	[21.1.238,)	required
+client:jei->minecraft	1.21.1	[1.21, 1.21.1)	required
+client:kotlinforforge->minecraft	1.21.1	[1.20.6,1.21.9)	required
+client:libipn->neoforge	21.1.257	[21.1,)	required
+client:libipn->minecraft	1.21.1	[1.21.1, 1.21.2)	required
+client:lithium->minecraft	1.21.1	[1.21, 1.21.1]	required
+client:modernfix->neoforge	21.1.257	[21.0.111-beta,)	required
+client:modernfix->minecraft	1.21.1	[1.21, 1.22)	required
+client:modernfix->jei	19.51.0.418	[15.8.0.11,)	optional
+client:sodium->minecraft	1.21.1	1.21.1	required
+client:sodium->neoforge	21.1.257	[21.1.82,)	required
+client:fabric_api_base->neoforge	21.1.257	[21.1.219,)	required
+client:fabric_api_base->minecraft	1.21.1	[1.21.1,1.22)	required
+client:fabric_block_view_api_v2->neoforge	21.1.257	[21.1.115,)	required
+client:fabric_block_view_api_v2->minecraft	1.21.1	[1.21.1,1.22)	required
+client:fabric_renderer_api_v1->neoforge	21.1.257	[21.1.219,)	required
+client:fabric_renderer_api_v1->minecraft	1.21.1	[1.21.1,1.22)	required
+client:fabric_rendering_data_attachment_v1->neoforge	21.1.257	[21.1.115,)	required
+client:fabric_rendering_data_attachment_v1->minecraft	1.21.1	[1.21.1,1.22)	required
+client:sodium->minecraft	1.21.1	1.21.1	required
+client:sodium->neoforge	21.1.257	[21.1.82,)	required
+client:spark->neoforge	21.1.257	[20,)	required
+client:waystones->neoforge	21.1.257	[21-beta,)	required
+client:waystones->minecraft	1.21.1	[1.21,)	required
+client:waystones->balm	21.0.66	[21.0.39,)	required
+client:xaerominimap->neoforge	21.1.257	[21.0.110-beta,21.2.0)	required
+client:xaerominimap->minecraft	1.21.1	1.21.1	required
+client:xaerominimap->xaeroworldmap	1.47.0	[1.44.0,)	optional
+client:xaerolib->neoforge	21.1.257	[21.0.110-beta,)	required
+client:xaerolib->minecraft	1.21.1	[1.21, 1.21.1]	required
+client:xaeroworldmap->neoforge	21.1.257	[21.0.110-beta, 21.2.0)	required
+client:xaeroworldmap->minecraft	1.21.1	[1.21, 1.21.2)	required
+client:xaeroworldmap->xaerominimap	26.6.0	[26.4.0,)	optional
+client:xaeroworldmap->xaerolib	1.7.3	[1.0,)	required
+client:xaerolib->neoforge	21.1.257	[21.0.110-beta,)	required
+client:xaerolib->minecraft	1.21.1	[1.21, 1.21.1]	required
+client:yungsapi->minecraft	1.21.1	[1.21, 1.22)	required
+client:yungsapi->neoforge	21.1.257	[21.0.0,)	required
+client:yungsbridges->minecraft	1.21.1	[1.21, 1.22)	required
+client:yungsbridges->neoforge	21.1.257	[21.0.0,)	required
+client:yungsbridges->yungsapi	1.21.1-NeoForge-5.1.9	[1.21.1-NeoForge-5.1.2,)	required
+client:yungsextras->minecraft	1.21.1	[1.21, 1.22)	required
+client:yungsextras->neoforge	21.1.257	[21.0.0,)	required
+client:yungsextras->yungsapi	1.21.1-NeoForge-5.1.9	[1.21.1-NeoForge-5.1.2,)	required
+server:aaron->neoforge	21.1.257	[21.1.0,)	required
+server:aaron->minecraft	1.21.1	[1.21.1,1.22)	required
+server:aaron->kotlinforforge	5.12.0	[5.12.0,)	required
+server:ae2->neoforge	21.1.257	[21.1.169,)	required
+server:ae2->minecraft	1.21.1	[1.21.1]	required
+server:ae2->guideme	21.1.19	[21.1.1,)	required
+server:appliedcreate->neoforge	21.1.257	[21.1,)	required
+server:appliedcreate->minecraft	1.21.1	[1.21.1,1.22)	required
+server:appliedcreate->create	6.0.10	[6.0,)	required
+server:appliedcreate->kotlinforforge	5.12.0	[5,)	required
+server:appliedcreate->ae2	19.2.18	[19.0,)	required
+server:appliedcreate->extendedae	1.21-2.2.35-neoforge	[1.0,)	optional
+server:ae2wtlib->ae2wtlib_api	19.5.1	[19.5.1]	required
+server:ae2wtlib->ae2	19.2.18	[19.2.17,20.0.0)	required
+server:ae2wtlib->extendedae	1.21-2.2.35-neoforge	(,1.21-1.1.4-neoforge]	incompatible
+server:ae2wtlib_api->ae2	19.2.18	[19.2.17,20.0.0)	required
+server:balm->neoforge	21.1.257	[21.0.82-beta,)	required
+server:balm->minecraft	1.21.1	[1.21.1,)	required
+server:kuma_api->neoforge	21.1.257	[21-beta,)	required
+server:kuma_api->minecraft	1.21.1	[1.21,)	required
+server:buildinggadgets2->neoforge	21.1.257	[21.0,)	required
+server:buildinggadgets2->minecraft	1.21.1	[1.21,1.22)	required
+server:charginggadgets->neoforge	21.1.257	[21.0,)	required
+server:charginggadgets->minecraft	1.21.1	[1.21,1.22)	required
+server:chunky->neoforge	21.1.257	[21.0-beta,)	required
+server:chunky->minecraft	1.21.1	[1.21,1.22)	required
+server:craftingtweaks->neoforge	21.1.257	[21-beta,)	required
+server:craftingtweaks->minecraft	1.21.1	[1.21,)	required
+server:craftingtweaks->balm	21.0.66	[21.0.48,)	required
+server:create->neoforge	21.1.257	[21.1.219,)	required
+server:create->minecraft	1.21.1	[1.21.1]	required
+server:create->ponder	1.0.82+mc1.21.1	[1.0.82,)	required
+server:create->lithium	0.15.4+mc1.21.1	[0.14.7,)	optional
+server:ponder->neoforge	21.1.257	[21.1.206,)	required
+server:ponder->minecraft	1.21.1	[1.21.1]	required
+server:curios->neoforge	21.1.257	[21.1.60,)	required
+server:curios->minecraft	1.21.1	[1.21, 1.22)	required
+server:dankstorage->neoforge	21.1.257	[21.1.35,)	required
+server:dankstorage->minecraft	1.21.1	[1.21, 1.22)	required
+server:excessive_utilities->neoforge	21.1.257	[21.1.0,)	required
+server:excessive_utilities->curios	9.5.1+1.21.1	[9.0.5,)	required
+server:excessive_utilities->kotlinforforge	5.12.0	[5.12.0,6.0.0)	required
+server:excessive_utilities->aaron	1.21.0	[1.21,)	required
+server:excessive_utilities->minecraft	1.21.1	[1.21.1,1.22)	required
+server:explorify->minecraft	1.21.1	[1.20,)	required
+server:extendedae->neoforge	21.1.257	[21.1.194,)	required
+server:extendedae->minecraft	1.21.1	[1.21.1,)	required
+server:extendedae->ae2	19.2.18	[19.2.8,)	required
+server:extendedae->glodium	1.21-2.2-neoforge	[1.21-2.0-neoforge,)	required
+server:extendedae->ae2wtlib	19.5.1	[19.2.0,)	optional
+server:ae2wtlib_api->ae2	19.2.18	[19.1.2-beta,20.0.0)	required
+server:ferritecore->neoforge	21.1.257	[21.1.218,)	required
+server:ferritecore->minecraft	1.21.1	[1.21.1,1.22)	required
+server:glodium->neoforge	21.1.257	[21.1.1,)	required
+server:glodium->minecraft	1.21.1	[1.21.1,)	required
+server:guideme->neoforge	21.1.257	[21.1.1,)	required
+server:guideme->minecraft	1.21.1	[1.21.1]	required
+server:kotlinforforge->minecraft	1.21.1	[1.20.6,1.21.9)	required
+server:lithium->minecraft	1.21.1	[1.21, 1.21.1]	required
+server:modernfix->neoforge	21.1.257	[21.0.111-beta,)	required
+server:modernfix->minecraft	1.21.1	[1.21, 1.22)	required
+server:spark->neoforge	21.1.257	[20,)	required
+server:waystones->neoforge	21.1.257	[21-beta,)	required
+server:waystones->minecraft	1.21.1	[1.21,)	required
+server:waystones->balm	21.0.66	[21.0.39,)	required
+server:yungsapi->minecraft	1.21.1	[1.21, 1.22)	required
+server:yungsapi->neoforge	21.1.257	[21.0.0,)	required
+server:yungsbridges->minecraft	1.21.1	[1.21, 1.22)	required
+server:yungsbridges->neoforge	21.1.257	[21.0.0,)	required
+server:yungsbridges->yungsapi	1.21.1-NeoForge-5.1.9	[1.21.1-NeoForge-5.1.2,)	required
+server:yungsextras->minecraft	1.21.1	[1.21, 1.22)	required
+server:yungsextras->neoforge	21.1.257	[21.0.0,)	required
+server:yungsextras->yungsapi	1.21.1-NeoForge-5.1.9	[1.21.1-NeoForge-5.1.2,)	required

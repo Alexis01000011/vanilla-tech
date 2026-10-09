@@ -1,0 +1,14 @@
+version:3955
+renderDistance:8
+simulationDistance:6
+maxFps:60
+enableVsync:true
+graphicsMode:0
+particles:1
+entityDistanceScaling:0.75
+mipmapLevels:2
+key_key.ae2.wireless_terminal:key.keyboard.v
+key_key.buildinggadgets2.settings_menu:key.keyboard.g
+key_key.buildinggadgets2.undo:key.keyboard.backspace
+key_key.buildinggadgets2.anchor:key.keyboard.home
+key_key.buildinggadgets2.range:key.keyboard.end

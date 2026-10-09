@@ -1,0 +1,195 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/aaron.pw.toml"
+hash = "b98d1d67a07b6db14512d2fe2d19c58e3cb9039c299e1a98089fa89bae1230ef"
+metafile = true
+
+[[files]]
+file = "mods/ae2.pw.toml"
+hash = "7b59da2b03882393dc84191c125cdfc2e0abc3230a297ebc7586b1234d67800d"
+metafile = true
+
+[[files]]
+file = "mods/applied-create.pw.toml"
+hash = "74f3591295ea0947f5227cf2626f2736aa603f2082ad6dffe357af631770b9e6"
+metafile = true
+
+[[files]]
+file = "mods/applied-energistics-2-wireless-terminals.pw.toml"
+hash = "36396122462934df9dbe052e5002a789ce154077e7d4df8256c2cc1d4963904c"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "6b93713a1fd77ec95d5098668966090140227cf2c903dfbcca450847c1808c46"
+metafile = true
+
+[[files]]
+file = "mods/balm.pw.toml"
+hash = "f4f380a35d7071cef66b71e59dca2043917b0500fbe29efdd73d6c8e2762afc6"
+metafile = true
+
+[[files]]
+file = "mods/building-gadgets.pw.toml"
+hash = "5cd5ad508f12e57ce392f12adabab9a0225c521f0407b2d1e9533ef6bdd0a02f"
+metafile = true
+
+[[files]]
+file = "mods/charging-gadgets.pw.toml"
+hash = "ba317469abac5258d4f3e604a9a0435d7ea6144d8a765802d23b2df55bb77e55"
+metafile = true
+
+[[files]]
+file = "mods/chunky.pw.toml"
+hash = "1fda56abb587d1a3a721058f1bcb082776d1e9464d8e8c8916f47d33b4a77754"
+metafile = true
+
+[[files]]
+file = "mods/crafting-tweaks.pw.toml"
+hash = "85c7c943a4c1ced6e89c378162ccf873218f208eadf7e63c523b1b670371d044"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "ea6fe0472a366254a2749ba72a1e42f0ba05114bfbd807a6ccafb46a53af03c1"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "13c14858b51000ef677c1d2e20e1b7cbf5efa89e853b07362bd176f8fdcf956e"
+metafile = true
+
+[[files]]
+file = "mods/dank-storage.pw.toml"
+hash = "fa2d3417e8b1ef2ce4f070fb27bf40662af469ac2d740d850fcb715da712f50d"
+metafile = true
+
+[[files]]
+file = "mods/dynamic-fps.pw.toml"
+hash = "9a79884afb70df8a6b2e0e1a202d6917035dd302c664dae544f1050ffc305ee5"
+metafile = true
+
+[[files]]
+file = "mods/entityculling.pw.toml"
+hash = "93794b4db8b4fd7e69ff79f0f6b8baa0b29a0578a86e23d4121db5ac80a8b6cd"
+metafile = true
+
+[[files]]
+file = "mods/excessive-utilities.pw.toml"
+hash = "b80e400308cd6c85d583388bbcc9e0be61aef927c435d0c607b9141b0f099807"
+metafile = true
+
+[[files]]
+file = "mods/explorify.pw.toml"
+hash = "41a72a4778c6a81fffef9aa58ae9bd82d086685b73ec0a80d192d7e45f719ba8"
+metafile = true
+
+[[files]]
+file = "mods/extended-ae.pw.toml"
+hash = "181eb64ad9245ea9251753559d7e6a069a4dac5d7323b6338ca773ed69752ee0"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "8c1007fe73c350fc21333aa28fce400dbc7b1fa5bbb2d7e3c9fe074e9ea7cc7c"
+metafile = true
+
+[[files]]
+file = "mods/ftb-jei-extras.pw.toml"
+hash = "86019b7956d07cdde9d719a378faad84a7b6b3e99903191c1df868341ba0c291"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "c8447182daf5a36cedb7868d868fee1a8d9b6bedc5167e2575b859f179cf002d"
+metafile = true
+
+[[files]]
+file = "mods/glodium.pw.toml"
+hash = "787621d57595f452e90a3b765f0c918104e6115407de809f6ddb5012476fdd32"
+metafile = true
+
+[[files]]
+file = "mods/guideme.pw.toml"
+hash = "da6c02d23fa5a00ecff17981ac05bf500d55ef0e069b632c232696c09870907b"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "eaa5a989845e486c017eee7c2e101597e4240c5437c8fcf084cf088e50b21edf"
+metafile = true
+
+[[files]]
+file = "mods/inventory-profiles-next.pw.toml"
+hash = "134e2eafd2447ace3a006dbff668c3959bae0968cc98328d8c6207a7a57891f7"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "fcc31a07d0bf90552800cfeb04d5e5b456e48cddcc640adb72b894647ed5663c"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "c5886cdeb8094e40830655703a846c8f6a116d1e9cbc2d0e8109489533730f1b"
+metafile = true
+
+[[files]]
+file = "mods/libipn.pw.toml"
+hash = "e5eae873c66754e90d457311711243cc6e350d73f93fc6935c42ffb7de2ee69a"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "e56ef4cda70192e49b5c476a94bed401e63b0d46c9c0d48ade3a8f76d7f491ac"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "f1d9d20d3d7762c313fbd165346fe908dd1ffb686eaca305a1762ec33c69157d"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "695374f11bf65d0a6e6f244857cce0e62801c965ca36fd018699eb372a7837ae"
+metafile = true
+
+[[files]]
+file = "mods/spark.pw.toml"
+hash = "55276157b0d0ad40200a7d6d6c356c0bac173ce788d5e6c5615bf3e70fec8105"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "13a876e650ae6a2d6d9efed2a3f00f6592c1fb0ce9077ff03bd71a04ba8fae1c"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+hash = "13e58fc35455c17591f3d895dffa409240ab4ccf8133470e810b6aa4538abf16"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-world-map.pw.toml"
+hash = "aa2be2104e8849fdffb4ea09c58190f75f475726fe929d44a33a54a33fa7a6c2"
+metafile = true
+
+[[files]]
+file = "mods/yungs-api.pw.toml"
+hash = "ceedc41efae5062ed88c781fb2cd0e563f63f6fbee233769ef65a1d4cd652c8d"
+metafile = true
+
+[[files]]
+file = "mods/yungs-bridges.pw.toml"
+hash = "58d099f048d3369f7e5a143790339acdc4fa20bc2773a4567fca62a10a8d0a28"
+metafile = true
+
+[[files]]
+file = "mods/yungs-extras.pw.toml"
+hash = "0f279711dcd6fce2c2a7498856d454389453430510cb0f1b39313c9fc2b72511"
+metafile = true
+
+[[files]]
+file = "options.txt"
+hash = "47b5cbc68fef9a139e924002c79c2451bbd9e9b3be6acb36b66f530d6442991c"

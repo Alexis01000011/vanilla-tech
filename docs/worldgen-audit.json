@@ -1,0 +1,234 @@
+[
+  {
+    "mod": "Aaron",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Applied Energistics 2",
+    "worldgen_paths": [
+      "data/ae2/worldgen/structure_set/meteorite.json",
+      "data/ae2/worldgen/structure/meteorite.json",
+      "data/ae2/worldgen/biome/spatial_storage.json",
+      "data/ae2/tags/worldgen/biome/has_meteorites.json"
+    ],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Applied Create",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Applied Energistics 2 Wireless Terminals",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Balm",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Building Gadgets",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Charging Gadgets",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Chunky",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Crafting Tweaks",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Create",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Curios API",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Dank Storage",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Excessive Utilities",
+    "worldgen_paths": [
+      "data/excessive_utilities/dimension/the_depths.json",
+      "data/excessive_utilities/dimension/quantum_quarry.json",
+      "data/excessive_utilities/dimension/the_last_millennium.json",
+      "data/excessive_utilities/worldgen/structure_set/ancient_cities.json",
+      "data/excessive_utilities/worldgen/structure/ancient_city.json",
+      "data/excessive_utilities/worldgen/biome/the_depths.json",
+      "data/excessive_utilities/worldgen/noise_settings/the_depths.json",
+      "data/excessive_utilities/tags/worldgen/biome/biome_marker_blacklist.json",
+      "data/c/tags/worldgen/biome/is_overworld.json"
+    ],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Explorify",
+    "worldgen_paths": [
+      "data/explorify/tags/worldgen/biome/has_structure/badlands_pyramid.json",
+      "data/explorify/tags/worldgen/biome/has_structure/black_spiral.json",
+      "data/explorify/tags/worldgen/biome/has_structure/campsite.json",
+      "data/explorify/tags/worldgen/biome/has_structure/dark_forest_settlement.json",
+      "data/explorify/tags/worldgen/biome/has_structure/desert_shrine.json",
+      "data/explorify/tags/worldgen/biome/has_structure/end_shipwreck.json",
+      "data/explorify/tags/worldgen/biome/has_structure/farmstead.json",
+      "data/explorify/tags/worldgen/biome/has_structure/guide_post_cold.json",
+      "data/explorify/tags/worldgen/biome/has_structure/guide_post_warm.json",
+      "data/explorify/tags/worldgen/biome/has_structure/mangrove_hut.json",
+      "data/explorify/tags/worldgen/biome/has_structure/mausoleum.json",
+      "data/explorify/tags/worldgen/biome/has_structure/ruins.json",
+      "data/explorify/tags/worldgen/biome/has_structure/supply_cache/birch.json",
+      "data/explorify/tags/worldgen/biome/has_structure/supply_cache/dark.json",
+      "data/explorify/tags/worldgen/biome/has_structure/supply_cache/desert.json",
+      "data/explorify/tags/worldgen/biome/has_structure/supply_cache/forest.json",
+      "data/explorify/tags/worldgen/biome/has_structure/supply_cache/jungle.json",
+      "data/explorify/tags/worldgen/biome/has_structure/supply_cache/mangrove.json",
+      "data/explorify/tags/worldgen/biome/has_structure/supply_cache/taiga.json",
+      "data/explorify/tags/worldgen/biome/has_structure/tavern.json",
+      "data/explorify/tags/worldgen/biome/has_structure/watchtower_plains.json",
+      "data/explorify/tags/worldgen/biome/has_structure/watchtower_savanna.json",
+      "data/explorify/tags/worldgen/biome/has_structure/watchtower_taiga.json",
+      "data/explorify/worldgen/structure/badlands_pyramid.json",
+      "data/explorify/worldgen/structure/black_spiral.json",
+      "data/explorify/worldgen/structure/campsite.json",
+      "data/explorify/worldgen/structure/dark_forest_settlement.json",
+      "data/explorify/worldgen/structure/desert_shrine.json",
+      "data/explorify/worldgen/structure/end_shipwreck.json",
+      "data/explorify/worldgen/structure/farmstead.json",
+      "data/explorify/worldgen/structure/guide_post_cold.json",
+      "data/explorify/worldgen/structure/guide_post_warm.json",
+      "data/explorify/worldgen/structure/mangrove_hut.json",
+      "data/explorify/worldgen/structure/mausoleum.json",
+      "data/explorify/worldgen/structure/ruins.json",
+      "data/explorify/worldgen/structure/supply_cache/birch.json",
+      "data/explorify/worldgen/structure/supply_cache/dark.json",
+      "data/explorify/worldgen/structure/supply_cache/desert.json",
+      "data/explorify/worldgen/structure/supply_cache/forest.json",
+      "data/explorify/worldgen/structure/supply_cache/jungle.json",
+      "data/explorify/worldgen/structure/supply_cache/mangrove.json",
+      "data/explorify/worldgen/structure/supply_cache/taiga.json",
+      "data/explorify/worldgen/structure/tavern.json",
+      "data/explorify/worldgen/structure/watchtower/plains.json",
+      "data/explorify/worldgen/structure/watchtower/savanna.json",
+      "data/explorify/worldgen/structure/watchtower/taiga.json",
+      "data/explorify/worldgen/structure_set/badlands_pyramids.json",
+      "data/explorify/worldgen/structure_set/black_spirals.json",
+      "data/explorify/worldgen/structure_set/campsites.json",
+      "data/explorify/worldgen/structure_set/dark_forest_settlements.json",
+      "data/explorify/worldgen/structure_set/desert_shrines.json",
+      "data/explorify/worldgen/structure_set/end_shipwrecks.json",
+      "data/explorify/worldgen/structure_set/farmsteads.json",
+      "data/explorify/worldgen/structure_set/guide_posts.json",
+      "data/explorify/worldgen/structure_set/mangrove_huts.json",
+      "data/explorify/worldgen/structure_set/mausoleums.json",
+      "data/explorify/worldgen/structure_set/ruins.json",
+      "data/explorify/worldgen/structure_set/supply_caches.json",
+      "data/explorify/worldgen/structure_set/taverns.json",
+      "data/explorify/worldgen/structure_set/watchtowers.json"
+    ],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Extended AE",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "FerriteCore",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Glodium",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "GuideME",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Kotlin for Forge",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Lithium",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "ModernFix",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "spark",
+    "worldgen_paths": [],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "Waystones",
+    "worldgen_paths": [
+      "data/waystones/tags/worldgen/biome/has_structure/blackstone_waystone.json",
+      "data/waystones/tags/worldgen/biome/has_structure/deepslate_waystone.json",
+      "data/waystones/tags/worldgen/biome/has_structure/end_stone_waystone.json",
+      "data/waystones/tags/worldgen/biome/has_structure/mossy_waystone.json",
+      "data/waystones/tags/worldgen/biome/has_structure/mud_bricks_waystone.json",
+      "data/waystones/tags/worldgen/biome/has_structure/prismarine_waystone.json",
+      "data/waystones/tags/worldgen/biome/has_structure/purpur_waystone.json",
+      "data/waystones/tags/worldgen/biome/has_structure/red_nether_bricks_waystone.json",
+      "data/waystones/tags/worldgen/biome/has_structure/sandy_waystone.json",
+      "data/waystones/tags/worldgen/biome/has_structure/waystone.json"
+    ],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "YUNG's API",
+    "worldgen_paths": [
+      "data/yungsapi/tags/worldgen/structure/remove_magma_feature_in.json",
+      "data/yungsapi/tags/worldgen/structure/remove_basalt_columns_feature_in.json",
+      "data/yungsapi/tags/worldgen/structure/remove_vines_feature_in.json",
+      "data/yungsapi/tags/worldgen/structure/remove_delta_feature_in.json"
+    ],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "YUNG's Bridges",
+    "worldgen_paths": [
+      "data/yungsbridges/tags/worldgen/biome/collections/badlands.json",
+      "data/yungsbridges/tags/worldgen/biome/collections/jungle.json",
+      "data/yungsbridges/tags/worldgen/biome/collections/savanna.json",
+      "data/yungsbridges/tags/worldgen/biome/collections/taiga.json",
+      "data/yungsbridges/tags/worldgen/biome/has_structure/bridge.json"
+    ],
+    "vanilla_overrides": []
+  },
+  {
+    "mod": "YUNG's Extras",
+    "worldgen_paths": [
+      "data/yungsextras/tags/worldgen/biome/has_structure/desert_decorations.json",
+      "data/yungsextras/tags/worldgen/biome/has_structure/swamp_structures.json",
+      "data/yungsextras/tags/worldgen/biome/has_structure/vanilla_desert_well.json"
+    ],
+    "vanilla_overrides": []
+  }
+]

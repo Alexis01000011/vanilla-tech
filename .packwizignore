@@ -1,0 +1,13 @@
+.tools/**
+.cache/**
+research/**
+docs/**
+scripts/**
+releases/**
+server/**
+server-template/**
+README.md
+.gitignore
+*.log
+core
+core.*

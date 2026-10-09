@@ -1,0 +1,187 @@
+{
+  "project": {
+    "client_side": "unsupported",
+    "server_side": "required",
+    "game_versions": [
+      "1.19.2",
+      "1.19.3",
+      "1.19.4",
+      "1.20",
+      "1.20.1",
+      "1.20.4",
+      "1.21",
+      "1.21.1",
+      "1.21.4",
+      "26.1.1",
+      "26.1.2"
+    ],
+    "environment": [
+      "server_only"
+    ],
+    "id": "Ht4BfYp6",
+    "slug": "yungs-bridges",
+    "project_type": "mod",
+    "team": "13sU60QF",
+    "organization": "nuVP8uUG",
+    "title": "YUNG's Bridges",
+    "description": "Adds beautiful naturally generated bridges throughout the world!",
+    "body": "<p>\n<img src=\"https://i.imgur.com/cmRWhN4.png\" alt=\"YUNG's Bridges\" width=\"1344\" height=\"416\" /><br />\n<a title=\"Depends on YUNG's API\" href=\"https://modrinth.com/mod/yungs-api\" target=\"_blank\" rel=\"noopener\"><img src=\"https://tinyurl.com/yungsapibadge\" alt=\"Depends on YUNG's API\" width=\"211\" height=\"26\" /></a>&nbsp;<a title=\"Join the YUNG GANG on Discord!\" href=\"https://discord.gg/rns3beq\" target=\"_blank\" rel=\"noopener\"><img src=\"https://tinyurl.com/yungsdiscordbadge2\" alt=\"Join the YUNG GANG on Discord!\" width=\"136\" height=\"28\" /></a>&nbsp;<a title=\"Follow me on Twitter!\" href=\"https://twitter.com/yungnickyoung\" target=\"_blank\" rel=\"noopener\"><img src=\"https://tinyurl.com/yungstwitterbadge3\" alt=\"Follow me on Twitter!\" width=\"76\" height=\"27\" /></a>&nbsp;<a title=\"Subscribe to my YouTube!\" href=\"https://www.youtube.com/yungnickyoung\" target=\"_blank\" rel=\"noopener\"><img src=\"https://tinyurl.com/yungsyoutubebadge\" alt=\"Subscribe to my YouTube!\" width=\"80\" height=\"30\" /></a>&nbsp;<a title=\"Support me on Patreon!\" href=\"https://patreon.com/yungnickyoung\" target=\"_blank\" rel=\"noopener\"><img src=\"https://tinyurl.com/yungspatreonbadge\" alt=\"Support me on Patreon!\" width=\"138\" height=\"28\" /></a><br />\n<img src=\"https://i.imgur.com/Ug8dC9A.png\" alt=\"What is this?\" width=\"1125\" height=\"59\" /><br />\nYUNG's Bridges is the first Minecraft mod to ever add naturally generated bridges to the game. Explore the world and discover over 15 different types of bridges, each with biome-specific variants!\n</p>\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4aMS_7aq3ws\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n<p>\n<img src=\"https://i.imgur.com/ladFuIF.png\" alt=\"Compatibility\" width=\"1125\" height=\"59\" /><br />\nYUNG's Bridges is intended to be fully compatible with every worldgen mod, including:\n</p>\n<ul>\n<li><a title=\"YUNG's Better Desert Temples\" href=\"https://modrinth.com/mod/yungs-better-desert-temples\" target=\"_blank\" rel=\"noopener\">YUNG's Better Desert Temples</a></li>\n<li><a title=\"YUNG's Better Ocean Monuments\" href=\"https://modrinth.com/mod/yungs-better-ocean-monuments\" target=\"_blank\" rel=\"noopener\">YUNG's Better Ocean Monuments</a></li>\n<li><a title=\"YUNG's Better Mineshafts\" href=\"https://modrinth.com/mod/yungs-better-mineshafts\" target=\"_blank\" rel=\"noopener\">YUNG's Better Mineshafts</a></li>\n<li><a title=\"YUNG's Better Strongholds\" href=\"https://modrinth.com/mod/yungs-better-strongholds\" target=\"_blank\" rel=\"noopener\">YUNG's Better Strongholds</a></li>\n<li><a title=\"YUNG's Extras\" href=\"https://modrinth.com/mod/yungs-extras\" target=\"_blank\" rel=\"noopener\">YUNG's Extras</a></li>\n<li>Oh the Biomes You'll Go</li>\n<li>Biomes O' Plenty</li>\n<li>Terralith: makes river have steeper banks. Bridges may still spawn but will be rare. Experiment with higher spawn rates.</li>\n</ul>\n<p><a title=\"Play with friends with the Essential mod!\" href=\"https://essential.gg/x/yung\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://i.imgur.com/2mVOWMC.jpeg\" alt=\"Play with friends with the Essential mod!\" /></a></p>\n<p><img src=\"https://i.imgur.com/a49IMQJ.png\" /><br />\n<a title=\"Get 25% off your server with code YUNGNICKYOUNG at Bisect Hosting!\" href=\"https://bisecthosting.com/yung\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://i.imgur.com/nQRs7ZP.png\" alt=\"Use code YUNGNICKYOUNG with Bisect Hosting for 25% off!\" width=\"1344\" height=\"400\" /></a></p>",
+    "body_url": null,
+    "published": "2022-11-28T22:06:46.403543Z",
+    "updated": "2026-06-24T18:11:15.981260Z",
+    "approved": "2022-11-28T23:37:21.230737Z",
+    "queued": null,
+    "status": "approved",
+    "requested_status": null,
+    "moderator_message": null,
+    "license": {
+      "id": "LGPL-3.0-only",
+      "name": "GNU Lesser General Public License v3.0 only",
+      "url": null
+    },
+    "downloads": 15908179,
+    "followers": 1941,
+    "categories": [
+      "adventure",
+      "decoration",
+      "worldgen"
+    ],
+    "additional_categories": [],
+    "loaders": [
+      "fabric",
+      "forge",
+      "neoforge"
+    ],
+    "versions": [
+      "rgVgefNE",
+      "42BwR2A5",
+      "W7cTjzEy",
+      "RHuxQShE",
+      "pWD9qGts",
+      "KqjSgDPc",
+      "kmK7n0CX",
+      "j10QkrM6",
+      "F6lxHU1v",
+      "KDibEgMd",
+      "KgO1gfM2",
+      "hvfjXu8d",
+      "UjHqaPUL",
+      "tx2e5Fjp",
+      "qxvR9ze6",
+      "1tsMy0YZ",
+      "agXdVUwG",
+      "3zaZ4cxk",
+      "eUYfoWxq",
+      "qWsaAXJc",
+      "QHMeLVYo",
+      "QuxxUFoA",
+      "yA2nuSdw",
+      "EIr3cl8o",
+      "urkCzBf6",
+      "8h9N9fvs",
+      "kXaKq5O0",
+      "a8dqim8P",
+      "Emt3LgQS",
+      "fi6Ilg6W"
+    ],
+    "icon_url": "https://cdn.modrinth.com/data/Ht4BfYp6/b465e98ac5f2742cf52292e6649b6abb76665e8f_96.webp",
+    "raw_icon_url": "https://cdn.modrinth.com/data/Ht4BfYp6/1d55ae5220d5e8a3bd9224ce100c21492f43abb0.png",
+    "issues_url": "https://github.com/YUNG-GANG/YUNGs-Bridges/issues",
+    "source_url": "https://github.com/YUNG-GANG/YUNGs-Bridges",
+    "wiki_url": null,
+    "discord_url": "https://discord.gg/rns3beq",
+    "donation_urls": [
+      {
+        "id": "patreon",
+        "platform": "Patreon",
+        "url": "https://www.patreon.com/yungnickyoung"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://cdn.modrinth.com/data/Ht4BfYp6/images/07e3b478d55e78122d08b8d2f56f9cc5370dbbdb_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/Ht4BfYp6/images/acdbdc56bb8265197faaed79e27d9fa404aa794b.jpeg",
+        "featured": false,
+        "title": null,
+        "description": null,
+        "created": "2022-11-29T00:26:57.255423Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/Ht4BfYp6/images/107c8f8e38d88e37fb3adb39437d8199a8c6e174_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/Ht4BfYp6/images/7a403ad4545200cf40c766a9b5f03678a726313f.jpeg",
+        "featured": false,
+        "title": null,
+        "description": null,
+        "created": "2022-11-29T00:26:56.481564Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/Ht4BfYp6/images/9be9369df2d8bd82b9106886a9c9e4b43a88d7fb_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/Ht4BfYp6/images/adad5a9cbe37071018e845def3eb9be9218fa615.jpeg",
+        "featured": false,
+        "title": null,
+        "description": null,
+        "created": "2022-11-29T00:26:58.476712Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/Ht4BfYp6/images/fbe01e3d929ed8449de67e79e74150bbefcf86ab_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/Ht4BfYp6/images/c9ce969fff7aed52a33885c443835d168703d721.jpeg",
+        "featured": true,
+        "title": null,
+        "description": null,
+        "created": "2022-11-29T00:26:55.582308Z",
+        "ordering": 0
+      }
+    ],
+    "color": 3921308,
+    "thread_id": "Ht4BfYp6",
+    "monetization_status": "monetized"
+  },
+  "version": {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "server_only",
+    "id": "urkCzBf6",
+    "project_id": "Ht4BfYp6",
+    "author_id": "HCGwycZf",
+    "featured": false,
+    "name": "[1.21.1] v5.1.1 (NeoForge)",
+    "version_number": "1.21.1-NeoForge-5.1.1",
+    "changelog": "- Lowered minimum version requirements so it works on both 1.21 and 1.21.1\n  \nIf you want to get early access to all my mods, [Join the Patreon!](https://www.patreon.com/yungnickyoung)  \n[Join us on Discord!](https://discord.gg/rns3beq)  \n[Follow me on Twitter](https://twitter.com/yungnickyoung) for more mod updates!",
+    "changelog_url": null,
+    "date_published": "2024-10-14T20:39:23.498316Z",
+    "downloads": 1200196,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "UxJWGQIC",
+        "hashes": {
+          "sha512": "20b07ae4c08974980f976bcae32f18ccb885745d6cd50d4a5d0156eb5c51c29e49f8b2bf7dc2ae160d39b62f2332513bd9850efc5cba13697e36a2ac2848bc3b",
+          "sha1": "18099c2d54acd16bb8ab90a66f40fa16496d065e"
+        },
+        "url": "https://cdn.modrinth.com/data/Ht4BfYp6/versions/urkCzBf6/YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+        "filename": "YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+        "primary": true,
+        "size": 136820,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "Ua7DFN59",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  }
+}

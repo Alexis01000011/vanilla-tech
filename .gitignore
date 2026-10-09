@@ -1,0 +1,7 @@
+.tools/
+.cache/
+server/
+releases/
+*.log
+*.jar
+__pycache__/

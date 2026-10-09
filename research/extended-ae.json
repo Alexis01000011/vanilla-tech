@@ -1,0 +1,178 @@
+{
+  "project": {
+    "client_side": "required",
+    "server_side": "required",
+    "game_versions": [
+      "1.19.2",
+      "1.20.1",
+      "1.20.4",
+      "1.21",
+      "1.21.1",
+      "26.1.2"
+    ],
+    "environment": [
+      "client_and_server"
+    ],
+    "id": "JiOqfoFM",
+    "slug": "extended-ae",
+    "project_type": "mod",
+    "team": "WlJhJm7i",
+    "organization": null,
+    "title": "Extended AE",
+    "description": "Turbo-boosts Applied Energistics 2 with fan-favorite QoL blocks!",
+    "body": "## \ud83d\ude80 What\u2019s Extended AE?\n\nExtended AE is an add-on for Applied Energistics 2 that streamlines storage and crafting workflows. \n\n---\n\n## \u2757 Attention\n\nExtended AE doesn't support JEI since 1.21, install [FTB JEI Extra](https://www.curseforge.com/minecraft/mc-mods/ftb-jei-extras) if you want to use JEI with Extended AE.\n\n---\n\n## \ud83d\udd11 Highlights\n\n- \ud83e\udde9 **36-slot Pattern Provider & Interface** \u2013 craft or export huge recipe sets in one block.\n- \ud83c\udf0a **Infinity Cells (Water / Cobblestone)** \u2013 endless basic resources on tap.  \n- \u26a1 **x8 Faster Import / Export Buses** \u2013 high-throughput item I/O.   \n- \ud83d\udd0e **Extended Pattern Access Terminal** (wired + wireless) \u2013 huge autocrafting UI.  \n- \ud83d\udee0\ufe0f **Pattern Modifier** \u2013 batch-edit & clone crafting patterns.\n- \ud83c\udff7\ufe0f **Tag Export & Storage Buses** \u2013 filter/output by any item tag.  \n- \ud83c\udfaf **Precise Export Bus** \u2013 per-slot exact exporting.\n- \ud83d\udce6 **Mod Export & Storage Buses** \u2013 inventory filters by mod ID.  \n- \ud83d\udd04 **Active Formation Plane** \u2013 places blocks only on redstone.   \n- \u2699\ufe0f **Extended Inscriber & Extended Charger** \u2013 parallel chip making & charging.  \n- \ud83d\udd2c **Crystal Assembler & Restorer** \u2013 instant pure-crystal growth & repair.   \n- \ud83c\udfd7\ufe0f **Extended Molecular Assembler** \u2013 x8 parallel crafting.  \n- \ud83e\uddec **Assembler Matrix** - scalable multiblock crafter for extreme speed \ud83d\udd25\n- \ud83e\uddf4 **ME Canner** \u2013 fills (or now empties) cans & containers.    \n- \ud83d\udce1 **ME Wireless Connector** \u2013 long-range network bridge.  \n\n---\n\n## \ud83d\udda5\ufe0f Versions & Loaders\n\n| MC | Fabric | Forge | NeoForge |\n|----|:------:|:-----:|:-------:|\n| 1.19.2 | \u2705 | \u2705 | \u274c |\n| 1.20.1 | \u2705 | \u2705 | \u274c |\n| 1.21.1 | \u26a0\ufe0f | \u26a0\ufe0f | \u2705 |\n\n\u26a0\ufe0f - *Abandoned by Applied Energistics 2*\n\n---\n\n## \ud83d\udd17 Links\n\n[GitHub \ud83d\udee0\ufe0f](https://github.com/GlodBlock/ExtendedAE) | [CurseForge \u26cf\ufe0f](https://www.curseforge.com/minecraft/mc-mods/ex-pattern-provider)\n\n---\n\n\n## \ud83d\ude4c Credits\n\ud83c\udfa8 Textures & models by [Sea_Kerman]([https://github.com/Sea-Kerman](https://github.com/Sea-Kerman))\n\n---\n\n## \ud83d\udcf8 Showcase\n\n![mod content](https://cdn.modrinth.com/data/cached_images/d01b555d13dbccc7e4aa3e7e81374360a56ee840.png)\n",
+    "body_url": null,
+    "published": "2024-01-25T12:30:45.675180Z",
+    "updated": "2026-08-08T09:12:40.071600Z",
+    "approved": "2024-01-30T07:33:59.393003Z",
+    "queued": "2024-01-25T12:49:08.192685Z",
+    "status": "approved",
+    "requested_status": "approved",
+    "moderator_message": null,
+    "license": {
+      "id": "LGPL-3.0-or-later",
+      "name": "GNU Lesser General Public License v3.0 or later",
+      "url": "https://github.com/GlodBlock/ExtendedAE?tab=LGPL-3.0-1-ov-file"
+    },
+    "downloads": 1606085,
+    "followers": 56,
+    "categories": [
+      "storage",
+      "technology",
+      "utility"
+    ],
+    "additional_categories": [],
+    "loaders": [
+      "fabric",
+      "forge",
+      "neoforge"
+    ],
+    "versions": [
+      "ajWJA9Eb",
+      "Ggd55YCl",
+      "J9gFVZA0",
+      "d6RtwnJw",
+      "XYEEc3bc",
+      "DDffKzoX",
+      "RUDAw88r",
+      "g9F2WlEW",
+      "HKbkN3FH",
+      "k2lsElzR",
+      "GRiFeLcP",
+      "htfMQcrD",
+      "3WVOJcdF",
+      "peZWz9ep",
+      "NoPudBqI",
+      "BfuG9Cxi",
+      "1jVdkVlm",
+      "5t5ITPTd",
+      "exirPxD2",
+      "GhvCjkci",
+      "ZbOtXnRv",
+      "tvsagdd5",
+      "37DTYHnB",
+      "lLHqGjcR",
+      "soBlHsUw",
+      "Wmmw6SrO",
+      "zCAAV2UU",
+      "F0f1MNRo",
+      "C5s7onpr",
+      "TNPgMGo7",
+      "XfdVEvHd",
+      "aajojKCF",
+      "MGiWN1zu",
+      "gOnTv6Fx",
+      "9sb6QciS",
+      "TyGULeZ3",
+      "Rbc9dHqc",
+      "Fqgk03X3",
+      "PXAdwHro",
+      "mHal3Mkb",
+      "QM0UqPAi",
+      "PouYVFxW",
+      "V6UbrXGY",
+      "leiXZvDb",
+      "4BXqcY77",
+      "uq3lO4ER",
+      "bC302UUP",
+      "KpNzac5y"
+    ],
+    "icon_url": "https://cdn.modrinth.com/data/JiOqfoFM/adb226f730bf7ae09bd01f63d0fef3dc48e54cab_96.webp",
+    "raw_icon_url": "https://cdn.modrinth.com/data/JiOqfoFM/e4bcb5f8cdcf99bbc93bd0200b709bbb92ca78b9.png",
+    "issues_url": "https://github.com/GlodBlock/ExtendedAE/issues",
+    "source_url": "https://github.com/GlodBlock/ExtendedAE",
+    "wiki_url": null,
+    "discord_url": "https://discord.gg/8ppgAfY3yF",
+    "donation_urls": [],
+    "gallery": [
+      {
+        "url": "https://cdn.modrinth.com/data/JiOqfoFM/images/d01b555d13dbccc7e4aa3e7e81374360a56ee840_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/JiOqfoFM/images/d01b555d13dbccc7e4aa3e7e81374360a56ee840.png",
+        "featured": false,
+        "title": "Mod Content",
+        "description": null,
+        "created": "2025-05-19T20:39:20.332707Z",
+        "ordering": 1
+      }
+    ],
+    "color": 16544868,
+    "thread_id": "BjH2qPQQ",
+    "monetization_status": "monetized"
+  },
+  "version": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "bC302UUP",
+    "project_id": "JiOqfoFM",
+    "author_id": "I4dHTpdY",
+    "featured": false,
+    "name": "Extended AE 1.21-2.2.35-neoforge",
+    "version_number": "1.21-2.2.35-neoforge",
+    "changelog": "",
+    "changelog_url": null,
+    "date_published": "2026-08-08T09:10:52.001914Z",
+    "downloads": 35539,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "e86uaBlJ",
+        "hashes": {
+          "sha512": "e5b76a50802087d999bf6c113bc635e8ade9f20e06f4d3276a144f4eaa3090fc3b6c67b9b6a1f7d0d036e48e69f601114a0cc92c5a8d45953f895718f806348c",
+          "sha1": "e3521ca2567fabe0f0131cc923ec94dd99d6fa7b"
+        },
+        "url": "https://cdn.modrinth.com/data/JiOqfoFM/versions/bC302UUP/ExtendedAE-1.21-2.2.35-neoforge.jar",
+        "filename": "ExtendedAE-1.21-2.2.35-neoforge.jar",
+        "primary": true,
+        "size": 5578031,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "Ck4E7v7R",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "UhW5uCKw",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "XxWD5pD3",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  }
+}

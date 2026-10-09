@@ -1,0 +1,167 @@
+{
+  "project": {
+    "client_side": "required",
+    "server_side": "required",
+    "game_versions": [
+      "1.20.1",
+      "1.21.1"
+    ],
+    "environment": [
+      "client_and_server"
+    ],
+    "id": "XmZgyZzj",
+    "slug": "applied-create",
+    "project_type": "mod",
+    "team": "DW4TyvqL",
+    "organization": null,
+    "title": "Applied Create",
+    "description": "An add-on connects AE2 and Create.",
+    "body": "# Applied Create\n\nA bridge between [Create](https://modrinth.com/mod/create) and [Applied Energistics 2](https://modrinth.com/mod/ae2) for Minecraft.\n\nStore rotational stress in ME networks, transmit it through P2P tunnels, and automate mechanical crafting with pattern providers.\n\n---\n\n## Features\n\n### Andesite Pattern Provider / Brass Pattern Provider\n\nPattern providers designed for Create's Mechanical Crafters. Place one adjacent to a connected Mechanical Crafter array, insert AE2 processing patterns, and the provider will automatically push ingredients into the correct crafter grid positions based on the recipe layout.\n\n- **Andesite Pattern Provider** \u2014 9 pattern slots (standard)\n- **Brass Pattern Provider** \u2014 36 pattern slots (extended), upgradeable from Andesite variant\n- Available as both full blocks and cable-bus parts\n\n### Stress P2P Tunnel\n\nTransmit Create's rotational stress (speed + torque) through AE2 P2P tunnels.\n\n- **Stress P2P Tunnel** \u2014 an AE2 P2P tunnel part that attaches to cables\n\nSupports attunement via Create's mechanical items (cogwheels, shafts, etc.).\n\n### ME Gearbox\n\nA bidirectional converter between ME network energy storage and Create's rotational stress.\n\n- **Export Mode** (ME \u2192 Kinetic): Reads stored stress from the ME network and outputs it as rotation\n- **Import Mode** (Kinetic \u2192 ME): Accepts rotational stress from the kinetic network and stores it in ME storage\n\nToggle mode by right-clicking with an empty hand. Scroll to adjust the stress multiplier. Features a GUI for configuration and supports Jade tooltip display for mode and transfer rate.\n\n### Kinetic Energy Acceptor\n\nAccepts Create's rotational stress and converts it into AE2 grid power (AE). Connect it to a kinetic network to power your ME system mechanically. Scroll to adjust the conversion multiplier (1x\u2013256x).\n\n### Creative Stress Cell\n\nA creative-mode infinite stress source for testing and building. Provides unlimited stress capacity without requiring any kinetic input. Craftable by converting from a Creative Motor, and can be converted back.\n\n### Stress Storage\n\nA full tier system for storing rotational stress values in ME networks, mirroring AE2's item/fluid cell architecture:\n\n| Tier | Component | Cell |\n|------|-----------|------|\n| 1k\u2013256k | Andesite-style assemblies | Andesite housing cells |\n| 1M\u2013256M | Brass-style assemblies | Brass housing cells |\n\nIncludes custom processors (Andesite/Brass Stress Processor) and circuit boards craftable via AE2 inscriber or circuit cutter. Cells can be disassembled back into housing and components.\n\n---\n\n## Dependencies (1.21.1 NeoForge)\n\n| Mod | Version | Required |\n|-----|---------|----------|\n| [NeoForge](https://neoforged.net/) | 21.1.x (1.21.1) | Yes |\n| [Create](https://modrinth.com/mod/create) | 6.0+ | Yes |\n| [Applied Energistics 2](https://modrinth.com/mod/ae2) | 19.0+ | Yes |\n| [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge) | 5.0+ | Yes |\n\n## Installation\n\n1. Install NeoForge for Minecraft 1.21.1\n2. Install all required dependencies listed above\n3. Place `appliedcreate-x.x.x.jar` into your `mods/` folder\n4. Launch the game\n",
+    "body_url": null,
+    "published": "2026-03-01T05:49:59.422228Z",
+    "updated": "2026-07-31T11:42:22.067214Z",
+    "approved": "2026-03-10T03:14:50.882356Z",
+    "queued": "2026-03-01T06:08:08.792026Z",
+    "status": "approved",
+    "requested_status": "approved",
+    "moderator_message": null,
+    "license": {
+      "id": "LicenseRef-All-Rights-Reserved",
+      "name": "",
+      "url": null
+    },
+    "downloads": 77494,
+    "followers": 20,
+    "categories": [
+      "storage",
+      "technology"
+    ],
+    "additional_categories": [],
+    "loaders": [
+      "forge",
+      "neoforge"
+    ],
+    "versions": [
+      "V2l23EWr",
+      "Bge4yJR0",
+      "Wye2S6i7",
+      "XSn4LiAn",
+      "H5L9coUT",
+      "jjkHUyet",
+      "KmMRzr0g",
+      "whYLbqlh",
+      "UJH8Kymp",
+      "xwf60z5c",
+      "YEb1OoTX",
+      "Z1osCFNj",
+      "HElFht3c",
+      "Xm22wdvJ",
+      "fDyVqIgs",
+      "2bWngfNH"
+    ],
+    "icon_url": "https://cdn.modrinth.com/data/XmZgyZzj/1e9db39b2bfbeadc846426e9b1ee93681cfc9f2c_96.webp",
+    "raw_icon_url": "https://cdn.modrinth.com/data/XmZgyZzj/1e9db39b2bfbeadc846426e9b1ee93681cfc9f2c.png",
+    "issues_url": null,
+    "source_url": null,
+    "wiki_url": null,
+    "discord_url": null,
+    "donation_urls": [],
+    "gallery": [
+      {
+        "url": "https://cdn.modrinth.com/data/XmZgyZzj/images/f56767c703e632cd3009efa46f959a5bdd685e59_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/XmZgyZzj/images/f56767c703e632cd3009efa46f959a5bdd685e59.png",
+        "featured": false,
+        "title": null,
+        "description": null,
+        "created": "2026-03-01T06:07:53.225120Z",
+        "ordering": 0
+      },
+      {
+        "url": "https://cdn.modrinth.com/data/XmZgyZzj/images/4adcc4c27c1b674fbea8722e3fe49a74c712db2b_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/XmZgyZzj/images/4adcc4c27c1b674fbea8722e3fe49a74c712db2b.png",
+        "featured": false,
+        "title": null,
+        "description": null,
+        "created": "2026-03-01T05:58:10.206865Z",
+        "ordering": 1
+      }
+    ],
+    "color": 4930089,
+    "thread_id": "XFNNbnbz",
+    "monetization_status": "monetized"
+  },
+  "version": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "2bWngfNH",
+    "project_id": "XmZgyZzj",
+    "author_id": "NBRM4ZTU",
+    "featured": false,
+    "name": "Applied Create 1.1.7 for NeoForge 1.21.1",
+    "version_number": "1.1.7",
+    "changelog": "Version 1.1.7\n\n- Added a built-in refreshed texture resource pack.\n- Fixed pattern providers to use native memory card pattern storage.\n- Corrected texture author credits.",
+    "changelog_url": null,
+    "date_published": "2026-07-31T11:42:22.067214Z",
+    "downloads": 8249,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "510ov6mp",
+        "hashes": {
+          "sha1": "bcc3e3999c0130c08b36d35d3e2e077c48af280c",
+          "sha512": "784c0bb0171eba13c076c5f2183d7db1f005cdcbabf5bb0c85f22e56e256cc6a1139aecdd0b4b2a48314dc30978fc10172464e8821a16400b98dd2ccdb87f33f"
+        },
+        "url": "https://cdn.modrinth.com/data/XmZgyZzj/versions/2bWngfNH/appliedcreate-1.21.1-1.1.7.jar",
+        "filename": "appliedcreate-1.21.1-1.1.7.jar",
+        "primary": true,
+        "size": 443442,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "HlpEBg3R",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "u6dRKJwZ",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "Jypq3ojy",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "LNytGWDc",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "XxWD5pD3",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  }
+}

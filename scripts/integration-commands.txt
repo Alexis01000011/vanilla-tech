@@ -1,0 +1,21 @@
+list
+execute in minecraft:overworld run locate structure minecraft:monument
+execute in minecraft:the_nether run locate structure minecraft:fortress
+execute in minecraft:overworld run locate structure minecraft:stronghold
+execute in minecraft:overworld run locate structure minecraft:mineshaft
+execute in minecraft:overworld run locate structure minecraft:village_plains
+execute in minecraft:overworld run locate structure explorify:ruins
+forceload add 0 0
+setblock 0 100 0 ae2:creative_energy_cell
+setblock 1 100 0 ae2:controller
+setblock 2 100 0 ae2:drive
+setblock 4 100 0 create:creative_motor
+setblock 5 100 0 create:shaft
+setblock 8 100 0 charginggadgets:charging_station
+setblock 10 100 0 waystones:waystone
+setblock 12 100 0 excessive_utilities:furnace_generator
+execute if block 1 100 0 ae2:controller[state=online] run say VT_AE2_CONTROLLER_ONLINE
+spark tps
+save-all flush
+forceload remove all
+stop

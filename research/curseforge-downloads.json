@@ -1,0 +1,50 @@
+[
+  {
+    "metadata": "mods/building-gadgets.pw.toml",
+    "url": "https://edge.forgecdn.net/files/6850/515/buildinggadgets2-1.3.9.jar",
+    "sha1": "666a155981e3cd231f67809b9e2a0238377bbbfc",
+    "sha512": "41e61011371da600c2883fcf55e5e589af973a8d4c444479e1a6ce1686ecc9e63d6bb7f2fe20389e4aa79a47826dd2239db78788ad511cf02df1dbe698eeef0e",
+    "provider": "CurseForge",
+    "file_id": 6850515
+  },
+  {
+    "metadata": "mods/dank-storage.pw.toml",
+    "url": "https://edge.forgecdn.net/files/7539/725/dankstorage-neoforge-1.21.1-20.jar",
+    "sha1": "609751b946058cc2d93497f4b4679b394dcf48c4",
+    "sha512": "df4d91803d320e7101f906fa7461494e33b532b125c9549bf15022b17ae556e4799dbd38a7c71675174746ab4c8b5ae82629e2ebc1e1d8facbb5ea6687242edb",
+    "provider": "CurseForge",
+    "file_id": 7539725
+  },
+  {
+    "metadata": "mods/ftb-library-forge.pw.toml",
+    "url": "https://edge.forgecdn.net/files/9008/89/ftb-library-neoforge-2101.1.37.jar",
+    "sha1": "b6e503587afcd678ec257e4abdc6362ff18c2fef",
+    "sha512": "36f7e2fd41de638b044ad2b391f69f276ab28df3d86cf9d83638a2e0432ef151e1737ce60d671901d0a3b49424c9ba1a09c0293fc0c6637871020b46feae9159",
+    "provider": "CurseForge",
+    "file_id": 9008089
+  },
+  {
+    "metadata": "mods/architectury-api.pw.toml",
+    "url": "https://edge.forgecdn.net/files/8492/726/architectury-13.0.11-neoforge.jar",
+    "sha1": "008656a0702801174b8ec245ed7aad1921d6e9f1",
+    "sha512": "d9f7c3bb8162577dfb461ffdf04bd6a3563c7586934a0e2a744c14421beffb8286f0d88d4c758317003f20f99fe8072a39b9d675af061e036970d36db36027f0",
+    "provider": "CurseForge",
+    "file_id": 8492726
+  },
+  {
+    "metadata": "mods/ftb-jei-extras.pw.toml",
+    "url": "https://edge.forgecdn.net/files/6695/679/ftb-jei-extras-21.1.7.jar",
+    "sha1": "ef01126201a805991bbfe5351cff7d0a9e3a077b",
+    "sha512": "6c389021ee6eacc0a94d7a8236d6a21b52e8409e3f5245cce67c6f68eced3419252b02ef5e5d67c5fab3b970ecf07edc21f17146b084114ad412144905d1bba1",
+    "provider": "CurseForge",
+    "file_id": 6695679
+  },
+  {
+    "metadata": "mods/charging-gadgets.pw.toml",
+    "url": "https://edge.forgecdn.net/files/5615/790/charginggadgets-1.14.1.jar",
+    "sha1": "3208ea2ca10d786895d03c2cd3a124d14393b357",
+    "sha512": "4974a9a2772befe11e7315b8869b28f25e370084ae21b9cdc09f37b1160a841a2dce6583841c47deac9894e64da7deef2a08dfc51fe170a3e88a42ad5f965f46",
+    "provider": "CurseForge",
+    "file_id": 5615790
+  }
+]

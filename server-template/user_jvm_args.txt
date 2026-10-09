@@ -1,0 +1,4 @@
+-Xms1G
+-Xmx5G
+-XX:+UseG1GC
+-Xlog:gc*:file=gc.log:time,uptime,level,tags:filecount=3,filesize=10M

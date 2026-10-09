@@ -1,0 +1,13 @@
+name = "Vanilla Tech"
+author = "Alexis"
+version = "0.1.0-rc.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "db75f76c4092bf96b4b8eb10666dc8385db6f0da87f9581e5fcd6d0e90b34b78"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.257"
