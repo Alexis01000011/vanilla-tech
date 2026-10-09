@@ -1,4 +1,4 @@
-# Catálogo de mods — Vanilla Tech 0.4.0-alpha.1
+# Catálogo de mods — Vanilla Tech 0.4.0
 
 Minecraft **1.21.1** · NeoForge **21.1.257** · 75 artefactos fijados (69 mods + 5 shaderpacks + 1 resource pack) (`pin = true`).
 Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qué* aporta cada mod y *por qué* está en el pack.
@@ -54,7 +54,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Deep Aether | 1.21.1-1.1.5.1 | [Modrinth](https://modrinth.com/mod/deep-aether) | both | Expansión del Aether: 11 biomas nuevos (bosques de aerglow, pantano de yagroot, golden heights, sacred lands…), materiales (skyjade, stratus), mobs, el Brass Dungeon y drops extra de los jefes. Sus biomas se reparten dentro del Aether con AeroBlender (incluido en su JAR); solo agrega features y mobs a biomas del Aether. Licencia LGPL-3.0. |
 | Deeper and Darker | 1.4.1 | [Modrinth](https://modrinth.com/mod/deeperdarker) | both | Dimensión **Otherside**, a la que se llega activando el portal de reinforced deepslate de las ancient cities. Trae biomas, mobs, el Ancient Temple y equipo (Soul Elytra, Sculk Transmitter, armadura de warden). En el Overworld solo agrega **vasijas decorativas** (`ancient_vase`) a 17 piezas de muro de las ancient cities: la forma de la ciudad no cambia. No tiene dependencias. Licencia AGPL-3.0. |
 
-## D3. Mobs, illagers y aventura (línea 0.4, en pruebas)
+## D3. Mobs, illagers y aventura
 
 | Mod | Versión | Fuente | Side | Para qué |
 |---|---|---|---|---|

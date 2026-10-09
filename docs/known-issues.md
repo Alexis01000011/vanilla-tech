@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-09, release **0.4.0-alpha.1** (estable: 0.3.0).
+Estado a 2026-10-09, release **0.4.0** (estable).
 
 ## Pruebas pendientes
 
@@ -66,7 +66,7 @@ Estado a 2026-10-09, release **0.4.0-alpha.1** (estable: 0.3.0).
 - **Aviso al arrancar `Failed to process update information`** (AeroBlender): su URL de comprobación de versiones no devuelve JSON. Es inofensivo.
 - **Quitar Aether de un mundo donde ya se usó** borra sus bloques e ítems. Ver *Versiones y ramas* en el README.
 
-### Mobs e illagers (0.4.0-alpha)
+### Mobs e illagers (0.4)
 - **Las raids cambian**. Entran Iceologer e Illusioner (Friends & Foes); Alchemist, Sorcerer, Basher, Necromancer, Inquisitor, Provoker, Archivist y Marauder (Illager Invasion); Archer, Skirmisher y Legioner (It Takes a Pillage). Una granja de raids diseñada para vanilla puede no aguantarlos. Cada mob se puede sacar de las raids por config sin quitar el mod:
   - `config/illagerinvasion-server.toml`: `participate_in_raids` de cada mob.
   - `config/friendsandfoes.json`: `enableIceologerInRaids`, `enableIllusionerInRaids`.

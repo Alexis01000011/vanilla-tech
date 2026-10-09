@@ -103,4 +103,6 @@ El usuario declaró estable esta versión y se publicó como **0.2.0**.
 | Errores en el log | Ninguno nuevo; solo advertencias de modelos faltantes en 4 ítems de Deep Aether y el chequeo de versión de AeroBlender |
 | Memoria | La instancia seguía usando 3900 MiB (Prism global) |
 
-El usuario declaró estable esta versión y se publicó como **0.3.0**. Siguen pendientes las pruebas en juego P5–P11 y P13–P15.
+El usuario declaró estable esta versión y se publicó como **0.3.0**.
+
+**0.4.0-alpha.1, 2026-10-09** (usuario; mismos archivos que la estable **0.4.0**): "todo bien". El log del cliente no muestra errores nuevos: solo las advertencias de modelos ya conocidas de Deep Aether y Excessive Utilities. Memoria todavía en 3900 MiB (Prism global). El usuario declaró estable esta versión y se publicó como **0.4.0**. Siguen pendientes las pruebas en juego P5–P11 y P13–P15.

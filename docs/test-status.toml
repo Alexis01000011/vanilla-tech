@@ -173,43 +173,43 @@ status = "Launch tested"
 evidence = "Cliente 0.3.0-alpha.1 arranca. Servidor: las 18 estructuras previas salen en las mismas coordenadas que en 0.2.0-alpha.1"
 [storagedrawers]
 status = "Launch tested"
-evidence = "Servidor 0.4.0-alpha.1: cajón colocado"
+evidence = "Servidor 0.4.0-alpha.1: cajón colocado; cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [friends-and-foes-forge]
 status = "Launch tested"
-evidence = "Servidor 0.4.0-alpha.1: botón de cobre colocado; iceologer_cabin ubicada (citadel no aparece cerca de la semilla)"
+evidence = "Servidor 0.4.0-alpha.1: botón de cobre colocado; iceologer_cabin ubicada (citadel no aparece cerca de la semilla); cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [illager-invasion]
 status = "Launch tested"
-evidence = "Servidor 0.4.0-alpha.1: illager_fort ubicado; config sin Illusioner en raids aceptada"
+evidence = "Servidor 0.4.0-alpha.1: illager_fort ubicado; config sin Illusioner en raids aceptada; cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [it-takes-a-pillage-continuation]
 status = "Launch tested"
-evidence = "Servidor 0.4.0-alpha.1: bastille ubicada"
+evidence = "Servidor 0.4.0-alpha.1: bastille ubicada; cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [artifacts]
 status = "Launch tested"
-evidence = "Servidor 0.4.0-alpha.1 carga con Curios y sin compatibilidad con Accessories"
+evidence = "Servidor 0.4.0-alpha.1 carga con Curios y sin compatibilidad con Accessories; cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [create-connected]
 status = "Launch tested"
-evidence = "Servidor 0.4.0-alpha.1: caja de engranajes de latón colocada"
+evidence = "Servidor 0.4.0-alpha.1: caja de engranajes de latón colocada; cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [createaddition]
 status = "Launch tested"
-evidence = "Servidor 0.4.0-alpha.1: motor eléctrico colocado"
+evidence = "Servidor 0.4.0-alpha.1: motor eléctrico colocado; cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [puzzles-lib]
 status = "Launch tested"
-evidence = "Servidor 0.4.0-alpha.1 carga (Illager Invasion)"
+evidence = "Servidor 0.4.0-alpha.1 carga (Illager Invasion); cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [resourceful-lib]
 status = "Launch tested"
-evidence = "Servidor 0.4.0-alpha.1 carga (Friends & Foes, It Takes a Pillage)"
+evidence = "Servidor 0.4.0-alpha.1 carga (Friends & Foes, It Takes a Pillage); cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [not-enough-animations]
-status = "Verified"
-evidence = "Solo cliente; pendiente en Prism"
+status = "Launch tested"
+evidence = "Solo cliente; cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [entity-model-features]
-status = "Verified"
-evidence = "Solo cliente; pendiente en Prism"
+status = "Launch tested"
+evidence = "Solo cliente; cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [entitytexturefeatures]
-status = "Verified"
-evidence = "Solo cliente; pendiente en Prism"
+status = "Launch tested"
+evidence = "Solo cliente; cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [emf-compat-core]
-status = "Verified"
-evidence = "Solo cliente; pendiente en Prism"
+status = "Launch tested"
+evidence = "Solo cliente; cliente 0.4.0-alpha.1 arranca y entra al mundo"
 [not-enough-animations-emf-compat]
-status = "Verified"
-evidence = "Solo cliente; pendiente en Prism"
+status = "Launch tested"
+evidence = "Solo cliente; cliente 0.4.0-alpha.1 arranca y entra al mundo"

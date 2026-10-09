@@ -4,13 +4,13 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 
 | | |
 |---|---|
-| Versión del pack | **0.4.0-alpha.1** (pruebas: mobs, illagers, Artifacts, Storage Drawers, addons de Create, animaciones). Estable actual: **0.3.0**. Ver [Versiones](#versiones-y-ramas) |
+| Versión del pack | **0.4.0** (estable: dimensiones + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones). Ver [Versiones](#versiones-y-ramas) |
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
 | Launcher | Prism Launcher (`.mrpack`) |
 | Mods | 75 artefactos fijados (69 mods + 5 shaderpacks + 1 resource pack): 74 en el cliente, 50 en el servidor |
-| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente **0.3.0-alpha.1** (mismos mods que 0.3.0) probado en Prism por el usuario: el Aether con el contenido de Deep Aether y el Otherside de Deeper and Darker. Los mods nuevos de 0.4.0-alpha.1 solo están probados en el servidor. Faltan las pruebas en juego de [known-issues.md](docs/known-issues.md). |
+| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente **0.4.0-alpha.1** (mismos mods que 0.4.0) probado en Prism por el usuario; antes, 0.3.0-alpha.1 con el Aether, Deep Aether y el Otherside. Faltan las pruebas en juego de [known-issues.md](docs/known-issues.md). |
 
 Contenido principal: Create + Create: Connected + Create Crafts & Additions · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Storage Drawers · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · **The Aether + Deep Aether + Deeper and Darker** (alpha) · Friends & Foes · Illager Invasion · It Takes a Pillage · Artifacts · Explorify + YUNG's Extras/Bridges · JEI · Jade · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Just Zoom · Not Enough Animations + Fresh Animations: Player Extension (EMF/ETF) · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
 La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/mod-catalog.md).
@@ -86,8 +86,9 @@ python3 scripts/test-server.py --directory .cache/server-test --name local-integ
 |---|---|---|
 | `0.1.x` | `release/0.1` | Línea base: Create + AE2 + calidad de vida, **sin dimensiones nuevas** (última: 0.1.0-rc.5). |
 | `0.2.x` | `release/0.2` | La base + The Aether (0.2.0). |
-| `0.3.x` | `release/0.3` | **Estable actual**: + Deep Aether + Deeper and Darker (0.3.0, validada por el usuario en el cliente). |
-| `0.4.0-alpha.N` | `main` | Siguiente paso: lote de mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Entre una alpha y otra se pueden agregar o quitar mods. |
+| `0.3.x` | `release/0.3` | + Deep Aether + Deeper and Darker (0.3.0). |
+| `0.4.x` | `release/0.4` | **Estable actual**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones (0.4.0, validada por el usuario en el cliente). |
+| `0.5.0-alpha.N` | `main` | Siguiente paso: L_Ender's Cataclysm y Just Hammers. Entre una alpha y otra se pueden agregar o quitar mods. |
 
 - Cada release lleva una etiqueta anotada `v<versión>` (`git tag -n1` las lista) y una entrada en [CHANGELOG.md](CHANGELOG.md) con el SHA-256 del `.mrpack`.
 - Para volver a una versión: usa su archivo en `releases/`, o `git checkout v<versión> && bash scripts/build.sh`, que lo reconstruye idéntico.
