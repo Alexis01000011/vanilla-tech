@@ -127,6 +127,11 @@ client:ftbjeiextras->minecraft	1.21.1	[1.21.1, 1.22)	required
 client:ftblibrary->neoforge	21.1.257	[21.1.0,)	required
 client:ftblibrary->minecraft	1.21.1	[1.21.1,)	required
 client:ftblibrary->architectury	13.0.11	[13.0.6,)	required
+client:ftbquests->neoforge	21.1.257	[21.1.0,)	required
+client:ftbquests->minecraft	1.21.1	[1.21.1,)	required
+client:ftbquests->architectury	13.0.11	[13.0.8,)	required
+client:ftbquests->ftblibrary	2101.1.37	[2101.1.36,)	required
+client:ftbquests->ftbteams	2101.1.11	[2101.1.9,)	required
 client:ftbteams->neoforge	21.1.257	[21.1.0,)	required
 client:ftbteams->minecraft	1.21.1	[1.21.1,)	required
 client:ftbteams->architectury	13.0.11	[13.0.8,)	required
@@ -197,6 +202,9 @@ client:owo->neoforge	21.1.257	[21,)	required
 client:owo->minecraft	1.21.1	[1.21,)	required
 client:fabric_api_base->neoforge	21.1.257	[21.0.133-beta,)	required
 client:fabric_api_base->minecraft	1.21.1	[1.21,1.22)	required
+client:paxi->minecraft	1.21.1	[1.21, 1.22)	required
+client:paxi->neoforge	21.1.257	[21.0.0,)	required
+client:paxi->yungsapi	1.21.1-NeoForge-5.1.9	[1.21.1-NeoForge-5.1.4,)	required
 client:puzzleslib->minecraft	1.21.1	[1.21.1,1.21.2)	required
 client:puzzleslib->neoforge	21.1.257	[21.1.21,)	required
 client:resourcefullib->neoforge	21.1.257	[21.0.0-beta,)	required
@@ -348,6 +356,11 @@ server:ftbchunks->ftbteams	2101.1.11	[2101.1.9,)	required
 server:ftblibrary->neoforge	21.1.257	[21.1.0,)	required
 server:ftblibrary->minecraft	1.21.1	[1.21.1,)	required
 server:ftblibrary->architectury	13.0.11	[13.0.6,)	required
+server:ftbquests->neoforge	21.1.257	[21.1.0,)	required
+server:ftbquests->minecraft	1.21.1	[1.21.1,)	required
+server:ftbquests->architectury	13.0.11	[13.0.8,)	required
+server:ftbquests->ftblibrary	2101.1.37	[2101.1.36,)	required
+server:ftbquests->ftbteams	2101.1.11	[2101.1.9,)	required
 server:ftbteams->neoforge	21.1.257	[21.1.0,)	required
 server:ftbteams->minecraft	1.21.1	[1.21.1,)	required
 server:ftbteams->architectury	13.0.11	[13.0.8,)	required
@@ -384,6 +397,9 @@ server:owo->neoforge	21.1.257	[21,)	required
 server:owo->minecraft	1.21.1	[1.21,)	required
 server:fabric_api_base->neoforge	21.1.257	[21.0.133-beta,)	required
 server:fabric_api_base->minecraft	1.21.1	[1.21,1.22)	required
+server:paxi->minecraft	1.21.1	[1.21, 1.22)	required
+server:paxi->neoforge	21.1.257	[21.0.0,)	required
+server:paxi->yungsapi	1.21.1-NeoForge-5.1.9	[1.21.1-NeoForge-5.1.4,)	required
 server:puzzleslib->minecraft	1.21.1	[1.21.1,1.21.2)	required
 server:puzzleslib->neoforge	21.1.257	[21.1.21,)	required
 server:resourcefullib->neoforge	21.1.257	[21.0.0-beta,)	required

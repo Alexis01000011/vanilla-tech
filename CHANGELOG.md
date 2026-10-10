@@ -7,12 +7,20 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.2.x**: la base + The Aether. Rama `release/0.2`.
 - **0.3.x**: + Deep Aether + Deeper and Darker. Rama `release/0.3`.
 - **0.4.x**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Rama `release/0.4`. **Estable actual.**
-- **0.5.0-alpha.N**: L_Ender's Cataclysm y Just Hammers, sobre 0.4, en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
+- **0.5.0-alpha.1**: L_Ender's Cataclysm y Just Hammers, sobre 0.4. Es la que corre el mundo del servidor real.
+- **0.6.0-alpha.N**: libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5, en `main`. Las alphas pueden agregar y quitar mods entre sí; los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
 
-## Sin publicar
-- **Pipeline CI/CD** ([docs/cicd.md](docs/cicd.md)): CI en GitHub Actions, releases inmutables en GitHub Pages (`releases/<v>/`, alias `staging` y `stable`), deploy manual con aprobación a la EC2 (backup, healthcheck, reversión) y rollback.
-- **Auto-update en Prism** ([docs/auto-update-prism.md](docs/auto-update-prism.md)): `options.txt` y los ajustes de shaders quedan `preserve = true` en `index.toml`; el `.mrpack` de 0.5.0-alpha.1 no cambia (`sha256 3578edc3…`).
-- **Herramientas**: `bootstrap-tools.py` acepta un packwiz compilado (`PACKWIZ_BIN`), porque el artefacto nightly caduca el 2026-12-05.
+## 0.6.0-alpha.1 — 2026-10-10
+- **Agregado**: FTB Quests 2101.1.36 con el libro *Vanilla Tech · Explora a tu ritmo* (20 capítulos, 181 misiones en español, sin dependencias ni recompensas). Se abre con el botón de la barra lateral del inventario.
+- **Animaciones** (solo cliente): Fresh Animations 1.10.4 + Details 2.2.1 + Emissive 1.6 + Fresh Illager Mod Compats 5.0, que adapta los illagers de Illager Invasion y Friends & Foes. FA: Player Extension sigue arriba. No se incluyeron Objects (rompe los cofres y botes del Aether y de Deeper and Darker), Quivers, Creepers ni Spiders.
+- **Receta**: manzana dorada encantada con 8 bloques de oro + 1 manzana, mediante Paxi 5.1.3 y el datapack global `config/paxi/datapacks/vanilla-tech-recetas`.
+- **Teclas: sin cambios.** Las líneas `key_*` de `options.txt` son idénticas a 0.5.0-alpha.1; FTB Quests no asigna teclas en juego. En `options.txt` solo cambia la lista de paquetes de recursos.
+- **Instancia existente**: los paquetes de recursos nuevos no se activan solos. Actívalos en *Opciones → Paquetes de recursos* en este orden, de abajo arriba: Fresh Animations → Details → Emissive → Fresh Illager Mod Compats → Player Extension.
+- **Servidor**: se agregan 2 mods de servidor (FTB Quests, Paxi). El mundo existente toma el libro y el datapack al arrancar (probado sobre el mundo de prueba de 0.5.0-alpha.1). El progreso de las misiones se guarda en `world/ftbquests/`.
+- **Probado**: servidor en mundo nuevo (`docs/0.6.0-alpha.1-integration.json`, 11/11 checks, los mismos `locate` y errores que 0.5) y actualización del mundo de prueba de 0.5.0-alpha.1 (`docs/0.6.0-alpha.1-upgrade.json`). Libro cargado (20 capítulos, 181 misiones), datapack `vanilla-tech-recetas (paxi)` activo, +7 recetas de FTB Quests +1 propia, +1 advancement; sin errores nuevos. Falta el cliente: P30–P33 de `known-issues.md`.
+- **Distribución** (primera release por el pipeline, [docs/cicd.md](docs/cicd.md)): publicada en GitHub Pages; Prism la recibe con el auto-update ([docs/auto-update-prism.md](docs/auto-update-prism.md), se configura una vez por instancia) y el servidor con el workflow *Deploy* (backup, healthcheck, reversión). `options.txt` y los ajustes de shaders van con `preserve = true`: el auto-update nunca los sobrescribe.
+- **Herramientas**: CI (lint, build reproducible con packwiz compilado desde el commit fijado, validación, smoke test), `release.py`, `check-quests.py` (IDs del libro estables entre releases) y `ops/` (deploy/rollback de la EC2).
+- 84 artefactos (83 en el cliente, 55 en el servidor). `sha256 d97a93c47f983162e288eb99e339fda9991176e7710743b91b884cc1c553821b`
 
 ## 0.5.0-alpha.1 — 2026-10-09
 - **Agregado**: L_Ender's Cataclysm 3.33 (+ Lionfish API 3.1) y Just Hammers 21.1.4.

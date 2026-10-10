@@ -1,0 +1,142 @@
+{
+  id: "0D561B2F82584C7E",
+  group: "",
+  order_index: 0,
+  filename: "00_bienvenida",
+  icon: {
+    id: "minecraft:book"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "00962F4A87DCBC96",
+      icon: {
+        id: "minecraft:compass"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "7B87CA29BDAAFC14",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "4FFBEC52661565FD",
+      icon: {
+        id: "minecraft:paper"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "37E8F29D6B60D7E5",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "7EE77CFE8F96178C",
+      icon: {
+        id: "minecraft:player_head"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "2D243613544F187F",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "1BA66B99AB5EC754",
+      icon: {
+        id: "minecraft:writable_book"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "352CBD17F213D807",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "705FB0A1D92010CE",
+      icon: {
+        id: "minecraft:crafting_table"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "23803FE86ADD2833",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}

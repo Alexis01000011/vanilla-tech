@@ -1516,6 +1516,56 @@
     ]
   },
   {
+    "id": "ftbquests",
+    "version": "2101.1.36",
+    "jar": "ftb-quests-neoforge-2101.1.36.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.0,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "architectury",
+        "type": "required",
+        "versionRange": "[13.0.8,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "ftblibrary",
+        "type": "required",
+        "versionRange": "[2101.1.36,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      },
+      {
+        "modId": "ftbteams",
+        "type": "required",
+        "versionRange": "[2101.1.9,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      },
+      {
+        "modId": "ftbxmodcompat",
+        "type": "optional",
+        "versionRange": "[21.1.7,)",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "ftbteams",
     "version": "2101.1.11",
     "jar": "ftb-teams-neoforge-2101.1.11.jar",
@@ -2331,6 +2381,32 @@
         "modId": "minecraft",
         "type": "required",
         "versionRange": "[1.21,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "paxi",
+    "version": "1.21.1-NeoForge-5.1.3",
+    "jar": "Paxi-1.21.1-NeoForge-5.1.3.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21, 1.22)"
+      },
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.0.0,)"
+      },
+      {
+        "modId": "yungsapi",
+        "versionRange": "[1.21.1-NeoForge-5.1.4,)",
+        "type": "required",
         "ordering": "NONE",
         "side": "BOTH"
       }

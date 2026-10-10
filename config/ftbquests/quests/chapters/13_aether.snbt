@@ -1,0 +1,286 @@
+{
+  id: "5A1E7DBA21991083",
+  group: "",
+  order_index: 13,
+  filename: "13_aether",
+  icon: {
+    id: "minecraft:glowstone"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "5F8B96359A22E136",
+      icon: {
+        id: "minecraft:glowstone"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "07460AE1561C5100",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "4936C15A6485BB62",
+      icon: {
+        id: "aether:book_of_lore"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "57B32E5EE3C3E3B0",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "537C56C031265CE4",
+      icon: {
+        id: "aether:ambrosium_torch"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "49D82946631E1EE9",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "1783983D941337F4",
+      icon: {
+        id: "aether:altar"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "2C6ABCD3EC3CD70E",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "07957E445F10B8E0",
+      icon: {
+        id: "aether:incubator"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "611EA38E3481EBF7",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "124AF947B9CC99D4",
+      icon: {
+        id: "aether:cold_aercloud"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "3E357E2D95A876E6",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "1FB939D01DF1D0B1",
+      icon: {
+        id: "aether:zanite_ring"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "4342EA434783093B",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "6505ABD2F3406271",
+      icon: {
+        id: "aether:bronze_dungeon_key"
+      },
+      x: 9.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "1FD516F7E09B5ED9",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "3A66FF5115F17287",
+      icon: {
+        id: "aether:silver_dungeon_key"
+      },
+      x: 0.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "0462FA6221993F8C",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "10C8CBAE84CCF671",
+      icon: {
+        id: "aether:gold_dungeon_key"
+      },
+      x: 3.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "181ACF19C84DAFA2",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5F8E2EF4EB5B2673",
+      icon: {
+        id: "aether:skyroot_planks"
+      },
+      x: 6.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "52494747022CE96B",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}

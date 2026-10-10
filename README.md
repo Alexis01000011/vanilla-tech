@@ -4,15 +4,15 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 
 | | |
 |---|---|
-| Versión del pack | **0.5.0-alpha.1** (pruebas: L_Ender's Cataclysm y Just Hammers). Estable actual: **0.4.0**. Ver [Versiones](#versiones-y-ramas) |
+| Versión del pack | **0.6.0-alpha.1** (pruebas: libro de misiones FTB Quests, Fresh Animations, receta de la manzana dorada encantada). Servidor real: **0.5.0-alpha.1**. Estable actual: **0.4.0**. Ver [Versiones](#versiones-y-ramas) |
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
 | Launcher | Prism Launcher: `.mrpack` para instalar, [auto-update](docs/auto-update-prism.md) con packwiz-installer |
-| Mods | 78 artefactos fijados (72 mods + 5 shaderpacks + 1 resource pack): 77 en el cliente, 53 en el servidor |
-| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente **0.4.0-alpha.1** (mismos mods que 0.4.0) probado en Prism por el usuario; antes, 0.3.0-alpha.1 con el Aether, Deep Aether y el Otherside. Los mods nuevos de 0.5.0-alpha.1 solo están probados en el servidor. Faltan las pruebas en juego de [known-issues.md](docs/known-issues.md). |
+| Mods | 84 artefactos fijados (74 mods + 5 shaderpacks + 5 resource packs): 83 en el cliente, 55 en el servidor |
+| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente **0.4.0-alpha.1** (mismos mods que 0.4.0) probado en Prism por el usuario; antes, 0.3.0-alpha.1 con el Aether, Deep Aether y el Otherside. 0.5.0-alpha.1 corre en el servidor real. Lo nuevo de 0.6.0-alpha.1 solo está probado en el servidor de prueba. Faltan las pruebas en juego de [known-issues.md](docs/known-issues.md). |
 
-Contenido principal: Create + Create: Connected + Create Crafts & Additions · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Storage Drawers · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · **The Aether + Deep Aether + Deeper and Darker** (alpha) · L_Ender's Cataclysm · Just Hammers · Friends & Foes · Illager Invasion · It Takes a Pillage · Artifacts · Explorify + YUNG's Extras/Bridges · JEI · Jade · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Just Zoom · Not Enough Animations + Fresh Animations: Player Extension (EMF/ETF) · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
+Contenido principal: Create + Create: Connected + Create Crafts & Additions · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Storage Drawers · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · **The Aether + Deep Aether + Deeper and Darker** (alpha) · L_Ender's Cataclysm · Just Hammers · FTB Quests (libro de misiones en español) · Paxi (datapack de recetas) · Friends & Foes · Illager Invasion · It Takes a Pillage · Artifacts · Explorify + YUNG's Extras/Bridges · JEI · Jade · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Just Zoom · Not Enough Animations + Fresh Animations (+ Details, Emissive, Illager Compats, Player Extension; EMF/ETF) · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
 La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/mod-catalog.md).
 
 ## Documentación
@@ -37,8 +37,8 @@ vanilla-tech/
 ├── pack.toml, index.toml     # proyecto packwiz (fuente de verdad)
 ├── mods/*.pw.toml            # 72 metafiles con versión, URL y hash fijados (sin JARs)
 ├── shaderpacks/              # 5 metafiles de shaders (Modrinth) + ajustes .txt → client-overrides/
-├── resourcepacks/            # metafile de Fresh Animations: Player Extension (activado en options.txt)
-├── config/                   # configs del pack (EU, ModernFix, Lithium, FTB Chunks, Artifacts, Illager Invasion, Cataclysm) → overrides/
+├── resourcepacks/            # metafiles de Fresh Animations y sus extensiones (activados en options.txt)
+├── config/                   # configs del pack (EU, ModernFix, Lithium, FTB Chunks, Artifacts, Illager Invasion, Cataclysm), libro de FTB Quests y datapack de Paxi → overrides/
 ├── options.txt               # opciones y atajos de cliente → client-overrides/
 ├── server-template/          # server.properties y user_jvm_args.txt de partida
 ├── scripts/                  # build, validación, instalación y pruebas de servidor
@@ -93,7 +93,8 @@ python3 scripts/test-server.py --directory .cache/server-test --name local-integ
 | `0.2.x` | `release/0.2` | La base + The Aether (0.2.0). |
 | `0.3.x` | `release/0.3` | + Deep Aether + Deeper and Darker (0.3.0). |
 | `0.4.x` | `release/0.4` | **Estable actual**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones (0.4.0, validada por el usuario en el cliente). |
-| `0.5.0-alpha.N` | `main` | Siguiente paso: L_Ender's Cataclysm y Just Hammers. Entre una alpha y otra se pueden agregar o quitar mods. |
+| `0.5.0-alpha.1` | etiqueta | L_Ender's Cataclysm y Just Hammers. Corre en el servidor real. |
+| `0.6.0-alpha.N` | `main` | Siguiente paso: libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada. Entre una alpha y otra se pueden agregar o quitar mods. |
 
 - Cada release lleva una etiqueta anotada `v<versión>` (`git tag -n1` las lista) y una entrada en [CHANGELOG.md](CHANGELOG.md) con el SHA-256 del `.mrpack`.
 - Para volver a una versión: usa su archivo en `releases/`, o `git checkout v<versión> && bash scripts/build.sh`, que lo reconstruye idéntico.

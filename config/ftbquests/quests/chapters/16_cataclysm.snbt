@@ -1,0 +1,286 @@
+{
+  id: "296D84E0FA94D54C",
+  group: "",
+  order_index: 16,
+  filename: "16_cataclysm",
+  icon: {
+    id: "cataclysm:ignitium_ingot"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "34CEFB6D76DBC401",
+      icon: {
+        id: "minecraft:shield"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "42F776B08A712943",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "0815D200FD266214",
+      icon: {
+        id: "minecraft:ender_eye"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "423C14F44170721F",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "09F3A0EE4E05DCA0",
+      icon: {
+        id: "cataclysm:void_core"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "369C851F7C674911",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "56E19CC6726F461B",
+      icon: {
+        id: "cataclysm:monstrous_helm"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "6B20E49359276D41",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "440AE7F419E4ED6B",
+      icon: {
+        id: "cataclysm:burning_ashes"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "24D0FBFC6C65D70C",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "784FA03FCC81678E",
+      icon: {
+        id: "minecraft:redstone_block"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "092F617F3DAF37FA",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5A5B7D6D57264885",
+      icon: {
+        id: "cataclysm:abyssal_sacrifice"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "0432553AE1C05023",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "05EBF8E8C4A58519",
+      icon: {
+        id: "minecraft:brush"
+      },
+      x: 9.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "0A2360AD0EC9F665",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5DDF4E153F05227C",
+      icon: {
+        id: "minecraft:blue_ice"
+      },
+      x: 0.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "26D5AA309EFCC09E",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "3E201F1DFADB8FF6",
+      icon: {
+        id: "minecraft:trident"
+      },
+      x: 3.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "32EE60E0A411DE0C",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "33F691EA22C96834",
+      icon: {
+        id: "cataclysm:ignitium_ingot"
+      },
+      x: 6.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "1874430C0C091BAD",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}
