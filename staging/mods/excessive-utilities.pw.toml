@@ -1,0 +1,15 @@
+name = "Excessive Utilities"
+filename = "excessive-utilities-1.21.1-1.10.0-build.64.jar"
+side = "both"
+
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/zI2FlF4Q/versions/NkZymTsn/excessive-utilities-1.21.1-1.10.0-build.64.jar"
+hash-format = "sha512"
+hash = "f0aa9ec602a1e73f43649583d95d9d6671a73abb05320a92f9850cc48b9ef80648c4ded10f60a932f0107a4265ef093088cdeb447669f910f4ddd661f25671c5"
+
+[update]
+[update.modrinth]
+mod-id = "zI2FlF4Q"
+version = "NkZymTsn"
