@@ -24,7 +24,8 @@
       x: 0.0d,
       y: 0.0d,
       shape: "square",
-      size: 1.0d,
+      size: 1.2d,
+      disable_toast: true,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -34,11 +35,35 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "advancement",
+          advancement: "create:mechanical_press",
+          criterion: "",
           id: "04751CA895FE311B",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
-      rewards: []
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "21B3F585A0749B48",
+          type: "toast",
+          icon: {
+            id: "create:mechanical_press"
+          },
+          description: "La prensa ha procesado su primer objeto."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "7F8CB64547493B61",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
     },
     {
       id: "538ACC4CE1106379",
@@ -49,6 +74,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -58,8 +84,17 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "item",
+          item: {
+            id: "create:brass_ingot"
+          },
+          count: 1,
+          consume_items: false,
+          only_from_crafting: false,
+          match_components: "none",
+          task_screen_only: false,
           id: "55F4C6BCA1B8F86E",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -73,6 +108,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -82,8 +118,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "01A182A96A2D65A6",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -97,6 +134,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -106,8 +144,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "24F02E737CFC1210",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -121,6 +160,7 @@
       y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -130,8 +170,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "2922204B79B0730E",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -145,6 +186,7 @@
       y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -154,8 +196,11 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "advancement",
+          advancement: "create:belt",
+          criterion: "",
           id: "2D0FCDF7410A7884",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -169,6 +214,7 @@
       y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -178,8 +224,11 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "advancement",
+          advancement: "create:funnel",
+          criterion: "",
           id: "29EA4EF443CA3725",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -193,6 +242,7 @@
       y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -202,8 +252,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "464C3F04710EC1B5",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -217,6 +268,7 @@
       y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -226,8 +278,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "4B91F53F5C7909DF",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -241,6 +294,7 @@
       y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -250,8 +304,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "5800964EB3BB18FF",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -265,6 +320,7 @@
       y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -274,8 +330,11 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "advancement",
+          advancement: "create:mechanical_crafter",
+          criterion: "",
           id: "06420F13AF8A020E",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -289,6 +348,7 @@
       y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -298,11 +358,59 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "0EDDD32FBC86A752",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
+    },
+    {
+      id: "27F7B77F6397B596",
+      icon: {
+        id: "create:mechanical_press"
+      },
+      x: 0.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "2E867350158AC551",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "5FB9138B3F2F9A3A",
+          type: "toast",
+          icon: {
+            id: "create:mechanical_press"
+          },
+          description: "La entrada y la salida ya están conectadas."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "1D921B50E28CE9C1",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
     }
   ],
   quest_links: [],

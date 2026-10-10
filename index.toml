@@ -22,83 +22,83 @@ hash = "0fe735f6927c9d905e14b238f2cf44d5c08d735b460a603ad26a764b90096dca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/00_bienvenida.snbt"
-hash = "2f10e827261f36b8cab6284ce835d306a4ba4dde6293101543ec1b4e00464f2d"
+hash = "004c45cdd63fdad0ee8d69f3a0b1933f84a94ab4b893337e8bc4dddcbc8fd168"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/01_herramientas.snbt"
-hash = "eebbff7960f194054c51dedc7517304c67e188571df34bb03abaf5a02268a4fa"
+hash = "f906e620c3385f43a9a4a4fd419f53aa6337c369747493f2cc275a565dff66c3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/02_base_y_equipaje.snbt"
-hash = "9992a694a7ec592701428181060da4cbf404842e241225e219cc3ee47ec4e0e5"
+hash = "3bb427aab59e761af378eeb1837e665463ff323bcf459cd73673c8ba9059c4fa"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/03_cajones.snbt"
-hash = "c0b81b0cb24f741352bd19892138318b6e10155a1c4bde2a42c090d541e315a6"
+hash = "077f924d2723f36e901dfb03045fac60361b3f555fa75ec21219c52091be2def"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/04_create_rotacion.snbt"
-hash = "60e4b3b1ce86cbcd59e2ddc5469b3a1cf117ee79618535a351aa90841b00eb77"
+hash = "0565a1dbbfcd972c36a694819129e4d8c5db69ae9ca60d5c3533c508aa09f4ba"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/05_create_procesos.snbt"
-hash = "64702e42fc74be1ba0c079bec4b632e047e7dba853eb023a799cf7ae4e166ea3"
+hash = "c733d75b8a0750cc2f92b2a5516a4a93a8e7792d7006cea6fd14fa684e8696ee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/06_create_movimiento.snbt"
-hash = "4c49502faed6039bebeefe56fcb2837ecef0c027e4328841bde10377825990e6"
+hash = "9ff771004a573e821f60980e42d08dea2a5357be41f3f197dfb8f56f8838083f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/07_create_addons.snbt"
-hash = "a7dd296286cd972c7c563c9017088f120fdd381691a017ed2ca9ff274fd896a4"
+hash = "4eff7062c8e62ec85880932c0ca2c83c9a5e1047aa99d52982544c583486aa55"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/08_ae2_inicio.snbt"
-hash = "e86a9b27728bf06c76663a106c938aeddf872bd6167b2ede47f7d275d4a5c537"
+hash = "0eb1b1e1f76f878fc6cefe25dbc55d22ca7a1308635c54e1febe4c8ee7f4c758"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/09_ae2_automatizar.snbt"
-hash = "d1201b2dc9bcc914816f84d3f6953561005ba3126471fa405aeb82ee618c47e0"
+hash = "e15b8e1deae2ad6144015e26a705578bac2abc97517acf51d7cba1d98a37e0dd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/10_ae2_addons.snbt"
-hash = "78ac212cfe1eca90151403063e8eeb2743c70d2defbe5a8ada6e388693d84ca7"
+hash = "3654eeef99608830e03e0b981524f4791cbf9ccddad6470fbc3feaf8e6f2f037"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/11_excessive.snbt"
-hash = "6f50e376d41a2d33b5c6c0d23ab57e668debbab91fee0de34af318571362fe70"
+hash = "5908a0e496d3c53d84212d15dc7cc44795a340c4a8fc703a3d1ac7d200c215d1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/12_exploracion.snbt"
-hash = "77b7b5f311b32b8f35999579ff38be94f877b7910557ed152e617238c0f305bb"
+hash = "a1d31c2fe06cc08eef12b6431b1795698c82ba4f8d87997c82da0c60c0b2d0f9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/13_aether.snbt"
-hash = "a1c0d7d88e586baf9ec57380e11ef863fb3013af77610038780f7a350e629152"
+hash = "bc7c1f8b17b075f31856f931f8d26d268c36aecf5febd8210c153de5597dfda1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/14_deep_aether.snbt"
-hash = "d965b2d28f89604038a8fd44039ad64d60876c343c73209096f464b333efb691"
+hash = "0c214c44a57a386c000516d0ac417a4a0ecd9935bf4f6a6429357f38abfdaaef"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/15_otherside.snbt"
-hash = "7869f0665b25532f61908c1beaefcf359528cc34fd23896e803b6ccf143b4c22"
+hash = "e56e64e1b0badbfce7e56946d2f55860c8d197fcc622e9e5c7b3e982040a18a1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/16_cataclysm.snbt"
-hash = "4cf4d58ea852d85411156541433fe6e3e7afcad64b1b651e5111b70b329104d1"
+hash = "07d9395dbfb87b8d31f6a6e3d9ff30940f3e73c0abca36954922b294f9133821"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/17_cliente_rendimiento.snbt"
-hash = "5c39b20041b19846a74887724c626d7277bd93393ae94f4677b940d95d519856"
+hash = "7240b7f22266e918ed168be4bc7a0ccf68bb6a6ca3a3ae6d46e42cf0ab49423b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/18_bibliotecas.snbt"
-hash = "10df0cc5b69a06113ed0108fba7de4357dbcb51460b4685172170ac21f066505"
+hash = "bc2478d4bb64c7c4894aeb5ac6c176f864531d1adc925b9f24ed95bb5211cd5c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/19_proyectos.snbt"
-hash = "18148dc288f8e8a3e043bce448aadf910a1db362984fd0af794349f50633798a"
+hash = "b34538b8d5324f054576569ed00e75aa3a7d1e27bb3273d7e0342dbc03aa553c"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -106,7 +106,7 @@ hash = "7dedc4913050d8c85256f98e3494cbde2e3804bc1ca6569a42b4f872a6bbcb5d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/es_mx.snbt"
-hash = "fe7e214e94f0f0760e202b5d0c20da27444aa72208514dea06162e2c490ea815"
+hash = "22a1db1ae5ebb4100cca2a2adf17bda233763a03f52020981d7d4e7c4b2ee97b"
 
 [[files]]
 file = "config/illagerinvasion-server.toml"
