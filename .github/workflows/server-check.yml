@@ -1,0 +1,49 @@
+# Server check: diagnóstico de solo lectura en la EC2 por el mismo camino que Deploy (OIDC -> SSM).
+# Sirve para probar credenciales y permisos antes de un deploy, o para ver el estado y ensayar backups.
+# Nunca cambia el pack ni reinicia Minecraft. Pide aprobación (environment production).
+name: Server check
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: status (release activa, backups, historial) · healthcheck · drill-s3 (ensaya el backup del mundo en S3) · drill-latest (último backup local)
+        type: choice
+        options: [status, healthcheck, drill-s3, drill-latest]
+        default: status
+      start_if_stopped:
+        description: Prender la EC2 si está apagada (el cron la apaga a los ~10 min sin jugadores)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: production
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    environment: production
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          mask-aws-account-id: true
+          aws-region: ${{ vars.AWS_REGION || 'us-east-1' }}
+          role-session-name: vanilla-tech-check-${{ github.run_id }}
+      - name: Ejecutar en la EC2 (SSM)
+        env:
+          INSTANCE_ID: ${{ secrets.EC2_INSTANCE_ID }}
+          START_IF_STOPPED: ${{ inputs.start_if_stopped }}
+          ACTION: ${{ inputs.action }}
+        run: |
+          case "$ACTION" in
+            drill-s3) bash ops/github/ssm-run.sh drill --target s3 ;;
+            drill-latest) bash ops/github/ssm-run.sh drill --target latest ;;
+            *) bash ops/github/ssm-run.sh "$ACTION" ;;
+          esac

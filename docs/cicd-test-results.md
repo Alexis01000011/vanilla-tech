@@ -37,15 +37,21 @@ Tiempos locales (laptop, heap 2G): deploy completo R1→R2 60 s (detener, backup
 | CI en PR #1, job `smoke` | ✅ NeoForge 21.1.257 con 53 mods: `Done (18.590s)`, salida 0, RSS pico 1.5 GiB (heap 4G), 18 líneas ERROR conocidas del arranque |
 | CI en PR #1 tras los fixes de `ops/` | ✅ build + smoke |
 
-## 4. Estáticas
+## 4. EC2 real (2026-10-10, instancia prendida solo para esto)
+
+- Preflight de solo lectura: Python 3.9.25, `zstd` presente, 27 GB libres, datos 624 MB (mundo 181 MB) con dueño `ec2-user`, manifiesto `/data/.modrinth-modpack-manifest.json`, 53 mods.
+- `install-on-instance.sh`: scripts en `/opt/vanilla-tech/cd`, línea de mantenimiento agregada a `idle-shutdown.sh` (copia `.bak`), release activa registrada (0.5.0-alpha.1, `3578edc3…`). Minecraft no se reinició.
+- Por el documento SSM `VanillaTech-Deploy` (el camino de GitHub): `healthcheck` ✅ (53/53 mods con sha512 de la release, ping 1.21.1, RCON; `modernfix-mixins.properties` reescrita por ModernFix, normal) y `drill s3` ✅ sobre el backup real del mundo (`level.dat` válido, 25 regiones del Overworld, 9 del Nether, 2 jugadores).
+
+## 5. Estáticas
 
 - `shellcheck -S warning` limpio en `ops/`, `scripts/ci/`, `scripts/build.sh`; `actionlint` limpio en los 4 workflows.
 - Python que corre en la instancia (`mc_tools.py` y los bloques embebidos) compatible con la gramática de Python 3.9 (Amazon Linux 2023).
 - El documento SSM renderizado pasa `sh -n`; todos sus parámetros tienen `allowedPattern`/`allowedValues`.
 
-## 5. Pendiente (no se puede probar sin la siguiente release o sin la instancia)
+## 6. Pendiente
 
-- Instalar `ops/ec2` en la EC2 real y correr `status.sh` + `drill.sh` sobre un backup real.
+- Rol OIDC desde GitHub: workflow **Server check** (requiere tu aprobación).
 - Primer deploy real por el workflow **Deploy** (será 0.6.0-alpha.1, impacto alto, con tu aprobación): SSM, `sync-modpack.sh`, docker/itzg y tiempos reales.
 - Configurar Prism en el Windows del amigo con la URL real; confirmar adopción sin descargas.
 - Comportamiento del CDN de GitHub Pages justo después de promover `stable` (el instalador rechaza mezclas, pero conviene observarlo una vez).

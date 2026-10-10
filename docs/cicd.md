@@ -54,6 +54,7 @@ Cómo un cambio del pack llega a los clientes (Prism) y al servidor EC2 sin rein
 | `.github/workflows/release.yml` | Etiqueta `v*`: lo mismo sobre la etiqueta + reproducibilidad contra el CHANGELOG + GitHub Release + `releases/<v>/` y `staging/` en Pages + instalación real con packwiz-installer (cliente y servidor) desde la URL publicada. `bootstrap` (una vez) registra la release que ya corre. |
 | `.github/workflows/deploy.yml` | Manual. `plan` (sin aprobación): release publicada, sha del sitio = sha de la GitHub Release, impacto, puertas. `deploy` (environment `production`): SSM → `deploy.sh`; si sano, promueve `stable/` y `server/`; verifica instalación desde `stable/`. |
 | `.github/workflows/rollback.yml` | Manual con aprobación: SSM → `rollback.sh`, luego `stable/` y `server/` → versión restaurada. |
+| `.github/workflows/server-check.yml` | Manual con aprobación, solo lectura: `status`, `healthcheck`, ensayo del backup de S3 o del último local. Prueba OIDC + SSM sin cambiar nada. |
 | `scripts/release.py` | `meta`, `impact`, `publish` (inmutable), `alias`, `server`, `verify`, `render` del sitio. |
 | `scripts/check-pack.py`, `check-itzg.py`, `check-quests.py`, `check-install.py`, `preserve.py` | Lint rápido; mods que itzg omitiría; IDs del quest book; instalación real con packwiz-installer; marcas `preserve`. |
 | `scripts/ci/*.sh` | packwiz desde fuente, impacto, smoke, checkout/push de `gh-pages`, espera de Pages. |
@@ -143,7 +144,8 @@ Resultados, fallas encontradas y pendientes: [cicd-test-results.md](cicd-test-re
 | Environment `production`: revisor obligatorio Alexis01000011, solo rama `main` | ✅ hecho | Settings → Environments |
 | Publicar 0.5.0-alpha.1 como base (bootstrap) | Claude con tu OK | Actions → Release → `tag=v0.5.0-alpha.1`, `bootstrap=true` |
 | OIDC + rol + documento SSM | ✅ hecho 2026-10-10 (autorizado) | `GITHUB_REPO=Alexis01000011/vanilla-tech INSTANCE_ID=<id> ops/aws/setup-aws.sh` |
-| Instalar `ops/ec2` en la instancia (no reinicia Minecraft) | Claude con tu OK, instancia prendida | `ops/aws/install-on-instance.sh`, luego `drill.sh latest` |
+| Instalar `ops/ec2` en la instancia (no reinicia Minecraft) | ✅ hecho 2026-10-10: healthcheck 53/53 mods, ensayo del backup de S3 OK (por el documento SSM) | `ops/aws/install-on-instance.sh` |
+| Probar el rol OIDC desde GitHub | tú apruebas | Actions → **Server check** → `status` (con `start_if_stopped` si está apagada) |
 | Secrets del environment `production`: `AWS_DEPLOY_ROLE_ARN`, `EC2_INSTANCE_ID` | ✅ hecho | enmascarados en los logs públicos |
 | Configurar Prism del amigo | el amigo | [auto-update-prism.md](auto-update-prism.md) |
 | Primer deploy real por el pipeline | tú apruebas | Deploy de la próxima versión |
