@@ -38,7 +38,7 @@ now() { date +%s; }
 rt_start()   { systemctl start "$VT_SERVICE"; }
 rt_stop()    { systemctl stop "$VT_SERVICE"; }
 rt_active()  { systemctl is-active --quiet "$VT_SERVICE"; }
-rt_running() { docker ps -q -f "name=^${VT_CONTAINER}\$" 2>/dev/null | grep -q .; }
+rt_running() { [ -n "$(docker ps -q -f "name=^${VT_CONTAINER}\$" 2>/dev/null)" ]; }
 rt_rcon()    { docker exec "$VT_CONTAINER" rcon-cli "$@"; }
 # itzg/installer errors happen before Minecraft writes logs/latest.log
 rt_console_since() { docker logs --since "@$1" "$VT_CONTAINER" 2>&1 || true; }
@@ -160,10 +160,15 @@ snapshot_verify() {   # integrity of a snapshot directory (checksums + archive t
   [ -f "$dir/meta.json" ] || die "no existe el backup $1"
   ( cd "$dir" && sha256sum -c --quiet SHA256SUMS ) || die "checksums inválidos en $1"
   a=$(ls "$dir"/data.tar.*)
+  # grep -c reads the whole listing: grep -q would close the pipe early and, under pipefail, the
+  # SIGPIPE'd tar would turn a good archive into a failed check.
+  # The archive bytes were already checked against SHA256SUMS above.
+  local n
   case "$a" in
-    *.zst) zstd -q -dc "$a" | tar -tf - | grep -qx './world/level.dat' ;;
-    *.gz)  tar -tzf "$a" | grep -qx './world/level.dat' ;;
-  esac || die "el backup $1 no contiene world/level.dat"
+    *.zst) n=$(zstd -q -dc "$a" | tar -tf - | grep -cx './world/level.dat' || true) ;;
+    *.gz)  n=$(tar -tzf "$a" | grep -cx './world/level.dat' || true) ;;
+  esac
+  [ "${n:-0}" -ge 1 ] || die "el backup $1 no contiene world/level.dat (o no se pudo listar)"
 }
 
 snapshot_restore() {   # snapshot_restore ID: moves the live data dir aside and extracts the snapshot

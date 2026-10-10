@@ -17,7 +17,7 @@ import gzip,json,pathlib,sys
 t,i,secs=pathlib.Path(sys.argv[1]),sys.argv[2],int(sys.argv[3])
 w=t/'world';lvl=gzip.open(w/'level.dat').read()
 assert lvl[:1]==b'\x0a','level.dat is not an NBT compound'
-dims={str(p.parent.parent.relative_to(w)) or '.':len(list(p.glob('*.mca'))) for p in w.rglob('region') if p.is_dir()}
+dims={str(p.parent.relative_to(w)):len(list(p.glob('*.mca'))) for p in w.rglob('region') if p.is_dir()}  # '.' = Overworld
 out={'backup':i,'ok':True,'extract_seconds':secs,'level_dat_bytes':len(lvl),'region_files':dims,
      'playerdata':len(list((w/'playerdata').glob('*.dat'))),'mods':len(list((t/'mods').glob('*.jar'))),
      'has':{f:(t/f).exists() for f in ('server.properties','whitelist.json','ops.json','config')}}

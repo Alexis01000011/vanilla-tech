@@ -26,7 +26,7 @@ if [ -n "$SINCE" ]; then
     [ "$(now)" -lt "$deadline" ] || fail "el servidor no terminó de cargar en ${TIMEOUT}s"
     if READY=$($PY wait-ready "$VT_DATA/logs/latest.log" "$SINCE" 10 2>/dev/null); then break; fi
     case "$READY" in *'"error": "timeout"'*) ;; *) fail "crash al arrancar: $READY" ;; esac
-    rt_console_since "$SINCE" | grep -qE 'Failed to install|\[init\] ERROR|mc-image-helper.*ERROR' \
+    [ "$(rt_console_since "$SINCE" | grep -cE 'Failed to install|\[init\] ERROR|mc-image-helper.*ERROR')" -gt 0 ] \
       && fail "error del instalador del contenedor: $(rt_console_since "$SINCE" | grep -E 'ERROR' | tail -n2 | tr '\n' ' ')"
   done
   log "Minecraft cargó: $READY"
