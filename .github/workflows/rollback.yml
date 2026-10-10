@@ -42,15 +42,18 @@ jobs:
         with: { path: ci }
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          mask-aws-account-id: true
           aws-region: ${{ vars.AWS_REGION || 'us-east-1' }}
           role-session-name: vanilla-tech-rollback-${{ github.run_id }}
       - id: ssm
         name: Restaurar en la EC2 (SSM -> rollback.sh)
         env:
-          INSTANCE_ID: ${{ vars.EC2_INSTANCE_ID }}
+          INSTANCE_ID: ${{ secrets.EC2_INSTANCE_ID }}
           START_IF_STOPPED: ${{ inputs.start_if_stopped }}
-        run: bash ci/ops/github/ssm-run.sh rollback --target "${{ inputs.target }}" --flags "${{ inputs.kick_players && 'kick' || 'none' }}"
+          TARGET: ${{ inputs.target }}
+          FLAGS: ${{ inputs.kick_players && 'kick' || 'none' }}
+        run: bash ci/ops/github/ssm-run.sh rollback --target "$TARGET" --flags "$FLAGS"
       - name: Volver a apuntar stable a la versión restaurada
         env: { RESULT: '${{ steps.ssm.outputs.result }}' }
         run: |

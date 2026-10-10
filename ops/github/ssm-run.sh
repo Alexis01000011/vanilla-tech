@@ -29,7 +29,7 @@ if [ "$ST" = stopped ]; then
     note "::error::La instancia está apagada. Prende el server (botón o \`vt-control.sh start\`) y vuelve a lanzar el workflow, o lánzalo con start_if_stopped=true. No se cambió nada."
     echo "status=instance-stopped" >> "$OUT"; exit 20
   fi
-  note "Prendiendo $INSTANCE_ID (start_if_stopped=true; el cron de inactividad la apagará con backup)."
+  note "Prendiendo la instancia (start_if_stopped=true; el cron de inactividad la apagará con backup)."
   aws ec2 start-instances --instance-ids "$INSTANCE_ID" >/dev/null
   aws ec2 wait instance-running --instance-ids "$INSTANCE_ID"
 elif [ "$ST" != running ]; then

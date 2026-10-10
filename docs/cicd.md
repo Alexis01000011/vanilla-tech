@@ -114,9 +114,9 @@ No se crearon buckets nuevos ni snapshots de EBS.
 
 ## 7. Seguridad
 
-- Sin llaves de AWS en GitHub: OIDC con `aud` y `sub` fijos (`repo:<owner>/<repo>:environment:production`).
+- Sin llaves de AWS en GitHub: OIDC con `aud` y `sub` fijos (`repo:<owner>/<repo>:environment:production`); `mask-aws-account-id` activo.
 - El rol no puede apagar, terminar, cambiar red, ni leer el token de Cloudflare.
-- `production` exige aprobación manual. Los forks y PRs no tienen acceso al environment ni a credenciales.
+- `production` exige aprobación manual y solo acepta la rama `main`. El ARN del rol y el ID de la instancia son secrets **de ese environment**: no existen para PRs ni forks, solo después de aprobar, y se enmascaran en los logs (públicos en un repo público).
 - El sitio solo publica lo que lista `index.toml` (metafiles, configs, `options.txt`) + `.mrpack` + `release.json`. `check-pack.py` rechaza JARs, mundos, logs y cadenas con forma de credencial.
 - Las Lambdas, el DNS, el security group, `mc.env` y `user-data.sh` no cambian. En la instancia solo se agrega `/opt/vanilla-tech/cd/` y una línea en `idle-shutdown.sh` (con copia `.bak`).
 
@@ -144,6 +144,6 @@ Ver [cicd-test-results.md](cicd-test-results.md).
 | Publicar 0.5.0-alpha.1 como base (bootstrap) | Claude con tu OK | Actions → Release → `tag=v0.5.0-alpha.1`, `bootstrap=true` |
 | OIDC + rol + documento SSM | ✅ hecho 2026-10-10 (autorizado) | `GITHUB_REPO=Alexis01000011/vanilla-tech INSTANCE_ID=<id> ops/aws/setup-aws.sh` |
 | Instalar `ops/ec2` en la instancia (no reinicia Minecraft) | Claude con tu OK, instancia prendida | `ops/aws/install-on-instance.sh`, luego `drill.sh latest` |
-| Variables `AWS_DEPLOY_ROLE_ARN`, `EC2_INSTANCE_ID`, `AWS_REGION` | Claude con tu OK | `gh variable set` |
+| Secrets del environment `production`: `AWS_DEPLOY_ROLE_ARN`, `EC2_INSTANCE_ID` (enmascarados en los logs, que son públicos) | Claude con tu OK | `gh secret set … --env production` |
 | Configurar Prism del amigo | el amigo | [auto-update-prism.md](auto-update-prism.md) |
 | Primer deploy real por el pipeline | tú apruebas | Deploy de la próxima versión |

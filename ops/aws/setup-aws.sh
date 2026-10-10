@@ -52,8 +52,8 @@ else
 fi
 cat <<OUT
 
-Variables del repositorio GitHub (Settings > Secrets and variables > Actions > Variables):
-  AWS_DEPLOY_ROLE_ARN = arn:aws:iam::$ACCOUNT_ID:role/$ROLE
-  EC2_INSTANCE_ID     = $INSTANCE_ID
-  AWS_REGION          = $REGION
+Secrets del environment "production" en GitHub (enmascarados en los logs públicos):
+  gh secret set AWS_DEPLOY_ROLE_ARN --env production --body arn:aws:iam::$ACCOUNT_ID:role/$ROLE
+  gh secret set EC2_INSTANCE_ID     --env production --body $INSTANCE_ID
+Variable del repositorio: gh variable set AWS_REGION --body $REGION
 OUT
