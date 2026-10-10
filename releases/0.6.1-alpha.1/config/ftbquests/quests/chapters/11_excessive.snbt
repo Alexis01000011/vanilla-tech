@@ -1,0 +1,334 @@
+{
+  id: "07E1838CCD822062",
+  group: "",
+  order_index: 11,
+  filename: "11_excessive",
+  icon: {
+    id: "excessive_utilities:resonator"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "2EF9946394919912",
+      icon: {
+        id: "excessive_utilities:manual_mill"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "4C1FD83989248530",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "7191D40562481BC4",
+      icon: {
+        id: "excessive_utilities:water_mill"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "4577F018F37094DF",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "20619A7BEB7AD4EF",
+      icon: {
+        id: "excessive_utilities:resonator"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "30F3EB97FA1A072C",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5CEE2E4D4AC6EDFC",
+      icon: {
+        id: "excessive_utilities:furnace_generator"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "0A8673935B132A90",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "1124B100CD427E21",
+      icon: {
+        id: "excessive_utilities:item_transfer_node"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "1A589B8760F90F18",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "2F9718BF0581BC6B",
+      icon: {
+        id: "excessive_utilities:trash_can"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "153C81B17C11C7F9",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "43F7BD9211D6D724",
+      icon: {
+        id: "excessive_utilities:iron_drum"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "426E42931D187316",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "47AD9A6C30A93A77",
+      icon: {
+        id: "excessive_utilities:angel_ring"
+      },
+      x: 9.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "1A57504380D99CCD",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "2270BD2E77E34D31",
+      icon: {
+        id: "excessive_utilities:watering_can"
+      },
+      x: 0.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "37505A4AC408B747",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "077506480685C604",
+      icon: {
+        id: "minecraft:tnt"
+      },
+      x: 3.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "79C79AA7F8794013",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "2BB0E767B204B4C9",
+      icon: {
+        id: "excessive_utilities:depths_portal"
+      },
+      x: 6.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "59C1EF6033EC2F69",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "10E05C5CACDFB61F",
+      icon: {
+        id: "excessive_utilities:ender_quarry"
+      },
+      x: 9.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "56BC11987FB29277",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}

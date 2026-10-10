@@ -1,0 +1,742 @@
+{
+  id: "296D84E0FA94D54C",
+  group: "",
+  order_index: 16,
+  filename: "16_cataclysm",
+  icon: {
+    id: "cataclysm:ignitium_ingot"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "34CEFB6D76DBC401",
+      icon: {
+        id: "minecraft:shield"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "42F776B08A712943",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "0815D200FD266214",
+      icon: {
+        id: "minecraft:ender_eye"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "423C14F44170721F",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "09F3A0EE4E05DCA0",
+      icon: {
+        id: "cataclysm:void_core"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "structure",
+          structure: "cataclysm:ruined_citadel",
+          id: "369C851F7C674911",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "56E19CC6726F461B",
+      icon: {
+        id: "cataclysm:monstrous_helm"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "structure",
+          structure: "cataclysm:soul_black_smith",
+          id: "6B20E49359276D41",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "440AE7F419E4ED6B",
+      icon: {
+        id: "cataclysm:burning_ashes"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "structure",
+          structure: "cataclysm:burning_arena",
+          id: "24D0FBFC6C65D70C",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "784FA03FCC81678E",
+      icon: {
+        id: "minecraft:redstone_block"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "structure",
+          structure: "cataclysm:ancient_factory",
+          id: "092F617F3DAF37FA",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5A5B7D6D57264885",
+      icon: {
+        id: "cataclysm:abyssal_sacrifice"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "structure",
+          structure: "cataclysm:sunken_city",
+          id: "0432553AE1C05023",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "05EBF8E8C4A58519",
+      icon: {
+        id: "minecraft:brush"
+      },
+      x: 9.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "structure",
+          structure: "cataclysm:cursed_pyramid",
+          id: "0A2360AD0EC9F665",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5DDF4E153F05227C",
+      icon: {
+        id: "minecraft:blue_ice"
+      },
+      x: 0.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "structure",
+          structure: "cataclysm:frosted_prison",
+          id: "26D5AA309EFCC09E",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "3E201F1DFADB8FF6",
+      icon: {
+        id: "minecraft:trident"
+      },
+      x: 3.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "structure",
+          structure: "cataclysm:acropolis",
+          id: "32EE60E0A411DE0C",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "33F691EA22C96834",
+      icon: {
+        id: "cataclysm:ignitium_ingot"
+      },
+      x: 6.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "1874430C0C091BAD",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "14410180695547C2",
+      icon: {
+        id: "cataclysm:void_core"
+      },
+      x: 9.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "cataclysm:kill_ender_guardian",
+          criterion: "",
+          id: "6A07A326E5C5E04E",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "12357C7D47FFC395",
+          type: "toast",
+          icon: {
+            id: "cataclysm:void_core"
+          },
+          description: "Ender Guardian ha sido derrotado."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "521B6BEDAD540D14",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "6173EDE3E5D99669",
+      icon: {
+        id: "cataclysm:monstrous_helm"
+      },
+      x: 0.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "cataclysm:kill_monstrosity",
+          criterion: "",
+          id: "76D89CBE58EFC2F1",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "61B5697F39B723F1",
+          type: "toast",
+          icon: {
+            id: "cataclysm:monstrous_helm"
+          },
+          description: "Netherite Monstrosity ha sido derrotado."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "299C16D6905A664A",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "6AB7C1E1FDEC25AF",
+      icon: {
+        id: "cataclysm:burning_ashes"
+      },
+      x: 3.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "cataclysm:kill_ignis",
+          criterion: "",
+          id: "58DE43427A1FFB0B",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "329185529010C9F8",
+          type: "toast",
+          icon: {
+            id: "cataclysm:burning_ashes"
+          },
+          description: "Ignis ha sido derrotado."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "551CE220FB387A14",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "5CB881F2DE72303D",
+      icon: {
+        id: "minecraft:redstone_block"
+      },
+      x: 6.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "cataclysm:kill_harbinger",
+          criterion: "",
+          id: "3D806A7075E20512",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "77345C87D7C687AD",
+          type: "toast",
+          icon: {
+            id: "minecraft:redstone_block"
+          },
+          description: "The Harbinger ha sido derrotado."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "1D0AB29E7A9DFED8",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "14A22865A2CA159D",
+      icon: {
+        id: "cataclysm:abyssal_sacrifice"
+      },
+      x: 9.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "cataclysm:kill_leviathan",
+          criterion: "",
+          id: "73F8C53864886653",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "6B9BE7D41EFE72C9",
+          type: "toast",
+          icon: {
+            id: "cataclysm:abyssal_sacrifice"
+          },
+          description: "The Leviathan ha sido derrotado."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "09D08D76C85FBA48",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "34DAE65335A75F3B",
+      icon: {
+        id: "minecraft:brush"
+      },
+      x: 0.0d,
+      y: 8.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "cataclysm:kill_remnant",
+          criterion: "",
+          id: "3F97390E70195590",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "05814ECAF4E7E541",
+          type: "toast",
+          icon: {
+            id: "minecraft:brush"
+          },
+          description: "Ancient Remnant ha sido derrotado."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "02A3B332C66F0530",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "73509959BDBCC696",
+      icon: {
+        id: "minecraft:blue_ice"
+      },
+      x: 3.0d,
+      y: 8.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "cataclysm:kill_maledictus",
+          criterion: "",
+          id: "129E036E14C74EB0",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "392EAA524BE015A6",
+          type: "toast",
+          icon: {
+            id: "minecraft:blue_ice"
+          },
+          description: "Maledictus ha sido derrotado."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "6E35D7F81F3A3F02",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "123323C7440FC3E5",
+      icon: {
+        id: "minecraft:trident"
+      },
+      x: 6.0d,
+      y: 8.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "cataclysm:kill_scylla",
+          criterion: "",
+          id: "52E52A9F0B2CF4BA",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "50BC76861A47B095",
+          type: "toast",
+          icon: {
+            id: "minecraft:trident"
+          },
+          description: "Scylla ha sido derrotado."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "122AD99E32F04D1F",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "6D095E59D7A187E8",
+      icon: {
+        id: "cataclysm:necklace_of_the_desert"
+      },
+      x: 9.0d,
+      y: 8.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "item",
+          item: {
+            id: "cataclysm:necklace_of_the_desert"
+          },
+          count: 1,
+          consume_items: false,
+          only_from_crafting: false,
+          match_components: "none",
+          task_screen_only: false,
+          id: "5994F80CEC356B48",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}

@@ -1,0 +1,15 @@
+name = "Sildur's Basic Shaders"
+filename = "Sildur's Basic Shaders v2.6 Fancy.zip"
+side = "client"
+
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/N1BIOvQX/versions/95dMdxBz/Sildur%27s%20Basic%20Shaders%20v2.6%20Fancy.zip"
+hash-format = "sha512"
+hash = "a7596364e48a356a87bcb313ef843332c4158d9dbda0e9ed19c8561463d2148defe58d71e68a024a2e6ee2273e0404ccdf5aa38dca7e589007b7bce58104a967"
+
+[update]
+[update.modrinth]
+mod-id = "N1BIOvQX"
+version = "95dMdxBz"

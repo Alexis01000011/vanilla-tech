@@ -1,0 +1,212 @@
+{
+  id: "4A7A886D83DB15B1",
+  group: "",
+  order_index: 3,
+  filename: "03_cajones",
+  icon: {
+    id: "storagedrawers:oak_full_drawers_1"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "179303FD37831088",
+      icon: {
+        id: "storagedrawers:oak_full_drawers_1"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "item",
+          item: {
+            id: "storagedrawers:oak_full_drawers_1"
+          },
+          count: 1,
+          consume_items: false,
+          only_from_crafting: false,
+          match_components: "none",
+          task_screen_only: false,
+          id: "660E06AC779D0223",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "759E451B4920672F",
+      icon: {
+        id: "storagedrawers:drawer_key"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "2109B1425787F1DA",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "1A947E8B8FCB088C",
+      icon: {
+        id: "storagedrawers:iron_storage_upgrade"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "2A1A35D2ECAD0D88",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "38E5D4DE41273579",
+      icon: {
+        id: "storagedrawers:compacting_drawers_3"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "09D8FE1EC995DA6A",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "3A8F9D72CEEEDC20",
+      icon: {
+        id: "storagedrawers:controller"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "613C0173AD817CAB",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "511C03E987B60646",
+      icon: {
+        id: "create:andesite_funnel"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "7F003858B3117423",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "2385382D726F3DE7",
+      icon: {
+        id: "ae2:storage_bus"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "64AFBA978A8057A0",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}
