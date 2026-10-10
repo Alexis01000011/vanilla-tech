@@ -27,6 +27,18 @@ Todo lo de este documento son **mediciones reales sin jugadores conectados** o r
 | 0.5.0-alpha.1, integración (+ L_Ender's Cataclysm, Just Hammers) | 34.5–47.9 s | 1970–2394 MiB | Mundo nuevo, dos corridas. El RSS más alto hasta ahora, con el mismo heap de 2 GiB: el pack ya roza el límite de la prueba. En el servidor real hay que usar el heap recomendado (5–8 GiB). |
 | 0.4.0-alpha.1, integración (+ lote de mobs, illagers, Artifacts, Storage Drawers, addons de Create) | 39.2 s (66.4 s en la primera corrida) | 1679 MiB | Mundo nuevo. |
 
+### Servidor real (AWS EC2 r8i.large, 2 vCPU / 16 GiB), 0.5.0-alpha.1, 2026-10-09
+Medido por la sesión que opera el servidor (imagen `itzg/minecraft-server`, `TYPE=MODRINTH`, `MEMORY=8G`, por lo que Xms = Xmx = 8 GiB):
+
+| Medida | Valor |
+|---|---|
+| Pregeneración Overworld | **10 201 chunks** (cuadrado de radio 800 bloques alrededor del spawn) en **8 min 19 s**, 13.6–25.6 chunks/s (media ~20) |
+| "Can't keep up" / errores durante la pregeneración | Ninguno |
+| Lithium | Los dos `Force-disabling mixin 'world.game_events.dispatch.*'` aparecen al arrancar (arreglo de la fuga #783 aplicado) |
+| RSS del proceso Java | De 4.5 a 6.7 GiB en los primeros ~2000 chunks (Java va ocupando el heap ya reservado) y luego **plano en 6.77–6.88 GiB** del 27 % al 100 % |
+
+No hay señales de fuga, pero el heap ocupado tras cada GC **no se midió**: la imagen trae un JRE sin `jcmd` y la salida de spark no llega por RCON. Con Xms = Xmx, el RSS solo es una aproximación. Para medirlo, activar el log de GC con `JVM_OPTS` (`-Xlog:gc*:file=/data/logs/gc.log:time,uptime:filecount=3,filesize=10M`), igual que hace `server-template/user_jvm_args.txt`.
+
 Detalle de la prueba con pregeneración (`docs/rc2-integration.json`):
 
 - **Chunky**: 1681 chunks (radio de 320 bloques) en **2 min 38 s**, unos **10.6 chunks/s**.
