@@ -1,0 +1,334 @@
+{
+  id: "2D01A70B5BB24DEE",
+  group: "",
+  order_index: 12,
+  filename: "12_exploracion",
+  icon: {
+    id: "minecraft:map"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "5E00F6AA57437CD7",
+      icon: {
+        id: "minecraft:compass"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "48B7A41119FE6C7B",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "2C86369CBC8DF6C5",
+      icon: {
+        id: "minecraft:mossy_stone_bricks"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "24BDE4552A074630",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "6406E694A9979BB9",
+      icon: {
+        id: "minecraft:oak_planks"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "71B85C6134010C3C",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "6570DA3477EE7AA1",
+      icon: {
+        id: "friendsandfoes:copper_button"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "33D26D0A03301259",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "17B4E32007A30ADA",
+      icon: {
+        id: "minecraft:tuff"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "5810A0053ED095C1",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "7CECCBC22FCBB970",
+      icon: {
+        id: "minecraft:glow_berries"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "0945533FC96F080A",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "2CA7520251793FD1",
+      icon: {
+        id: "minecraft:beehive"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "46E2D057A8BE6D7A",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5B24AAB8F70A5BFE",
+      icon: {
+        id: "minecraft:kelp"
+      },
+      x: 9.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "250D16D27C5807AF",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "4E73A918591A3D74",
+      icon: {
+        id: "minecraft:shield"
+      },
+      x: 0.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "096C545F3256AA5A",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "4DAB9042504C2330",
+      icon: {
+        id: "minecraft:crossbow"
+      },
+      x: 3.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "34E8F9920DE8C6FE",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "0E41E15923A1CACF",
+      icon: {
+        id: "minecraft:enchanted_book"
+      },
+      x: 6.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "74E970CE3125BE92",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "4A2D31ABC5E93324",
+      icon: {
+        id: "minecraft:iron_sword"
+      },
+      x: 9.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "24030E08F4AD15E2",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "14A4384EE484460D",
+      icon: {
+        id: "artifacts:cloud_in_a_bottle"
+      },
+      x: 0.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "3AFA622C9248DE50",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}

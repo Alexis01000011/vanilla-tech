@@ -1,0 +1,310 @@
+{
+  id: "2FD2640F4FDEFE4F",
+  group: "",
+  order_index: 5,
+  filename: "05_create_procesos",
+  icon: {
+    id: "create:mechanical_press"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "063B15D71CF49D07",
+      icon: {
+        id: "create:mechanical_press"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "04751CA895FE311B",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "538ACC4CE1106379",
+      icon: {
+        id: "create:mechanical_mixer"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "55F4C6BCA1B8F86E",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "3F8EC4B1AB47D8B5",
+      icon: {
+        id: "create:millstone"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "01A182A96A2D65A6",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "50B27DC6AB6C7B01",
+      icon: {
+        id: "create:encased_fan"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "24F02E737CFC1210",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "020AA27668028487",
+      icon: {
+        id: "create:deployer"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "2922204B79B0730E",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "0513C6EF5C3322B7",
+      icon: {
+        id: "create:belt_connector"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "2D0FCDF7410A7884",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "793E33335356B2A2",
+      icon: {
+        id: "create:brass_funnel"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "29EA4EF443CA3725",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "0E83C88366A75554",
+      icon: {
+        id: "create:mechanical_pump"
+      },
+      x: 9.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "464C3F04710EC1B5",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "7626A2F7849F96D9",
+      icon: {
+        id: "create:spout"
+      },
+      x: 0.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "4B91F53F5C7909DF",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "75F33EDEBE0935EF",
+      icon: {
+        id: "create:precision_mechanism"
+      },
+      x: 3.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "5800964EB3BB18FF",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "13DBB53007FC8D18",
+      icon: {
+        id: "create:mechanical_crafter"
+      },
+      x: 6.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "06420F13AF8A020E",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "76B844A04C9922A4",
+      icon: {
+        id: "create:packager"
+      },
+      x: 9.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "0EDDD32FBC86A752",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}

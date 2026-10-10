@@ -1,0 +1,166 @@
+{
+  id: "018475E873F82F89",
+  group: "",
+  order_index: 17,
+  filename: "17_cliente_rendimiento",
+  icon: {
+    id: "minecraft:painting"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "3ECA338937D8E4C9",
+      icon: {
+        id: "minecraft:painting"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "39EB6A2646AC606C",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "49828B21BCED389B",
+      icon: {
+        id: "minecraft:sunflower"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "26ABA3194AAB5291",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5E64E34E5173C8E4",
+      icon: {
+        id: "minecraft:armor_stand"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "355059F3DA87B834",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "1F0F7B9B9EE0F270",
+      icon: {
+        id: "minecraft:glass"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "49824A3A5D244BB8",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "72CAA2AC9506294D",
+      icon: {
+        id: "minecraft:clock"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "60128E45B25F1724",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "290559B71B808A8A",
+      icon: {
+        id: "minecraft:command_block"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "68CDC1F2DCF5496D",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}

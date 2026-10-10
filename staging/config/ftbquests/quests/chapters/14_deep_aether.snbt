@@ -1,0 +1,190 @@
+{
+  id: "360CC3A13D3BDDA8",
+  group: "",
+  order_index: 14,
+  filename: "14_deep_aether",
+  icon: {
+    id: "deep_aether:skyjade"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "18A88FB824923D30",
+      icon: {
+        id: "deep_aether:roseroot_log"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "1A8B4FC821799D18",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5FA238A7EFF5F99B",
+      icon: {
+        id: "deep_aether:skyjade_lantern"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "158FA73F7836F700",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "0B182DB0A52D2FA5",
+      icon: {
+        id: "deep_aether:skyjade_pickaxe"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "66B782DC2249C734",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "4BC5FF5F2AD6E582",
+      icon: {
+        id: "deep_aether:stratus_ingot"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "4490CB8D77156AD6",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "3F6472B38ED814E5",
+      icon: {
+        id: "deep_aether:stratus_boots"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "32E8DF63AEFD024F",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "084C3279C87B5581",
+      icon: {
+        id: "deep_aether:brass_dungeon_key"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "7D088D83A9192413",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "57E2D08DDDE3E24B",
+      icon: {
+        id: "deep_aether:slider_eye"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "070563128CF1506D",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}

@@ -1,0 +1,238 @@
+{
+  id: "4E9FFD8097EA4E61",
+  group: "",
+  order_index: 10,
+  filename: "10_ae2_addons",
+  icon: {
+    id: "appliedcreate:kinetic_energy_acceptor"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "77C0CBE01594933D",
+      icon: {
+        id: "appliedcreate:kinetic_energy_acceptor"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "30590A496392CA13",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "3E95E5551A9D2D44",
+      icon: {
+        id: "appliedcreate:andesite_pattern_provider"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "09979DCCE9AA3C5C",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "4D9B9F9F3F470125",
+      icon: {
+        id: "appliedcreate:me_gearbox"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "5908F1E8ECF40CEA",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "2C27FB5B7D7421D2",
+      icon: {
+        id: "appliedcreate:me_blueprint_cannon"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "40E013EB3395D6F0",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "49B5585317F0EBD5",
+      icon: {
+        id: "ae2wtlib:wireless_universal_terminal"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "7A5BEA741FAB2356",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "194C226CBC2E2D20",
+      icon: {
+        id: "ae2wtlib:quantum_bridge_card"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "32E8368C6F1C6334",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "2877A1CED1E48B13",
+      icon: {
+        id: "extendedae:ex_pattern_provider"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "33AEE287B6D0855B",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "07947B2598B34833",
+      icon: {
+        id: "extendedae:pattern_modifier"
+      },
+      x: 9.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "25BAF7FDDC49A2CD",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5ED7EEF70EF8B35A",
+      icon: {
+        id: "extendedae:assembler_matrix_frame"
+      },
+      x: 0.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "2BDDB8AF914C3187",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}
