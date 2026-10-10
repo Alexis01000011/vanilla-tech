@@ -391,6 +391,7 @@ metafile = true
 [[files]]
 file = "options.txt"
 hash = "0052e427dda7b47cb56230efb44b9ac6be716abf31cd8e5beec953810d71728a"
+preserve = true
 
 [[files]]
 file = "resourcepacks/fa-player-extension.pw.toml"
@@ -400,10 +401,12 @@ metafile = true
 [[files]]
 file = "shaderpacks/MakeUp-UltraFast-9.5a.zip.txt"
 hash = "580271d86f52d2d9a684da02936da7a62e9045fb5618f7f625c84e40048c33f1"
+preserve = true
 
 [[files]]
 file = "shaderpacks/Mellow Shader v3.2.zip.txt"
 hash = "8b749eb015b08dad9e5d5121254f4e661957e6a3c75383909bef10d329ce85f8"
+preserve = true
 
 [[files]]
 file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"

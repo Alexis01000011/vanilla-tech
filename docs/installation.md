@@ -161,6 +161,7 @@ chunky start
 ## 4. Actualizar
 
 ### Servidor
+**El servidor real (AWS) se actualiza con el pipeline**: workflow *Deploy* con aprobación, backup completo, healthcheck y reversión automática ([cicd.md](cicd.md)). Lo de abajo es para un servidor propio sin pipeline.
 ```bash
 cd vanilla-tech && git pull && bash scripts/build.sh
 # detener el servidor y hacer backup del mundo primero
@@ -172,8 +173,8 @@ Comportamiento del script:
 - **Configs que el pack sí cambió**: si nadie las tocó localmente, las reemplaza. Si las cambiaron las dos partes, se detiene y lista los archivos; revísalos y vuelve a correr con `--replace-configs`, que guarda la copia local como `*.bak-<versión>`.
 
 ### Cliente (Prism)
-La forma más segura es crear una instancia nueva con el `.mrpack` nuevo y copiar desde la anterior:
+**Recomendado:** configurar una vez el actualizador automático ([auto-update-prism.md](auto-update-prism.md)); cada **Jugar** descarga solo lo que cambió y no toca mundos, opciones ni teclas.
+
+Sin el actualizador, la forma más segura es crear una instancia nueva con el `.mrpack` nuevo y copiar desde la anterior:
 - `saves/` (mundos locales), `options.txt`, `servers.dat`.
 - `xaero/` (waypoints y mapa explorado) y `local/` (datos de cliente de FTB).
-
-Alternativa a futuro, sin pasos manuales: publicar el repositorio y usar `packwiz-installer-bootstrap` como *pre-launch command* de Prism apuntando al `pack.toml` publicado. Así cada arranque sincroniza el cliente con la versión del repositorio.

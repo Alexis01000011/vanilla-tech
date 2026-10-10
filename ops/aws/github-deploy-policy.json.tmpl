@@ -1,0 +1,32 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "RunOnlyTheDeployDocumentOnTheServer",
+      "Effect": "Allow",
+      "Action": "ssm:SendCommand",
+      "Resource": [
+        "arn:aws:ssm:${REGION}:${ACCOUNT_ID}:document/VanillaTech-Deploy",
+        "arn:aws:ec2:${REGION}:${ACCOUNT_ID}:instance/${INSTANCE_ID}"
+      ]
+    },
+    {
+      "Sid": "ReadCommandResultsAndAgentStatus",
+      "Effect": "Allow",
+      "Action": ["ssm:GetCommandInvocation", "ssm:ListCommandInvocations", "ssm:DescribeInstanceInformation"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "SeeInstanceState",
+      "Effect": "Allow",
+      "Action": "ec2:DescribeInstances",
+      "Resource": "*"
+    },
+    {
+      "Sid": "StartOnlyThisInstanceWhenTheApproverAsksFor",
+      "Effect": "Allow",
+      "Action": "ec2:StartInstances",
+      "Resource": "arn:aws:ec2:${REGION}:${ACCOUNT_ID}:instance/${INSTANCE_ID}"
+    }
+  ]
+}

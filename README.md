@@ -8,7 +8,7 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
-| Launcher | Prism Launcher (`.mrpack`) |
+| Launcher | Prism Launcher: `.mrpack` para instalar, [auto-update](docs/auto-update-prism.md) con packwiz-installer |
 | Mods | 78 artefactos fijados (72 mods + 5 shaderpacks + 1 resource pack): 77 en el cliente, 53 en el servidor |
 | Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente **0.4.0-alpha.1** (mismos mods que 0.4.0) probado en Prism por el usuario; antes, 0.3.0-alpha.1 con el Aether, Deep Aether y el Otherside. Los mods nuevos de 0.5.0-alpha.1 solo están probados en el servidor. Faltan las pruebas en juego de [known-issues.md](docs/known-issues.md). |
 
@@ -20,6 +20,8 @@ La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/
 | Documento | Contenido |
 |---|---|
 | [docs/installation.md](docs/installation.md) | Instalar y actualizar cliente (Prism) y servidor; FTB Chunks; backups; operador `imalexisxo`. |
+| [docs/auto-update-prism.md](docs/auto-update-prism.md) | Configurar Prism (una vez) para recibir las versiones nuevas sin reinstalar. |
+| [docs/cicd.md](docs/cicd.md) | Pipeline: CI, releases inmutables, deploy aprobado a la EC2, backups, rollback, promoción de `stable`. |
 | [docs/mod-catalog.md](docs/mod-catalog.md) | Qué aporta cada mod, enlaces oficiales y mods rechazados. |
 | [docs/compatibility-matrix.md](docs/compatibility-matrix.md) | Versión, fuente, dependencias, lado y estado de prueba de cada mod (generada). |
 | [docs/performance.md](docs/performance.md) | Mediciones del servidor y recomendaciones de memoria para cliente y servidor (8/16 GiB). |
@@ -70,6 +72,9 @@ El resultado queda en `releases/vanilla-tech-<versión>.mrpack` (+ `.sha256`). E
 | `scripts/integration-commands.txt` | Prueba de integración: estructuras vanilla, de Explorify, The Aether, Deep Aether, Deeper and Darker y de los mods de illagers y de L_Ender's Cataclysm, dimensiones del Aether y del Otherside, AE2, Create, Applied Create y colocación de bloques de los demás mods. |
 | `scripts/pregen-commands.txt` | Benchmark de pregeneración con Chunky. |
 | `scripts/research.py` | Vuelve a consultar Modrinth para ver versiones nuevas (no modifica el pack). |
+| `scripts/check-pack.py` | Lint rápido sin descargas (lo corre el CI primero): versiones, índice al día, mods fijados y de CDN oficial, `preserve`, CHANGELOG. |
+| `scripts/release.py` | Metadatos de release, impacto cliente/servidor y sitio de actualizaciones (`releases/`, `stable/`, `staging/`). Ver [docs/cicd.md](docs/cicd.md). |
+| `ops/ec2/` | Scripts del servidor: `deploy.sh`, `rollback.sh`, `healthcheck.sh`, `status.sh`, `drill.sh`. |
 
 ### Probar un servidor localmente
 ```bash

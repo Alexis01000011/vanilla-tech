@@ -1,0 +1,121 @@
+# Deploy: lleva una release YA publicada (workflow Release) al servidor EC2 y, solo si el servidor quedó
+# sano, promueve stable/ para que Prism actualice a los clientes. Manual y con aprobación del environment
+# "production". Nunca corre por un push.
+#   - Cambios solo de cliente: no toca la EC2; solo promueve stable/.
+#   - Impacto alto (mods de servidor agregados/quitados): exige confirm_high_impact.
+#   - EC2 apagada: falla sin cambios, salvo start_if_stopped (la prende; el cron la apaga con backup).
+name: Deploy
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Versión publicada (p. ej. 0.5.1)
+        required: true
+      start_if_stopped:
+        description: Prender la EC2 si está apagada (~USD 0.14/h hasta que el cron la apague)
+        type: boolean
+        default: false
+      confirm_high_impact:
+        description: Confirmo una release de impacto ALTO (mods de servidor nuevos o quitados)
+        type: boolean
+        default: false
+      kick_players:
+        description: Avisar y desconectar a jugadores conectados (solo con su acuerdo)
+        type: boolean
+        default: false
+      allow_downgrade:
+        description: Desplegar una versión anterior conservando el mundo (normalmente usa Rollback)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: production
+  cancel-in-progress: false
+env:
+  PACK_SITE_URL: ${{ vars.PACK_SITE_URL }}
+  VERSION: ${{ inputs.version }}
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      sha256: ${{ steps.rel.outputs.sha256 }}
+      server_deploy: ${{ steps.impact.outputs.server_deploy }}
+      severity: ${{ steps.impact.outputs.severity }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: rel
+        name: Release publicada e íntegra
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-(alpha|beta|rc)\.[0-9]+)?$ ]] || { echo "::error::Versión inválida: $VERSION"; exit 1; }
+          curl -fsSL "$PACK_SITE_URL/releases/$VERSION/release.json" -o release.json || { echo "::error::$VERSION no está publicada: corre antes el workflow Release (etiqueta v$VERSION)"; exit 1; }
+          sha=$(python3 -c 'import json;r=json.load(open("release.json"));assert r["version"]==__import__("os").environ["VERSION"];print(r["mrpack"]["sha256"])')
+          # Segunda fuente independiente del sitio: el .sha256 de la GitHub Release.
+          gh release download "v$VERSION" --repo "$GITHUB_REPOSITORY" -p "*.mrpack.sha256" -O gh.sha256
+          [ "$(cut -d' ' -f1 gh.sha256)" = "$sha" ] || { echo "::error::El sha256 del sitio y el de la GitHub Release no coinciden"; exit 1; }
+          echo "sha256=$sha" >> "$GITHUB_OUTPUT"
+      - id: impact
+        name: Impacto contra el servidor y los clientes
+        run: bash scripts/ci/impact.sh release.json
+      - name: Puertas de seguridad
+        env:
+          SEVERITY: ${{ steps.impact.outputs.severity }}
+          DOWNGRADE: ${{ steps.impact.outputs.downgrade }}
+          LOADER: ${{ steps.impact.outputs.loader_change }}
+        run: |
+          if [ "$LOADER" = true ]; then echo "::error::La release cambia Minecraft/NeoForge: requiere autorización explícita y un plan aparte (no se despliega por aquí)"; exit 1; fi
+          if [ "$SEVERITY" = high ] && [ "${{ inputs.confirm_high_impact }}" != true ]; then
+            echo "::error::Impacto ALTO (mods de servidor nuevos/quitados: registros, bloques o dimensiones). Revisa el resumen y relanza con confirm_high_impact."; exit 1; fi
+          if [ "$DOWNGRADE" = true ] && [ "${{ inputs.allow_downgrade }}" != true ]; then
+            echo "::error::$VERSION es anterior a la del servidor: usa el workflow Rollback (o allow_downgrade si sabes que el mundo lo tolera)"; exit 1; fi
+          echo "Plan: servidor=${{ steps.impact.outputs.server_deploy }}, severidad=$SEVERITY" | tee -a "$GITHUB_STEP_SUMMARY"
+
+  deploy:
+    needs: plan
+    runs-on: ubuntu-24.04
+    environment: production
+    timeout-minutes: 75
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with: { path: ci }
+      - uses: aws-actions/configure-aws-credentials@v4
+        if: needs.plan.outputs.server_deploy != 'false'
+        with:
+          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION || 'us-east-1' }}
+          role-session-name: vanilla-tech-deploy-${{ github.run_id }}
+      - name: Desplegar en la EC2 (SSM -> deploy.sh)
+        if: needs.plan.outputs.server_deploy != 'false'
+        env:
+          INSTANCE_ID: ${{ vars.EC2_INSTANCE_ID }}
+          START_IF_STOPPED: ${{ inputs.start_if_stopped }}
+        run: |
+          flags=none
+          if [ "${{ inputs.kick_players }}" = true ] && [ "${{ inputs.allow_downgrade }}" = true ]; then flags=kick-downgrade
+          elif [ "${{ inputs.kick_players }}" = true ]; then flags=kick
+          elif [ "${{ inputs.allow_downgrade }}" = true ]; then flags=downgrade; fi
+          bash ci/ops/github/ssm-run.sh deploy --version "$VERSION" --sha256 "${{ needs.plan.outputs.sha256 }}" --flags "$flags"
+      - name: Sin cambios de servidor
+        if: needs.plan.outputs.server_deploy == 'false'
+        run: |
+          echo "Solo cambios de cliente: la EC2 no se toca." | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Promover stable (y registrar lo que corre el servidor)
+        run: |
+          git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          bash ci/scripts/ci/site-checkout.sh site
+          python3 ci/scripts/release.py alias --site site --name stable --version "$VERSION"
+          if [ "${{ needs.plan.outputs.server_deploy }}" != false ]; then python3 ci/scripts/release.py server --site site --version "$VERSION"; fi
+          python3 ci/scripts/release.py verify --site site
+          bash ci/scripts/ci/site-push.sh site "Promote $VERSION to stable (run ${{ github.run_id }})"
+      - name: Verificar lo que verán los clientes
+        working-directory: ci
+        run: |
+          bash scripts/ci/wait-site.sh "$PACK_SITE_URL/stable/release.json" "$VERSION"
+          curl -fsSL "$PACK_SITE_URL/releases/$VERSION/release.json" -o /tmp/rel.json
+          python3 scripts/check-install.py --pack "$PACK_SITE_URL/stable/pack.toml" --side client --dir /tmp/client --expect /tmp/rel.json
+          echo "✅ stable -> $VERSION. Prism actualizará a los clientes en su próximo arranque." >> "$GITHUB_STEP_SUMMARY"

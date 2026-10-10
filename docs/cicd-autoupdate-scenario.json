@@ -1,0 +1,97 @@
+[
+ {
+  "step": "impact B->C is client-only, no EC2 deploy",
+  "ok": true,
+  "detail": "client"
+ },
+ {
+  "step": "impact A->B needs EC2 deploy",
+  "ok": true,
+  "detail": "high"
+ },
+ {
+  "step": "first run on an imported instance (stable=A) succeeds",
+  "ok": true,
+  "detail": "3.3s"
+ },
+ {
+  "step": "existing mods adopted without re-download",
+  "ok": true,
+  "detail": "mtimes unchanged"
+ },
+ {
+  "step": "player files untouched after first run",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "step": "instance matches release A",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "step": "second run changes nothing",
+  "ok": true,
+  "detail": "1.5s; changed: []"
+ },
+ {
+  "step": "update A->B succeeds",
+  "ok": true,
+  "detail": "73.7s"
+ },
+ {
+  "step": "instance matches release B (new mods, new configs)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "step": "pack-owned config updated",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "step": "player options/keybinds/shader settings/saves/personal mod preserved",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "step": "client-only update B->C succeeds",
+  "ok": true,
+  "detail": "1.5s"
+ },
+ {
+  "step": "mod removed from the pack is deleted",
+  "ok": true,
+  "detail": "mods/dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar"
+ },
+ {
+  "step": "player files still preserved (options.txt not replaced by new default)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "step": "stale/corrupt metafile rejected: installer exits non-zero, Prism does not launch",
+  "ok": true,
+  "detail": "exit 1"
+ },
+ {
+  "step": "nothing from the broken publication written to the instance",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "step": "after the site is fixed, client rollback C->B restores the removed mod",
+  "ok": true,
+  "detail": "2.9s"
+ },
+ {
+  "step": "player files preserved through rollback",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "step": "server-side install has exactly the server mods",
+  "ok": true,
+  "detail": "53 mods; "
+ }
+]

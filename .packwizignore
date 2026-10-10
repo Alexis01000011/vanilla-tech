@@ -13,3 +13,9 @@ CHANGELOG.md
 core
 core.*
 .git/**
+# Pipeline CI/CD: nunca forma parte del pack publicado
+.github/**
+ops/**
+release.json
+impact-*
+site/**
