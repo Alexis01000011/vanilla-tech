@@ -1,0 +1,72 @@
+# ops/tests/e2e-local.sh — 2026-10-10T16:38:55Z — NeoForge 21.1.257 real, heap 2G, mc-image-helper 1.72.0
+
+PASS install.sh instala y parchea idle-shutdown (exit 0)
+PASS idle-shutdown respeta el flag de mantenimiento
+PASS install.sh es idempotente (exit 0)
+PASS el parche no se duplica
+PASS arranque inicial de R1 (0.5.0-alpha.1)
+PASS marcador del mundo = 42
+PASS sha256 distinto al del pipeline se rechaza (exit 1)
+PASS downgrade sin autorización se rechaza (exit 13)
+PASS cambio de NeoForge sin autorización se rechaza (exit 12)
+PASS versión con caracteres raros se rechaza (exit 1)
+PASS desplegar la release ya activa es un no-op (exit 0)
+PASS con jugadores conectados no despliega (exit 10)
+PASS el servidor sigue arriba con R1 tras los rechazos
+PASS flag de mantenimiento liberado
+PASS lock ocupado: otro deploy en curso (exit 11)
+PASS deploy 0.5.0-alpha.1 -> 0.5.1-alpha.2 (exit 0)
+PASS pack activo = 0.5.1-alpha.2
+PASS mod quitado (Chunky) eliminado del servidor
+PASS config del pack aplicada
+PASS mundo conservado (marcador 42)
+PASS ops.json conservado
+PASS contador de inactividad reiniciado
+PASS backup previo registrado (20261010T163404Z-0.5.0-alpha.1)
+PASS deploy roto 0.5.1-alpha.3 se revierte solo (exit 2)
+PASS pack activo vuelve a 0.5.1-alpha.2
+PASS servidor sano tras la reversión
+PASS mundo intacto tras la reversión (marcador 43)
+PASS datos fallidos apartados para diagnóstico
+PASS historial registra la reversión
+PASS rollback previous (antes de 0.5.1-alpha.2) (exit 0)
+PASS pack activo = 0.5.0-alpha.1
+PASS Chunky de vuelta
+PASS mundo del backup (marcador 42; lo jugado después queda en el backup de seguridad)
+PASS backup de seguridad del estado previo (20261010T163622Z-0.5.1-alpha.2)
+PASS deshacer el rollback (rollback a 20261010T163622Z-0.5.1-alpha.2) (exit 0)
+PASS de vuelta en 0.5.1-alpha.2
+PASS con el marcador 43
+PASS ensayo de restauración del último backup (exit 0)
+PASS retención: como máximo 3 backups + protegidos
+PASS status.sh (exit 0)
+PASS idle-shutdown no apaga durante mantenimiento
+PASS idle-shutdown ignora un flag huérfano (>3 h)
+42 PASS / 0 FAIL
+
+## Tiempos y resultados de cada operación (logs de ops/ec2)
+20261010T163345Z-deploy-0.4.0: ERROR: 0.4.0 es anterior a 0.5.0-alpha.1: usa rollback.sh, o --allow-downgrade si sabes que el mundo lo tolera 
+
+20261010T163345Z-deploy-0.5.1-alpha.2: ERROR: el sha256 descargado no coincide con el del pipeline 
+
+20261010T163345Z-deploy-0.9.0: ERROR: NeoForge change 21.1.257 -> 21.1.999 needs explicit authorization (--allow-loader-change) 
+
+20261010T163346Z-deploy-0.5.0-alpha.1: 
+20261010T163346Z-deploy-0.5.1-alpha.2: ERROR: hay 1 jugador(es) conectados; reintenta cuando salgan (o --kick-players con su acuerdo) fin: código 10 en 3 s 
+
+20261010T163350Z-deploy-0.5.1-alpha.2: ERROR: otro deploy/rollback está en curso fin: código 11 en 2 s 
+
+20261010T163352Z-deploy-0.5.1-alpha.2: OK: 0.5.0-alpha.1 -> 0.5.1-alpha.2 en 60 s; backup previo: 20261010T163404Z-0.5.0-alpha.1 fin: código 0 en 60 s 
+
+20261010T163453Z-deploy-0.5.1-alpha.3: ERROR: healthcheck falló: HEALTH {"ok":false,"error":"crash al arrancar: {\"ready\": false, \"error\": \"Missing or unsupported mandatory dependencies\", \"seconds\": 8.0}"} revertido a 0.5.1-alpha.2 fin: código 2 en 76 s 
+
+20261010T163614Z-rollback-20261010T163404Z-0.5.0-alpha.1: OK: 0.5.1-alpha.2 -> 0.5.0-alpha.1 (backup 20261010T163404Z-0.5.0-alpha.1). Para deshacer: rollback.sh 20261010T163622Z-0.5.1-alpha.2 fin: código 0 en 62 s 
+
+20261010T163719Z-rollback-20261010T163622Z-0.5.1-alpha.2: OK: 0.5.0-alpha.1 -> 0.5.1-alpha.2 (backup 20261010T163622Z-0.5.1-alpha.2). Para deshacer: rollback.sh 20261010T163727Z-0.5.0-alpha.1 fin: código 0 en 74 s 
+
+
+## history.jsonl
+{"action": "deploy", "at": "2026-10-10T16:34:52Z", "previous": "0.5.0-alpha.1", "result": "ok", "seconds": 60, "snapshot": "20261010T163404Z-0.5.0-alpha.1", "version": "0.5.1-alpha.2"}
+{"action": "deploy", "at": "2026-10-10T16:36:09Z", "phase": "started", "result": "rolled-back", "snapshot": "20261010T163504Z-0.5.1-alpha.2", "version": "0.5.1-alpha.3"}
+{"action": "rollback", "at": "2026-10-10T16:37:16Z", "result": "ok", "safety": "20261010T163622Z-0.5.1-alpha.2", "seconds": 62, "target": "20261010T163404Z-0.5.0-alpha.1", "version": "0.5.0-alpha.1"}
+{"action": "rollback", "at": "2026-10-10T16:38:33Z", "result": "ok", "safety": "20261010T163727Z-0.5.0-alpha.1", "seconds": 74, "target": "20261010T163622Z-0.5.1-alpha.2", "version": "0.5.1-alpha.2"}

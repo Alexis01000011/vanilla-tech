@@ -131,19 +131,19 @@ No se crearon buckets nuevos ni snapshots de EBS.
 
 ## 9. Pruebas
 
-Ver [cicd-test-results.md](cicd-test-results.md).
+Resultados, fallas encontradas y pendientes: [cicd-test-results.md](cicd-test-results.md).
 
 ## 10. Configuración pendiente (requiere autorización)
 
 | Paso | Quién | Comando / lugar |
 |---|---|---|
-| Iniciar sesión en GitHub CLI | tú | `gh auth login` (el token guardado está vencido) |
-| Crear el repo **público** y subir `main`, ramas y etiquetas | Claude con tu OK | `gh repo create … --public` + `git push` |
-| Activar Pages desde `gh-pages` y variable `PACK_SITE_URL` | Claude con tu OK | `gh api …/pages`, `gh variable set` |
-| Environment `production` con tu usuario como revisor obligatorio | Claude con tu OK | `gh api -X PUT …/environments/production` |
+| Iniciar sesión en GitHub CLI | ✅ hecho | `gh auth login` |
+| Repo **público** con `main`, `release/*` y etiquetas (historial con correo noreply) | ✅ hecho 2026-10-10 | github.com/Alexis01000011/vanilla-tech |
+| Pages desde `gh-pages`; variables `PACK_SITE_URL`, `AWS_REGION` | ✅ hecho | https://alexis01000011.github.io/vanilla-tech/ |
+| Environment `production`: revisor obligatorio Alexis01000011, solo rama `main` | ✅ hecho | Settings → Environments |
 | Publicar 0.5.0-alpha.1 como base (bootstrap) | Claude con tu OK | Actions → Release → `tag=v0.5.0-alpha.1`, `bootstrap=true` |
 | OIDC + rol + documento SSM | ✅ hecho 2026-10-10 (autorizado) | `GITHUB_REPO=Alexis01000011/vanilla-tech INSTANCE_ID=<id> ops/aws/setup-aws.sh` |
 | Instalar `ops/ec2` en la instancia (no reinicia Minecraft) | Claude con tu OK, instancia prendida | `ops/aws/install-on-instance.sh`, luego `drill.sh latest` |
-| Secrets del environment `production`: `AWS_DEPLOY_ROLE_ARN`, `EC2_INSTANCE_ID` (enmascarados en los logs, que son públicos) | Claude con tu OK | `gh secret set … --env production` |
+| Secrets del environment `production`: `AWS_DEPLOY_ROLE_ARN`, `EC2_INSTANCE_ID` | ✅ hecho | enmascarados en los logs públicos |
 | Configurar Prism del amigo | el amigo | [auto-update-prism.md](auto-update-prism.md) |
 | Primer deploy real por el pipeline | tú apruebas | Deploy de la próxima versión |
