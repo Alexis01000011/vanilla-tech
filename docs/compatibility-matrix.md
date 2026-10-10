@@ -1,4 +1,4 @@
-# Matriz de compatibilidad — Vanilla Tech 0.6.0
+# Matriz de compatibilidad — Vanilla Tech 0.6.1-alpha.1
 
 Minecraft 1.21.1 · NeoForge 21.1.257 · 74 artefactos fijados.
 Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `docs/test-status.toml`.

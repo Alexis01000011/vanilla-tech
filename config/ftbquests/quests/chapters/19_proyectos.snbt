@@ -25,6 +25,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -34,8 +35,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "7D41709AF28AD04B",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -49,6 +51,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -58,8 +61,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "7BC402982D0C3F0A",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -73,6 +77,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -82,8 +87,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "374E76330BD3BA78",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -97,6 +103,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -106,8 +113,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "28BAD24DCD72F839",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []

@@ -17,7 +17,7 @@
   require_sequential_tasks: false,
   quests: [
     {
-      id: "77C0CBE01594933D",
+      id: "2EFDBDCBC80B59F5",
       icon: {
         id: "appliedcreate:kinetic_energy_acceptor"
       },
@@ -25,6 +25,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -34,21 +35,78 @@
       hide_details_until_startable: false,
       tasks: [
         {
-          id: "30590A496392CA13",
-          type: "checkmark"
+          type: "item",
+          item: {
+            id: "appliedcreate:kinetic_energy_acceptor"
+          },
+          count: 1,
+          consume_items: false,
+          only_from_crafting: false,
+          match_components: "none",
+          task_screen_only: false,
+          id: "2C67DC7A01E11241",
+          disable_toast: true
         }
       ],
       rewards: []
+    },
+    {
+      id: "77C0CBE01594933D",
+      icon: {
+        id: "appliedcreate:kinetic_energy_acceptor"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "30590A496392CA13",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "2B177F3FE4E34E05",
+          type: "toast",
+          icon: {
+            id: "appliedcreate:kinetic_energy_acceptor"
+          },
+          description: "Tu red ya recibe energía desde Create."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "7AEDB7E92AB566E6",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
     },
     {
       id: "3E95E5551A9D2D44",
       icon: {
         id: "appliedcreate:andesite_pattern_provider"
       },
-      x: 3.0d,
+      x: 6.0d,
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -58,21 +116,70 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "09979DCCE9AA3C5C",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
+    },
+    {
+      id: "564EEA5E1533F91E",
+      icon: {
+        id: "appliedcreate:andesite_pattern_provider"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "4DAAEEDCC922FC70",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "0BF9638CD02E94AF",
+          type: "toast",
+          icon: {
+            id: "appliedcreate:andesite_pattern_provider"
+          },
+          description: "Tu primer pedido volvió terminado a ME."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "76DC64C91A19E721",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
     },
     {
       id: "4D9B9F9F3F470125",
       icon: {
         id: "appliedcreate:me_gearbox"
       },
-      x: 6.0d,
-      y: 0.0d,
+      x: 0.0d,
+      y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -82,8 +189,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "5908F1E8ECF40CEA",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -93,10 +201,11 @@
       icon: {
         id: "appliedcreate:me_blueprint_cannon"
       },
-      x: 9.0d,
-      y: 0.0d,
+      x: 3.0d,
+      y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -106,8 +215,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "40E013EB3395D6F0",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -117,10 +227,11 @@
       icon: {
         id: "ae2wtlib:wireless_universal_terminal"
       },
-      x: 0.0d,
+      x: 6.0d,
       y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -130,8 +241,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "7A5BEA741FAB2356",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -141,10 +253,11 @@
       icon: {
         id: "ae2wtlib:quantum_bridge_card"
       },
-      x: 3.0d,
+      x: 9.0d,
       y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -154,8 +267,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "32E8368C6F1C6334",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -165,10 +279,11 @@
       icon: {
         id: "extendedae:ex_pattern_provider"
       },
-      x: 6.0d,
-      y: 2.0d,
+      x: 0.0d,
+      y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -178,8 +293,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "33AEE287B6D0855B",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -189,10 +305,11 @@
       icon: {
         id: "extendedae:pattern_modifier"
       },
-      x: 9.0d,
-      y: 2.0d,
+      x: 3.0d,
+      y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -202,8 +319,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "25BAF7FDDC49A2CD",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -213,10 +331,11 @@
       icon: {
         id: "extendedae:assembler_matrix_frame"
       },
-      x: 0.0d,
+      x: 6.0d,
       y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -226,8 +345,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "2BDDB8AF914C3187",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []

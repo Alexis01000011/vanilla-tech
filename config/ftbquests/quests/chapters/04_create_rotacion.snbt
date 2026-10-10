@@ -25,6 +25,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -34,8 +35,65 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "3D74FE49C7A018B9",
-          type: "checkmark"
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "348CEEB2C8E9DC22",
+      icon: {
+        id: "create:andesite_alloy"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "create:andesite_alloy",
+          criterion: "",
+          id: "62C300F1E0BF1E96",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "60940E3246C3CE5C",
+      icon: {
+        id: "create:andesite_casing"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "create:andesite_casing",
+          criterion: "",
+          id: "3066195738435185",
+          disable_toast: true
         }
       ],
       rewards: []
@@ -45,10 +103,11 @@
       icon: {
         id: "create:goggles"
       },
-      x: 3.0d,
+      x: 9.0d,
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -58,8 +117,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "43E598D44A6C176A",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -69,10 +129,11 @@
       icon: {
         id: "create:water_wheel"
       },
-      x: 6.0d,
-      y: 0.0d,
+      x: 0.0d,
+      y: 2.0d,
       shape: "square",
-      size: 1.0d,
+      size: 1.2d,
+      disable_toast: true,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -82,21 +143,46 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "advancement",
+          advancement: "create:water_wheel",
+          criterion: "",
           id: "3799141371A87276",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
-      rewards: []
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "536914D58FCDD319",
+          type: "toast",
+          icon: {
+            id: "create:water_wheel"
+          },
+          description: "Tu rueda ya está generando rotación."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "24E839AEBCD6CAC8",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
     },
     {
       id: "0E76E4EE156C228A",
       icon: {
         id: "create:shaft"
       },
-      x: 9.0d,
-      y: 0.0d,
+      x: 3.0d,
+      y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -106,8 +192,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "196B785899AFF925",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -117,10 +204,11 @@
       icon: {
         id: "create:speedometer"
       },
-      x: 0.0d,
+      x: 6.0d,
       y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -130,8 +218,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "0D0E23BE25AC83D1",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -141,10 +230,11 @@
       icon: {
         id: "create:stressometer"
       },
-      x: 3.0d,
+      x: 9.0d,
       y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -154,8 +244,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "55A12503B087D3D8",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -165,10 +256,11 @@
       icon: {
         id: "create:clutch"
       },
-      x: 6.0d,
-      y: 2.0d,
+      x: 0.0d,
+      y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -178,8 +270,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "529B3CD6BD81DD30",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -189,10 +282,11 @@
       icon: {
         id: "create:windmill_bearing"
       },
-      x: 9.0d,
-      y: 2.0d,
+      x: 3.0d,
+      y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -202,8 +296,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "3F1DEA4F65B185B3",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -213,10 +308,11 @@
       icon: {
         id: "create:steam_engine"
       },
-      x: 0.0d,
+      x: 6.0d,
       y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -226,8 +322,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "073CAD5EC65A7555",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -237,10 +334,11 @@
       icon: {
         id: "create:gearbox"
       },
-      x: 3.0d,
+      x: 9.0d,
       y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -250,8 +348,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "036BDF24C684EC43",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []

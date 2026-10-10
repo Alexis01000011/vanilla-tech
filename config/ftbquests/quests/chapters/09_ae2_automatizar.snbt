@@ -25,6 +25,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -34,8 +35,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "68F50C50860B06B8",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -49,6 +51,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -58,8 +61,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "0D98E275D85066DB",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -73,6 +77,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -82,8 +87,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "3B4799C780A79909",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -97,6 +103,7 @@
       y: 0.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -106,8 +113,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "4BDBF0A3BBA87D89",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -120,7 +128,8 @@
       x: 0.0d,
       y: 2.0d,
       shape: "square",
-      size: 1.0d,
+      size: 1.2d,
+      disable_toast: true,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -130,11 +139,33 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "1F0EA91A58F47C17",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
-      rewards: []
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "5F751685515100E6",
+          type: "toast",
+          icon: {
+            id: "ae2:1k_crafting_storage"
+          },
+          description: "Tu red completó su primera fabricación."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "085556B74CAB0500",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
     },
     {
       id: "73C1D3837915D99B",
@@ -145,6 +176,7 @@
       y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -154,8 +186,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "7AB9BC562A1ED3D7",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -169,6 +202,7 @@
       y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -178,8 +212,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "527308DA92712B7E",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -193,6 +228,7 @@
       y: 2.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -202,8 +238,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "6D7A6F0448F2ADFB",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []
@@ -217,6 +254,7 @@
       y: 4.0d,
       shape: "square",
       size: 1.0d,
+      disable_toast: false,
       dependencies: [],
       hide_until_deps_visible: false,
       hide_until_deps_complete: false,
@@ -226,8 +264,9 @@
       hide_details_until_startable: false,
       tasks: [
         {
+          type: "checkmark",
           id: "6D1B4408E9393B8B",
-          type: "checkmark"
+          disable_toast: true
         }
       ],
       rewards: []

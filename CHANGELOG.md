@@ -8,7 +8,16 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.3.x**: + Deep Aether + Deeper and Darker. Rama `release/0.3`.
 - **0.4.x**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Rama `release/0.4`.
 - **0.5.0-alpha.1**: L_Ender's Cataclysm y Just Hammers, sobre 0.4. Es la que corre el mundo del servidor real.
-- **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. **Estable actual.** La siguiente, 0.6.1, trae mejoras del libro; las alphas pueden agregar y quitar mods entre sí y los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
+- **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. **Estable actual.** En pruebas: **0.6.1-alpha.N** con el libro V2 (será la primera versión del servidor real con libro); las alphas pueden agregar y quitar mods entre sí y los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
+
+## 0.6.1-alpha.1 — 2026-10-10
+- **Libro V2** (Codex, `questbook-vanilla-tech-0.5.0-alpha.1-v2/`, ZIP sha256 `373f7d6b…`; los 23 SNBT se copiaron idénticos): 20 capítulos y **203 misiones** (181 de V1 + 22 nuevas): inicio práctico de Create, línea de placas, cosechadora con parada y descarga, alimentación ME por rotación, pedido completo AE2 → crafters de Create → ME, más Aether y Otherside, y Cataclysm separado en visitas, objetos de activación y victorias opcionales.
+- **Detección automática** en 47 tareas: 12 de objeto (no consumen nada), 23 de avance y 12 de estructura. Las otras 156 siguen siendo marcas manuales. Siguen sin dependencias entre misiones.
+- **Hitos**: 24 misiones muestran un toast propio y una fanfarria (`playsound minecraft:ui.toast.challenge_complete players @s`, permiso 2, silencioso). Sin premios de objetos ni XP. El sonido usa el volumen *Jugadores*.
+- **IDs**: se conservan los 382 de V1 (28 tareas pasaron de manual a automática con el mismo ID) y se agregan 92. Los 23 avances y las 12 estructuras existen en los JARs del pack.
+- **Sin cambios de mods, configs ni teclas** respecto a 0.6.0.
+- **Probado**: servidor en mundo nuevo (`docs/0.6.1-alpha.1-integration.json`). Falta el cliente: P30 y P34 de `known-issues.md`.
+- 84 artefactos (83 en el cliente, 55 en el servidor). `sha256 383da7f0d797121d0d00f9ae7b907ffce7f9380303c8fc6430274755ae7efee9`
 
 ## 0.6.0 — 2026-10-10 (estable)
 - **Mismo contenido que 0.6.0-alpha.1**: los archivos, las dependencias y los overrides son idénticos; solo cambia el número de versión.
