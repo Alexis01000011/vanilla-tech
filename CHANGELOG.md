@@ -6,9 +6,15 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.1.x**: línea base (Create + AE2 + calidad de vida), sin dimensiones nuevas. Rama `release/0.1`.
 - **0.2.x**: la base + The Aether. Rama `release/0.2`.
 - **0.3.x**: + Deep Aether + Deeper and Darker. Rama `release/0.3`.
-- **0.4.x**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Rama `release/0.4`. **Estable actual.**
+- **0.4.x**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Rama `release/0.4`.
 - **0.5.0-alpha.1**: L_Ender's Cataclysm y Just Hammers, sobre 0.4. Es la que corre el mundo del servidor real.
-- **0.6.0-alpha.N**: libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5, en `main`. Las alphas pueden agregar y quitar mods entre sí; los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
+- **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. **Estable actual.** La siguiente, 0.6.1, trae mejoras del libro; las alphas pueden agregar y quitar mods entre sí y los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
+
+## 0.6.0 — 2026-10-10 (estable)
+- **Mismo contenido que 0.6.0-alpha.1**: los archivos, las dependencias y los overrides son idénticos; solo cambia el número de versión.
+- **Validado por el usuario en el cliente**, que pidió marcarla estable.
+- **Servidor real**: sigue en 0.5.0-alpha.1 por decisión del usuario; se actualizará con 0.6.1. Por eso el alias `stable/` de Pages (lo que reciben los clientes con auto-update) sigue en 0.5.0-alpha.1 hasta ese deploy.
+- 84 artefactos (83 en el cliente, 55 en el servidor). `sha256 58a0312d8088655f70e5a2c03c1929df9e125c93f1b388169ac5e7d518786909`
 
 ## 0.6.0-alpha.1 — 2026-10-10
 - **Agregado**: FTB Quests 2101.1.36 con el libro *Vanilla Tech · Explora a tu ritmo* (20 capítulos, 181 misiones en español, sin dependencias ni recompensas). Se abre con el botón de la barra lateral del inventario.
