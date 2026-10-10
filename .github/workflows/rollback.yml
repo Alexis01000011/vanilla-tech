@@ -1,0 +1,72 @@
+# Rollback: restaura en la EC2 un backup completo tomado por deploy.sh (mundo + archivos + pack) y
+# vuelve a apuntar stable/ a esa versión para que los clientes coincidan. Manual y con aprobación.
+# OJO: el mundo vuelve al momento del backup; antes de restaurar se guarda un backup de seguridad del
+# estado actual (su id aparece en el resumen) para poder deshacerlo.
+name: Rollback
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "'previous' (el backup previo al deploy activo) o un id de backup (status.sh lo lista)"
+        default: previous
+        required: true
+      start_if_stopped:
+        description: Prender la EC2 si está apagada
+        type: boolean
+        default: false
+      kick_players:
+        description: Avisar y desconectar a jugadores conectados (solo con su acuerdo)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: production
+  cancel-in-progress: false
+env:
+  PACK_SITE_URL: ${{ vars.PACK_SITE_URL }}
+
+jobs:
+  rollback:
+    runs-on: ubuntu-24.04
+    environment: production
+    timeout-minutes: 75
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - name: Objetivo válido
+        env: { TARGET: '${{ inputs.target }}' }
+        run: '[[ "$TARGET" =~ ^(previous|[0-9]{8}T[0-9]{6}Z-[A-Za-z0-9.+-]+)$ ]] || { echo "::error::target inválido"; exit 1; }'
+      - uses: actions/checkout@v4
+        with: { path: ci }
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          mask-aws-account-id: true
+          aws-region: ${{ vars.AWS_REGION || 'us-east-1' }}
+          role-session-name: vanilla-tech-rollback-${{ github.run_id }}
+      - id: ssm
+        name: Restaurar en la EC2 (SSM -> rollback.sh)
+        env:
+          INSTANCE_ID: ${{ secrets.EC2_INSTANCE_ID }}
+          START_IF_STOPPED: ${{ inputs.start_if_stopped }}
+          TARGET: ${{ inputs.target }}
+          FLAGS: ${{ inputs.kick_players && 'kick' || 'none' }}
+        run: bash ci/ops/github/ssm-run.sh rollback --target "$TARGET" --flags "$FLAGS"
+      - name: Volver a apuntar stable a la versión restaurada
+        env: { RESULT: '${{ steps.ssm.outputs.result }}' }
+        run: |
+          v=$(python3 -c 'import json,os;print(json.loads(os.environ["RESULT"])["version"])')
+          echo "Servidor restaurado a $v" >> "$GITHUB_STEP_SUMMARY"
+          git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          bash ci/scripts/ci/site-checkout.sh site
+          if [ -d "site/releases/$v" ]; then
+            python3 ci/scripts/release.py alias --site site --name stable --version "$v"
+            python3 ci/scripts/release.py server --site site --version "$v"
+            python3 ci/scripts/release.py verify --site site
+            bash ci/scripts/ci/site-push.sh site "Rollback: stable/server -> $v (run ${{ github.run_id }})"
+            echo "stable -> $v: los clientes vuelven a esa versión en su próximo arranque." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::warning::$v no está publicada en el sitio; stable no se cambió. Revisa a mano que los clientes coincidan."
+          fi

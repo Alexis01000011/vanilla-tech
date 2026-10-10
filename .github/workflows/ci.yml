@@ -1,0 +1,109 @@
+# CI: valida cada cambio del pack. Nunca usa AWS ni prende la EC2.
+# lint -> build reproducible -> validación de JARs (hashes, lados, dependencias, rangos) -> impacto contra
+# lo publicado -> smoke test de un servidor NeoForge real si el cambio afecta al servidor.
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main, 'release/**']
+  workflow_dispatch:
+    inputs:
+      smoke:
+        description: Forzar el smoke test de servidor
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+env:
+  PACK_SITE_URL: ${{ vars.PACK_SITE_URL }}
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    outputs:
+      version: ${{ steps.meta.outputs.version }}
+      server_deploy: ${{ steps.impact.outputs.server_deploy }}
+      severity: ${{ steps.impact.outputs.severity }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: '21' }
+      - uses: actions/setup-go@v5
+        with: { go-version: '1.23', cache: false }
+      - uses: actions/cache@v4
+        with:
+          path: |
+            .cache/artifacts
+            .cache/libs
+            .cache/packwiz
+            .cache/packwiz-src
+          key: pack-${{ hashFiles('mods/*.pw.toml', 'shaderpacks/*.pw.toml', 'resourcepacks/*.pw.toml', 'research/packwiz.json') }}
+          restore-keys: pack-
+      - name: Lint del pack (rápido, sin descargas)
+        run: python3 scripts/check-pack.py
+      - name: packwiz fijado (compilado desde el commit bloqueado)
+        run: echo "PACKWIZ_BIN=$(bash scripts/ci/packwiz.sh)" >> "$GITHUB_ENV"
+      - name: Build (.mrpack determinista)
+        run: bash scripts/build.sh
+      - name: index.toml/pack.toml al día con el árbol
+        run: git diff --exit-code -- index.toml pack.toml || { echo "::error::Corre bash scripts/build.sh y commitea index.toml/pack.toml"; exit 1; }
+      - name: Validación de JARs (hashes, lados cliente/servidor, dependencias, rangos, worldgen)
+        run: bash scripts/check.sh
+      - name: Documentación generada al día
+        run: |
+          git diff --stat --exit-code -- docs/ || echo "::warning::docs/ generados cambiaron (compatibility-matrix, jar-inventory...): commitea la salida de check.sh"
+      - name: Exclusiones de itzg en el servidor
+        run: python3 scripts/check-itzg.py releases/*.mrpack
+      - id: meta
+        name: Metadatos de la release
+        run: |
+          v=$(python3 -c "import tomllib;print(tomllib.load(open('pack.toml','rb'))['version'])")
+          python3 scripts/release.py meta --root . --mrpack "releases/vanilla-tech-$v.mrpack" --commit "$GITHUB_SHA" --out release.json
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+      - id: impact
+        name: Impacto contra lo que corre el servidor y lo que tienen los clientes
+        run: bash scripts/ci/impact.sh release.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build-${{ steps.meta.outputs.version }}
+          path: |
+            releases/*.mrpack
+            releases/*.sha256
+            release.json
+            impact-*.json
+            docs/jar-inventory.json
+            docs/version-ranges.tsv
+          retention-days: 30
+
+  smoke:
+    needs: build
+    if: needs.build.outputs.server_deploy != 'false' || inputs.smoke
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: '21' }
+      - uses: actions/cache/restore@v4
+        with:
+          path: |
+            .cache/artifacts
+            .cache/libs
+          key: pack-${{ hashFiles('mods/*.pw.toml', 'shaderpacks/*.pw.toml', 'resourcepacks/*.pw.toml', 'research/packwiz.json') }}
+          restore-keys: pack-
+      - uses: actions/download-artifact@v4
+        with: { name: 'build-${{ needs.build.outputs.version }}' }
+      - name: Smoke test de servidor NeoForge (mundo temporal, 127.0.0.1)
+        run: bash scripts/ci/smoke.sh ci-smoke
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smoke-${{ needs.build.outputs.version }}
+          path: |
+            docs/ci-smoke.json
+            docs/ci-smoke.log
+          retention-days: 30

@@ -1,0 +1,142 @@
+# Release: una etiqueta vX.Y.Z construye, valida y PUBLICA una release inmutable. No despliega nada.
+#   releases/<v>/ (packwiz + .mrpack + release.json) en GitHub Pages, GitHub Release con el .mrpack,
+#   y staging/ apuntando a <v> para probarla en una instancia de Prism aparte.
+# El despliegue al servidor y la promoción de stable/ son el workflow "Deploy" (con aprobación).
+name: Release
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Etiqueta existente a publicar (p. ej. v0.5.0-alpha.1)
+        required: true
+      bootstrap:
+        description: 'Solo la primera vez: registrar esta release como la que YA corre en la EC2 y en los clientes (stable + server), sin desplegar'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: pages-publish
+  cancel-in-progress: false
+env:
+  PACK_SITE_URL: ${{ vars.PACK_SITE_URL }}
+  TAG: ${{ inputs.tag || github.ref_name }}
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - name: Etiqueta válida
+        run: |
+          [[ "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-(alpha|beta|rc)\.[0-9]+)?$ ]] || { echo "::error::Etiqueta inválida: $TAG"; exit 1; }
+          echo "VERSION=${TAG#v}" >> "$GITHUB_ENV"
+          [ -n "$PACK_SITE_URL" ] || { echo "::error::Falta la variable del repositorio PACK_SITE_URL"; exit 1; }
+      - name: Herramientas del pipeline (rama por defecto)
+        uses: actions/checkout@v4
+        with: { path: ci }
+      - name: Árbol del pack en la etiqueta
+        uses: actions/checkout@v4
+        with: { ref: '${{ env.TAG }}', path: pack }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: '21' }
+      - uses: actions/setup-go@v5
+        with: { go-version: '1.23', cache: false }
+      - uses: actions/cache@v4
+        with:
+          path: |
+            pack/.cache/artifacts
+            pack/.cache/libs
+            pack/.cache/packwiz
+            ci/.cache/packwiz-src
+          key: release-${{ hashFiles('pack/mods/*.pw.toml', 'pack/research/packwiz.json') }}
+          restore-keys: release-
+      - name: Lint (la etiqueta coincide con pack.toml; CHANGELOG)
+        run: python3 ci/scripts/check-pack.py --root pack --tag "$TAG"
+      - name: Build reproducible
+        working-directory: pack
+        run: |
+          # Etiquetas anteriores al pipeline ignoran PACKWIZ_BIN y usan el binario nightly (válido hasta 2026-12-05).
+          PACKWIZ_BIN=$(bash ../ci/scripts/ci/packwiz.sh) bash scripts/build.sh
+          sha=$(cut -d' ' -f1 "releases/vanilla-tech-$VERSION.mrpack.sha256"); echo "MRPACK_SHA=$sha" >> "$GITHUB_ENV"
+          # Si el CHANGELOG ya registró el sha de esta versión, el build tiene que reproducirlo byte a byte.
+          want=$(python3 - "$VERSION" <<'PY'
+          import re,sys
+          v=sys.argv[1];s=open('CHANGELOG.md').read();m=re.search(r'(?ms)^## '+re.escape(v)+r'\b.*?(?=^## |\Z)',s)
+          h=re.findall(r'sha256 ([0-9a-f]{64})',m.group(0)) if m else []
+          print(h[-1] if h else '')
+          PY
+          )
+          if [ -n "$want" ] && [ "$want" != "$sha" ]; then echo "::error::El build no reproduce el sha del CHANGELOG ($want != $sha)"; exit 1; fi
+          echo "mrpack sha256 $sha ${want:+(= CHANGELOG)}"
+      - name: Validación de JARs
+        working-directory: pack
+        run: bash scripts/check.sh
+      - name: Exclusiones de itzg
+        run: python3 ci/scripts/check-itzg.py "pack/releases/vanilla-tech-$VERSION.mrpack"
+      - id: impact
+        name: Metadatos e impacto
+        working-directory: pack
+        run: |
+          python3 ../ci/scripts/release.py meta --root . --mrpack "releases/vanilla-tech-$VERSION.mrpack" --commit "$(git rev-parse HEAD)" --out release.json
+          PACK_SITE_URL=$PACK_SITE_URL bash ../ci/scripts/ci/impact.sh release.json
+      - name: Smoke test de servidor
+        if: steps.impact.outputs.server_deploy != 'false'
+        working-directory: pack
+        run: bash ../ci/scripts/ci/smoke.sh "release-$VERSION-smoke"
+      - name: GitHub Release (inmutable)
+        env: { GH_TOKEN: '${{ github.token }}' }
+        working-directory: pack
+        run: |
+          notes=$(python3 - "$VERSION" <<'PY'
+          import re,sys
+          v=sys.argv[1];s=open('CHANGELOG.md').read();m=re.search(r'(?ms)^## '+re.escape(v)+r'\b.*?(?=^## |\Z)',s)
+          print(m.group(0) if m else f'Release {v}')
+          PY
+          )
+          files=("releases/vanilla-tech-$VERSION.mrpack" "releases/vanilla-tech-$VERSION.mrpack.sha256" release.json)
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            mkdir -p /tmp/existing && gh release download "$TAG" --repo "$GITHUB_REPOSITORY" -p "*.mrpack" -D /tmp/existing --clobber
+            cmp "/tmp/existing/vanilla-tech-$VERSION.mrpack" "releases/vanilla-tech-$VERSION.mrpack" \
+              || { echo "::error::La GitHub Release $TAG ya existe con otro .mrpack: las releases son inmutables"; exit 1; }
+          else
+            pre=; [[ "$VERSION" == *-* ]] && pre=--prerelease
+            gh release create "$TAG" "${files[@]}" --repo "$GITHUB_REPOSITORY" --title "Vanilla Tech $VERSION" --notes "$notes" --verify-tag $pre
+          fi
+      - name: Publicar en el sitio (releases/<v> + staging)
+        run: |
+          git config --global user.name "github-actions[bot]"; git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          bash ci/scripts/ci/site-checkout.sh site
+          python3 ci/scripts/release.py publish --site site --root pack --mrpack "pack/releases/vanilla-tech-$VERSION.mrpack" --commit "$(git -C pack rev-parse HEAD)"
+          python3 ci/scripts/release.py alias --site site --name staging --version "$VERSION"
+          if [ "${{ inputs.bootstrap }}" = true ]; then
+            [ ! -f site/server/release.json ] || { echo "::error::bootstrap solo se permite con un sitio sin server/release.json"; exit 1; }
+            python3 ci/scripts/release.py alias --site site --name stable --version "$VERSION"
+            python3 ci/scripts/release.py server --site site --version "$VERSION"
+          fi
+          python3 ci/scripts/release.py verify --site site
+          bash ci/scripts/ci/site-push.sh site "Publish $VERSION (staging)${{ inputs.bootstrap && ' + bootstrap stable/server' || '' }}"
+      - name: Esperar a GitHub Pages y probar la instalación publicada
+        working-directory: ci
+        run: |
+          bash scripts/ci/wait-site.sh "$PACK_SITE_URL/staging/release.json" "$VERSION"
+          curl -fsSL "$PACK_SITE_URL/releases/$VERSION/release.json" -o /tmp/rel.json
+          python3 scripts/check-install.py --pack "$PACK_SITE_URL/staging/pack.toml" --side client --dir /tmp/client --expect /tmp/rel.json
+          python3 scripts/check-install.py --pack "$PACK_SITE_URL/staging/pack.toml" --side server --dir /tmp/server --expect /tmp/rel.json
+          {
+            echo "### Release $VERSION publicada"
+            echo "- Prism (pruebas): \`$PACK_SITE_URL/staging/pack.toml\`"
+            echo "- Instalador completo: $PACK_SITE_URL/releases/$VERSION/vanilla-tech-$VERSION.mrpack (sha256 \`$MRPACK_SHA\`)"
+            echo "- Siguiente paso: workflow **Deploy** con \`version=$VERSION\` (pide aprobación)."
+          } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: release-${{ env.VERSION }}
+          path: |
+            pack/release.json
+            pack/impact-*.json
+            pack/docs/release-*-smoke.*
+          retention-days: 90

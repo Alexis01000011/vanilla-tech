@@ -9,6 +9,11 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.4.x**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Rama `release/0.4`. **Estable actual.**
 - **0.5.0-alpha.N**: L_Ender's Cataclysm y Just Hammers, sobre 0.4, en `main`. Las alphas pueden agregar y quitar mods entre sí; sus mundos son desechables (ver *Versiones y ramas* en el README).
 
+## Sin publicar
+- **Pipeline CI/CD** ([docs/cicd.md](docs/cicd.md)): CI en GitHub Actions, releases inmutables en GitHub Pages (`releases/<v>/`, alias `staging` y `stable`), deploy manual con aprobación a la EC2 (backup, healthcheck, reversión) y rollback.
+- **Auto-update en Prism** ([docs/auto-update-prism.md](docs/auto-update-prism.md)): `options.txt` y los ajustes de shaders quedan `preserve = true` en `index.toml`; el `.mrpack` de 0.5.0-alpha.1 no cambia (`sha256 3578edc3…`).
+- **Herramientas**: `bootstrap-tools.py` acepta un packwiz compilado (`PACKWIZ_BIN`), porque el artefacto nightly caduca el 2026-12-05.
+
 ## 0.5.0-alpha.1 — 2026-10-09
 - **Agregado**: L_Ender's Cataclysm 3.33 (+ Lionfish API 3.1) y Just Hammers 21.1.4.
 - **Teclas**: habilidades de Cataclysm en L (ítem y botas), P (peto) e I (casco); sin tecla: *Progresos*, *Interacciones sociales* y el modo construcción de Dank Storage.

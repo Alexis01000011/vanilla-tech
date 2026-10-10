@@ -5,3 +5,6 @@ releases/
 *.log
 *.jar
 __pycache__/
+/release.json
+/impact-*
+/site/

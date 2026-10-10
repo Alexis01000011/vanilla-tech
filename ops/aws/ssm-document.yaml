@@ -1,0 +1,41 @@
+# VanillaTech-Deploy — único comando que el rol de GitHub puede ejecutar en la instancia.
+# Cada parámetro está restringido por allowedPattern/allowedValues, así que nunca llega texto libre al
+# shell: solo una acción conocida, una versión X.Y.Z[-pre.N], un sha256 hex y un id de backup.
+schemaVersion: '2.2'
+description: Vanilla Tech CD - deploy/rollback/status/healthcheck/drill con los scripts auditados de /opt/vanilla-tech/cd
+parameters:
+  action:
+    type: String
+    allowedValues: [status, healthcheck, drill, deploy, rollback]
+  version:
+    type: String
+    default: 0.0.0
+    allowedPattern: '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}(-(alpha|beta|rc)\.[0-9]{1,3})?$'
+  sha256:
+    type: String
+    default: '0000000000000000000000000000000000000000000000000000000000000000'
+    allowedPattern: '^[0-9a-f]{64}$'
+  target:
+    type: String
+    default: previous
+    allowedPattern: '^(previous|latest|s3|[0-9]{8}T[0-9]{6}Z-[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}(-(alpha|beta|rc)\.[0-9]{1,3})?|[0-9]{8}T[0-9]{6}Z-unknown)$'
+  flags:
+    type: String
+    default: none
+    allowedValues: [none, kick, downgrade, kick-downgrade]
+mainSteps:
+  - action: aws:runShellScript
+    name: vanillaTechCD
+    inputs:
+      timeoutSeconds: '3600'
+      runCommand:
+        - 'CD=/opt/vanilla-tech/cd; KICK=; DOWN='
+        - 'case "{{ flags }}" in kick|kick-downgrade) KICK=--kick-players ;; esac'
+        - 'case "{{ flags }}" in downgrade|kick-downgrade) DOWN=--allow-downgrade ;; esac'
+        - 'case "{{ action }}" in'
+        - '  status) exec "$CD/status.sh" ;;'
+        - '  healthcheck) exec "$CD/healthcheck.sh" ;;'
+        - '  drill) exec "$CD/drill.sh" "{{ target }}" ;;'
+        - '  deploy) exec "$CD/deploy.sh" "{{ version }}" "{{ sha256 }}" $KICK $DOWN ;;'
+        - '  rollback) exec "$CD/rollback.sh" "{{ target }}" $KICK ;;'
+        - 'esac'
