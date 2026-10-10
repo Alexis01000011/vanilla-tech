@@ -17,7 +17,7 @@ else
 fi
 if [ -n "$site" ] && full stable; then
   python3 "$tools/release.py" impact impact-base-stable.json "$new" > impact-stable.json
-  python3 -c 'import json;r=json.load(open("impact-stable.json"));print(f"- Clientes (stable {r[\"base\"]}): actualización {\"sí\" if r[\"client_update\"] else \"no\"}")' >> "$sum"
+  python3 -c 'import json;r=json.load(open("impact-stable.json"));print("- Clientes (stable %s): actualización %s" % (r["base"], "sí" if r["client_update"] else "no"))' >> "$sum"
   mine=releases/$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["mrpack"]["file"])' "$new")
   if [ -f "$mine" ]; then
     base=$(python3 -c 'import json;r=json.load(open("impact-base-stable.json"));print(r["version"]+"/"+r["mrpack"]["file"])')

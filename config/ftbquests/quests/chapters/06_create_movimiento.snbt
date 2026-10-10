@@ -1,0 +1,190 @@
+{
+  id: "0EFE18504E47B8DF",
+  group: "",
+  order_index: 6,
+  filename: "06_create_movimiento",
+  icon: {
+    id: "create:mechanical_bearing"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "1213E69CB69DBC56",
+      icon: {
+        id: "create:mechanical_harvester"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "7B825615D4A92D89",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "1272957D7A690459",
+      icon: {
+        id: "create:portable_storage_interface"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "7C8A80516FA3D86D",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "340A0BE3BD90C9B1",
+      icon: {
+        id: "create:super_glue"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "05E7E339AB85A0EF",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "524E963512B845C2",
+      icon: {
+        id: "create:track"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "5EBDFB2564BFA4F8",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "62A19700EF537380",
+      icon: {
+        id: "create:schedule"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "1F5BEB3C6D814ABB",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "6AC5FCE4AB5B27E5",
+      icon: {
+        id: "create:schematicannon"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "2522539A88629E12",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "15731A5B3D8F4BA5",
+      icon: {
+        id: "buildinggadgets2:gadget_building"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "3CEB30A5B8F59D59",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}

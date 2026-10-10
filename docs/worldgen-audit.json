@@ -367,6 +367,12 @@
     "vanilla_structure_pieces": []
   },
   {
+    "mod": "FTB Quests (NeoForge)",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
     "mod": "FTB Teams (NeoForge)",
     "worldgen_paths": [],
     "vanilla_overrides": [],
@@ -551,6 +557,12 @@
   },
   {
     "mod": "owo-lib",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
+    "mod": "Paxi",
     "worldgen_paths": [],
     "vanilla_overrides": [],
     "vanilla_structure_pieces": []

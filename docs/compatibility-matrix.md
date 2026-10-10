@@ -1,6 +1,6 @@
-# Matriz de compatibilidad — Vanilla Tech 0.5.0-alpha.1
+# Matriz de compatibilidad — Vanilla Tech 0.6.0-alpha.1
 
-Minecraft 1.21.1 · NeoForge 21.1.257 · 72 artefactos fijados.
+Minecraft 1.21.1 · NeoForge 21.1.257 · 74 artefactos fijados.
 Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `docs/test-status.toml`.
 
 **Estados**
@@ -47,6 +47,7 @@ El cliente **0.4.0-alpha.1** (mismos mods que 0.4.0) arrancó en Prism y entró 
 | FTB Chunks (NeoForge) | 2101.1.22 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-forge) | Architectury API, FTB Library (NeoForge), FTB Teams (NeoForge) | both | Launch tested | Servidor: config del pack cargada sin reescritura |
 | FTB JEI Extras | 21.1.7 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-jei-extras) | — | client | Launch tested | Cliente rc.3: arranque y mundo nuevo en Prism (solo cliente) |
 | FTB Library (NeoForge) | 2101.1.37 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge) | Architectury API | both | Launch tested | Servidor carga |
+| FTB Quests (NeoForge) | 2101.1.36 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge) | Architectury API, FTB Library (NeoForge), FTB Teams (NeoForge) | both | Verified |  |
 | FTB Teams (NeoForge) | 2101.1.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge) | Architectury API, FTB Library (NeoForge) | both | Launch tested | Servidor carga |
 | Glodium | 1.21-2.2-neoforge | [Modrinth](https://modrinth.com/mod/glodium) | — | both | Launch tested | Servidor carga |
 | GraveStone Mod | 1.21.1-1.0.40 | [Modrinth](https://modrinth.com/mod/gravestone-mod) | — | both | Launch tested | Servidor: bloque de lápida colocado |
@@ -69,6 +70,7 @@ El cliente **0.4.0-alpha.1** (mismos mods que 0.4.0) arrancó en Prism y entró 
 | ModernFix | 5.27.26+mc1.21.1 | [Modrinth](https://modrinth.com/mod/modernfix) | — | both | Launch tested | Servidor carga; 2 mixins desactivados por conflicto con Lithium |
 | Not Enough Animations | 1.12.6 | [Modrinth](https://modrinth.com/mod/not-enough-animations) | — | client | Launch tested | Solo cliente; cliente 0.4.0-alpha.1 arranca y entra al mundo |
 | owo-lib | 0.12.15.5-beta.1+1.21 | [Modrinth](https://modrinth.com/mod/owo-lib) | — | both | Launch tested | Servidor alpha.1 carga (requerida por Accessories, que viene dentro de Aether) |
+| Paxi | 1.21.1-NeoForge-5.1.3 | [Modrinth](https://modrinth.com/mod/paxi) | YUNG's API | both | Verified |  |
 | Puzzles Lib | 21.1.63 | [Modrinth](https://modrinth.com/mod/puzzles-lib) | — | both | Launch tested | Servidor 0.4.0-alpha.1 carga (Illager Invasion); cliente 0.4.0-alpha.1 arranca y entra al mundo |
 | Resourceful Lib | 3.0.12 | [Modrinth](https://modrinth.com/mod/resourceful-lib) | — | both | Launch tested | Servidor 0.4.0-alpha.1 carga (Friends & Foes, It Takes a Pillage); cliente 0.4.0-alpha.1 arranca y entra al mundo |
 | Searchables | 1.0.2 | [Modrinth](https://modrinth.com/mod/searchables) | — | client | Verified | Solo cliente (biblioteca de Controlling) |

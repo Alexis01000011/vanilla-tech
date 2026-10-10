@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-09, release **0.5.0-alpha.1** (estable: 0.4.0).
+Estado a 2026-10-10, release **0.6.0-alpha.1** (estable: 0.4.0; el servidor real corre 0.5.0-alpha.1).
 
 ## Pruebas pendientes
 
@@ -34,6 +34,10 @@ Estado a 2026-10-09, release **0.5.0-alpha.1** (estable: 0.4.0).
 | P27 | **Storage Drawers con AE2** (Storage Bus sobre un cajón) y **Create Crafts & Additions** (alternador → FE → máquina). | En el servidor se colocan los bloques. |
 | P28 | **L_Ender's Cataclysm**: encontrar una estructura, pelear un jefe y usar las habilidades del equipo (L, P, I). Medir FPS en las arenas. | En el servidor se ubican sus estructuras (0.5.0-alpha.1). |
 | P29 | **Just Hammers**: minar 3×3 y que no rompa bloques protegidos ni de máquinas por accidente. | Solo ítems; el servidor carga el mod. |
+| P30 | **FTB Quests en el cliente**: abrir el libro desde el botón de la barra lateral del inventario; 20 capítulos visibles, texto en español, iconos sin «missing item». Marcar una misión del inicio y una de Cataclysm sin completar las anteriores; salir y volver (persistencia). Con dos jugadores: formar party (FTB Teams) y ver la marca compartida. | En el servidor carga el libro completo (`Loaded 1 chapter groups, 20 chapters, 181 quests`). La UI y los iconos solo se ven en el cliente. |
+| P31 | **Fresh Animations y los illagers**: spawnear (creativo) Basher, Marauder, Provoker, Archivist, Necromancer, Invoker, Sorcerer, Inquisitor, Alchemist, Firecaller y Surrendered de Illager Invasion; Iceologer e Illusioner de Friends & Foes; Legioner, Archer y Skirmisher de It Takes a Pillage; y pillager/vindicator/evoker vanilla. No deben verse caras rotas, partes transparentes ni brazos fuera de lugar. | Análisis estático: modelos y texturas del pack de compatibilidad resueltos y capas verificadas en los JARs. Falta verlo en el juego. Los de It Takes a Pillage se ven vanilla (capas propias, sin modelo FA). |
+| P32 | **Fresh Animations: rendimiento**: FPS con muchos mobs (aldea, granja de animales, raid) con y sin shaders, comparando con FA apagado. | En la iGPU puede costar FPS. Si molesta, se desactivan Details y Emissive o todo FA en *Opciones → Paquetes de recursos*; no afecta al servidor. |
+| P33 | **Manzana dorada encantada**: 8 bloques de oro + 1 manzana en la mesa de crafteo; aparece en JEI y en el libro de recetas al tener un bloque de oro. | En el servidor se comprueba que el datapack de Paxi queda activo y que la receta se lee sin errores. |
 | P19 | **Jade**: el HUD muestra el bloque que se mira y la información de AE2 y Create. | Solo cliente; en el servidor ya cargan los plugins de AE2, Extended AE, Waystones, GraveStone y Balm (rc.5). |
 
 ## Problemas conocidos
@@ -90,6 +94,9 @@ Análisis estático de 1781 clases de mixin en 101 JARs (incluidos los internos)
 - **Flywheel (Create) se apaga con un shader activo** (backend "off"): con muchos bloques cinéticos bajan mucho los FPS en la iGPU. Create Crafts & Additions tiene un crash reportado con ese backend al mirar un Liquid Blaze Burner encendido (mrh0/createaddition#1020, abierto; no se verificó si afecta a 1.6.0).
 - **Duplicación Storage Drawers + AE2** (jaquadro/StorageDrawers#1243, AE2#8592, abiertos): Import Bus con lista negra y tarjetas de aceleración sobre un cajón de varias ranuras. Es un exploit; basta con no usarlo.
 - **Animaciones**: Not Enough Animations tiene issues abiertos con Fresh Animations: Player Extension (#315, #331: *Animation smoothing* rompe las animaciones del arco y los brazos; se arregla desactivándolo en la config de NEA). El Umbrella de Artifacts se ve al revés con FA:PE (artifacts#473).
+- **Fresh Animations (0.6.0-alpha)**: EMF aplica los modelos por capa (`ModelLayerLocation`), no por tipo de entidad. Cualquier mod que reutilice una capa vanilla recibe el modelo de FA sobre su propia textura. En el pack solo pasa con Illager Invasion (Basher, Marauder, Provoker, Archivist, Necromancer y Surrendered), y lo cubre *Fresh Illager Mod Compats*, que debe quedar **encima** de FA y de sus extensiones. Ese pack también reemplaza los modelos de FA de pillager, vindicator, evoker, illusioner, vex, witch, zombie villager, esqueleto, stray y wither skeleton por sus propias versiones (basadas en FA). Si se cambia el orden o se quita, los illagers de Illager Invasion pueden verse rotos.
+- **Packs nuevos en una instancia existente**: `options.txt` va marcado como `preserve` para el auto-update. Si se actualiza una instancia que ya existía, los paquetes de recursos nuevos se descargan pero no se activan solos: hay que activarlos en *Opciones → Paquetes de recursos* con el orden de abajo arriba FA → Details → Emissive → Illager Compats → Player Extension. Una instancia importada desde cero los trae activados.
+- **Paxi** imprime al arrancar `Reference map 'paxi.refmap.json' ... could not be read` (dos líneas). Es inofensivo: NeoForge usa mappings de Mojang y no necesita refmap.
 - **Menores, sin verificar**: un martillo de Just Hammers con Silk Touch permite XP infinita (#108); Entity Culling no tiene a los jefes de Cataclysm en su whitelist (si parpadean, agregarlos a `entityWhitelist`); la Frosted Prison y la Cursed Pyramid no tienen lista de exclusión y pueden quedar pegadas a aldeas nevadas o de desierto.
 - **Revisado y OK**: Friends & Foes e It Takes a Pillage extienden las raids y las patrullas sin pisarse; el Clay Golem no reemplaza a los gólems de hierro; Sunken City y Acropolis se alejan 10 chunks de los monumentos oceánicos; Cataclysm no toca `data/minecraft`. Ningún log tiene `InvalidInjectionException` ni `MixinTransformerError`.
 

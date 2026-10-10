@@ -1,0 +1,334 @@
+{
+  id: "63AD96E219E3E5DB",
+  group: "",
+  order_index: 8,
+  filename: "08_ae2_inicio",
+  icon: {
+    id: "ae2:terminal"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "2C56EF9C8E330B74",
+      icon: {
+        id: "ae2:guide"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "2311294AA010EB81",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "796CF7A24A1B8984",
+      icon: {
+        id: "ae2:meteorite_compass"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "20522598BCA177E0",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "243EF94B3D7234A5",
+      icon: {
+        id: "ae2:certus_quartz_crystal"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "5EC1ECBFD031B502",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5DCC198515B3D278",
+      icon: {
+        id: "ae2:charger"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "1F069920EF390D2A",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "3276A05779957D0A",
+      icon: {
+        id: "ae2:growth_accelerator"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "7A40B84DFA9202A3",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "252C313172323D09",
+      icon: {
+        id: "ae2:inscriber"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "5481963BBDB674C4",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "364B3217BF813479",
+      icon: {
+        id: "ae2:energy_acceptor"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "4DBE95CF38025619",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "655C5B73283A1EC9",
+      icon: {
+        id: "ae2:drive"
+      },
+      x: 9.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "2B1C0584D67AFF78",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "584296F56D62E3F7",
+      icon: {
+        id: "ae2:item_storage_cell_1k"
+      },
+      x: 0.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "02EB8E515320D4D8",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "795BA72F3297A4D1",
+      icon: {
+        id: "ae2:crafting_terminal"
+      },
+      x: 3.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "71E2FC47569537A1",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "28753EC59F5EC841",
+      icon: {
+        id: "ae2:fluix_smart_cable"
+      },
+      x: 6.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "075B3AE9161AD2D8",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "51EB11A95F328263",
+      icon: {
+        id: "ae2:controller"
+      },
+      x: 9.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "31B7FC6C069649D4",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "59FF42E7F86626F8",
+      icon: {
+        id: "ae2:energy_cell"
+      },
+      x: 0.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "23AA523DD68E3981",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}

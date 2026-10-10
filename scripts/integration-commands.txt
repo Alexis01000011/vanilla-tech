@@ -43,6 +43,10 @@ execute in deeperdarker:otherside run forceload add 0 0
 execute in deeperdarker:otherside run setblock 0 100 0 deeperdarker:sculk_stone
 execute in aether:the_aether run forceload add 0 0
 execute in aether:the_aether run setblock 0 100 0 aether:holystone
+## FTB Quests + Paxi (0.6.x): the quest book loads at startup ("Loaded ... chapters" in the log);
+## the Paxi datapack must be listed as enabled and its recipe/advancement parse without errors
+datapack list enabled
+datapack list available
 forceload add 0 0 31 15
 ## AE2 network on a creative cell
 setblock 0 100 0 ae2:creative_energy_cell
