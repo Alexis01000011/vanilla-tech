@@ -1,0 +1,118 @@
+{
+  id: "45B3D46CB908D0B5",
+  group: "",
+  order_index: 19,
+  filename: "19_proyectos",
+  icon: {
+    id: "minecraft:campfire"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "2A48508BFA40AD2D",
+      icon: {
+        id: "create:mechanical_press"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "7D41709AF28AD04B",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "29878DC4A35EE3B5",
+      icon: {
+        id: "waystones:waystone"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "7BC402982D0C3F0A",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "78B614D5F771E82E",
+      icon: {
+        id: "storagedrawers:controller"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "374E76330BD3BA78",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "53605B0DA1DB417A",
+      icon: {
+        id: "minecraft:compass"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "28BAD24DCD72F839",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}

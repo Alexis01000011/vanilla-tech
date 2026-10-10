@@ -1,0 +1,382 @@
+{
+  id: "37C321AAC17D6A31",
+  group: "",
+  order_index: 2,
+  filename: "02_base_y_equipaje",
+  icon: {
+    id: "sophisticatedbackpacks:backpack"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "3E8C560E6CDE36B5",
+      icon: {
+        id: "sophisticatedbackpacks:backpack"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "7191EA685F362E54",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "4A5B3593A3BCB66C",
+      icon: {
+        id: "sophisticatedbackpacks:copper_backpack"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "0693BF6B24A44906",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "7A857B411312A71A",
+      icon: {
+        id: "sophisticatedbackpacks:pickup_upgrade"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "2F46DA71FDA0132B",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "2DA66A198A012DC8",
+      icon: {
+        id: "sophisticatedbackpacks:feeding_upgrade"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "2E4D9B95544B3952",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "0EF7047C52BF719C",
+      icon: {
+        id: "sophisticatedbackpacks:crafting_upgrade"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "50CC4085521E8B1D",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "0492FFE89C19588B",
+      icon: {
+        id: "dankstorage:dank_1"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "14581B608B8505E6",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "0D95693208CCECDD",
+      icon: {
+        id: "dankstorage:dock"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "6DB3C794B3D8A63D",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "21C2443BC2EA035F",
+      icon: {
+        id: "minecraft:leather_chestplate"
+      },
+      x: 9.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "709D25B6FF2B24D2",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "79A2E369E2FC17E4",
+      icon: {
+        id: "waystones:waystone"
+      },
+      x: 0.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "356B583D18AA3587",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5E31A3ABA755FEDC",
+      icon: {
+        id: "waystones:warp_stone"
+      },
+      x: 3.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "3D2095E04B5D01B1",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "667C33C9EDA33D1E",
+      icon: {
+        id: "minecraft:stone_bricks"
+      },
+      x: 6.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "43A928CE6DA50791",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "55B3151CC29BCA24",
+      icon: {
+        id: "minecraft:filled_map"
+      },
+      x: 9.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "144F1E19AC800C6D",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5D6DD269D5068515",
+      icon: {
+        id: "minecraft:clock"
+      },
+      x: 0.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "4B29887A1A04C61E",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5493326116164F67",
+      icon: {
+        id: "justhammers:iron_hammer"
+      },
+      x: 3.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "721CD59E9265B486",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "65D6A62872418E6F",
+      icon: {
+        id: "justhammers:impact_core"
+      },
+      x: 6.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.0d,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          id: "55DC597074DBFEA5",
+          type: "checkmark"
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}
