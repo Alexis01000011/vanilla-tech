@@ -19,6 +19,7 @@ concurrency:
   cancel-in-progress: true
 env:
   PACK_SITE_URL: ${{ vars.PACK_SITE_URL }}
+  ALLOW_QUEST_ID_REMOVAL: ${{ vars.ALLOW_QUEST_ID_REMOVAL }}   # solo el dueño, cuando quitar misiones es intencional
 
 jobs:
   build:

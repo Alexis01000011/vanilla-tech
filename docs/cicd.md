@@ -105,12 +105,12 @@ Desde tu Linux, sin GitHub: `./vt-control.sh cd-status`, `./vt-control.sh cd-dri
 
 No se crearon buckets nuevos ni snapshots de EBS.
 
-## 6. FTB Quests (para la release que lo agregue)
+## 6. FTB Quests
 
-- Versión que está evaluando la sesión de Codex: **FTB Quests 2101.1.36** (rama `1.21.1/main`), con FTB Library/Teams/Architectury ya presentes.
+- En el pack desde **0.6.0**: FTB Quests 2101.1.36 (rama `1.21.1/main`) con FTB Library/Teams/Architectury; libro de 20 capítulos (382 IDs).
 - **Definiciones**: `config/ftbquests/quests/**.snbt` (+ `lang/`). Van en el pack como configs: se versionan e itzg las reescribe en cada arranque.
 - **Progreso**: `world/ftbquests/<equipo>.snbt` en el servidor. Está dentro de `world/`: lo cubren los backups y ningún deploy lo sobrescribe.
-- **IDs**: el progreso apunta a los IDs hex de las definiciones. `check-quests.py` (CI) falla si una release quita IDs, salvo `ALLOW_QUEST_ID_REMOVAL=1`. Editar el libro en el editor del juego conserva los IDs; regenerarlo desde cero no.
+- **IDs**: el progreso apunta a los IDs hex de las definiciones. `check-quests.py` (CI y Release) compara contra la release publicada más reciente anterior (p. ej. 0.6.1 contra 0.6.0, aunque `stable` siga en otra) y falla si se pierden IDs. Si quitar misiones es intencional, el dueño activa la variable del repo `ALLOW_QUEST_ID_REMOVAL=1` para ese run y la quita después. Editar el libro en el editor del juego conserva los IDs; regenerarlo desde cero no.
 - **Recarga sin reinicio**: `/ftbquests reload quests` (op) relee `config/ftbquests/quests` y sincroniza a todos sin tocar el progreso. Es viable para releases que solo cambian el libro, pero **no se implementó**: saltaría el manifiesto de itzg y el propio mod advierte que la recarga es para desarrollo. Hoy un cambio del libro se despliega como `low` (reinicio ~3 min). Revisar cuando el libro exista.
 
 ## 7. Seguridad
