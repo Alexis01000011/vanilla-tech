@@ -115,7 +115,7 @@ No se crearon buckets nuevos ni snapshots de EBS.
 
 ## 7. Seguridad
 
-- Sin llaves de AWS en GitHub: OIDC con `aud` y `sub` fijos (`repo:<owner>/<repo>:environment:production`); `mask-aws-account-id` activo.
+- Sin llaves de AWS en GitHub: OIDC con `aud` y `sub` fijos. El repo usa *subjects inmutables* de GitHub (`repo:<owner>@<id>/<repo>@<id>:environment:production`): `setup-aws.sh` lee el prefijo real con la API de GitHub. Un repo borrado y recreado con el mismo nombre no calza. `mask-aws-account-id` activo.
 - El rol no puede apagar, terminar, cambiar red, ni leer el token de Cloudflare.
 - `production` exige aprobación manual y solo acepta la rama `main`. El ARN del rol y el ID de la instancia son secrets **de ese environment**: no existen para PRs ni forks, solo después de aprobar, y se enmascaran en los logs (públicos en un repo público).
 - El sitio solo publica lo que lista `index.toml` (metafiles, configs, `options.txt`) + `.mrpack` + `release.json`. `check-pack.py` rechaza JARs, mundos, logs y cadenas con forma de credencial.
