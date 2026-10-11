@@ -15,8 +15,14 @@ cd "$(dirname "$0")"
 [[ "$INSTANCE_ID" =~ ^i-[0-9a-f]{8,17}$ ]] || { echo "INSTANCE_ID inválido"; exit 1; }
 DRY=; [ "${1:-}" = --dry-run ] && DRY=1
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
-render() { ACCOUNT_ID=$ACCOUNT_ID GITHUB_REPO=$GITHUB_REPO INSTANCE_ID=$INSTANCE_ID REGION=$REGION \
-  python3 -c 'import os,sys;s=open(sys.argv[1]).read();[s:=s.replace("${"+k+"}",os.environ[k]) for k in ("ACCOUNT_ID","GITHUB_REPO","INSTANCE_ID","REGION")];print(s)' "$1"; }
+# GitHub's OIDC "sub" starts with repo:owner/repo, or with repo:owner@ID/repo@ID when the repository uses
+# immutable subject claims (default for new repos). Ask GitHub instead of assuming the old format.
+GITHUB_SUB_PREFIX=${GITHUB_SUB_PREFIX:-$(gh api "repos/$GITHUB_REPO/actions/oidc/customization/sub" --jq '.sub_claim_prefix // empty' 2>/dev/null)}
+GITHUB_SUB_PREFIX=${GITHUB_SUB_PREFIX:-repo:$GITHUB_REPO}
+[[ "$GITHUB_SUB_PREFIX" =~ ^repo:[A-Za-z0-9_.-]+(@[0-9]+)?/[A-Za-z0-9_.-]+(@[0-9]+)?$ ]] || { echo "sub_claim_prefix inesperado: $GITHUB_SUB_PREFIX"; exit 1; }
+echo "OIDC sub: $GITHUB_SUB_PREFIX:environment:production"
+render() { ACCOUNT_ID=$ACCOUNT_ID GITHUB_SUB_PREFIX=$GITHUB_SUB_PREFIX INSTANCE_ID=$INSTANCE_ID REGION=$REGION \
+  python3 -c 'import os,sys;s=open(sys.argv[1]).read();[s:=s.replace("${"+k+"}",os.environ[k]) for k in ("ACCOUNT_ID","GITHUB_SUB_PREFIX","INSTANCE_ID","REGION")];print(s)' "$1"; }
 T=$(mktemp -d); trap 'rm -rf "$T"' EXIT
 render github-oidc-trust.json.tmpl > "$T/trust.json"; render github-deploy-policy.json.tmpl > "$T/policy.json"
 python3 -m json.tool "$T/trust.json" >/dev/null; python3 -m json.tool "$T/policy.json" >/dev/null
