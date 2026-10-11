@@ -1,10 +1,10 @@
 {
  "mrpack": {
-  "file": "vanilla-tech-0.5.0-alpha.1.mrpack",
-  "sha256": "3578edc3e150256613f6a8fb08849f9ec130c00c7c7d2a80861d57b797273466"
+  "file": "vanilla-tech-0.6.2.mrpack",
+  "sha256": "e7f296732525e5b65bf76f8cd319aa5b2fd4425ccb1ece440c7a6daed6f98851"
  },
  "server": {
-  "fingerprint": "56893f4151103feede7a176f4dfaed03dab318ca190f0040044d01f847b0839f"
+  "fingerprint": "2eb30c2f9a6d6a26f0d700676d7ea4c01c1e913d5e3d945843836b882469af92"
  },
- "version": "0.5.0-alpha.1"
+ "version": "0.6.2"
 }

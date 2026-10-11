@@ -17,6 +17,98 @@ file = "config/ftbchunks-world.snbt"
 hash = "2b05ce349f0da4ee35eeee9331046cddc41adbe9d8813bf31f53e8f7e50f5985"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "0fe735f6927c9d905e14b238f2cf44d5c08d735b460a603ad26a764b90096dca"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/00_bienvenida.snbt"
+hash = "004c45cdd63fdad0ee8d69f3a0b1933f84a94ab4b893337e8bc4dddcbc8fd168"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/01_herramientas.snbt"
+hash = "f906e620c3385f43a9a4a4fd419f53aa6337c369747493f2cc275a565dff66c3"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/02_base_y_equipaje.snbt"
+hash = "3bb427aab59e761af378eeb1837e665463ff323bcf459cd73673c8ba9059c4fa"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/03_cajones.snbt"
+hash = "077f924d2723f36e901dfb03045fac60361b3f555fa75ec21219c52091be2def"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/04_create_rotacion.snbt"
+hash = "0565a1dbbfcd972c36a694819129e4d8c5db69ae9ca60d5c3533c508aa09f4ba"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/05_create_procesos.snbt"
+hash = "c733d75b8a0750cc2f92b2a5516a4a93a8e7792d7006cea6fd14fa684e8696ee"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/06_create_movimiento.snbt"
+hash = "9ff771004a573e821f60980e42d08dea2a5357be41f3f197dfb8f56f8838083f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/07_create_addons.snbt"
+hash = "4eff7062c8e62ec85880932c0ca2c83c9a5e1047aa99d52982544c583486aa55"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/08_ae2_inicio.snbt"
+hash = "0eb1b1e1f76f878fc6cefe25dbc55d22ca7a1308635c54e1febe4c8ee7f4c758"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/09_ae2_automatizar.snbt"
+hash = "e15b8e1deae2ad6144015e26a705578bac2abc97517acf51d7cba1d98a37e0dd"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/10_ae2_addons.snbt"
+hash = "3654eeef99608830e03e0b981524f4791cbf9ccddad6470fbc3feaf8e6f2f037"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/11_excessive.snbt"
+hash = "5908a0e496d3c53d84212d15dc7cc44795a340c4a8fc703a3d1ac7d200c215d1"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/12_exploracion.snbt"
+hash = "a1d31c2fe06cc08eef12b6431b1795698c82ba4f8d87997c82da0c60c0b2d0f9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/13_aether.snbt"
+hash = "bc7c1f8b17b075f31856f931f8d26d268c36aecf5febd8210c153de5597dfda1"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/14_deep_aether.snbt"
+hash = "0c214c44a57a386c000516d0ac417a4a0ecd9935bf4f6a6429357f38abfdaaef"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/15_otherside.snbt"
+hash = "e56e64e1b0badbfce7e56946d2f55860c8d197fcc622e9e5c7b3e982040a18a1"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/16_cataclysm.snbt"
+hash = "07d9395dbfb87b8d31f6a6e3d9ff30940f3e73c0abca36954922b294f9133821"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/17_cliente_rendimiento.snbt"
+hash = "7240b7f22266e918ed168be4bc7a0ccf68bb6a6ca3a3ae6d46e42cf0ab49423b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/18_bibliotecas.snbt"
+hash = "bc2478d4bb64c7c4894aeb5ac6c176f864531d1adc925b9f24ed95bb5211cd5c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/19_proyectos.snbt"
+hash = "b34538b8d5324f054576569ed00e75aa3a7d1e27bb3273d7e0342dbc03aa553c"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "7dedc4913050d8c85256f98e3494cbde2e3804bc1ca6569a42b4f872a6bbcb5d"
+
+[[files]]
+file = "config/ftbquests/quests/lang/es_mx.snbt"
+hash = "22a1db1ae5ebb4100cca2a2adf17bda233763a03f52020981d7d4e7c4b2ee97b"
+
+[[files]]
 file = "config/illagerinvasion-server.toml"
 hash = "0c06bc454067939e9ad9e801c40f787437519dcbac669d84c73833a083f37323"
 
@@ -27,6 +119,18 @@ hash = "ef94b8241f8b99e9b43fa51d1c677181fbd8f33d7625d7b52875fb5dc1c4e42b"
 [[files]]
 file = "config/modernfix-mixins.properties"
 hash = "198cde513054d17cb57d1844eb0cba67c505a1b3f1425da6967fc8e18eb5f8f7"
+
+[[files]]
+file = "config/paxi/datapacks/vanilla-tech-recetas/data/vanillatech/advancement/recipes/food/enchanted_golden_apple.json"
+hash = "d7ed4beafaa0ee4bd08a73f68836d50dfa1f3c1bb54e7430daac7c1a753648d5"
+
+[[files]]
+file = "config/paxi/datapacks/vanilla-tech-recetas/data/vanillatech/recipe/enchanted_golden_apple.json"
+hash = "2b20bd94010a71212f9c32c6e9b6e908de4daef7ae5dc7d59e9bd98376a2bbf8"
+
+[[files]]
+file = "config/paxi/datapacks/vanilla-tech-recetas/pack.mcmeta"
+hash = "2a1e2f3ea30cd0c3c37d31e4145743ab26e1e8ab14fa51fb3df5b8028c54d34d"
 
 [[files]]
 file = "mods/aaron.pw.toml"
@@ -46,6 +150,11 @@ metafile = true
 [[files]]
 file = "mods/aether.pw.toml"
 hash = "fc8f4590287558d0dea1c7c57b077f1e33f7f06194cdf0adad7dc41490b54cd3"
+metafile = true
+
+[[files]]
+file = "mods/ambientsounds.pw.toml"
+hash = "7c0555a261a5617414b7a0fb8982e572f40a68b21976b7a332c820de703019cd"
 metafile = true
 
 [[files]]
@@ -89,6 +198,11 @@ hash = "1fda56abb587d1a3a721058f1bcb082776d1e9464d8e8c8916f47d33b4a77754"
 metafile = true
 
 [[files]]
+file = "mods/cirrus.pw.toml"
+hash = "79872a060b0b52f357a7cfe5f9413f3d1ac478992238bd252bd832f7e44dc35b"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 hash = "a704303711d84707e58377f50f349bb5ede80f43a6a4a6d2af89dd00315cc115"
 metafile = true
@@ -114,6 +228,11 @@ hash = "0ff66dbd8cb0ca81b25690892968bf32dc5eb96021727dde768cd6c3389f9fbd"
 metafile = true
 
 [[files]]
+file = "mods/creativecore.pw.toml"
+hash = "b17ee09c3749186f3c0d1ec920a5a0c3c51fa141ed5b4f060feb7f64743aed76"
+metafile = true
+
+[[files]]
 file = "mods/curios.pw.toml"
 hash = "13c14858b51000ef677c1d2e20e1b7cbf5efa89e853b07362bd176f8fdcf956e"
 metafile = true
@@ -136,6 +255,11 @@ metafile = true
 [[files]]
 file = "mods/dynamic-fps.pw.toml"
 hash = "9a79884afb70df8a6b2e0e1a202d6917035dd302c664dae544f1050ffc305ee5"
+metafile = true
+
+[[files]]
+file = "mods/elevatormod.pw.toml"
+hash = "183e4e542476e819021a0dc71c8a54c5d3fdeb31c626e7a91718b58869cf829f"
 metafile = true
 
 [[files]]
@@ -196,6 +320,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "f2ce90a4c2dc094e5bb5618aabae3880c041c91613d0ea3f918640ffde981fdd"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "9e9129beedb76cdc7c1fe2135410d1139660620252c4ef4619609560438db67c"
 metafile = true
 
 [[files]]
@@ -314,6 +443,11 @@ hash = "c8213098e376ad2a3ac5748257e1b5bde3c7520b877dc199efc7c92c13fe0fe6"
 metafile = true
 
 [[files]]
+file = "mods/paxi.pw.toml"
+hash = "e89a34287df32e22b5a537af9387f80e62ca1682b84dc807babb7aca3ceddea9"
+metafile = true
+
+[[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "6163bb406f894e9135354da7dff4a2193766abe475442b470262a43dcc27ca76"
 metafile = true
@@ -359,6 +493,11 @@ hash = "8c9c42ad121f7d946012ec1b7c3dd91c2ae6bec4416bc4fbb11747a7cf2a4805"
 metafile = true
 
 [[files]]
+file = "mods/time-in-a-bottle-universal.pw.toml"
+hash = "86c2eb9cbd62d371978565d36dceba11d58b0f36cb3fd3b3d8677e0c48331929"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
 hash = "13a876e650ae6a2d6d9efed2a3f00f6592c1fb0ce9077ff03bd71a04ba8fae1c"
 metafile = true
@@ -371,6 +510,11 @@ metafile = true
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
 hash = "aa2be2104e8849fdffb4ea09c58190f75f475726fe929d44a33a54a33fa7a6c2"
+metafile = true
+
+[[files]]
+file = "mods/yacl.pw.toml"
+hash = "da50edac8e968901ccc0659faccd4367d1c3df9500730dd0198fdcbc830fef59"
 metafile = true
 
 [[files]]
@@ -390,12 +534,32 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "0052e427dda7b47cb56230efb44b9ac6be716abf31cd8e5beec953810d71728a"
+hash = "1e7303d3e7c33b965fb3728f735e6474c1fd015ac6f0e38097bd41272711645f"
 preserve = true
 
 [[files]]
 file = "resourcepacks/fa-player-extension.pw.toml"
 hash = "0f4f19676d3864838a8d65294fb5bb5794377af422487a89db1e6cd5bb24eff2"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations-details.pw.toml"
+hash = "6edf7b3ac816dff920f275d6d92eb9140a4e12f31a5a78b8905da1fb8e435f06"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations-emissive.pw.toml"
+hash = "cdc1309aa2d591aa66b14fbfc01d3b8be422e18d31dd745e0ab524ed4e001b4e"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+hash = "17860c03fe98e042d6bbbbf1685c787f2a85f497e1ab1679dff78387e9295e5c"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-illager-mod-compats.pw.toml"
+hash = "ab4306bd3ae7cba785432266b0962ac892a12d717ddd8c1157ae1b099d6702e4"
 metafile = true
 
 [[files]]

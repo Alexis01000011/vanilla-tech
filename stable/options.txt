@@ -7,7 +7,7 @@ graphicsMode:0
 particles:1
 entityDistanceScaling:0.75
 mipmapLevels:2
-resourcePacks:["vanilla","mod_resources","file/FA+Player-v1.1.zip"]
+resourcePacks:["vanilla","mod_resources","file/FreshAnimations_v1.10.4.zip","file/FA+Details-v2.2.1.zip","file/FA+Emissive-v1.6.zip","file/5.0 FA Illager Mod Compats.zip","file/FA+Player-v1.1.zip"]
 key_key.ae2.wireless_terminal:key.keyboard.v
 key_key.buildinggadgets2.settings_menu:key.keyboard.h
 key_key.buildinggadgets2.undo:key.keyboard.backspace

@@ -1,0 +1,178 @@
+{
+  id: "1469BAD498C621DD",
+  group: "",
+  order_index: 18,
+  filename: "18_bibliotecas",
+  icon: {
+    id: "minecraft:bookshelf"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "42577F5E9CBD9888",
+      icon: {
+        id: "minecraft:book"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "0B6E1445FA214F05",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "65E24C92138C8431",
+      icon: {
+        id: "minecraft:chest"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "6241A95E016E0235",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5FE6DF27F5B2ACB9",
+      icon: {
+        id: "minecraft:enchanted_book"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "5E4765E67AA0FA48",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "7C41B02C1D7CC838",
+      icon: {
+        id: "minecraft:stone_bricks"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "35FD9511FD051EAB",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "60A2C52308CFF71D",
+      icon: {
+        id: "minecraft:glowstone"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "213F65DA8769CE9C",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5495D2387F167EA4",
+      icon: {
+        id: "minecraft:paper"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "39A979FE6677343E",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}
