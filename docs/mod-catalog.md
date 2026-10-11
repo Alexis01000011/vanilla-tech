@@ -28,6 +28,8 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 
 | Mod | Versión | Fuente | Side | Para qué |
 |---|---|---|---|---|
+| ElevatorMod | 1.11.4 | [Modrinth](https://modrinth.com/mod/elevatormod) | both | Port del elevador de OpenBlocks (0.6.2-alpha): bloques de elevador en 16 colores (8 lanas del color + 1 perla de ender). Saltar sube y agacharse baja al elevador más cercano de la misma columna. No asigna teclas. MIT, sin dependencias. |
+| Time in a bottle | 6.5.4 | [Modrinth](https://modrinth.com/mod/time-in-a-bottle-universal) | both | Ítem que acumula tiempo mientras está en el inventario y lo gasta acelerando un bloque con lógica propia (hornos, máquinas de Create, spawners…), duplicando la velocidad con cada uso. Receta: oro, diamantes, reloj, lapislázuli y botella (0.6.2-alpha). Lista negra `tiab:un_acceleratable` (cofre y bloque de pasto por defecto; ningún mod del pack le agrega más). No asigna teclas. MIT; JEI y EMI opcionales. |
 | Waystones | 21.1.46 | [Modrinth](https://modrinth.com/mod/waystones) | both | Teletransporte entre piedras activadas. Requiere Balm. |
 | Just Hammers | 21.1.4 | [Modrinth](https://modrinth.com/mod/just-hammers) | both | Martillos que minan en 3×3 (y versiones más grandes y reforzadas). Sin dependencias. |
 | Storage Drawers | 13.11.4 | [Modrinth](https://modrinth.com/mod/storagedrawers) | both | Cajones de almacenamiento masivo de un solo ítem, compactadores y controlador de cajones. Un Storage Bus de AE2 puede leerlos. Sin dependencias. |
@@ -109,6 +111,13 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Entity Texture Features (ETF) | 7.2.5 | [Modrinth](https://modrinth.com/mod/entitytexturefeatures) | client | Texturas de entidades por resource pack (variantes, emisivas). |
 | EMF Compat: Not Enough Animations | 1.2.1 | [Modrinth](https://modrinth.com/mod/not-enough-animations-emf-compat) | client | Evita que EMF y Not Enough Animations se peleen por la pose del jugador. Probado por su autor con Fresh Animations: Player Extension. Requiere EMF Compat: Core. |
 
+## F3. Ambiente (solo cliente)
+
+| Mod | Versión | Fuente | Lado | Uso |
+|---|---|---|---|---|
+| AmbientSounds | 6.3.10 | [Modrinth](https://modrinth.com/mod/ambientsounds) | client | Sonidos de ambiente según bioma, hora, altura y lugar: pájaros, viento, grillos, cuevas, bajo el agua (0.6.2-alpha). No asigna teclas. Requiere CreativeCore. |
+| Cirrus | 1.4.1 | [Modrinth](https://modrinth.com/mod/cirrus) | client | Cielo mejorado (0.6.2-alpha): tres capas de nubes, gradientes de día y noche, estrellas, estrellas fugaces, Vía Láctea, auroras en biomas fríos y cielo del End. Las nubes nuevas solo se activan en las dimensiones que tienen regla (`overworld`, `the_nether`, `the_end`): el Aether y el Otherside conservan las suyas. Pensado para usarse **sin shaders**; con un shaderpack activo, el shader puede taparlo. No asigna teclas. Requiere Architectury y YACL. ARR; el pack solo lo referencia. |
+
 ## G. Bibliotecas (dependencias obligatorias verificadas en los JARs)
 
 | Biblioteca | Versión | Fuente | Side | Requerida por |
@@ -132,7 +141,9 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Resourceful Lib | 3.0.12 | [Modrinth](https://modrinth.com/mod/resourceful-lib) | both | Friends & Foes, It Takes a Pillage |
 | EMF Compat: Core | 2.3.0 | [Modrinth](https://modrinth.com/mod/emf-compat-core) | client | EMF Compat: Not Enough Animations |
 | owo-lib | 0.12.15.5-beta.1+1.21 | [Modrinth](https://modrinth.com/mod/owo-lib) | both | Accessories (que viene dentro de The Aether). Solo hay versiones beta para NeoForge; es la que exige la página de The Aether. |
-| Architectury API | 13.0.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | both | FTB Library, FTB Chunks, FTB Teams |
+| Architectury API | 13.0.11 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/architectury-api) | both | FTB Library, FTB Chunks, FTB Teams, FTB Quests, Cirrus |
+| CreativeCore | 2.13.51 | [Modrinth](https://modrinth.com/mod/creativecore) | client | AmbientSounds (solo cliente, igual que él) |
+| YetAnotherConfigLib (YACL) | 3.8.2 | [Modrinth](https://modrinth.com/mod/yacl) | client | Cirrus. También activa las pantallas de configuración opcionales de Friends & Foes, It Takes a Pillage e Illager Invasion |
 
 ## H. Shaderpacks (solo cliente, apagados por defecto)
 
@@ -172,5 +183,7 @@ Los mismos que el usuario tenía en su instancia 1.21.11, identificados en Modri
 | KubeJS, Open Loader | Para una receta bastaba un datapack global: Paxi es más liviano y su única dependencia (YUNG's API) ya estaba. |
 | Friends & Foes 5.0.x | Publicada el 2026-10-07, con hotfixes el 08 y el 09 (uno por un crash con Curios). Se fija la 4.0.27 (agosto). |
 | Create Crafts & Additions 1.7.x | Marcada como beta en Modrinth. Se fija la 1.6.0, la última estable. |
-| YACL, Forge Config Screens | Opcionales: solo agregan pantallas de configuración dentro del juego a Friends & Foes, It Takes a Pillage e Illager Invasion. |
+| Forge Config Screens | Opcional: solo agrega pantallas de configuración. (YACL entró en 0.6.2 como dependencia de Cirrus.) |
+| Time in a Bottle Fix (Tiab Fix), TIAB Charger | Addons, no correcciones: agregan aceleración de cultivos, animales y AE2, y un cargador. No se pidieron. |
+| Sound Physics Remastered | Eco y reverberación en cuevas. El usuario eligió solo AmbientSounds; además, en NeoForge 1.21.1 su autor lo marca como alpha. |
 | Open Parties and Claims | Alternativa a FTB Chunks con integración nativa en Xaero; el usuario prefirió FTB Chunks. |

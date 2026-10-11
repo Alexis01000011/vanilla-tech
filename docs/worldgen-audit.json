@@ -225,6 +225,12 @@
     ]
   },
   {
+    "mod": "ElevatorMod",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
     "mod": "Excessive Utilities",
     "worldgen_paths": [
       "data/excessive_utilities/dimension/the_depths.json",
@@ -608,6 +614,12 @@
     "worldgen_paths": [
       "data/terrablender/worldgen/biome/deferred_placeholder.json"
     ],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
+    "mod": "Time in a bottle",
+    "worldgen_paths": [],
     "vanilla_overrides": [],
     "vanilla_structure_pieces": []
   },

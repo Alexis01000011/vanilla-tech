@@ -153,6 +153,11 @@ hash = "fc8f4590287558d0dea1c7c57b077f1e33f7f06194cdf0adad7dc41490b54cd3"
 metafile = true
 
 [[files]]
+file = "mods/ambientsounds.pw.toml"
+hash = "7c0555a261a5617414b7a0fb8982e572f40a68b21976b7a332c820de703019cd"
+metafile = true
+
+[[files]]
 file = "mods/applied-create.pw.toml"
 hash = "74f3591295ea0947f5227cf2626f2736aa603f2082ad6dffe357af631770b9e6"
 metafile = true
@@ -193,6 +198,11 @@ hash = "1fda56abb587d1a3a721058f1bcb082776d1e9464d8e8c8916f47d33b4a77754"
 metafile = true
 
 [[files]]
+file = "mods/cirrus.pw.toml"
+hash = "79872a060b0b52f357a7cfe5f9413f3d1ac478992238bd252bd832f7e44dc35b"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 hash = "a704303711d84707e58377f50f349bb5ede80f43a6a4a6d2af89dd00315cc115"
 metafile = true
@@ -218,6 +228,11 @@ hash = "0ff66dbd8cb0ca81b25690892968bf32dc5eb96021727dde768cd6c3389f9fbd"
 metafile = true
 
 [[files]]
+file = "mods/creativecore.pw.toml"
+hash = "b17ee09c3749186f3c0d1ec920a5a0c3c51fa141ed5b4f060feb7f64743aed76"
+metafile = true
+
+[[files]]
 file = "mods/curios.pw.toml"
 hash = "13c14858b51000ef677c1d2e20e1b7cbf5efa89e853b07362bd176f8fdcf956e"
 metafile = true
@@ -240,6 +255,11 @@ metafile = true
 [[files]]
 file = "mods/dynamic-fps.pw.toml"
 hash = "9a79884afb70df8a6b2e0e1a202d6917035dd302c664dae544f1050ffc305ee5"
+metafile = true
+
+[[files]]
+file = "mods/elevatormod.pw.toml"
+hash = "183e4e542476e819021a0dc71c8a54c5d3fdeb31c626e7a91718b58869cf829f"
 metafile = true
 
 [[files]]
@@ -473,6 +493,11 @@ hash = "8c9c42ad121f7d946012ec1b7c3dd91c2ae6bec4416bc4fbb11747a7cf2a4805"
 metafile = true
 
 [[files]]
+file = "mods/time-in-a-bottle-universal.pw.toml"
+hash = "86c2eb9cbd62d371978565d36dceba11d58b0f36cb3fd3b3d8677e0c48331929"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
 hash = "13a876e650ae6a2d6d9efed2a3f00f6592c1fb0ce9077ff03bd71a04ba8fae1c"
 metafile = true
@@ -485,6 +510,11 @@ metafile = true
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
 hash = "aa2be2104e8849fdffb4ea09c58190f75f475726fe929d44a33a54a33fa7a6c2"
+metafile = true
+
+[[files]]
+file = "mods/yacl.pw.toml"
+hash = "da50edac8e968901ccc0659faccd4367d1c3df9500730dd0198fdcbc830fef59"
 metafile = true
 
 [[files]]

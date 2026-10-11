@@ -206,6 +206,36 @@
     ]
   },
   {
+    "id": "ambientsounds",
+    "version": "6.3.10",
+    "jar": "AmbientSounds_NEOFORGE_v6.3.10_mc1.21.1.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "creativecore",
+        "type": "required",
+        "ordering": "NONE",
+        "side": "BOTH",
+        "versionRange": "[2.13.37,)"
+      }
+    ]
+  },
+  {
     "id": "appliedcreate",
     "version": "1.1.7",
     "jar": "appliedcreate-1.21.1-1.1.7.jar",
@@ -545,6 +575,57 @@
     ]
   },
   {
+    "id": "cirrus",
+    "version": "1.4.1",
+    "jar": "cirrus-neoforge-1.21.1-1.4.1.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.247,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "architectury",
+        "type": "required",
+        "versionRange": "[13.0.8,)",
+        "ordering": "AFTER",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "distanthorizons",
+        "type": "optional",
+        "versionRange": "[2.3.0,)",
+        "ordering": "AFTER",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "where_winds_blow",
+        "type": "optional",
+        "versionRange": "[1.0.0,)",
+        "ordering": "AFTER",
+        "side": "CLIENT"
+      },
+      {
+        "modId": "yet_another_config_lib_v3",
+        "type": "required",
+        "versionRange": "[3.8.1,)",
+        "ordering": "AFTER",
+        "side": "CLIENT"
+      }
+    ]
+  },
+  {
     "id": "controlling",
     "version": "19.0.5",
     "jar": "Controlling-neoforge-1.21.1-19.0.5.jar",
@@ -875,6 +956,29 @@
     ]
   },
   {
+    "id": "creativecore",
+    "version": "2.13.51",
+    "jar": "CreativeCore_NEOFORGE_v2.13.51_mc1.21.1.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "curios",
     "version": "9.5.1+1.21.1",
     "jar": "curios-neoforge-9.5.1+1.21.1.jar",
@@ -1046,6 +1150,29 @@
         "versionRange": "[1.21.0,1.21.1]",
         "ordering": "NONE",
         "side": "CLIENT"
+      }
+    ]
+  },
+  {
+    "id": "elevatorid",
+    "version": "1.21.1-1.11.4",
+    "jar": "elevatorid-neoforge-1.21.1-1.11.4.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
       }
     ]
   },
@@ -2734,6 +2861,29 @@
     ]
   },
   {
+    "id": "tiab",
+    "version": "6.5.4",
+    "jar": "tiab-neoforge-6.5.4.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[4,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1, 1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "waystones",
     "version": "21.1.46",
     "jar": "waystones-neoforge-1.21.1-21.1.46.jar",
@@ -2896,6 +3046,14 @@
         "side": "BOTH"
       }
     ]
+  },
+  {
+    "id": "yet_another_config_lib_v3",
+    "version": "3.8.2+1.21.1-neoforge",
+    "jar": "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+    "side": "client",
+    "loader": "javafml",
+    "dependencies": []
   },
   {
     "id": "yungsapi",
