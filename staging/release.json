@@ -1,28 +1,28 @@
 {
  "client": {
-  "fingerprint": "49b3b9b61bc735e01171e2123e9f1a2cc96b6b82d77559279d4f26dbcce315cf"
+  "fingerprint": "e66f1a43f847c94d027051f6f402736d5764a3e6ea3ae8176de492848d0751ce"
  },
- "commit": "a93a074b41134e8c62d9f77643244c33847242e9",
+ "commit": "27bd79db23b54c6c11e0e11e2d03f4e9586f6172",
  "counts": {
-  "client": 83,
-  "server": 55
+  "client": 89,
+  "server": 57
  },
  "minecraft": "1.21.1",
  "mrpack": {
-  "file": "vanilla-tech-0.6.1-alpha.1.mrpack",
-  "sha256": "383da7f0d797121d0d00f9ae7b907ffce7f9380303c8fc6430274755ae7efee9",
-  "sha512": "e8d62fc16e05cf0122f64581da5978651a83b989ab82403eaa4ef3d1021ebfcd8392be23bc9f7d4de8e6c975571fdc84ebe35188ba03ef4e9f0d38a19688b093",
-  "size": 103199
+  "file": "vanilla-tech-0.6.2-alpha.1.mrpack",
+  "sha256": "b3d173d9c1aae38b19cf85b91f93997dee1eea64306b6640210598c766b62a4f",
+  "sha512": "d59d16de3abc898318dca330896a0e88d384368983b43d0d6af20afa208db2ea5bc62267b0336d8602463a99debfdc702bca2af71771915b499d78cb72905ea7",
+  "size": 104156
  },
- "mrpack_url": "../releases/0.6.1-alpha.1/vanilla-tech-0.6.1-alpha.1.mrpack",
+ "mrpack_url": "../releases/0.6.2-alpha.1/vanilla-tech-0.6.2-alpha.1.mrpack",
  "name": "Vanilla Tech",
  "neoforge": "21.1.257",
  "packwiz": {
-  "index_sha256": "d7c0be2bab54a395bc5695b2d480e312d5f0407e69de9c5425bd6ea03c62df82",
-  "pack_sha256": "a7f11074c767579f41e687a43a1c0e0d81541698278f2a10aa78059c891be8d9"
+  "index_sha256": "3928b4ec8ce7b9266831ba04563ebf63379aa4eb5522277e05da3dae3109d992",
+  "pack_sha256": "accb18f506397d06e733ddf1f6587fc8b8538dd0362b47f0cf592802919fc156"
  },
  "server": {
-  "fingerprint": "e8dff84058588708792d8959bc51ad818cabe76fb8b3efa3a63e63b37e271652"
+  "fingerprint": "2eb30c2f9a6d6a26f0d700676d7ea4c01c1e913d5e3d945843836b882469af92"
  },
- "version": "0.6.1-alpha.1"
+ "version": "0.6.2-alpha.1"
 }
