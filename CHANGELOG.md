@@ -8,8 +8,14 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.3.x**: + Deep Aether + Deeper and Darker. Rama `release/0.3`.
 - **0.4.x**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Rama `release/0.4`.
 - **0.5.0-alpha.1**: L_Ender's Cataclysm y Just Hammers, sobre 0.4. Es la que corre el mundo del servidor real.
-- **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. **Estable actual.** En pruebas: **0.6.1-alpha.N** con el libro V2 (será la primera versión del servidor real con libro); las alphas pueden agregar y quitar mods entre sí y los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
-- **0.6.2-alpha.N**: + elevadores (ElevatorMod), Time in a Bottle, AmbientSounds y Cirrus, sobre 0.6.1-alpha.1, en `main`.
+- **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. **Estable actual: 0.6.2.** Las alphas pueden agregar y quitar mods entre sí; los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
+- **0.6.1-alpha.1 / 0.6.2-alpha.1**: libro V2; luego elevadores (ElevatorMod), Time in a Bottle, AmbientSounds y Cirrus. Ambas quedaron incluidas en 0.6.2.
+
+## 0.6.2 — 2026-10-11 (estable)
+- **Mismo contenido que 0.6.2-alpha.1**: los archivos, las dependencias y los overrides son idénticos; solo cambia el número de versión.
+- **Validada por el usuario**, que pidió marcarla estable. Incluye el libro V2 de 0.6.1-alpha.1 (0.6.1 no se publicó como estable).
+- **Servidor real**: sigue en 0.5.0-alpha.1 hasta que el usuario apruebe el deploy (impacto alto: FTB Quests, Paxi, ElevatorMod y Time in a Bottle son mods de servidor nuevos respecto a 0.5.0-alpha.1). Hasta entonces `stable/` de Pages sigue en 0.5.0-alpha.1.
+- 90 artefactos (89 en el cliente, 57 en el servidor). `sha256 e7f296732525e5b65bf76f8cd319aa5b2fd4425ccb1ece440c7a6daed6f98851`
 
 ## 0.6.2-alpha.1 — 2026-10-11
 - **Agregado**:

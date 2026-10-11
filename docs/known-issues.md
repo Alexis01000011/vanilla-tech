@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-11, release **0.6.2-alpha.1** (estable: 0.6.0; el servidor real corre 0.5.0-alpha.1).
+Estado a 2026-10-11, release **0.6.2** (estable; el servidor real corre 0.5.0-alpha.1 hasta el deploy).
 
 ## Pruebas pendientes
 
