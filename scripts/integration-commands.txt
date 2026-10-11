@@ -72,6 +72,7 @@ setblock 22 100 0 storagedrawers:oak_full_drawers_1
 setblock 24 100 0 createaddition:electric_motor
 setblock 26 100 0 create_connected:brass_gearbox
 setblock 28 100 0 friendsandfoes:copper_button
+setblock 30 100 0 elevatorid:elevator_white
 #sleep 15
 execute if block 1 100 0 ae2:controller[state=online] run say VT_AE2_CONTROLLER_ONLINE
 data get block 6 100 0 Speed
@@ -85,6 +86,7 @@ execute if block 22 100 0 storagedrawers:oak_full_drawers_1 run say VT_DRAWER_PL
 execute if block 24 100 0 createaddition:electric_motor run say VT_CREATEADDITION_PLACED
 execute if block 26 100 0 create_connected:brass_gearbox run say VT_CREATECONNECTED_PLACED
 execute if block 28 100 0 friendsandfoes:copper_button run say VT_FRIENDSANDFOES_PLACED
+execute if block 30 100 0 elevatorid:elevator_white run say VT_ELEVATOR_PLACED
 execute in deeperdarker:otherside if block 0 100 0 deeperdarker:sculk_stone run say VT_OTHERSIDE_DIMENSION_LOADED
 spark tps
 save-all flush

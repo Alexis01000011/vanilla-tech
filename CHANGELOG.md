@@ -9,6 +9,22 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.4.x**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Rama `release/0.4`.
 - **0.5.0-alpha.1**: L_Ender's Cataclysm y Just Hammers, sobre 0.4. Es la que corre el mundo del servidor real.
 - **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. **Estable actual.** En pruebas: **0.6.1-alpha.N** con el libro V2 (será la primera versión del servidor real con libro); las alphas pueden agregar y quitar mods entre sí y los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
+- **0.6.2-alpha.N**: + elevadores (ElevatorMod), Time in a Bottle, AmbientSounds y Cirrus, sobre 0.6.1-alpha.1, en `main`.
+
+## 0.6.2-alpha.1 — 2026-10-11
+- **Agregado**:
+  - **ElevatorMod 1.11.4** (cliente y servidor), el elevador de OpenBlocks: 8 lanas del mismo color + 1 perla de ender. Saltar sube y agacharse baja al siguiente elevador de la misma columna.
+  - **Time in a bottle 6.5.4** (cliente y servidor): acumula tiempo en el inventario y acelera un bloque con lógica propia. Config por defecto: hasta 256× (`max_rate_multi = 8`) y 30 s por uso. Su lista negra (`tiab:un_acceleratable`) solo trae el cofre y el bloque de pasto.
+  - **AmbientSounds 6.3.10** + CreativeCore 2.13.51 (solo cliente): sonidos de ambiente según bioma, hora y lugar.
+  - **Cirrus 1.4.1** + YACL 3.8.2 (solo cliente): nubes en capas, estrellas, Vía Láctea, auroras y cielo del End.
+- **Compatibilidad revisada**:
+  - Cirrus solo activa sus nubes en Overworld, Nether y End (reglas por dimensión), así que el Aether y el Otherside conservan sus nubes.
+  - Con un shaderpack activo, el shader puede taparlo.
+  - Las recetas del elevador y de Time in a Bottle no chocan con ninguna otra del pack.
+- **Teclas: sin cambios.** Ninguno de los mods nuevos registra teclas: CreativeCore solo trae la API, sin teclas propias.
+- **Sin cambios** en el libro (474 IDs), las configs ni `options.txt`.
+- **Probado**: servidor en mundo nuevo (`docs/0.6.2-alpha.1-integration.json`): 12/12 checks con un elevador colocado, +33 recetas y los mismos errores conocidos que 0.6.1-alpha.1. Falta el cliente: P35–P38 de `known-issues.md`.
+- 90 artefactos (89 en el cliente, 57 en el servidor). `sha256 b3d173d9c1aae38b19cf85b91f93997dee1eea64306b6640210598c766b62a4f`
 
 ## 0.6.1-alpha.1 — 2026-10-10
 - **Libro V2** (Codex, `questbook-vanilla-tech-0.5.0-alpha.1-v2/`, ZIP sha256 `373f7d6b…`; los 23 SNBT se copiaron idénticos): 20 capítulos y **203 misiones** (181 de V1 + 22 nuevas): inicio práctico de Create, línea de placas, cosechadora con parada y descarga, alimentación ME por rotación, pedido completo AE2 → crafters de Create → ME, más Aether y Otherside, y Cataclysm separado en visitas, objetos de activación y victorias opcionales.

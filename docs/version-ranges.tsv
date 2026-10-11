@@ -16,6 +16,9 @@ client:cumulus_menus->neoforge	21.1.257	[21.1.47,)	required
 client:cumulus_menus->minecraft	1.21.1	[1.21.1,1.21.2)	required
 client:nitrogen_internals->neoforge	21.1.257	[21.1.47,)	required
 client:nitrogen_internals->minecraft	1.21.1	[1.21.1,1.21.2)	required
+client:ambientsounds->neoforge	21.1.257	[21.1,)	required
+client:ambientsounds->minecraft	1.21.1	[1.21.1,1.22)	required
+client:ambientsounds->creativecore	2.13.51	[2.13.37,)	required
 client:appliedcreate->neoforge	21.1.257	[21.1,)	required
 client:appliedcreate->minecraft	1.21.1	[1.21.1,1.22)	required
 client:appliedcreate->create	6.0.10	[6.0,)	required
@@ -42,6 +45,10 @@ client:buildinggadgets2->neoforge	21.1.257	[21.0,)	required
 client:buildinggadgets2->minecraft	1.21.1	[1.21,1.22)	required
 client:charginggadgets->neoforge	21.1.257	[21.0,)	required
 client:charginggadgets->minecraft	1.21.1	[1.21,1.22)	required
+client:cirrus->neoforge	21.1.257	[21.1.247,)	required
+client:cirrus->minecraft	1.21.1	[1.21.1]	required
+client:cirrus->architectury	13.0.11	[13.0.8,)	required
+client:cirrus->yet_another_config_lib_v3	3.8.2+1.21.1-neoforge	[3.8.1,)	required
 client:controlling->neoforge	21.1.257	[21.1.94,)	required
 client:controlling->minecraft	1.21.1	[1.21.1]	required
 client:controlling->searchables	1.0.2	[1.0.1,)	required
@@ -72,6 +79,8 @@ client:createaddition->jei	19.51.0.418	[15.0.0.0,)	optional
 client:createaddition->minecraft	1.21.1	[1.21.1]	required
 client:sablecompanion->neoforge	21.1.257	[21.1.80,)	required
 client:sablecompanion->minecraft	1.21.1	[1.21.1,)	required
+client:creativecore->neoforge	21.1.257	[21.1,)	required
+client:creativecore->minecraft	1.21.1	[1.21.1,1.22)	required
 client:curios->neoforge	21.1.257	[21.1.60,)	required
 client:curios->minecraft	1.21.1	[1.21, 1.22)	required
 client:dankstorage->neoforge	21.1.257	[21.1.35,)	required
@@ -88,6 +97,8 @@ client:aeroblender->aether	1.5.10	1.21.1-1.5.0-neoforge,)	required
 client:deeperdarker->minecraft	1.21.1	[1.21.1]	required
 client:deeperdarker->neoforge	21.1.257	[21.1,)	required
 client:dynamic_fps->minecraft	1.21.1	[1.21.0,1.21.1]	required
+client:elevatorid->neoforge	21.1.257	[21.1,)	required
+client:elevatorid->minecraft	1.21.1	[1.21.1,)	required
 client:emf_compat_core->minecraft	1.21.1	[1.21.1,1.22)	required
 client:emf_compat_core->neoforge	21.1.257	[21,)	required
 client:emf_compat_core->entity_model_features	3.3.11	[3.3.2,)	required
@@ -231,6 +242,8 @@ client:spark->neoforge	21.1.257	[20,)	required
 client:storagedrawers->minecraft	1.21.1	[1.21,1.21.1]	required
 client:storagedrawers->neoforge	21.1.257	[21.0.0,)	required
 client:terrablender->neoforge	21.1.257	[20.4,)	required
+client:tiab->neoforge	21.1.257	[4,)	required
+client:tiab->minecraft	1.21.1	[1.21.1, 1.22)	required
 client:waystones->neoforge	21.1.257	[21-beta,)	required
 client:waystones->minecraft	1.21.1	[1.21,)	required
 client:waystones->balm	21.0.66	[21.0.39,)	required
@@ -332,6 +345,8 @@ server:aeroblender->terrablender	4.1.0.8	[1.21.1-4.1.0.0,)	required
 server:aeroblender->aether	1.5.10	1.21.1-1.5.0-neoforge,)	required
 server:deeperdarker->minecraft	1.21.1	[1.21.1]	required
 server:deeperdarker->neoforge	21.1.257	[21.1,)	required
+server:elevatorid->neoforge	21.1.257	[21.1,)	required
+server:elevatorid->minecraft	1.21.1	[1.21.1,)	required
 server:excessive_utilities->neoforge	21.1.257	[21.1.0,)	required
 server:excessive_utilities->curios	9.5.1+1.21.1	[9.0.5,)	required
 server:excessive_utilities->kotlinforforge	5.12.0	[5.12.0,6.0.0)	required
@@ -413,6 +428,8 @@ server:spark->neoforge	21.1.257	[20,)	required
 server:storagedrawers->minecraft	1.21.1	[1.21,1.21.1]	required
 server:storagedrawers->neoforge	21.1.257	[21.0.0,)	required
 server:terrablender->neoforge	21.1.257	[20.4,)	required
+server:tiab->neoforge	21.1.257	[4,)	required
+server:tiab->minecraft	1.21.1	[1.21.1, 1.22)	required
 server:waystones->neoforge	21.1.257	[21-beta,)	required
 server:waystones->minecraft	1.21.1	[1.21,)	required
 server:waystones->balm	21.0.66	[21.0.39,)	required
