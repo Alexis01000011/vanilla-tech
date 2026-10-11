@@ -1,0 +1,689 @@
+{
+ "client": {
+  "fingerprint": "e66f1a43f847c94d027051f6f402736d5764a3e6ea3ae8176de492848d0751ce",
+  "mods": {
+   "mods/aaron": {
+    "file": "mods/aaron-1.21.1-1.21.0-build.39.jar",
+    "sha512": "4d564a177da836d48375a62ae465259f40c7ada71b2885d510e73c3e04078e8d11b08ce438369186109704bda325f551c88a385b498df328c6f60efab84c130d"
+   },
+   "mods/ae2": {
+    "file": "mods/appliedenergistics2-19.2.18.jar",
+    "sha512": "39bc4cf733a4321631e2637a1a6dfd3527135fdac1b572534e6fd1f9eab7a6dd92d56c5fa066263c95149c9b20cabdd1fd3dff80bea515381b1d2d754cad26c3"
+   },
+   "mods/ae2-jei-integration": {
+    "file": "mods/ae2jeiintegration-1.2.1.jar",
+    "sha512": "5aa19cdf7c97c2d2a24d74f8b84379222aa34b5ce86b86c7fb799526e8f268dfa080a4f587c9c96704b40430c7c728aa1b5391ae67346d702e2fe31e691b8c48"
+   },
+   "mods/aether": {
+    "file": "mods/aether-1.21.1-1.5.10-neoforge.jar",
+    "sha512": "4b004daed6d09362646e204f068dee28e80523e705e862778036c492775672071ca9cc95f9574a842f34d2e058b46138c6154c6a2f251dcdad7a8803907dad46"
+   },
+   "mods/ambientsounds": {
+    "file": "mods/AmbientSounds_NEOFORGE_v6.3.10_mc1.21.1.jar",
+    "sha512": "4cc8e10a28f346cd4d08831a95f0225473f1377777cbc490300315d99a8cdb35f42135c388d5d041c633e354fc1bba985c59f6ac4a52cb9c2f947f904090cdd9"
+   },
+   "mods/applied-create": {
+    "file": "mods/appliedcreate-1.21.1-1.1.7.jar",
+    "sha512": "784c0bb0171eba13c076c5f2183d7db1f005cdcbabf5bb0c85f22e56e256cc6a1139aecdd0b4b2a48314dc30978fc10172464e8821a16400b98dd2ccdb87f33f"
+   },
+   "mods/applied-energistics-2-wireless-terminals": {
+    "file": "mods/ae2wtlib-19.5.1.jar",
+    "sha512": "0659d755c6ae91551d30c20b948d5bde0a39b2ae9825b1a4e132f0bbd10e032f18d82b6847261360589f36980ed3597ef6c6947b680523a1de767a9b7953682e"
+   },
+   "mods/architectury-api": {
+    "file": "mods/architectury-13.0.11-neoforge.jar",
+    "sha512": "d9f7c3bb8162577dfb461ffdf04bd6a3563c7586934a0e2a744c14421beffb8286f0d88d4c758317003f20f99fe8072a39b9d675af061e036970d36db36027f0"
+   },
+   "mods/artifacts": {
+    "file": "mods/artifacts-neoforge-13.2.5.jar",
+    "sha512": "9079bc8a22c237881b22b38027bbab2a8a2e685a1f49c1e1e0e5796f3e0a5509a130d73753c7b2980f12e4f00845f8e8c967ee969f1eadcd52139c2780afe09d"
+   },
+   "mods/balm": {
+    "file": "mods/balm-neoforge-1.21.1-21.0.66.jar",
+    "sha512": "0262d51c0e931d10c3dccefb3b5426a1622edecab243d4b15dce07a23309641370184776739765067d292d808242d088c6fbf249762689824eff9ba42c2d1e63"
+   },
+   "mods/building-gadgets": {
+    "file": "mods/buildinggadgets2-1.3.9.jar",
+    "sha512": "41e61011371da600c2883fcf55e5e589af973a8d4c444479e1a6ce1686ecc9e63d6bb7f2fe20389e4aa79a47826dd2239db78788ad511cf02df1dbe698eeef0e"
+   },
+   "mods/charging-gadgets": {
+    "file": "mods/charginggadgets-1.14.1.jar",
+    "sha512": "4974a9a2772befe11e7315b8869b28f25e370084ae21b9cdc09f37b1160a841a2dce6583841c47deac9894e64da7deef2a08dfc51fe170a3e88a42ad5f965f46"
+   },
+   "mods/cirrus": {
+    "file": "mods/cirrus-neoforge-1.21.1-1.4.1.jar",
+    "sha512": "85b8796a77e624ac443324df876605d60c577b5c255736c030eeac8a885248b4e026c69b5779212332a2c6373f4a998d8b5c760be98ceec91051b3df2a095360"
+   },
+   "mods/controlling": {
+    "file": "mods/Controlling-neoforge-1.21.1-19.0.5.jar",
+    "sha512": "bd01b2a38a869ea38e5f2a8fcd601e67ea9b132b9883c6ae752bc35dff6e94f6d47b965e31c1ee5c2f6a1221653549680da779fcb5319d199aec261d221d179e"
+   },
+   "mods/crafting-tweaks": {
+    "file": "mods/craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+    "sha512": "e1869211c2e037bdaadbe9b9f592d4ccfb7ab94d7ba6803629d6525945edc05db973db6bd7568f2af4550ae4616ae6cbb832e1684412ba439d37f523b564d9a7"
+   },
+   "mods/create": {
+    "file": "mods/create-1.21.1-6.0.10.jar",
+    "sha512": "11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b"
+   },
+   "mods/create-connected": {
+    "file": "mods/create_connected-1.3.3-mc1.21.1.jar",
+    "sha512": "485675693980a266611669857fa9cd348e2a29140b87bf0a8ab3e13c3591422cceaa36b7a2eb90084d35ec1868c8eec9f924383bb4dada2dddcb72e9f09361b0"
+   },
+   "mods/createaddition": {
+    "file": "mods/createaddition-1.6.0.jar",
+    "sha512": "e3a31eefb15d37bd1a2ba9012d0c00ec92f7c9e57b7a35c993676ea0cc85ba4f35a055a9f98d57636f24a0562d6da18b4e90713f4f46d47959666a097a6a5cea"
+   },
+   "mods/creativecore": {
+    "file": "mods/CreativeCore_NEOFORGE_v2.13.51_mc1.21.1.jar",
+    "sha512": "864301fa1229511203fc291e9b683db5af3cb4aa4faed0ef1eb54112491b3c97f9b5006b42d41fb2c169f7fc93ad13459f5079c6ffc73dc4b145ee61b7687997"
+   },
+   "mods/curios": {
+    "file": "mods/curios-neoforge-9.5.1+1.21.1.jar",
+    "sha512": "5981a267686b744e7e3c227f78cbcd5267c14ac6979a28e814695f4589273998563147207fef4a5cdb7cdbdc39797cd95d9e4abadb55869f18e02a38d0654ae5"
+   },
+   "mods/dank-storage": {
+    "file": "mods/dankstorage-neoforge-1.21.1-20.jar",
+    "sha512": "df4d91803d320e7101f906fa7461494e33b532b125c9549bf15022b17ae556e4799dbd38a7c71675174746ab4c8b5ae82629e2ebc1e1d8facbb5ea6687242edb"
+   },
+   "mods/deep-aether": {
+    "file": "mods/deep_aether-1.21.1-1.1.5.1.jar",
+    "sha512": "f848fee0a8a73d0696bf721753af1b752b067791900a19a949ce9faa0adcf1f03b29f44e5ea945404c4505891b14dadab89009253cd31cc85c241c07fe9c5684"
+   },
+   "mods/deeperdarker": {
+    "file": "mods/deeperdarker-neoforge-1.21.1-1.4.1.jar",
+    "sha512": "38d8d87878f39a063feb029db17702bedadf7554233ae56db6018c21225b6dff4d4cc31f4b0995254fd488e2a687f3b15bf9647c59dd42b9032791d34316ed0c"
+   },
+   "mods/dynamic-fps": {
+    "file": "mods/dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar",
+    "sha512": "8eb18a280b265e598540306275b51a165836f4b14c6c703b6ced11fcac50bfab439e4deb69e222f62614a9f15fa0ef58e5bd84e20e37ae57755d9c2f8b134057"
+   },
+   "mods/elevatormod": {
+    "file": "mods/elevatorid-neoforge-1.21.1-1.11.4.jar",
+    "sha512": "2b13e5daf0e54d7d004a1fbdcfbd75909f32c83527df727f708106b7d5770b790d35facb2308b2fd63540f40c895ff4c7cc30916bb5e6c4934f06484fbaed16e"
+   },
+   "mods/emf-compat-core": {
+    "file": "mods/emf_compat_core_neoforge_1.21.1_2.3.0.jar",
+    "sha512": "2ab24e0c14ee159e94873f22e8c1408f22fcbe3b6e6f5f2f82a456e3c7b2a1964b8983808cd0fdedf0247bdf0c751a668f4857501614023e2297ad14955211b3"
+   },
+   "mods/entity-model-features": {
+    "file": "mods/entity_model_features-3.3.11-1.21-neoforge.jar",
+    "sha512": "18783cfc82c6668108c150e44359033f5fd4dacecf3255a7779a2e96d3cf6ff5e743059032ff66993e63bf01220d27c4e525a2a862bcdf74f85b9de3651c1ab6"
+   },
+   "mods/entityculling": {
+    "file": "mods/entityculling-neoforge-1.11.3-mc1.21.1.jar",
+    "sha512": "93e83dd690b91d610be29451b34836c9daa7e08bd952f88ffa07c62d8774bbaac2ff0c6768d2cbf1b14f47d0b86f98cef9fd341e0d29bd37207eaf4aa2abea63"
+   },
+   "mods/entitytexturefeatures": {
+    "file": "mods/entity_texture_features-7.2.5-1.21-neoforge.jar",
+    "sha512": "7b126a027aede28ca6a31e65a1c4890212ad88504ff0e252ebcaf54b4e124abd667403ca8d084af028554e159a4964eeebb07acab609cbe7cead39ec7c84394e"
+   },
+   "mods/excessive-utilities": {
+    "file": "mods/excessive-utilities-1.21.1-1.10.0-build.64.jar",
+    "sha512": "f0aa9ec602a1e73f43649583d95d9d6671a73abb05320a92f9850cc48b9ef80648c4ded10f60a932f0107a4265ef093088cdeb447669f910f4ddd661f25671c5"
+   },
+   "mods/explorify": {
+    "file": "mods/Explorify v1.6.5.mod.jar",
+    "sha512": "9b22adeb1952ec25856e160b93aaa41934fd41e8d1aef985317cb2c9d64aae1012e134e23f52ba39fac3a98b3309b60f0b55b98a4db4de1731960b998117c83e"
+   },
+   "mods/extended-ae": {
+    "file": "mods/ExtendedAE-1.21-2.2.35-neoforge.jar",
+    "sha512": "e5b76a50802087d999bf6c113bc635e8ade9f20e06f4d3276a144f4eaa3090fc3b6c67b9b6a1f7d0d036e48e69f601114a0cc92c5a8d45953f895718f806348c"
+   },
+   "mods/ferrite-core": {
+    "file": "mods/ferritecore-7.0.3-neoforge.jar",
+    "sha512": "19af89a2075bb10a63884fa853ebf84b02c79dc3242430ecdad056fd764fdcde367a7303276b329df01b0736e2ef264c5d80c7dc92c6aebd244f556a230bb417"
+   },
+   "mods/friends-and-foes-forge": {
+    "file": "mods/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+    "sha512": "7575f340d8021b8da09674163b8ef8ea8f52b7e2b76da302a04c70f7ae552429a65853ea65fd513a65d9f43ba84f524a2957cc37f22e0f0265f331c6bcb4bfc4"
+   },
+   "mods/ftb-chunks-forge": {
+    "file": "mods/ftb-chunks-neoforge-2101.1.22.jar",
+    "sha512": "6589c6f9efb86b0f50963143a9c3c5647aeded698825189494455013441bae7973c1b83f95fce35d3f0b5239a8afd153c8b55ce4a3a6b21fd5d44ae47cecb2d8"
+   },
+   "mods/ftb-jei-extras": {
+    "file": "mods/ftb-jei-extras-21.1.7.jar",
+    "sha512": "6c389021ee6eacc0a94d7a8236d6a21b52e8409e3f5245cce67c6f68eced3419252b02ef5e5d67c5fab3b970ecf07edc21f17146b084114ad412144905d1bba1"
+   },
+   "mods/ftb-library-forge": {
+    "file": "mods/ftb-library-neoforge-2101.1.37.jar",
+    "sha512": "36f7e2fd41de638b044ad2b391f69f276ab28df3d86cf9d83638a2e0432ef151e1737ce60d671901d0a3b49424c9ba1a09c0293fc0c6637871020b46feae9159"
+   },
+   "mods/ftb-quests-forge": {
+    "file": "mods/ftb-quests-neoforge-2101.1.36.jar",
+    "sha512": "35298874f77fc15d1b66478092ec447db73ddaf699431e1529e41a5b4c421abf9cddc0d491385e45862eec816ade0bfbb92f267a035bfe2587b2b82683b61ad1"
+   },
+   "mods/ftb-teams-forge": {
+    "file": "mods/ftb-teams-neoforge-2101.1.11.jar",
+    "sha512": "21c9350c6c7ec54ee54b74f2bdc0a44f91005bedda3caf27d673b2f2bcad1dbef5aec970201ec8e959db2a1743ceb2e24ae99a9e36744dce740a0ab1dad01c52"
+   },
+   "mods/glodium": {
+    "file": "mods/Glodium-1.21-2.2-neoforge.jar",
+    "sha512": "56a387a1bdaf0146c9a7e14de0aca8b6f53f25d3ba9d46255f142043387282ed9e4fa0011d309e32d9ffe5362b129c07e301226dd4ac11eda9a4f42f27c0b5d1"
+   },
+   "mods/gravestone-mod": {
+    "file": "mods/gravestone-neoforge-1.21.1-1.0.40.jar",
+    "sha512": "5504a222d4085da1898ff6d4dff8eb1821fd14a8caaaac785554277147f984262e63925a411db3f1a34e9c7874652fb6737176bea4c0c3f01243f5eae4ea6eaa"
+   },
+   "mods/guideme": {
+    "file": "mods/guideme-21.1.19.jar",
+    "sha512": "4dfa132e5cfd69a86c958867067f1c5ab39bb69ae35b2a62c24bb9924e9c688f1a4930ab75d335b22378d9f98cd7fceae8d030812b8f90c9aa282de8ea129f5a"
+   },
+   "mods/illager-invasion": {
+    "file": "mods/IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+    "sha512": "5ad618c60d78ab9196ef386c63d5855f3eab2f90006156b786d5b4f4ea7e6bcc1fd9f61dfa45b7b2df44dd900fe9747c9ac1ccac6fdb11814e2f4a7e53d93107"
+   },
+   "mods/immediatelyfast": {
+    "file": "mods/ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar",
+    "sha512": "7d1c2e6ce306f4bb9aa155f64ba87732dc2443d57fde249467a99e0ed90fec89a706252888b97f882efbc55d6044971519db704125f27ae53cd9ae40424f9b2c"
+   },
+   "mods/inventory-profiles-next": {
+    "file": "mods/InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+    "sha512": "521296cc7e4fa48e06eb0c00d430968c7b879946db5b02e632cc724672759ac152e11bd9d320bd09f7418edd6fe4ece521a1a2cac49d7f5687519c69a0bcbf12"
+   },
+   "mods/iris": {
+    "file": "mods/iris-neoforge-1.8.12+mc1.21.1.jar",
+    "sha512": "57b8026a3c3c433cf6123d63dc6ce7e11f6d480a72926370db1fc7f2b06059bc16a753ecd7e7af659c19e90b592103196b0e89585ce4f0744a4ca433f59bcf1a"
+   },
+   "mods/it-takes-a-pillage-continuation": {
+    "file": "mods/takesapillage-neoforge-1.0.13+mc1.21.1.jar",
+    "sha512": "cc0d566d80f6da915795382561f0c57d611f0c1a28f82520b6606850cb282dc7168becfdea485076a0d45631bfbaaa7287ebc27a2824a94b50ab619a51aefeab"
+   },
+   "mods/jade": {
+    "file": "mods/Jade-1.21.1-NeoForge-15.10.6.jar",
+    "sha512": "dad9755dce8d85d914fc4df2baa0211f13e5839a71c1925fdd01f69081a95e30a2934e6273f8b01f0169adebe7a9dae57a8d904de0c4cb36dc17369bb474f0f2"
+   },
+   "mods/jei": {
+    "file": "mods/jei-1.21.1-neoforge-19.51.0.418.jar",
+    "sha512": "a6ca3abc3080f6f41033a77cb955fefe9f9ebae795c33546227f555b2d31e8d4131cc705126d14a3fbabb31097fc0e876dc0bbeb05ad907a1b796f21e57527bf"
+   },
+   "mods/just-hammers": {
+    "file": "mods/just-hammers-neoforge-21.1.4.jar",
+    "sha512": "1b08fb9d8bae6061f62bb75da033c7dcacb4078c3f66df35d12ce93356b74f44be2325eae85adea1358dca1f302d0a0ecf67de94934f012038c171b5eda12dab"
+   },
+   "mods/just-zoom": {
+    "file": "mods/justzoom_neoforge_2.1.0_MC_1.21.1.jar",
+    "sha512": "6b4df108238ff54a4cee55517908fef96e2382458c9f13eac2443dab1148fa5538f33505a66f3ea24f646c9be7300e6c6185a077d709c85405cbe61c24e58f38"
+   },
+   "mods/konkrete": {
+    "file": "mods/konkrete_neoforge_1.9.9_MC_1.21.jar",
+    "sha512": "378bd12e3c32329abbae5cd514e1d1cc2a3cc3a45979fedb1d4e4c0a6732bdcf4b7d1bf7f7a112074bf288957edf86152c9c090a27d1d5de84a9a7825d3d6511"
+   },
+   "mods/kotlin-for-forge": {
+    "file": "mods/kotlinforforge-5.12.0-all.jar",
+    "sha512": "b8c3942f4d33179edf3f102f3d870b99dd436f8b8236dbbd31aa51b888162c692cfd88927295f24dc8b4375232f4c6c17360c5d6c4823f93cbcd7cf4bdc8bd14"
+   },
+   "mods/l_enders-cataclysm": {
+    "file": "mods/L_Ender's Cataclysm 1.21.1-3.33.jar",
+    "sha512": "289f6e8364a6e432f34803a47cff8381899a1df0fdc675170323b43fd1c09579b1320d8b4e0de5df65c609b738d450c13c89e240d6d79f607888da26b7724947"
+   },
+   "mods/libipn": {
+    "file": "mods/libIPN-neoforge-1.21.1-6.6.3.jar",
+    "sha512": "89383465eb8dfa296e7518dd0e6ddc1a242f4537a3183425f2319c79a3e97843ded0f5e13f86b095f2f09beacd2a1f249f554e0f4e18291209720826031a8b93"
+   },
+   "mods/lionfish-api": {
+    "file": "mods/lionfishapi-3.1.jar",
+    "sha512": "fdd90f19d0424c3a837111291d6ac1547d62cbcedd43b74d3a8946912f9c5212a5ea239a6969eccf678289bcb77cbb9a937db01fdaf60e57826f9a99893d19cb"
+   },
+   "mods/lithium": {
+    "file": "mods/lithium-neoforge-0.15.4+mc1.21.1.jar",
+    "sha512": "2735da2088b88a8bdcd4ad02a2b6fffbfd3925557cefd4fa54b5477dfb9e582ea7f521300c060f57dff1325dd21bff276b7333363ad3371ed6893e3de9eca9cd"
+   },
+   "mods/modernfix": {
+    "file": "mods/modernfix-neoforge-5.27.26+mc1.21.1.jar",
+    "sha512": "37c76fc5bc72cfc1035260f891ffeb45b4f32651d2e490c5eb8c60f3b5686deca3145b32d4fab9036f65f5277b0ac66f4ad3855e52cd973e791b09e9c4b896d8"
+   },
+   "mods/not-enough-animations": {
+    "file": "mods/notenoughanimations-neoforge-1.12.6-mc1.21.1.jar",
+    "sha512": "2b392f770cac669abcc796e836fc86579e29c1c70174f773fadbb747d8a49763fefd938835aeef8681a384aee9a7b6a8fa4684aaa1961159ccddea680e936acd"
+   },
+   "mods/not-enough-animations-emf-compat": {
+    "file": "mods/emf_compat_not_enough_animations_neoforge_1.21.1_1.2.1.jar",
+    "sha512": "cb23695118bb831a61ef01d7207238c4b6cf277b98d9a019f8567787cc44bf3d024ef7406c9762045558e1ca7a39786cb9d172dd0a745d72b6fc56468139926d"
+   },
+   "mods/owo-lib": {
+    "file": "mods/owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+    "sha512": "4de5c5d52139244b8c5260d641087664d992624b822599a32e03c08eb133be854a2f413667dbca1e55772445b04a70210c17b3bc13e3c88e425e7d928104b9fa"
+   },
+   "mods/paxi": {
+    "file": "mods/Paxi-1.21.1-NeoForge-5.1.3.jar",
+    "sha512": "ed6a33eb9a4ac6ce4dd0cd03a45aba6068536121ab89cd4040d8c53964d59a7a8ceaee2f3bae13a3df3813eaf8d4fc4f82883e28ac4577b53aa26b750a181699"
+   },
+   "mods/puzzles-lib": {
+    "file": "mods/puzzleslib-v21.1.63-mc1.21.1+neoforge.jar",
+    "sha512": "7aaf73d9e8c974a41c77503bb0584032608366b1fa96636a97465ee9fb6d74a5b75b56d4d30fe80b88d3160b938517546ac80053312a403a79477efc45508cc0"
+   },
+   "mods/resourceful-lib": {
+    "file": "mods/resourcefullib-neoforge-1.21-3.0.12.jar",
+    "sha512": "a9d20e345faa9bcb297bd95ac9524205834804d1bb13518397dd4f7f62b352b08c3339ee7f7870d3669078ceeb33d5c31ea527aecce4b31d62ec1ff7d8b562c8"
+   },
+   "mods/searchables": {
+    "file": "mods/Searchables-neoforge-1.21.1-1.0.2.jar",
+    "sha512": "d0824bac1900142ac9a53e68f7ec3b4c0d33d9366bbd3f1d0d93eed860e5eb6b5e6f5a215a69bfffa70bcb48573ff49b5a12bbaa96096ceac6636000d506027a"
+   },
+   "mods/sodium": {
+    "file": "mods/sodium-neoforge-0.6.13+mc1.21.1.jar",
+    "sha512": "ce58f34d05d96c0a109a5cea23c741f6bdb2e6be31fc087c5989274cefca5f10ba0c08c62083cf554a51f2c7667bf46e4164383f675c844e77633aef2659996b"
+   },
+   "mods/sophisticated-backpacks": {
+    "file": "mods/sophisticatedbackpacks-1.21.1-3.26.9.2195.jar",
+    "sha512": "b9f41c5e3a8fa08d71bf1606c6b1115c58abb19638e9b211fb842120a09bb78b6ed28163a45240d25240580157adb1d893eb62fcaeba381a6540fd9d6eda1a23"
+   },
+   "mods/sophisticated-core": {
+    "file": "mods/sophisticatedcore-1.21.1-1.5.7.2381.jar",
+    "sha512": "900c0c59d8340c8e707f843ead5c2b26d230744a7c6a532d0988c5d341a8494029aa292c17cd1806e1ec87945492cfd60ac4e21134f37f8d031422b5802df2e6"
+   },
+   "mods/spark": {
+    "file": "mods/spark-1.10.124-neoforge.jar",
+    "sha512": "f86ce34f2759c69df82578c397ff55b666c84626229a98f598458b960c21b38c95d6bfef4772af7f963c4f4868e5e2d9aef6b99c1d51bab55bf45e0e6e6b5ed4"
+   },
+   "mods/storagedrawers": {
+    "file": "mods/StorageDrawers-neoforge-1.21.1-13.11.4.jar",
+    "sha512": "df97b8b5053a902264a236a71e7585b78d9d48a0bce585033aa8b169896d775f6fda462cfc77431af79cc596ab356eb9642e0c69a205a46b02d4d6f7ab3e74e9"
+   },
+   "mods/terrablender": {
+    "file": "mods/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+    "sha512": "9d4b2a1be5139c0fb2fad92ed21805b17d9e83b6ea48e637e018bb14063c1823a206390755dbfe8d025c20fd62ac11cdd84db53ddb956dabaeda01bff57bac50"
+   },
+   "mods/time-in-a-bottle-universal": {
+    "file": "mods/tiab-neoforge-6.5.4.jar",
+    "sha512": "c43e6d9d626b8180f3091ba54f8fd4b3290fcfd0abd16c9520a76427193bccd16d2cd67470151f42fb3f18ae9938e9b3c4cb931dd013f0664e8a46d2c77fd5c9"
+   },
+   "mods/waystones": {
+    "file": "mods/waystones-neoforge-1.21.1-21.1.46.jar",
+    "sha512": "ca90b58d884d4bc2b08a870484ae7ede397e71d31eaaf01ff2603ad498d584763e099c2094e57031522385339705d2c011ed4910bf36efae688e64935b49ece9"
+   },
+   "mods/xaeros-minimap": {
+    "file": "mods/xaerominimap-neoforge-1.21.1-26.6.0.jar",
+    "sha512": "d56b93ddb921285624b491d6a85aba23748bec9974867399c881c257eb25a746df92a735473adf3a6875e0928a56ff78245d5238eb9207b0e45c3fec20c896dc"
+   },
+   "mods/xaeros-world-map": {
+    "file": "mods/xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+    "sha512": "4d2d78bc85afa002f682ef344b7284cf1baa4903cc5a11cd1d7bd260ac63952580ae717bab47079540ead633cdd5d8e4fdf230dc99a68bcb7a269500e7dada13"
+   },
+   "mods/yacl": {
+    "file": "mods/yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+    "sha512": "583de19b927ce8050c2b7d5e60b75accc69e325e5aac85c27994c82a9dec2e4e078343fa1d4c3a10d4bd7e0e524e0b3b246a18cf03db01e363a1e6f865adcf48"
+   },
+   "mods/yungs-api": {
+    "file": "mods/YungsApi-1.21.1-NeoForge-5.1.9.jar",
+    "sha512": "7e3cf0b429e8a1c51dca094c2d8eabf12245bb42cbcd8b6e3e54959f931bef93201b81a08d200b417059aaa438e8eb445c3978a09568597bfb588199b7775967"
+   },
+   "mods/yungs-bridges": {
+    "file": "mods/YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+    "sha512": "20b07ae4c08974980f976bcae32f18ccb885745d6cd50d4a5d0156eb5c51c29e49f8b2bf7dc2ae160d39b62f2332513bd9850efc5cba13697e36a2ac2848bc3b"
+   },
+   "mods/yungs-extras": {
+    "file": "mods/YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+    "sha512": "d4ef831a034977abdcaec40a7662adbc37c32cf141c68245250da501f6ada2ce193c5351166fbcf2ffb1c452b60bfca8ac578963332aa4a1b523e43912b8cb8c"
+   },
+   "resourcepacks/fa-player-extension": {
+    "file": "resourcepacks/FA+Player-v1.1.zip",
+    "sha512": "d2a5c46ae53e4bb6355604a1ade253ab49f1deb205f5ee69085014965241d3c9623204951ab174a5dbdaf24d9b25ecae9a1638cc6a13d780b398a6d70d157a4e"
+   },
+   "resourcepacks/fresh-animations": {
+    "file": "resourcepacks/FreshAnimations_v1.10.4.zip",
+    "sha512": "41258f9bea1a773d823f9a014d0c08206e9e7b339bc538e1538211fff28fadd06878a836d292cbb636ed6829cd2801a509368ae3eb3ad4bedf42190a0d5f7a90"
+   },
+   "resourcepacks/fresh-animations-details": {
+    "file": "resourcepacks/FA+Details-v2.2.1.zip",
+    "sha512": "f5f84645c2665e772d6db80a201e7dda0feb570a82445b72e7012665b6df238357a8b62e6d2655a43146fd309c36125ed18d9512ee924f89587ef627c6f3c753"
+   },
+   "resourcepacks/fresh-animations-emissive": {
+    "file": "resourcepacks/FA+Emissive-v1.6.zip",
+    "sha512": "e3909b72828c27838ba262e91e5fc035bd5553d0053f82f322d4af5f956d024b38d24706e866f8ad62d08a423f899339abefc0584c2e2a11b1f2f9c703032c2d"
+   },
+   "resourcepacks/fresh-illager-mod-compats": {
+    "file": "resourcepacks/5.0 FA Illager Mod Compats.zip",
+    "sha512": "841766c0c3e785e53817023344e4a9432572219dc4f162602497976a1ddb4fcbf269b5a0f98736e45121dfef99beb23f4be38524f8a2197e1c4bcbea2819ce28"
+   },
+   "shaderpacks/makeup-ultra-fast-shaders": {
+    "file": "shaderpacks/MakeUp-UltraFast-9.5a.zip",
+    "sha512": "ec8a7409da5b404055b9fe322dcd22f7297e51a917e4e4cb64422a6fbdab232e415b04589f206b10a023dfb39cc752fd4dd80321ca7efc3fe2a063a37b79c867"
+   },
+   "shaderpacks/mellow": {
+    "file": "shaderpacks/Mellow Shader v3.2.zip",
+    "sha512": "1e431b67cbcacc07a589d68ff29eb8e85a968e25d829fa708bd7e50683258ed1df8f43fba23929518d79820bded22d8667557f410a16ae2f8b3cc1c6169eb90e"
+   },
+   "shaderpacks/miniature-shader": {
+    "file": "shaderpacks/miniature-shader-2.18.11.zip",
+    "sha512": "0f6c08c97b7f5be819b50adfe4f73e7a8da2ee1bb52149e8954ad70e27166dce46f4c087a5babe10e713adc37ef8026c7d11866044c228a32b3359ef32865440"
+   },
+   "shaderpacks/sildurs-basic-shaders": {
+    "file": "shaderpacks/Sildur's Basic Shaders v2.6 Fancy.zip",
+    "sha512": "a7596364e48a356a87bcb313ef843332c4158d9dbda0e9ed19c8561463d2148defe58d71e68a024a2e6ee2273e0404ccdf5aa38dca7e589007b7bce58104a967"
+   },
+   "shaderpacks/sildurs-vibrant-shaders": {
+    "file": "shaderpacks/Sildur's Vibrant Shaders v1.56 Extreme.zip",
+    "sha512": "dcec6e58436beb19c08c8ccca8db351e9ba374c77eb2b8d3d6c9b9c2bbaeacbae85ca46c8585e23433402a42eca29bfe85720e64d94a73d68598879c8e89fdcf"
+   }
+  },
+  "overrides": {
+   "config/artifacts/general.toml": "89914268eb2411fa4b644ba77da79f558d2b1bca69810004dad1a0589596684a",
+   "config/cataclysm-common.toml": "3e8e543fe00d18ff68a01389862e09290fe558c9941959ae107a58ccd27c11f6",
+   "config/excessive_utilities-server.toml": "c773741af7d93f3f624aef7cd0cb8bfef7c604ac48a577187be1390b96803569",
+   "config/ftbchunks-world.snbt": "2b05ce349f0da4ee35eeee9331046cddc41adbe9d8813bf31f53e8f7e50f5985",
+   "config/ftbquests/quests/chapter_groups.snbt": "0fe735f6927c9d905e14b238f2cf44d5c08d735b460a603ad26a764b90096dca",
+   "config/ftbquests/quests/chapters/00_bienvenida.snbt": "004c45cdd63fdad0ee8d69f3a0b1933f84a94ab4b893337e8bc4dddcbc8fd168",
+   "config/ftbquests/quests/chapters/01_herramientas.snbt": "f906e620c3385f43a9a4a4fd419f53aa6337c369747493f2cc275a565dff66c3",
+   "config/ftbquests/quests/chapters/02_base_y_equipaje.snbt": "3bb427aab59e761af378eeb1837e665463ff323bcf459cd73673c8ba9059c4fa",
+   "config/ftbquests/quests/chapters/03_cajones.snbt": "077f924d2723f36e901dfb03045fac60361b3f555fa75ec21219c52091be2def",
+   "config/ftbquests/quests/chapters/04_create_rotacion.snbt": "0565a1dbbfcd972c36a694819129e4d8c5db69ae9ca60d5c3533c508aa09f4ba",
+   "config/ftbquests/quests/chapters/05_create_procesos.snbt": "c733d75b8a0750cc2f92b2a5516a4a93a8e7792d7006cea6fd14fa684e8696ee",
+   "config/ftbquests/quests/chapters/06_create_movimiento.snbt": "9ff771004a573e821f60980e42d08dea2a5357be41f3f197dfb8f56f8838083f",
+   "config/ftbquests/quests/chapters/07_create_addons.snbt": "4eff7062c8e62ec85880932c0ca2c83c9a5e1047aa99d52982544c583486aa55",
+   "config/ftbquests/quests/chapters/08_ae2_inicio.snbt": "0eb1b1e1f76f878fc6cefe25dbc55d22ca7a1308635c54e1febe4c8ee7f4c758",
+   "config/ftbquests/quests/chapters/09_ae2_automatizar.snbt": "e15b8e1deae2ad6144015e26a705578bac2abc97517acf51d7cba1d98a37e0dd",
+   "config/ftbquests/quests/chapters/10_ae2_addons.snbt": "3654eeef99608830e03e0b981524f4791cbf9ccddad6470fbc3feaf8e6f2f037",
+   "config/ftbquests/quests/chapters/11_excessive.snbt": "5908a0e496d3c53d84212d15dc7cc44795a340c4a8fc703a3d1ac7d200c215d1",
+   "config/ftbquests/quests/chapters/12_exploracion.snbt": "a1d31c2fe06cc08eef12b6431b1795698c82ba4f8d87997c82da0c60c0b2d0f9",
+   "config/ftbquests/quests/chapters/13_aether.snbt": "bc7c1f8b17b075f31856f931f8d26d268c36aecf5febd8210c153de5597dfda1",
+   "config/ftbquests/quests/chapters/14_deep_aether.snbt": "0c214c44a57a386c000516d0ac417a4a0ecd9935bf4f6a6429357f38abfdaaef",
+   "config/ftbquests/quests/chapters/15_otherside.snbt": "e56e64e1b0badbfce7e56946d2f55860c8d197fcc622e9e5c7b3e982040a18a1",
+   "config/ftbquests/quests/chapters/16_cataclysm.snbt": "07d9395dbfb87b8d31f6a6e3d9ff30940f3e73c0abca36954922b294f9133821",
+   "config/ftbquests/quests/chapters/17_cliente_rendimiento.snbt": "7240b7f22266e918ed168be4bc7a0ccf68bb6a6ca3a3ae6d46e42cf0ab49423b",
+   "config/ftbquests/quests/chapters/18_bibliotecas.snbt": "bc2478d4bb64c7c4894aeb5ac6c176f864531d1adc925b9f24ed95bb5211cd5c",
+   "config/ftbquests/quests/chapters/19_proyectos.snbt": "b34538b8d5324f054576569ed00e75aa3a7d1e27bb3273d7e0342dbc03aa553c",
+   "config/ftbquests/quests/data.snbt": "7dedc4913050d8c85256f98e3494cbde2e3804bc1ca6569a42b4f872a6bbcb5d",
+   "config/ftbquests/quests/lang/es_mx.snbt": "22a1db1ae5ebb4100cca2a2adf17bda233763a03f52020981d7d4e7c4b2ee97b",
+   "config/illagerinvasion-server.toml": "0c06bc454067939e9ad9e801c40f787437519dcbac669d84c73833a083f37323",
+   "config/lithium.properties": "ef94b8241f8b99e9b43fa51d1c677181fbd8f33d7625d7b52875fb5dc1c4e42b",
+   "config/modernfix-mixins.properties": "198cde513054d17cb57d1844eb0cba67c505a1b3f1425da6967fc8e18eb5f8f7",
+   "config/paxi/datapacks/vanilla-tech-recetas/data/vanillatech/advancement/recipes/food/enchanted_golden_apple.json": "d7ed4beafaa0ee4bd08a73f68836d50dfa1f3c1bb54e7430daac7c1a753648d5",
+   "config/paxi/datapacks/vanilla-tech-recetas/data/vanillatech/recipe/enchanted_golden_apple.json": "2b20bd94010a71212f9c32c6e9b6e908de4daef7ae5dc7d59e9bd98376a2bbf8",
+   "config/paxi/datapacks/vanilla-tech-recetas/pack.mcmeta": "2a1e2f3ea30cd0c3c37d31e4145743ab26e1e8ab14fa51fb3df5b8028c54d34d",
+   "options.txt": "1e7303d3e7c33b965fb3728f735e6474c1fd015ac6f0e38097bd41272711645f",
+   "shaderpacks/MakeUp-UltraFast-9.5a.zip.txt": "580271d86f52d2d9a684da02936da7a62e9045fb5618f7f625c84e40048c33f1",
+   "shaderpacks/Mellow Shader v3.2.zip.txt": "8b749eb015b08dad9e5d5121254f4e661957e6a3c75383909bef10d329ce85f8"
+  }
+ },
+ "commit": "809b8ee6ff7f50fe1fe9c2da4f0fd1580346e320",
+ "counts": {
+  "client": 89,
+  "server": 57
+ },
+ "minecraft": "1.21.1",
+ "mrpack": {
+  "file": "vanilla-tech-0.6.2.mrpack",
+  "sha256": "e7f296732525e5b65bf76f8cd319aa5b2fd4425ccb1ece440c7a6daed6f98851",
+  "sha512": "c7530dd043518df13990ff3d45c90adaf1b43127b894b0a71ce8651d603f70c88cf7fee68d12bdb7fd3e34035f525bf14786b0beae78461933efd71e27b29acc",
+  "size": 104149
+ },
+ "name": "Vanilla Tech",
+ "neoforge": "21.1.257",
+ "packwiz": {
+  "index_sha256": "3928b4ec8ce7b9266831ba04563ebf63379aa4eb5522277e05da3dae3109d992",
+  "pack_sha256": "1a76b24c9a727989a7929dad1ffed704ae37a6efae29c663caf7bc5b365ed485"
+ },
+ "schema": 1,
+ "server": {
+  "fingerprint": "2eb30c2f9a6d6a26f0d700676d7ea4c01c1e913d5e3d945843836b882469af92",
+  "mods": {
+   "mods/aaron": {
+    "file": "mods/aaron-1.21.1-1.21.0-build.39.jar",
+    "sha512": "4d564a177da836d48375a62ae465259f40c7ada71b2885d510e73c3e04078e8d11b08ce438369186109704bda325f551c88a385b498df328c6f60efab84c130d"
+   },
+   "mods/ae2": {
+    "file": "mods/appliedenergistics2-19.2.18.jar",
+    "sha512": "39bc4cf733a4321631e2637a1a6dfd3527135fdac1b572534e6fd1f9eab7a6dd92d56c5fa066263c95149c9b20cabdd1fd3dff80bea515381b1d2d754cad26c3"
+   },
+   "mods/ae2-jei-integration": {
+    "file": "mods/ae2jeiintegration-1.2.1.jar",
+    "sha512": "5aa19cdf7c97c2d2a24d74f8b84379222aa34b5ce86b86c7fb799526e8f268dfa080a4f587c9c96704b40430c7c728aa1b5391ae67346d702e2fe31e691b8c48"
+   },
+   "mods/aether": {
+    "file": "mods/aether-1.21.1-1.5.10-neoforge.jar",
+    "sha512": "4b004daed6d09362646e204f068dee28e80523e705e862778036c492775672071ca9cc95f9574a842f34d2e058b46138c6154c6a2f251dcdad7a8803907dad46"
+   },
+   "mods/applied-create": {
+    "file": "mods/appliedcreate-1.21.1-1.1.7.jar",
+    "sha512": "784c0bb0171eba13c076c5f2183d7db1f005cdcbabf5bb0c85f22e56e256cc6a1139aecdd0b4b2a48314dc30978fc10172464e8821a16400b98dd2ccdb87f33f"
+   },
+   "mods/applied-energistics-2-wireless-terminals": {
+    "file": "mods/ae2wtlib-19.5.1.jar",
+    "sha512": "0659d755c6ae91551d30c20b948d5bde0a39b2ae9825b1a4e132f0bbd10e032f18d82b6847261360589f36980ed3597ef6c6947b680523a1de767a9b7953682e"
+   },
+   "mods/architectury-api": {
+    "file": "mods/architectury-13.0.11-neoforge.jar",
+    "sha512": "d9f7c3bb8162577dfb461ffdf04bd6a3563c7586934a0e2a744c14421beffb8286f0d88d4c758317003f20f99fe8072a39b9d675af061e036970d36db36027f0"
+   },
+   "mods/artifacts": {
+    "file": "mods/artifacts-neoforge-13.2.5.jar",
+    "sha512": "9079bc8a22c237881b22b38027bbab2a8a2e685a1f49c1e1e0e5796f3e0a5509a130d73753c7b2980f12e4f00845f8e8c967ee969f1eadcd52139c2780afe09d"
+   },
+   "mods/balm": {
+    "file": "mods/balm-neoforge-1.21.1-21.0.66.jar",
+    "sha512": "0262d51c0e931d10c3dccefb3b5426a1622edecab243d4b15dce07a23309641370184776739765067d292d808242d088c6fbf249762689824eff9ba42c2d1e63"
+   },
+   "mods/building-gadgets": {
+    "file": "mods/buildinggadgets2-1.3.9.jar",
+    "sha512": "41e61011371da600c2883fcf55e5e589af973a8d4c444479e1a6ce1686ecc9e63d6bb7f2fe20389e4aa79a47826dd2239db78788ad511cf02df1dbe698eeef0e"
+   },
+   "mods/charging-gadgets": {
+    "file": "mods/charginggadgets-1.14.1.jar",
+    "sha512": "4974a9a2772befe11e7315b8869b28f25e370084ae21b9cdc09f37b1160a841a2dce6583841c47deac9894e64da7deef2a08dfc51fe170a3e88a42ad5f965f46"
+   },
+   "mods/chunky": {
+    "file": "mods/Chunky-NeoForge-1.4.23.jar",
+    "sha512": "2db769dd723f243a21e1881e7c9f825e9c193da6f2bed454b70cb6fa9e51c57f63fdcf017c0657bbd26f7bba30815413e27c74d3c7be0783390a96ee9baa4bf7"
+   },
+   "mods/crafting-tweaks": {
+    "file": "mods/craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+    "sha512": "e1869211c2e037bdaadbe9b9f592d4ccfb7ab94d7ba6803629d6525945edc05db973db6bd7568f2af4550ae4616ae6cbb832e1684412ba439d37f523b564d9a7"
+   },
+   "mods/create": {
+    "file": "mods/create-1.21.1-6.0.10.jar",
+    "sha512": "11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b"
+   },
+   "mods/create-connected": {
+    "file": "mods/create_connected-1.3.3-mc1.21.1.jar",
+    "sha512": "485675693980a266611669857fa9cd348e2a29140b87bf0a8ab3e13c3591422cceaa36b7a2eb90084d35ec1868c8eec9f924383bb4dada2dddcb72e9f09361b0"
+   },
+   "mods/createaddition": {
+    "file": "mods/createaddition-1.6.0.jar",
+    "sha512": "e3a31eefb15d37bd1a2ba9012d0c00ec92f7c9e57b7a35c993676ea0cc85ba4f35a055a9f98d57636f24a0562d6da18b4e90713f4f46d47959666a097a6a5cea"
+   },
+   "mods/curios": {
+    "file": "mods/curios-neoforge-9.5.1+1.21.1.jar",
+    "sha512": "5981a267686b744e7e3c227f78cbcd5267c14ac6979a28e814695f4589273998563147207fef4a5cdb7cdbdc39797cd95d9e4abadb55869f18e02a38d0654ae5"
+   },
+   "mods/dank-storage": {
+    "file": "mods/dankstorage-neoforge-1.21.1-20.jar",
+    "sha512": "df4d91803d320e7101f906fa7461494e33b532b125c9549bf15022b17ae556e4799dbd38a7c71675174746ab4c8b5ae82629e2ebc1e1d8facbb5ea6687242edb"
+   },
+   "mods/deep-aether": {
+    "file": "mods/deep_aether-1.21.1-1.1.5.1.jar",
+    "sha512": "f848fee0a8a73d0696bf721753af1b752b067791900a19a949ce9faa0adcf1f03b29f44e5ea945404c4505891b14dadab89009253cd31cc85c241c07fe9c5684"
+   },
+   "mods/deeperdarker": {
+    "file": "mods/deeperdarker-neoforge-1.21.1-1.4.1.jar",
+    "sha512": "38d8d87878f39a063feb029db17702bedadf7554233ae56db6018c21225b6dff4d4cc31f4b0995254fd488e2a687f3b15bf9647c59dd42b9032791d34316ed0c"
+   },
+   "mods/elevatormod": {
+    "file": "mods/elevatorid-neoforge-1.21.1-1.11.4.jar",
+    "sha512": "2b13e5daf0e54d7d004a1fbdcfbd75909f32c83527df727f708106b7d5770b790d35facb2308b2fd63540f40c895ff4c7cc30916bb5e6c4934f06484fbaed16e"
+   },
+   "mods/excessive-utilities": {
+    "file": "mods/excessive-utilities-1.21.1-1.10.0-build.64.jar",
+    "sha512": "f0aa9ec602a1e73f43649583d95d9d6671a73abb05320a92f9850cc48b9ef80648c4ded10f60a932f0107a4265ef093088cdeb447669f910f4ddd661f25671c5"
+   },
+   "mods/explorify": {
+    "file": "mods/Explorify v1.6.5.mod.jar",
+    "sha512": "9b22adeb1952ec25856e160b93aaa41934fd41e8d1aef985317cb2c9d64aae1012e134e23f52ba39fac3a98b3309b60f0b55b98a4db4de1731960b998117c83e"
+   },
+   "mods/extended-ae": {
+    "file": "mods/ExtendedAE-1.21-2.2.35-neoforge.jar",
+    "sha512": "e5b76a50802087d999bf6c113bc635e8ade9f20e06f4d3276a144f4eaa3090fc3b6c67b9b6a1f7d0d036e48e69f601114a0cc92c5a8d45953f895718f806348c"
+   },
+   "mods/ferrite-core": {
+    "file": "mods/ferritecore-7.0.3-neoforge.jar",
+    "sha512": "19af89a2075bb10a63884fa853ebf84b02c79dc3242430ecdad056fd764fdcde367a7303276b329df01b0736e2ef264c5d80c7dc92c6aebd244f556a230bb417"
+   },
+   "mods/friends-and-foes-forge": {
+    "file": "mods/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+    "sha512": "7575f340d8021b8da09674163b8ef8ea8f52b7e2b76da302a04c70f7ae552429a65853ea65fd513a65d9f43ba84f524a2957cc37f22e0f0265f331c6bcb4bfc4"
+   },
+   "mods/ftb-chunks-forge": {
+    "file": "mods/ftb-chunks-neoforge-2101.1.22.jar",
+    "sha512": "6589c6f9efb86b0f50963143a9c3c5647aeded698825189494455013441bae7973c1b83f95fce35d3f0b5239a8afd153c8b55ce4a3a6b21fd5d44ae47cecb2d8"
+   },
+   "mods/ftb-library-forge": {
+    "file": "mods/ftb-library-neoforge-2101.1.37.jar",
+    "sha512": "36f7e2fd41de638b044ad2b391f69f276ab28df3d86cf9d83638a2e0432ef151e1737ce60d671901d0a3b49424c9ba1a09c0293fc0c6637871020b46feae9159"
+   },
+   "mods/ftb-quests-forge": {
+    "file": "mods/ftb-quests-neoforge-2101.1.36.jar",
+    "sha512": "35298874f77fc15d1b66478092ec447db73ddaf699431e1529e41a5b4c421abf9cddc0d491385e45862eec816ade0bfbb92f267a035bfe2587b2b82683b61ad1"
+   },
+   "mods/ftb-teams-forge": {
+    "file": "mods/ftb-teams-neoforge-2101.1.11.jar",
+    "sha512": "21c9350c6c7ec54ee54b74f2bdc0a44f91005bedda3caf27d673b2f2bcad1dbef5aec970201ec8e959db2a1743ceb2e24ae99a9e36744dce740a0ab1dad01c52"
+   },
+   "mods/glodium": {
+    "file": "mods/Glodium-1.21-2.2-neoforge.jar",
+    "sha512": "56a387a1bdaf0146c9a7e14de0aca8b6f53f25d3ba9d46255f142043387282ed9e4fa0011d309e32d9ffe5362b129c07e301226dd4ac11eda9a4f42f27c0b5d1"
+   },
+   "mods/gravestone-mod": {
+    "file": "mods/gravestone-neoforge-1.21.1-1.0.40.jar",
+    "sha512": "5504a222d4085da1898ff6d4dff8eb1821fd14a8caaaac785554277147f984262e63925a411db3f1a34e9c7874652fb6737176bea4c0c3f01243f5eae4ea6eaa"
+   },
+   "mods/guideme": {
+    "file": "mods/guideme-21.1.19.jar",
+    "sha512": "4dfa132e5cfd69a86c958867067f1c5ab39bb69ae35b2a62c24bb9924e9c688f1a4930ab75d335b22378d9f98cd7fceae8d030812b8f90c9aa282de8ea129f5a"
+   },
+   "mods/illager-invasion": {
+    "file": "mods/IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+    "sha512": "5ad618c60d78ab9196ef386c63d5855f3eab2f90006156b786d5b4f4ea7e6bcc1fd9f61dfa45b7b2df44dd900fe9747c9ac1ccac6fdb11814e2f4a7e53d93107"
+   },
+   "mods/it-takes-a-pillage-continuation": {
+    "file": "mods/takesapillage-neoforge-1.0.13+mc1.21.1.jar",
+    "sha512": "cc0d566d80f6da915795382561f0c57d611f0c1a28f82520b6606850cb282dc7168becfdea485076a0d45631bfbaaa7287ebc27a2824a94b50ab619a51aefeab"
+   },
+   "mods/jade": {
+    "file": "mods/Jade-1.21.1-NeoForge-15.10.6.jar",
+    "sha512": "dad9755dce8d85d914fc4df2baa0211f13e5839a71c1925fdd01f69081a95e30a2934e6273f8b01f0169adebe7a9dae57a8d904de0c4cb36dc17369bb474f0f2"
+   },
+   "mods/jei": {
+    "file": "mods/jei-1.21.1-neoforge-19.51.0.418.jar",
+    "sha512": "a6ca3abc3080f6f41033a77cb955fefe9f9ebae795c33546227f555b2d31e8d4131cc705126d14a3fbabb31097fc0e876dc0bbeb05ad907a1b796f21e57527bf"
+   },
+   "mods/just-hammers": {
+    "file": "mods/just-hammers-neoforge-21.1.4.jar",
+    "sha512": "1b08fb9d8bae6061f62bb75da033c7dcacb4078c3f66df35d12ce93356b74f44be2325eae85adea1358dca1f302d0a0ecf67de94934f012038c171b5eda12dab"
+   },
+   "mods/kotlin-for-forge": {
+    "file": "mods/kotlinforforge-5.12.0-all.jar",
+    "sha512": "b8c3942f4d33179edf3f102f3d870b99dd436f8b8236dbbd31aa51b888162c692cfd88927295f24dc8b4375232f4c6c17360c5d6c4823f93cbcd7cf4bdc8bd14"
+   },
+   "mods/l_enders-cataclysm": {
+    "file": "mods/L_Ender's Cataclysm 1.21.1-3.33.jar",
+    "sha512": "289f6e8364a6e432f34803a47cff8381899a1df0fdc675170323b43fd1c09579b1320d8b4e0de5df65c609b738d450c13c89e240d6d79f607888da26b7724947"
+   },
+   "mods/lionfish-api": {
+    "file": "mods/lionfishapi-3.1.jar",
+    "sha512": "fdd90f19d0424c3a837111291d6ac1547d62cbcedd43b74d3a8946912f9c5212a5ea239a6969eccf678289bcb77cbb9a937db01fdaf60e57826f9a99893d19cb"
+   },
+   "mods/lithium": {
+    "file": "mods/lithium-neoforge-0.15.4+mc1.21.1.jar",
+    "sha512": "2735da2088b88a8bdcd4ad02a2b6fffbfd3925557cefd4fa54b5477dfb9e582ea7f521300c060f57dff1325dd21bff276b7333363ad3371ed6893e3de9eca9cd"
+   },
+   "mods/modernfix": {
+    "file": "mods/modernfix-neoforge-5.27.26+mc1.21.1.jar",
+    "sha512": "37c76fc5bc72cfc1035260f891ffeb45b4f32651d2e490c5eb8c60f3b5686deca3145b32d4fab9036f65f5277b0ac66f4ad3855e52cd973e791b09e9c4b896d8"
+   },
+   "mods/owo-lib": {
+    "file": "mods/owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+    "sha512": "4de5c5d52139244b8c5260d641087664d992624b822599a32e03c08eb133be854a2f413667dbca1e55772445b04a70210c17b3bc13e3c88e425e7d928104b9fa"
+   },
+   "mods/paxi": {
+    "file": "mods/Paxi-1.21.1-NeoForge-5.1.3.jar",
+    "sha512": "ed6a33eb9a4ac6ce4dd0cd03a45aba6068536121ab89cd4040d8c53964d59a7a8ceaee2f3bae13a3df3813eaf8d4fc4f82883e28ac4577b53aa26b750a181699"
+   },
+   "mods/puzzles-lib": {
+    "file": "mods/puzzleslib-v21.1.63-mc1.21.1+neoforge.jar",
+    "sha512": "7aaf73d9e8c974a41c77503bb0584032608366b1fa96636a97465ee9fb6d74a5b75b56d4d30fe80b88d3160b938517546ac80053312a403a79477efc45508cc0"
+   },
+   "mods/resourceful-lib": {
+    "file": "mods/resourcefullib-neoforge-1.21-3.0.12.jar",
+    "sha512": "a9d20e345faa9bcb297bd95ac9524205834804d1bb13518397dd4f7f62b352b08c3339ee7f7870d3669078ceeb33d5c31ea527aecce4b31d62ec1ff7d8b562c8"
+   },
+   "mods/sophisticated-backpacks": {
+    "file": "mods/sophisticatedbackpacks-1.21.1-3.26.9.2195.jar",
+    "sha512": "b9f41c5e3a8fa08d71bf1606c6b1115c58abb19638e9b211fb842120a09bb78b6ed28163a45240d25240580157adb1d893eb62fcaeba381a6540fd9d6eda1a23"
+   },
+   "mods/sophisticated-core": {
+    "file": "mods/sophisticatedcore-1.21.1-1.5.7.2381.jar",
+    "sha512": "900c0c59d8340c8e707f843ead5c2b26d230744a7c6a532d0988c5d341a8494029aa292c17cd1806e1ec87945492cfd60ac4e21134f37f8d031422b5802df2e6"
+   },
+   "mods/spark": {
+    "file": "mods/spark-1.10.124-neoforge.jar",
+    "sha512": "f86ce34f2759c69df82578c397ff55b666c84626229a98f598458b960c21b38c95d6bfef4772af7f963c4f4868e5e2d9aef6b99c1d51bab55bf45e0e6e6b5ed4"
+   },
+   "mods/storagedrawers": {
+    "file": "mods/StorageDrawers-neoforge-1.21.1-13.11.4.jar",
+    "sha512": "df97b8b5053a902264a236a71e7585b78d9d48a0bce585033aa8b169896d775f6fda462cfc77431af79cc596ab356eb9642e0c69a205a46b02d4d6f7ab3e74e9"
+   },
+   "mods/terrablender": {
+    "file": "mods/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+    "sha512": "9d4b2a1be5139c0fb2fad92ed21805b17d9e83b6ea48e637e018bb14063c1823a206390755dbfe8d025c20fd62ac11cdd84db53ddb956dabaeda01bff57bac50"
+   },
+   "mods/time-in-a-bottle-universal": {
+    "file": "mods/tiab-neoforge-6.5.4.jar",
+    "sha512": "c43e6d9d626b8180f3091ba54f8fd4b3290fcfd0abd16c9520a76427193bccd16d2cd67470151f42fb3f18ae9938e9b3c4cb931dd013f0664e8a46d2c77fd5c9"
+   },
+   "mods/waystones": {
+    "file": "mods/waystones-neoforge-1.21.1-21.1.46.jar",
+    "sha512": "ca90b58d884d4bc2b08a870484ae7ede397e71d31eaaf01ff2603ad498d584763e099c2094e57031522385339705d2c011ed4910bf36efae688e64935b49ece9"
+   },
+   "mods/yungs-api": {
+    "file": "mods/YungsApi-1.21.1-NeoForge-5.1.9.jar",
+    "sha512": "7e3cf0b429e8a1c51dca094c2d8eabf12245bb42cbcd8b6e3e54959f931bef93201b81a08d200b417059aaa438e8eb445c3978a09568597bfb588199b7775967"
+   },
+   "mods/yungs-bridges": {
+    "file": "mods/YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+    "sha512": "20b07ae4c08974980f976bcae32f18ccb885745d6cd50d4a5d0156eb5c51c29e49f8b2bf7dc2ae160d39b62f2332513bd9850efc5cba13697e36a2ac2848bc3b"
+   },
+   "mods/yungs-extras": {
+    "file": "mods/YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+    "sha512": "d4ef831a034977abdcaec40a7662adbc37c32cf141c68245250da501f6ada2ce193c5351166fbcf2ffb1c452b60bfca8ac578963332aa4a1b523e43912b8cb8c"
+   }
+  },
+  "overrides": {
+   "config/artifacts/general.toml": "89914268eb2411fa4b644ba77da79f558d2b1bca69810004dad1a0589596684a",
+   "config/cataclysm-common.toml": "3e8e543fe00d18ff68a01389862e09290fe558c9941959ae107a58ccd27c11f6",
+   "config/excessive_utilities-server.toml": "c773741af7d93f3f624aef7cd0cb8bfef7c604ac48a577187be1390b96803569",
+   "config/ftbchunks-world.snbt": "2b05ce349f0da4ee35eeee9331046cddc41adbe9d8813bf31f53e8f7e50f5985",
+   "config/ftbquests/quests/chapter_groups.snbt": "0fe735f6927c9d905e14b238f2cf44d5c08d735b460a603ad26a764b90096dca",
+   "config/ftbquests/quests/chapters/00_bienvenida.snbt": "004c45cdd63fdad0ee8d69f3a0b1933f84a94ab4b893337e8bc4dddcbc8fd168",
+   "config/ftbquests/quests/chapters/01_herramientas.snbt": "f906e620c3385f43a9a4a4fd419f53aa6337c369747493f2cc275a565dff66c3",
+   "config/ftbquests/quests/chapters/02_base_y_equipaje.snbt": "3bb427aab59e761af378eeb1837e665463ff323bcf459cd73673c8ba9059c4fa",
+   "config/ftbquests/quests/chapters/03_cajones.snbt": "077f924d2723f36e901dfb03045fac60361b3f555fa75ec21219c52091be2def",
+   "config/ftbquests/quests/chapters/04_create_rotacion.snbt": "0565a1dbbfcd972c36a694819129e4d8c5db69ae9ca60d5c3533c508aa09f4ba",
+   "config/ftbquests/quests/chapters/05_create_procesos.snbt": "c733d75b8a0750cc2f92b2a5516a4a93a8e7792d7006cea6fd14fa684e8696ee",
+   "config/ftbquests/quests/chapters/06_create_movimiento.snbt": "9ff771004a573e821f60980e42d08dea2a5357be41f3f197dfb8f56f8838083f",
+   "config/ftbquests/quests/chapters/07_create_addons.snbt": "4eff7062c8e62ec85880932c0ca2c83c9a5e1047aa99d52982544c583486aa55",
+   "config/ftbquests/quests/chapters/08_ae2_inicio.snbt": "0eb1b1e1f76f878fc6cefe25dbc55d22ca7a1308635c54e1febe4c8ee7f4c758",
+   "config/ftbquests/quests/chapters/09_ae2_automatizar.snbt": "e15b8e1deae2ad6144015e26a705578bac2abc97517acf51d7cba1d98a37e0dd",
+   "config/ftbquests/quests/chapters/10_ae2_addons.snbt": "3654eeef99608830e03e0b981524f4791cbf9ccddad6470fbc3feaf8e6f2f037",
+   "config/ftbquests/quests/chapters/11_excessive.snbt": "5908a0e496d3c53d84212d15dc7cc44795a340c4a8fc703a3d1ac7d200c215d1",
+   "config/ftbquests/quests/chapters/12_exploracion.snbt": "a1d31c2fe06cc08eef12b6431b1795698c82ba4f8d87997c82da0c60c0b2d0f9",
+   "config/ftbquests/quests/chapters/13_aether.snbt": "bc7c1f8b17b075f31856f931f8d26d268c36aecf5febd8210c153de5597dfda1",
+   "config/ftbquests/quests/chapters/14_deep_aether.snbt": "0c214c44a57a386c000516d0ac417a4a0ecd9935bf4f6a6429357f38abfdaaef",
+   "config/ftbquests/quests/chapters/15_otherside.snbt": "e56e64e1b0badbfce7e56946d2f55860c8d197fcc622e9e5c7b3e982040a18a1",
+   "config/ftbquests/quests/chapters/16_cataclysm.snbt": "07d9395dbfb87b8d31f6a6e3d9ff30940f3e73c0abca36954922b294f9133821",
+   "config/ftbquests/quests/chapters/17_cliente_rendimiento.snbt": "7240b7f22266e918ed168be4bc7a0ccf68bb6a6ca3a3ae6d46e42cf0ab49423b",
+   "config/ftbquests/quests/chapters/18_bibliotecas.snbt": "bc2478d4bb64c7c4894aeb5ac6c176f864531d1adc925b9f24ed95bb5211cd5c",
+   "config/ftbquests/quests/chapters/19_proyectos.snbt": "b34538b8d5324f054576569ed00e75aa3a7d1e27bb3273d7e0342dbc03aa553c",
+   "config/ftbquests/quests/data.snbt": "7dedc4913050d8c85256f98e3494cbde2e3804bc1ca6569a42b4f872a6bbcb5d",
+   "config/ftbquests/quests/lang/es_mx.snbt": "22a1db1ae5ebb4100cca2a2adf17bda233763a03f52020981d7d4e7c4b2ee97b",
+   "config/illagerinvasion-server.toml": "0c06bc454067939e9ad9e801c40f787437519dcbac669d84c73833a083f37323",
+   "config/lithium.properties": "ef94b8241f8b99e9b43fa51d1c677181fbd8f33d7625d7b52875fb5dc1c4e42b",
+   "config/modernfix-mixins.properties": "198cde513054d17cb57d1844eb0cba67c505a1b3f1425da6967fc8e18eb5f8f7",
+   "config/paxi/datapacks/vanilla-tech-recetas/data/vanillatech/advancement/recipes/food/enchanted_golden_apple.json": "d7ed4beafaa0ee4bd08a73f68836d50dfa1f3c1bb54e7430daac7c1a753648d5",
+   "config/paxi/datapacks/vanilla-tech-recetas/data/vanillatech/recipe/enchanted_golden_apple.json": "2b20bd94010a71212f9c32c6e9b6e908de4daef7ae5dc7d59e9bd98376a2bbf8",
+   "config/paxi/datapacks/vanilla-tech-recetas/pack.mcmeta": "2a1e2f3ea30cd0c3c37d31e4145743ab26e1e8ab14fa51fb3df5b8028c54d34d"
+  }
+ },
+ "version": "0.6.2"
+}
