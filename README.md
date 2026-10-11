@@ -4,7 +4,7 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 
 | | |
 |---|---|
-| Versión del pack | **0.6.2-alpha.1** (pruebas: libro de misiones V2, elevadores, Time in a Bottle, AmbientSounds, Cirrus). Estable actual: **0.6.0** (libro de misiones FTB Quests, Fresh Animations, receta de la manzana dorada encantada). Servidor real: **0.5.0-alpha.1** (pasa a la línea 0.6 con 0.6.1). Ver [Versiones](#versiones-y-ramas) |
+| Versión del pack | **0.6.2** (estable: libro de misiones V2 de FTB Quests, Fresh Animations, receta de la manzana dorada encantada, elevadores, Time in a Bottle, AmbientSounds, Cirrus). Servidor real: **0.5.0-alpha.1** (pasará a 0.6.2 con el deploy). Ver [Versiones](#versiones-y-ramas) |
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
@@ -94,7 +94,7 @@ python3 scripts/test-server.py --directory .cache/server-test --name local-integ
 | `0.3.x` | `release/0.3` | + Deep Aether + Deeper and Darker (0.3.0). |
 | `0.4.x` | `release/0.4` | + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones (0.4.0, validada por el usuario en el cliente). |
 | `0.5.0-alpha.1` | etiqueta | L_Ender's Cataclysm y Just Hammers. Corre en el servidor real. |
-| `0.6.x` | `release/0.6` | **Estable actual**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada (0.6.0, validada por el usuario en el cliente). En pruebas: 0.6.1-alpha.N (libro V2) y 0.6.2-alpha.N (elevadores, Time in a Bottle, AmbientSounds, Cirrus). |
+| `0.6.x` | `release/0.6` | **Estable actual**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada (0.6.0), libro V2 (0.6.1-alpha.1), elevadores, Time in a Bottle, AmbientSounds y Cirrus. Última: **0.6.2**, validada por el usuario. |
 
 - Cada release lleva una etiqueta anotada `v<versión>` (`git tag -n1` las lista) y una entrada en [CHANGELOG.md](CHANGELOG.md) con el SHA-256 del `.mrpack`.
 - Para volver a una versión: usa su archivo en `releases/`, o `git checkout v<versión> && bash scripts/build.sh`, que lo reconstruye idéntico.
