@@ -126,6 +126,9 @@ client:extendedae->ae2wtlib	19.5.1	[19.2.0,)	optional
 client:ae2wtlib_api->ae2	19.2.18	[19.1.2-beta,20.0.0)	required
 client:ferritecore->neoforge	21.1.257	[21.1.218,)	required
 client:ferritecore->minecraft	1.21.1	[1.21.1,1.22)	required
+client:forgematica->neoforge	21.1.257	[21,)	required
+client:forgematica->minecraft	1.21.1	[1.21,)	required
+client:forgematica->mafglib	0.4.3+mc1.21.1	[0.4,)	required
 client:friendsandfoes->minecraft	1.21.1	[1.21,)	required
 client:friendsandfoes->resourcefullib	3.0.12	[3.0.12,)	required
 client:ftbchunks->neoforge	21.1.257	[21.1.0,)	required
@@ -195,9 +198,17 @@ client:libipn->minecraft	1.21.1	[1.21.1, 1.21.2)	required
 client:lionfishapi->neoforge	21.1.257	[21.1.219,)	required
 client:lionfishapi->minecraft	1.21.1	1.21.1	required
 client:lithium->minecraft	1.21.1	[1.21, 1.21.1]	required
+client:mafglib->neoforge	21.1.257	[21,)	required
+client:mafglib->minecraft	1.21.1	[1.21,)	required
+client:fabric_api_base->neoforge	21.1.257	[21.1,)	required
+client:fabric_api_base->minecraft	1.21.1	[1.21.1,1.22)	required
+client:fabric_networking_api_v1->neoforge	21.1.257	[21.1,)	required
+client:fabric_networking_api_v1->minecraft	1.21.1	[1.21.1,1.22)	required
 client:modernfix->neoforge	21.1.257	[21.0.111-beta,)	required
 client:modernfix->minecraft	1.21.1	[1.21, 1.22)	required
 client:modernfix->jei	19.51.0.418	[15.8.0.11,)	optional
+client:naturescompass->neoforge	21.1.257	[21.0.0-beta,)	required
+client:naturescompass->minecraft	1.21.1	[1.21,1.21.1)	required
 client:emf_compat_not_enough_animations->minecraft	1.21.1	[1.21.1,1.22)	required
 client:emf_compat_not_enough_animations->neoforge	21.1.257	[21,)	required
 client:emf_compat_not_enough_animations->notenoughanimations	1.12.6	[1.8,)	required
@@ -216,6 +227,8 @@ client:fabric_api_base->minecraft	1.21.1	[1.21,1.22)	required
 client:paxi->minecraft	1.21.1	[1.21, 1.22)	required
 client:paxi->neoforge	21.1.257	[21.0.0,)	required
 client:paxi->yungsapi	1.21.1-NeoForge-5.1.9	[1.21.1-NeoForge-5.1.4,)	required
+client:pingwheel->neoforge	21.1.257	[21.0.143,)	required
+client:pingwheel->minecraft	1.21.1	[1.21,1.21.1]	required
 client:puzzleslib->minecraft	1.21.1	[1.21.1,1.21.2)	required
 client:puzzleslib->neoforge	21.1.257	[21.1.21,)	required
 client:resourcefullib->neoforge	21.1.257	[21.0.0-beta,)	required
@@ -408,6 +421,8 @@ server:lionfishapi->minecraft	1.21.1	1.21.1	required
 server:lithium->minecraft	1.21.1	[1.21, 1.21.1]	required
 server:modernfix->neoforge	21.1.257	[21.0.111-beta,)	required
 server:modernfix->minecraft	1.21.1	[1.21, 1.22)	required
+server:naturescompass->neoforge	21.1.257	[21.0.0-beta,)	required
+server:naturescompass->minecraft	1.21.1	[1.21,1.21.1)	required
 server:owo->neoforge	21.1.257	[21,)	required
 server:owo->minecraft	1.21.1	[1.21,)	required
 server:fabric_api_base->neoforge	21.1.257	[21.0.133-beta,)	required
@@ -415,6 +430,8 @@ server:fabric_api_base->minecraft	1.21.1	[1.21,1.22)	required
 server:paxi->minecraft	1.21.1	[1.21, 1.22)	required
 server:paxi->neoforge	21.1.257	[21.0.0,)	required
 server:paxi->yungsapi	1.21.1-NeoForge-5.1.9	[1.21.1-NeoForge-5.1.4,)	required
+server:pingwheel->neoforge	21.1.257	[21.0.143,)	required
+server:pingwheel->minecraft	1.21.1	[1.21,1.21.1]	required
 server:puzzleslib->minecraft	1.21.1	[1.21.1,1.21.2)	required
 server:puzzleslib->neoforge	21.1.257	[21.1.21,)	required
 server:resourcefullib->neoforge	21.1.257	[21.0.0-beta,)	required

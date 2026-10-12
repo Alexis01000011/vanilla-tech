@@ -562,6 +562,12 @@
     "vanilla_structure_pieces": []
   },
   {
+    "mod": "Nature's Compass",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
     "mod": "owo-lib",
     "worldgen_paths": [],
     "vanilla_overrides": [],
@@ -569,6 +575,12 @@
   },
   {
     "mod": "Paxi",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
+    "mod": "Ping Wheel",
     "worldgen_paths": [],
     "vanilla_overrides": [],
     "vanilla_structure_pieces": []

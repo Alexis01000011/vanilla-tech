@@ -1,6 +1,6 @@
-# Catálogo de mods — Vanilla Tech 0.5.0-alpha.1
+# Catálogo de mods — Vanilla Tech 0.6.3-alpha.1
 
-Minecraft **1.21.1** · NeoForge **21.1.257** · 78 artefactos fijados (72 mods + 5 shaderpacks + 1 resource pack) (`pin = true`).
+Minecraft **1.21.1** · NeoForge **21.1.257** · 94 artefactos fijados (84 mods + 5 shaderpacks + 5 resource packs) (`pin = true`).
 Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qué* aporta cada mod y *por qué* está en el pack.
 
 **Side**: `both` = cliente y servidor · `client` = solo cliente (el servidor no lo instala) · `server` = solo servidor.
@@ -30,6 +30,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 |---|---|---|---|---|
 | ElevatorMod | 1.11.4 | [Modrinth](https://modrinth.com/mod/elevatormod) | both | Port del elevador de OpenBlocks (0.6.2-alpha): bloques de elevador en 16 colores (8 lanas del color + 1 perla de ender). Saltar sube y agacharse baja al elevador más cercano de la misma columna. No asigna teclas. MIT, sin dependencias. |
 | Time in a bottle | 6.5.4 | [Modrinth](https://modrinth.com/mod/time-in-a-bottle-universal) | both | Ítem que acumula tiempo mientras está en el inventario y lo gasta acelerando un bloque con lógica propia (hornos, máquinas de Create, spawners…), duplicando la velocidad con cada uso. Receta: oro, diamantes, reloj, lapislázuli y botella (0.6.2-alpha). Lista negra `tiab:un_acceleratable` (cofre y bloque de pasto por defecto; ningún mod del pack le agrega más). No asigna teclas. MIT; JEI y EMI opcionales. |
+| Forgematica | 0.4.2+mc1.21.1 | [Modrinth](https://modrinth.com/mod/forgematica) | client | **Litematica** para NeoForge (0.6.3-alpha): port no oficial del mod de masa, que solo se publica para Fabric. También se registra como `litematica`. Esquemas `.litematic`: guardar un área, cargar un diseño y verlo como holograma para construirlo, lista de materiales y verificador. Los archivos van en la carpeta `schematics/` de cada instancia y se comparten fuera del juego (por ejemplo, por Discord). Sus teclas son propias, no van en `options.txt` y se cambian en *Mods → Forgematica → Config → Hotkeys*. Su menú usa **M**, la misma tecla que el mapa de Xaero, que es el que se abre. Por decisión del usuario se deja así y cada jugador reasigna la tecla. Su herramienta es el **palo**: con uno en la mano, los clics marcan las esquinas de la selección. Requiere MaFgLib. LGPL-3.0. |
 | Waystones | 21.1.46 | [Modrinth](https://modrinth.com/mod/waystones) | both | Teletransporte entre piedras activadas. Requiere Balm. |
 | Just Hammers | 21.1.4 | [Modrinth](https://modrinth.com/mod/just-hammers) | both | Martillos que minan en 3×3 (y versiones más grandes y reforzadas). Sin dependencias. |
 | Storage Drawers | 13.11.4 | [Modrinth](https://modrinth.com/mod/storagedrawers) | both | Cajones de almacenamiento masivo de un solo ítem, compactadores y controlador de cajones. Un Storage Bus de AE2 puede leerlos. Sin dependencias. |
@@ -50,6 +51,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Explorify | 1.6.5 | [Modrinth](https://modrinth.com/mod/explorify) | both | Estructuras pequeñas estilo vanilla (ruinas, tabernas, granjas, torres de vigilancia, campamentos…). Se instala como mod; no hace falta datapack. |
 | YUNG's Extras | 1.21.1-5.1.1 | [Modrinth](https://modrinth.com/mod/yungs-extras) | both | Pequeños detalles de worldgen. |
 | YUNG's Bridges | 1.21.1-5.1.1 | [Modrinth](https://modrinth.com/mod/yungs-bridges) | both | Puentes sobre ríos. |
+| Nature's Compass | 1.21.1-3.4.0 | [Modrinth](https://modrinth.com/mod/natures-compass) | both | Brújula que busca biomas (0.6.3-alpha): clic derecho abre la lista de biomas de la dimensión (incluidos los del Aether y del Otherside). Al elegir uno, la aguja apunta al más cercano y el HUD muestra coordenadas y distancia. Puede buscar la siguiente instancia del mismo bioma (hasta 25 veces). La búsqueda corre en el servidor con un tope de 50 000 muestras (config por defecto, `naturescompass-common.toml`). No gasta XP ni tiene durabilidad. Receta: 4 retoños, 4 troncos y una brújula (más una de reparación sin uso mientras la durabilidad esté apagada). La teletransportación al bioma solo funciona en creativo, con op o con trucos. No asigna teclas. CC BY-NC-SA 4.0; el pack solo lo referencia. |
 
 ## D2. Dimensiones
 
@@ -81,6 +83,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Xaero's Minimap | 26.6.0 | [Modrinth](https://modrinth.com/mod/xaeros-minimap) | client | Minimapa (el único activo: el de FTB Chunks se desactiva desde el servidor). |
 | Just Zoom | 2.1.0 | [Modrinth](https://modrinth.com/mod/just-zoom) | client | Zoom simple (tecla **C**, rueda para acercar o alejar). Requiere Konkrete. |
 | Xaero's World Map | 1.47.0 | [Modrinth](https://modrinth.com/mod/xaeros-world-map) | client | Mapa del mundo (tecla M). |
+| Ping Wheel | 1.12.2 | [Modrinth](https://modrinth.com/mod/ping-wheel) | both | Marcas temporales para jugar en grupo (0.6.3-alpha): señala un bloque, un mob o un ítem y los demás jugadores ven la marca en el mundo por unos segundos. Con **Tab** presionado se ve quién hizo cada marca. No usa el chat. Tecla por defecto: **botón lateral 5 del mouse** (*Ping Location*, el botón «adelante»). En una laptop sin ese botón, cada jugador la reasigna en *Opciones → Controles*. *Open Settings* no tiene tecla; los ajustes se abren con `/pingwheel config`. El servidor solo reenvía las marcas. MIT, sin dependencias. Su versión aparece como beta en Modrinth (todas sus versiones lo están). |
 
 ## F. Rendimiento y diagnóstico
 
@@ -126,6 +129,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Konkrete | 1.9.9 | [Modrinth](https://modrinth.com/mod/konkrete) | client | Just Zoom |
 | Searchables | 1.0.2 | [Modrinth](https://modrinth.com/mod/searchables) | client | Controlling |
 | GuideME | 21.1.19 | [Modrinth](https://modrinth.com/mod/guideme) | both | AE2 |
+| MaFgLib | 0.4.3+mc1.21.1 | [Modrinth](https://modrinth.com/mod/mafglib) | client | Forgematica (es el port de MaLiLib). Trae dentro dos módulos de Forgified Fabric API (`fabric_api_base`, `fabric_networking_api_v1`). owo-lib trae el mismo `fabric_api_base` 0.4.42 y NeoForge carga una sola copia |
 | Glodium | 1.21-2.2 | [Modrinth](https://modrinth.com/mod/glodium) | both | Extended AE |
 | Kotlin for Forge | 5.12.0 | [Modrinth](https://modrinth.com/mod/kotlin-for-forge) | both | Applied Create, Excessive Utilities, Aaron |
 | Aaron | 1.21.1-1.21.0-build.39 | [Modrinth](https://modrinth.com/mod/aaron) | both | Excessive Utilities |
@@ -173,6 +177,10 @@ Los mismos que el usuario tenía en su instancia 1.21.11, identificados en Modri
 | Just Zoom 3.x | La 3.0.0 es una reescritura publicada el 2026-10-03, con un crash corregido en 3.0.1 al día siguiente, y agrega una tecla de configuración en **B**, que ya está ocupada. Se fijó la 2.1.0 (marzo de 2025). |
 | Ok Zoomer | Solo hay versión beta para NeoForge 1.21.1. |
 | Sophisticated Backpacks Create Integration | No se pidió; se puede añadir si se quieren mochilas en contraptions. |
+| Litematica (oficial), Syncmatica, Litematica Printer, Litematica Server Paster | Solo existen para Fabric. En NeoForge se usa Forgematica. |
+| Kyoyu | Era la única opción para compartir `.litematic` dentro de la partida. Su última versión (1.2.0, beta de marzo de 2025) lista como problemas conocidos en NeoForge que el cliente no puede conectarse al servidor y que el servidor no responde. Los `.litematic` se comparten por fuera (Discord) y se copian a `schematics/`. |
+| Ping to Map: Xaero's Minimap | Addon de Ping Wheel que crea un waypoint temporal de Xaero por cada marca. No se pidió y es ARR. |
+| Hardcore Revival, PlayerRevive, FTB Essentials (`/tpa`), Xaero's Minimap en el servidor (rastreo de jugadores) | Se propusieron para mejorar el juego en grupo en 0.6.3. El usuario eligió solo Ping Wheel. Los waypoints compartidos ya vienen en el pack: FTB Chunks (con party, con un jugador o con el servidor) y Xaero (por chat). |
 | Iris 1.8.14-beta.1 + Sodium 0.8.13 | La única Iris para Sodium 0.8 en 1.21.1 es beta y no declara rango contra Sodium 0.8.13. Se eligió la pareja estable Sodium 0.6.13 + Iris 1.8.12. |
 | WTHIT, The One Probe | Alternativas a Jade. Jade es el más usado en 1.21.1 y AE2, Waystones y GraveStone ya traen su integración. |
 | Fresh Moves | Beta, sin actualizar desde enero de 2025 y con licencia propia. Se usa Fresh Animations: Player Extension, que el usuario aceptó como alternativa. |

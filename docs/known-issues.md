@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-11, release **0.6.2** (estable; el servidor real corre 0.5.0-alpha.1 hasta el deploy).
+Estado a 2026-10-12, release **0.6.3-alpha.1** (estable: 0.6.2, que también corre en el servidor real desde el deploy del 2026-10-11).
 
 ## Pruebas pendientes
 
@@ -43,6 +43,9 @@ Estado a 2026-10-11, release **0.6.2** (estable; el servidor real corre 0.5.0-al
 | P38 | **Time in a Bottle**: acelerar un horno, una máquina de Create (prensa o molino) y un cultivo; revisar el TPS con `spark tps` mientras se acelera a la velocidad máxima. Comprobar si respeta los claims de FTB Chunks (si otro jugador que no es aliado puede acelerar tus bloques); no se verificó en el código. | En el servidor se carga el mod. |
 | P36 | **AmbientSounds**: escuchar el ambiente en bosque, llanura, cueva, bajo el agua, en el Nether y en el Aether; revisar que no tape sonidos importantes (mobs, Create) y medir FPS. Se configura en su menú de mods. | Solo cliente. |
 | P37 | **Cirrus**: ver el cielo de día, de noche (estrellas, Vía Láctea), con tormenta y en un bioma frío (auroras). En el Aether y el Otherside, que sus cielos sigan bien. Comparar FPS con y sin Cirrus; con shaders el shaderpack puede taparlo. | Solo cliente. Análisis estático: las nubes de Cirrus solo se activan en Overworld, Nether y End. |
+| P39 | **Forgematica (Litematica)**: como **M** abre el mapa de Xaero, primero reasignar *openGuiMainMenu* en *Mods → Forgematica → Config → Hotkeys*. Luego: (a) marcar un área con el palo y guardarla como esquema; (b) cargar un `.litematic` copiado a `schematics/` y verlo como holograma con Sodium, también con un shaderpack de Iris activo; (c) lista de materiales y verificador; (d) moverse un rato alrededor del holograma (render de chunks del esquema) y salir y volver al mundo, que es cuando se vacían sus buffers. | Solo cliente. El reporte abierto [litematica-neoforge#13](https://github.com/CagayakeGirls/litematica-neoforge/issues/13) (crash por acceso a `BufferBuilder.building`) no debería aplicar: ImmediatelyFast, EMF y ETF ya abren ese campo con su access transformer. Falta confirmarlo en el juego. |
+| P40 | **Nature's Compass**: craftearla (4 retoños + 4 troncos + brújula) y buscar un bioma del Overworld, uno del Aether y uno del Otherside. El HUD debe mostrar coordenadas y distancia, y debe funcionar *buscar el siguiente*. Revisar `spark tps` en el servidor durante una búsqueda larga (por ejemplo, un bioma raro). | En el servidor se registra el ítem (`VT_NATURESCOMPASS_ITEM`) y genera su config. La búsqueda y la GUI necesitan un jugador. |
+| P41 | **Ping Wheel** (dos jugadores): marcar un bloque y un mob con el botón 5 del mouse; el otro jugador ve la marca, y con **Tab** se ve quién la hizo. En una laptop sin ese botón, reasignar *Ping Location* en *Opciones → Controles* (cada jugador; el pack no toca las teclas). | En el servidor carga el mod y crea `pingwheel.server.json` (canal automático, límite de 5 marcas por segundo). Las marcas solo se ven con jugadores. |
 | P19 | **Jade**: el HUD muestra el bloque que se mira y la información de AE2 y Create. | Solo cliente; en el servidor ya cargan los plugins de AE2, Extended AE, Waystones, GraveStone y Balm (rc.5). |
 
 ## Problemas conocidos
