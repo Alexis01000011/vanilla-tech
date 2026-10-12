@@ -8,8 +8,22 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.3.x**: + Deep Aether + Deeper and Darker. Rama `release/0.3`.
 - **0.4.x**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Rama `release/0.4`.
 - **0.5.0-alpha.1**: L_Ender's Cataclysm y Just Hammers, sobre 0.4. Es la que corre el mundo del servidor real.
-- **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. **Estable actual: 0.6.2.** Las alphas pueden agregar y quitar mods entre sí; los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
+- **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. **Estable actual: 0.6.2** (también en el servidor real desde el 2026-10-11). Las alphas pueden agregar y quitar mods entre sí; los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
 - **0.6.1-alpha.1 / 0.6.2-alpha.1**: libro V2; luego elevadores (ElevatorMod), Time in a Bottle, AmbientSounds y Cirrus. Ambas quedaron incluidas en 0.6.2.
+- **0.6.3-alpha.1**: Litematica (Forgematica), Nature's Compass y Ping Wheel, sobre 0.6.2.
+
+## 0.6.3-alpha.1 — 2026-10-12
+- **Agregado**:
+  - **Forgematica 0.4.2** + MaFgLib 0.4.3 (solo cliente): es **Litematica** para NeoForge, el port no oficial del mod de masa (el original solo existe para Fabric). Permite guardar áreas como esquema `.litematic`, cargar diseños como holograma, ver la lista de materiales y usar el verificador. Los esquemas van en `schematics/` de cada instancia; para compartirlos, se pasan por fuera (Discord) porque en NeoForge no hay mod que funcione para eso (Kyoyu no conecta).
+  - **Nature's Compass 3.4.0** (cliente y servidor): brújula que busca biomas, incluidos los del Aether y del Otherside. Receta: 4 retoños + 4 troncos + brújula. Config por defecto: no gasta XP, no tiene durabilidad y la teletransportación queda solo para creativo u op.
+  - **Ping Wheel 1.12.2** (cliente y servidor): marcas temporales en bloques y mobs que ven los demás jugadores, sin chat.
+- **Teclas: sin cambios en `options.txt`.**
+  - Litematica usa sus propias teclas (no las de Minecraft). Su menú está en **M**, igual que el mapa de Xaero, que es el que se abre. Por decisión del usuario se deja así: para usar Litematica, reasigna *openGuiMainMenu* en *Mods → Forgematica → Config → Hotkeys*. Su herramienta es el **palo**: con uno en la mano, los clics marcan las esquinas de la selección.
+  - Ping Wheel marca con el **botón lateral 5 del mouse** («adelante»); sin ese botón, se reasigna *Ping Location* en *Opciones → Controles*. Nature's Compass no asigna teclas.
+- **Juego en grupo**: los waypoints compartidos ya estaban en el pack. FTB Chunks comparte con tu party, con un jugador o con todo el servidor, y Xaero comparte por chat; el otro jugador los agrega con un clic.
+- **Servidor real**: sigue en 0.6.2. Esta versión agrega dos mods de servidor (Nature's Compass y Ping Wheel), así que el deploy es de impacto alto y solo se hace con aprobación del usuario.
+- **Probado**: servidor en mundo nuevo (`docs/0.6.3-alpha.1-integration.json`): 13/13 checks (nuevo: `VT_NATURESCOMPASS_ITEM`), recetas 6092 → 6094 (las dos de Nature's Compass), libro con 203 misiones, TPS 20 y los mismos 28 `locate` y 18 ERROR inofensivos que 0.6.2-alpha.1. Ping Wheel carga y genera `pingwheel.server.json`. Falta el cliente: P39–P41 de `known-issues.md`.
+- 94 artefactos (93 en el cliente, 59 en el servidor). `sha256 67f147e0300c8cab1460bbed353c725086218aec21e21dd63b8a828f4f91ef44`
 
 ## 0.6.2 — 2026-10-11 (estable)
 - **Mismo contenido que 0.6.2-alpha.1**: los archivos, las dependencias y los overrides son idénticos; solo cambia el número de versión.
