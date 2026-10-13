@@ -113,6 +113,11 @@ file = "config/illagerinvasion-server.toml"
 hash = "0c06bc454067939e9ad9e801c40f787437519dcbac669d84c73833a083f37323"
 
 [[files]]
+file = "config/litematica.json"
+hash = "ba10f1ce6d017fd2617de1d334b66eecbaee433e995bfef56ad75b73135c9334"
+preserve = true
+
+[[files]]
 file = "config/lithium.properties"
 hash = "ef94b8241f8b99e9b43fa51d1c677181fbd8f33d7625d7b52875fb5dc1c4e42b"
 
@@ -303,6 +308,11 @@ hash = "8c1007fe73c350fc21333aa28fce400dbc7b1fa5bbb2d7e3c9fe074e9ea7cc7c"
 metafile = true
 
 [[files]]
+file = "mods/forgematica.pw.toml"
+hash = "aa84d0af51966dbfd020ce2e97e4516a88fd206d975be0fec2d4afe9883e8819"
+metafile = true
+
+[[files]]
 file = "mods/friends-and-foes-forge.pw.toml"
 hash = "e34f1ef76c0e47cee0528b8f194f8c4810badc9f59b3128619394f680ba7e2a9"
 metafile = true
@@ -423,8 +433,18 @@ hash = "e56ef4cda70192e49b5c476a94bed401e63b0d46c9c0d48ade3a8f76d7f491ac"
 metafile = true
 
 [[files]]
+file = "mods/mafglib.pw.toml"
+hash = "86711bd7f83ed6496df41c30deedf56ead770bf60a60c07b3c66c7bb19242e74"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 hash = "f1d9d20d3d7762c313fbd165346fe908dd1ffb686eaca305a1762ec33c69157d"
+metafile = true
+
+[[files]]
+file = "mods/natures-compass.pw.toml"
+hash = "c42054b2d3aacf114ed654bdaf3527b2d1d3cb74bf408a089092ca94c5829722"
 metafile = true
 
 [[files]]
@@ -445,6 +465,11 @@ metafile = true
 [[files]]
 file = "mods/paxi.pw.toml"
 hash = "e89a34287df32e22b5a537af9387f80e62ca1682b84dc807babb7aca3ceddea9"
+metafile = true
+
+[[files]]
+file = "mods/ping-wheel.pw.toml"
+hash = "3a3f2358be3df74aea7755d0bdbdb3ca2a136ea305afe1dc47c739452ed8f6d2"
 metafile = true
 
 [[files]]
