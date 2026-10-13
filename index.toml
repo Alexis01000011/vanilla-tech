@@ -113,6 +113,11 @@ file = "config/illagerinvasion-server.toml"
 hash = "0c06bc454067939e9ad9e801c40f787437519dcbac669d84c73833a083f37323"
 
 [[files]]
+file = "config/litematica.json"
+hash = "ba10f1ce6d017fd2617de1d334b66eecbaee433e995bfef56ad75b73135c9334"
+preserve = true
+
+[[files]]
 file = "config/lithium.properties"
 hash = "ef94b8241f8b99e9b43fa51d1c677181fbd8f33d7625d7b52875fb5dc1c4e42b"
 

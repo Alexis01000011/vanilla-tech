@@ -8,7 +8,7 @@ so a release never overwrites the player's options, keybinds or shader settings.
   preserve.py ROOT --repack   also rewrite the index hash in ROOT/pack.toml (published trees)
 """
 import fnmatch,hashlib,pathlib,re,sys,tomllib
-PATTERNS=['options.txt','shaderpacks/*.txt']
+PATTERNS=['options.txt','shaderpacks/*.txt','config/litematica.json']
 
 def apply(root,repack=False):
  root=pathlib.Path(root);pack=tomllib.loads((root/'pack.toml').read_text())
