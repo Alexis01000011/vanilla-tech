@@ -10,7 +10,21 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.5.0-alpha.1**: L_Ender's Cataclysm y Just Hammers, sobre 0.4. Es la que corre el mundo del servidor real.
 - **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. **Estable actual: 0.6.2** (también en el servidor real desde el 2026-10-11). Las alphas pueden agregar y quitar mods entre sí; los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
 - **0.6.1-alpha.1 / 0.6.2-alpha.1**: libro V2; luego elevadores (ElevatorMod), Time in a Bottle, AmbientSounds y Cirrus. Ambas quedaron incluidas en 0.6.2.
-- **0.6.3-alpha.1**: Litematica (Forgematica), Nature's Compass y Ping Wheel, sobre 0.6.2.
+- **0.6.3-alpha.1 / 0.6.3-alpha.2**: Litematica (Forgematica), Nature's Compass y Ping Wheel, sobre 0.6.2. alpha.2 apaga por defecto la ventana de info de bloque de Litematica.
+
+## 0.6.3-alpha.2 — 2026-10-12
+- **Litematica: ventana de info de bloque apagada por defecto.** Era el *Block Info Overlay*: aparece mientras se mantiene **I** y en esta versión se dibuja en el centro de la pantalla. Con un bloque real muestra lo mismo que Jade (el bloque y el contenido del cofre). Pedido del usuario: los bloques reales quedan para Jade y las proyecciones para Litematica.
+- **Lo que sigue activo de Litematica**:
+  - Las *Block Info Lines*: texto chico en una esquina que solo aparece al mirar un bloque de la proyección, o uno real que no coincide con ella.
+  - El verificador (mantener **I** con un verificador activo).
+  - Para volver a encender la ventana: *Mods → Forgematica → Config → Info Overlays → blockInfoOverlayEnabled*.
+- **Cómo se aplica**:
+  - El pack trae `config/litematica.json` con solo ese ajuste. Malilib deja todo lo demás en su valor por defecto.
+  - Va solo al cliente (`client-overrides/`) y con `preserve = true`, igual que `options.txt`: se escribe solo si el archivo no existe, así que nunca pisa las teclas ni los ajustes que cada jugador cambie.
+  - Una instancia que ya abrió 0.6.3-alpha.1 ya tiene su propio `litematica.json` y conserva la ventana; ahí se apaga una vez a mano, en el menú de arriba.
+- **Herramientas**: `package.py` envía a `client-overrides/` la lista `CLIENT_ONLY` (`options.txt`, `config/litematica.json`) y `preserve.py` incluye `config/litematica.json`.
+- **Sin cambios de mods.** Impacto calculado contra 0.6.3-alpha.1: solo cliente (`server_deploy: false`). Los archivos del servidor son idénticos, así que no se repitió la prueba de servidor.
+- 94 artefactos (93 en el cliente, 59 en el servidor). `sha256 1ce1421a8848078e1eeaa3340529696f4e29137e6ae1cd90cb9584c83ae68fc8`
 
 ## 0.6.3-alpha.1 — 2026-10-12
 - **Agregado**:

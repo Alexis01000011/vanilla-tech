@@ -4,7 +4,7 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 
 | | |
 |---|---|
-| Versión del pack | **0.6.3-alpha.1** (pruebas: Litematica vía Forgematica, Nature's Compass, Ping Wheel). Estable actual y servidor real: **0.6.2** (libro de misiones V2 de FTB Quests, Fresh Animations, receta de la manzana dorada encantada, elevadores, Time in a Bottle, AmbientSounds, Cirrus). Ver [Versiones](#versiones-y-ramas) |
+| Versión del pack | **0.6.3-alpha.2** (pruebas: Litematica vía Forgematica, con su ventana de info de bloque apagada; Nature's Compass; Ping Wheel). Estable actual y servidor real: **0.6.2** (libro de misiones V2 de FTB Quests, Fresh Animations, receta de la manzana dorada encantada, elevadores, Time in a Bottle, AmbientSounds, Cirrus). Ver [Versiones](#versiones-y-ramas) |
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
@@ -65,7 +65,7 @@ El resultado queda en `releases/vanilla-tech-<versión>.mrpack` (+ `.sha256`). E
 
 | Script | Qué hace |
 |---|---|
-| `scripts/build.sh` | `bootstrap-tools.py` → `packwiz refresh` → `packwiz modrinth export` → `package.py` (mueve `options.txt` y los ajustes de shaders a `client-overrides/`, ordena el manifiesto y rechaza JARs embebidos). |
+| `scripts/build.sh` | `bootstrap-tools.py` → `packwiz refresh` → `packwiz modrinth export` → `package.py` (mueve `options.txt`, `config/litematica.json` y los ajustes de shaders a `client-overrides/`, ordena el manifiesto y rechaza JARs embebidos). |
 | `scripts/check.sh` | `fetch-artifacts.py`, `validate.py`, `check-ranges.py`, `worldgen-audit.py` y `gen-matrix.py`. |
 | `scripts/prepare-server.sh` | Instala o actualiza un servidor desde la release (`--directory`, `--heap 3G…10G`, `--replace-configs`). Idempotente. Nunca acepta la EULA. |
 | `scripts/test-server.sh` | Arranque acotado en `127.0.0.1:25575` sobre un directorio marcado con `.vanilla-tech-test-only`. Envía comandos de un archivo (`#sleep`, `#wait REGEX`) y guarda `docs/<name>.json`. |
