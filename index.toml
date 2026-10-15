@@ -223,6 +223,11 @@ hash = "f6e500911e240a3b71b57a92df3f63c09787529ca86cc6b52e80e40e68cd4de4"
 metafile = true
 
 [[files]]
+file = "mods/create-ultimate-factory.pw.toml"
+hash = "c422aa0231cdc3420f033e6a46c70a6c096d66a77f2497651f75894badc4798e"
+metafile = true
+
+[[files]]
 file = "mods/create.pw.toml"
 hash = "ea6fe0472a366254a2749ba72a1e42f0ba05114bfbd807a6ccafb46a53af03c1"
 metafile = true

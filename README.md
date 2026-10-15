@@ -4,15 +4,15 @@ Modpack de Minecraft Java para survival cooperativo de dos jugadores: **vanilla 
 
 | | |
 |---|---|
-| Versión del pack | **0.6.3-alpha.2** (pruebas: Litematica vía Forgematica, con su ventana de info de bloque apagada; Nature's Compass; Ping Wheel). Estable actual y servidor real: **0.6.2** (libro de misiones V2 de FTB Quests, Fresh Animations, receta de la manzana dorada encantada, elevadores, Time in a Bottle, AmbientSounds, Cirrus). Ver [Versiones](#versiones-y-ramas) |
+| Versión del pack | **0.7.0** (estable: Create: Ultimate Factory sobre 0.6.3-alpha.2, que trajo Litematica vía Forgematica, Nature's Compass y Ping Wheel). Servidor real: **0.6.3-alpha.2** desde el 2026-10-13, hasta el deploy de 0.7.0. Ver [Versiones](#versiones-y-ramas) |
 | Minecraft / loader | 1.21.1 / NeoForge 21.1.257 |
 | Java | 21 |
 | Gestor | [packwiz](https://packwiz.infra.link/) (commit `ef87d96`) |
 | Launcher | Prism Launcher: `.mrpack` para instalar, [auto-update](docs/auto-update-prism.md) con packwiz-installer |
-| Mods | 94 artefactos fijados (84 mods + 5 shaderpacks + 5 resource packs): 93 en el cliente, 59 en el servidor |
-| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente **0.6.0-alpha.1** (mismos archivos que 0.6.0) probado en Prism por el usuario; antes, 0.4.0-alpha.1 y 0.3.0-alpha.1 con el Aether, Deep Aether y el Otherside. 0.6.2 corre en el servidor real desde el 2026-10-11. Faltan las pruebas en juego de [known-issues.md](docs/known-issues.md). |
+| Mods | 95 artefactos fijados (85 mods + 5 shaderpacks + 5 resource packs): 94 en el cliente, 60 en el servidor |
+| Estado | Servidor probado (instalación limpia, integración por comandos, pregeneración). Cliente **0.6.0-alpha.1** (mismos archivos que 0.6.0) probado en Prism por el usuario; antes, 0.4.0-alpha.1 y 0.3.0-alpha.1 con el Aether, Deep Aether y el Otherside. 0.6.3-alpha.2 (probada en el cliente por el usuario) corre en el servidor real desde el 2026-10-13. Faltan las pruebas en juego de [known-issues.md](docs/known-issues.md). |
 
-Contenido principal: Create + Create: Connected + Create Crafts & Additions · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Storage Drawers · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · **The Aether + Deep Aether + Deeper and Darker** (alpha) · L_Ender's Cataclysm · Just Hammers · FTB Quests (libro de misiones en español) · Paxi (datapack de recetas) · Friends & Foes · Illager Invasion · It Takes a Pillage · Artifacts · Explorify + YUNG's Extras/Bridges · JEI · Jade · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Forgematica (Litematica) · Nature's Compass · Ping Wheel · Just Zoom · Not Enough Animations + Fresh Animations (+ Details, Emissive, Illager Compats, Player Extension; EMF/ETF) · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
+Contenido principal: Create + Create: Connected + Create Crafts & Additions + Create: Ultimate Factory · AE2 + Applied Create + AE2 Wireless Terminals + Extended AE + AE2 JEI Integration · Waystones · Dank Storage · Storage Drawers · Sophisticated Backpacks · GraveStone · Building Gadgets 2 · Excessive Utilities · FTB Chunks · **The Aether + Deep Aether + Deeper and Darker** (alpha) · L_Ender's Cataclysm · Just Hammers · FTB Quests (libro de misiones en español) · Paxi (datapack de recetas) · Friends & Foes · Illager Invasion · It Takes a Pillage · Artifacts · Explorify + YUNG's Extras/Bridges · JEI · Jade · Inventory Profiles Next · Crafting Tweaks · Controlling · Xaero's Minimap/World Map · Forgematica (Litematica) · Nature's Compass · Ping Wheel · Just Zoom · Not Enough Animations + Fresh Animations (+ Details, Emissive, Illager Compats, Player Extension; EMF/ETF) · Sodium + Iris (shaders opcionales, apagados) · Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Dynamic FPS · spark · Chunky.
 La lista completa, con versiones y enlaces, está en [docs/mod-catalog.md](docs/mod-catalog.md).
 
 ## Documentación
@@ -94,7 +94,8 @@ python3 scripts/test-server.py --directory .cache/server-test --name local-integ
 | `0.3.x` | `release/0.3` | + Deep Aether + Deeper and Darker (0.3.0). |
 | `0.4.x` | `release/0.4` | + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones (0.4.0, validada por el usuario en el cliente). |
 | `0.5.0-alpha.1` | etiqueta | L_Ender's Cataclysm y Just Hammers. Corrió en el servidor real hasta el deploy de 0.6.2. |
-| `0.6.x` | `release/0.6` | **Estable actual**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada (0.6.0), libro V2 (0.6.1-alpha.1), elevadores, Time in a Bottle, AmbientSounds y Cirrus. Última estable: **0.6.2**, validada por el usuario y en el servidor real. En pruebas: 0.6.3-alpha.N (Forgematica, Nature's Compass, Ping Wheel). |
+| `0.6.x` | `release/0.6` | **Estable actual**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada (0.6.0), libro V2 (0.6.1-alpha.1), elevadores, Time in a Bottle, AmbientSounds y Cirrus. Última estable: **0.6.2**. Después, 0.6.3-alpha.1/alpha.2 (Forgematica, Nature's Compass, Ping Wheel); alpha.2 se desplegó al servidor real el 2026-10-13. |
+| `0.7.x` | `release/0.7` | **Estable actual**: + Create: Ultimate Factory (0.7.0). |
 
 - Cada release lleva una etiqueta anotada `v<versión>` (`git tag -n1` las lista) y una entrada en [CHANGELOG.md](CHANGELOG.md) con el SHA-256 del `.mrpack`.
 - Para volver a una versión: usa su archivo en `releases/`, o `git checkout v<versión> && bash scripts/build.sh`, que lo reconstruye idéntico.

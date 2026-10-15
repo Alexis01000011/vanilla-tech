@@ -127,6 +127,12 @@
     "vanilla_structure_pieces": []
   },
   {
+    "mod": "Create: Ultimate Factory",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
     "mod": "Create",
     "worldgen_paths": [],
     "vanilla_overrides": [],

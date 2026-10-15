@@ -1,6 +1,6 @@
-# Catálogo de mods — Vanilla Tech 0.6.3-alpha.1
+# Catálogo de mods — Vanilla Tech 0.7.0
 
-Minecraft **1.21.1** · NeoForge **21.1.257** · 94 artefactos fijados (84 mods + 5 shaderpacks + 5 resource packs) (`pin = true`).
+Minecraft **1.21.1** · NeoForge **21.1.257** · 95 artefactos fijados (85 mods + 5 shaderpacks + 5 resource packs) (`pin = true`).
 Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qué* aporta cada mod y *por qué* está en el pack.
 
 **Side**: `both` = cliente y servidor · `client` = solo cliente (el servidor no lo instala) · `server` = solo servidor.
@@ -14,6 +14,7 @@ Fuente de verdad: los metafiles de `mods/*.pw.toml`. Este documento explica *qu�
 | Applied Create | 1.1.7 | [Modrinth](https://modrinth.com/mod/applied-create) | both | Puente AE2–Create: `kinetic_energy_acceptor` (rotación → energía AE2), Pattern Providers de andesita/latón, ME Gearbox, ME Blueprint Cannon, Spatial Assembler. |
 | Create: Connected | 1.3.3 | [Modrinth](https://modrinth.com/mod/create-connected) | both | Piezas extra para Create: caja de engranajes de latón, embragues y cajas invertidas, frenos, chute de latón, catalizadores de tintado para ventiladores, Sequenced Pulse Generator, etc. Requiere Create ≥ 6.0.10. |
 | Create Crafts & Additions | 1.6.0 | [Modrinth](https://modrinth.com/mod/createaddition) | both | Electricidad FE para Create: **alternador** (rotación → FE), **motor eléctrico** (FE → rotación), cables y conectores, rolling mill, cargador y acumuladores. Une Create con la energía FE de Excessive Utilities. Se usa la 1.6.0, la última estable: la 1.7.x sigue en beta. |
+| Create: Ultimate Factory | 2.2.4 | [Modrinth](https://modrinth.com/mod/create-ultimate-factory) | both | Solo recetas, sin bloques ni ítems (0.7.0): 33 recetas de Create que hacen renovables toba, deepslate, calcita, las piedras de Create, redstone, dripstone, pólvora, vara de blaze, hielo azul, slime, crying obsidian, amatista, glowstone, perlas de ender y más. Incluye cosas fuertes con baja probabilidad: diamante (9 bloques de carbón + lava, prensa calentada, 30 %), calavera de wither skeleton (1 %), corazón del mar (1 %) y netherite scrap (mínima). Config del autor sin cambios. No asigna teclas. Requiere Create. ARR; el pack solo lo referencia. |
 
 ## B. Addons de AE2
 

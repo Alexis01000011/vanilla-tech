@@ -60,6 +60,8 @@ client:create_connected->minecraft	1.21.1	[1.21.1,1.22)	required
 client:create_connected->create	6.0.10	[6.0.10,)	required
 client:sablecompanion->neoforge	21.1.257	[21.1.80,)	required
 client:sablecompanion->minecraft	1.21.1	[1.21.1,)	required
+client:create_ultimate_factory->neoforge	21.1.257	[21.1.65,)	required
+client:create_ultimate_factory->minecraft	1.21.1	[1.21.1]	required
 client:create->neoforge	21.1.257	[21.1.219,)	required
 client:create->minecraft	1.21.1	[1.21.1]	required
 client:create->flywheel	1.0.6	[1.0.0,2.0)	required
@@ -331,6 +333,8 @@ server:create_connected->minecraft	1.21.1	[1.21.1,1.22)	required
 server:create_connected->create	6.0.10	[6.0.10,)	required
 server:sablecompanion->neoforge	21.1.257	[21.1.80,)	required
 server:sablecompanion->minecraft	1.21.1	[1.21.1,)	required
+server:create_ultimate_factory->neoforge	21.1.257	[21.1.65,)	required
+server:create_ultimate_factory->minecraft	1.21.1	[1.21.1]	required
 server:create->neoforge	21.1.257	[21.1.219,)	required
 server:create->minecraft	1.21.1	[1.21.1]	required
 server:create->ponder	1.0.82+mc1.21.1	[1.0.82,)	required

@@ -8,9 +8,27 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.3.x**: + Deep Aether + Deeper and Darker. Rama `release/0.3`.
 - **0.4.x**: + mobs, illagers, Artifacts, Storage Drawers, addons de Create y animaciones. Rama `release/0.4`.
 - **0.5.0-alpha.1**: L_Ender's Cataclysm y Just Hammers, sobre 0.4. Es la que corre el mundo del servidor real.
-- **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. **Estable actual: 0.6.2** (también en el servidor real desde el 2026-10-11). Las alphas pueden agregar y quitar mods entre sí; los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
+- **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. Última estable: 0.6.2. El servidor real corrió 0.6.2 desde el 2026-10-11 y 0.6.3-alpha.2 desde el 2026-10-13. Las alphas pueden agregar y quitar mods entre sí; los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
 - **0.6.1-alpha.1 / 0.6.2-alpha.1**: libro V2; luego elevadores (ElevatorMod), Time in a Bottle, AmbientSounds y Cirrus. Ambas quedaron incluidas en 0.6.2.
-- **0.6.3-alpha.1 / 0.6.3-alpha.2**: Litematica (Forgematica), Nature's Compass y Ping Wheel, sobre 0.6.2. alpha.2 apaga por defecto la ventana de info de bloque de Litematica.
+- **0.6.3-alpha.1 / 0.6.3-alpha.2**: Litematica (Forgematica), Nature's Compass y Ping Wheel, sobre 0.6.2. alpha.2 apaga por defecto la ventana de info de bloque de Litematica. alpha.2 se desplegó directo al servidor real por decisión del usuario.
+- **0.7.x**: + Create: Ultimate Factory (recetas de Create que hacen renovables muchos recursos), sobre 0.6.3-alpha.2. Rama `release/0.7`. **Estable actual: 0.7.0.**
+
+## 0.7.0 — 2026-10-15 (estable)
+- **Agregado: Create: Ultimate Factory 2.2.4** (cliente y servidor). Es solo de datos, sin bloques ni ítems: trae 33 recetas activas de Create (prensa, mezcla, lavado, encantado con fuego de almas y triturado) que hacen renovables muchos recursos. Entre ellas:
+  - Prensa: toba (adoquín + lava), deepslate (piedra + lava), calcita, las piedras de Create (asurina, crimsita, ocrum, veridio, con pepitas + grava + fluido) y vara de blaze (polvo de blaze).
+  - Mezcla: redstone (netherrack + pedernal + lava), dripstone y pólvora.
+  - Encantado (haunting): netherrack (basalto), obsidiana llorona, carbón (carbón vegetal), rosa marchita (amapola), ojo de araña fermentado y fruta de chorus (manzana, 30 %).
+  - Lavado: hielo azul, bola de slime (40 %) y terracota sin teñir.
+  - Triturado: corales (corazón del mar 1 %), corales muertos, blackstone (calavera de wither skeleton 1 %), end stone (perla de ender 8 %), crying obsidian (amatista), soul sand (glowstone), scoria (polvo de blaze), limestone (cuarzo y lapislázuli), red sandstone (caparazón de nautilus 1 %), bloques de champiñón y nether bricks (netherite scrap con probabilidad mínima).
+- **Balance: config del autor sin cambios.** Hace renovables cosas fuertes: **diamante** (9 bloques de carbón + 100 mB de lava en prensa **calentada**, 30 %), calaveras de wither skeleton y corazones del mar. Lo pidió el usuario tal cual.
+- **Conflictos revisados** contra las 596 recetas de Create, Create: Connected y Create Crafts & Additions del pack:
+  - La única entrada idéntica (encantar una manzana) choca con una receta de Create que solo existe con Haunted Harvest, que no está en el pack.
+  - Las recetas de grava + pepitas comparten la grava con *andesita desde pedernal* de Create, pero piden otros ingredientes: no mezcles pedernal en ese mismo basin.
+  - Sus 4 recetas de compatibilidad (Create: Aeronautics, TFMG, Wither Skeleton Tweaks) no se activan porque esos mods no están.
+- **Teclas: sin cambios.** El mod no registra teclas y `options.txt` no cambia.
+- **Probado**: servidor en mundo nuevo (`docs/0.7.0-integration.json`): 13/13 checks, recetas 6094 → **6127 (+33, las activas de Ultimate Factory)**, ninguna receta falla al leerse, libro con 203 misiones, TPS 20 y los mismos 28 `locate` y 18 ERROR inofensivos que 0.6.3-alpha.1. El usuario no hizo prueba de cliente: el mod solo agrega recetas.
+- **Servidor real**: va de 0.6.3-alpha.2 a 0.7.0 (impacto alto: un mod de servidor nuevo). Solo agrega recetas, no toca el mundo.
+- 95 artefactos (94 en el cliente, 60 en el servidor). `sha256 1d2d41860f36fbaa3db0496941f37f2305ff161ea6d12ce3c33590151ada21bd`
 
 ## 0.6.3-alpha.2 — 2026-10-12
 - **Litematica: ventana de info de bloque apagada por defecto.** Era el *Block Info Overlay*: aparece mientras se mantiene **I** y en esta versión se dibuja en el centro de la pantalla. Con un bloque real muestra lo mismo que Jade (el bloque y el contenido del cofre). Pedido del usuario: los bloques reales quedan para Jade y las proyecciones para Litematica.
