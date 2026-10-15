@@ -739,6 +739,29 @@
     ]
   },
   {
+    "id": "create_ultimate_factory",
+    "version": "2.2.4",
+    "jar": "create_ultimate_factory-2.2.4-neoforge-1.21.1.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.65,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "create",
     "version": "6.0.10",
     "jar": "create-1.21.1-6.0.10.jar",

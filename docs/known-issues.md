@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-12, release **0.6.3-alpha.2** (estable: 0.6.2, que también corre en el servidor real desde el deploy del 2026-10-11).
+Estado a 2026-10-15, release **0.7.0** (estable). El servidor real corre 0.6.3-alpha.2 desde el 2026-10-13, hasta el deploy de 0.7.0.
 
 ## Pruebas pendientes
 
@@ -46,6 +46,7 @@ Estado a 2026-10-12, release **0.6.3-alpha.2** (estable: 0.6.2, que también cor
 | P39 | **Forgematica (Litematica)**: el usuario la probó en 0.6.3-alpha.1 y todo sirvió salvo la ventana de info de bloque, que se apagó en alpha.2 (comprobar en una instancia nueva que no aparece al mantener **I** y que las líneas de la proyección sí). Como **M** abre el mapa de Xaero, primero reasignar *openGuiMainMenu* en *Mods → Forgematica → Config → Hotkeys*. Luego: (a) marcar un área con el palo y guardarla como esquema; (b) cargar un `.litematic` copiado a `schematics/` y verlo como holograma con Sodium, también con un shaderpack de Iris activo; (c) lista de materiales y verificador; (d) moverse un rato alrededor del holograma (render de chunks del esquema) y salir y volver al mundo, que es cuando se vacían sus buffers. | Solo cliente. El reporte abierto [litematica-neoforge#13](https://github.com/CagayakeGirls/litematica-neoforge/issues/13) (crash por acceso a `BufferBuilder.building`) no debería aplicar: ImmediatelyFast, EMF y ETF ya abren ese campo con su access transformer. Falta confirmarlo en el juego. |
 | P40 | **Nature's Compass**: craftearla (4 retoños + 4 troncos + brújula) y buscar un bioma del Overworld, uno del Aether y uno del Otherside. El HUD debe mostrar coordenadas y distancia, y debe funcionar *buscar el siguiente*. Revisar `spark tps` en el servidor durante una búsqueda larga (por ejemplo, un bioma raro). | En el servidor se registra el ítem (`VT_NATURESCOMPASS_ITEM`) y genera su config. La búsqueda y la GUI necesitan un jugador. |
 | P41 | **Ping Wheel** (dos jugadores): marcar un bloque y un mob con el botón 5 del mouse; el otro jugador ve la marca, y con **Tab** se ve quién la hizo. En una laptop sin ese botón, reasignar *Ping Location* en *Opciones → Controles* (cada jugador; el pack no toca las teclas). | En el servidor carga el mod y crea `pingwheel.server.json` (canal automático, límite de 5 marcas por segundo). Las marcas solo se ven con jugadores. |
+| P42 | **Create: Ultimate Factory**: en JEI aparecen sus recetas (p. ej. buscar *diamond* o *tuff* y ver la de la prensa). En el juego: toba con adoquín + lava en una prensa sobre basin; diamante con 9 bloques de carbón + lava en una prensa **calentada** (blaze burner); hielo azul lavando hielo compacto con un ventilador sobre agua. | En el servidor se cuentan las recetas cargadas y se revisa que ninguna falle al leerse. Las máquinas y JEI se ven con un jugador. |
 | P19 | **Jade**: el HUD muestra el bloque que se mira y la información de AE2 y Create. | Solo cliente; en el servidor ya cargan los plugins de AE2, Extended AE, Waystones, GraveStone y Balm (rc.5). |
 
 ## Problemas conocidos

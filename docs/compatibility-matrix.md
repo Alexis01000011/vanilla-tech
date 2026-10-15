@@ -1,6 +1,6 @@
-# Matriz de compatibilidad — Vanilla Tech 0.6.3-alpha.2
+# Matriz de compatibilidad — Vanilla Tech 0.7.0
 
-Minecraft 1.21.1 · NeoForge 21.1.257 · 84 artefactos fijados.
+Minecraft 1.21.1 · NeoForge 21.1.257 · 85 artefactos fijados.
 Generada por `scripts/gen-matrix.py`; no editar a mano. Los estados viven en `docs/test-status.toml`.
 
 **Estados**
@@ -31,6 +31,7 @@ El cliente **0.4.0-alpha.1** (mismos mods que 0.4.0) arrancó en Prism y entró 
 | Create | 6.0.10 | [Modrinth](https://modrinth.com/mod/create) | — | both | Launch tested | Servidor: red cinética, eje a 16 RPM desde motor creativo |
 | Create Crafts & Additions | 1.6.0 | [Modrinth](https://modrinth.com/mod/createaddition) | Create | both | Launch tested | Servidor 0.4.0-alpha.1: motor eléctrico colocado; cliente 0.4.0-alpha.1 arranca y entra al mundo |
 | Create: Connected | 1.3.3-mc1.21.1 | [Modrinth](https://modrinth.com/mod/create-connected) | Create | both | Launch tested | Servidor 0.4.0-alpha.1: caja de engranajes de latón colocada; cliente 0.4.0-alpha.1 arranca y entra al mundo |
+| Create: Ultimate Factory | 2.2.4 | [Modrinth](https://modrinth.com/mod/create-ultimate-factory) | — | both | Verified |  |
 | CreativeCore | 2.13.51 | [Modrinth](https://modrinth.com/mod/creativecore) | — | client | Verified |  |
 | Curios API | 9.5.1+1.21.1 | [Modrinth](https://modrinth.com/mod/curios) | — | both | Launch tested | Servidor carga |
 | Dank Storage | 20 | [CurseForge](https://www.curseforge.com/minecraft/mc-mods/dank-storage) | — | both | Launch tested | Servidor carga |
