@@ -1,10 +1,22 @@
 {
  "aliases": {
   "stable": "0.6.3-alpha.2",
-  "staging": "0.6.3-alpha.2",
+  "staging": "0.7.0",
   "server": "0.6.3-alpha.2"
  },
  "releases": [
+  {
+   "version": "0.7.0",
+   "commit": "241bb35ba6edc29d83042d4ffb1270bc48d71f2c",
+   "minecraft": "1.21.1",
+   "neoforge": "21.1.257",
+   "counts": {
+    "client": 94,
+    "server": 60
+   },
+   "mrpack": "releases/0.7.0/vanilla-tech-0.7.0.mrpack",
+   "sha256": "1d2d41860f36fbaa3db0496941f37f2305ff161ea6d12ce3c33590151ada21bd"
+  },
   {
    "version": "0.6.3-alpha.2",
    "commit": "b101572cc78c82679ccd383815d54d8bfd0c9570",

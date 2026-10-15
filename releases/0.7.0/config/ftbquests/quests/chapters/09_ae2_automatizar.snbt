@@ -1,0 +1,277 @@
+{
+  id: "6F5C146E9E2A1486",
+  group: "",
+  order_index: 9,
+  filename: "09_ae2_automatizar",
+  icon: {
+    id: "ae2:pattern_provider"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "30F4DDA4F0947978",
+      icon: {
+        id: "ae2:import_bus"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "68F50C50860B06B8",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "0E766CED1C22C445",
+      icon: {
+        id: "ae2:storage_bus"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "0D98E275D85066DB",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "67E75F971F2171DF",
+      icon: {
+        id: "ae2:pattern_encoding_terminal"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "3B4799C780A79909",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "141CD65C78938BDD",
+      icon: {
+        id: "ae2:molecular_assembler"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "4BDBF0A3BBA87D89",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "22479C382600E0FA",
+      icon: {
+        id: "ae2:1k_crafting_storage"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "1F0EA91A58F47C17",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "5F751685515100E6",
+          type: "toast",
+          icon: {
+            id: "ae2:1k_crafting_storage"
+          },
+          description: "Tu red completó su primera fabricación."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "085556B74CAB0500",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "73C1D3837915D99B",
+      icon: {
+        id: "ae2:pattern_provider"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "7AB9BC562A1ED3D7",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "4F56AA522C21F976",
+      icon: {
+        id: "ae2:interface"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "527308DA92712B7E",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "19458B2755CA13E6",
+      icon: {
+        id: "ae2:level_emitter"
+      },
+      x: 9.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "6D7A6F0448F2ADFB",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "2EE6B8475BF13C0A",
+      icon: {
+        id: "ae2:quantum_ring"
+      },
+      x: 0.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "6D1B4408E9393B8B",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    }
+  ],
+  quest_links: [],
+  images: []
+}
