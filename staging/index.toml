@@ -9,6 +9,10 @@ file = "config/cataclysm-common.toml"
 hash = "3e8e543fe00d18ff68a01389862e09290fe558c9941959ae107a58ccd27c11f6"
 
 [[files]]
+file = "config/cirrus-client.json"
+hash = "4b7267c4122a60bfa634aba2c50262ff0900d4ba13452443d9584d64fbe842a4"
+
+[[files]]
 file = "config/excessive_utilities-server.toml"
 hash = "c773741af7d93f3f624aef7cd0cb8bfef7c604ac48a577187be1390b96803569"
 
@@ -114,7 +118,7 @@ hash = "0c06bc454067939e9ad9e801c40f787437519dcbac669d84c73833a083f37323"
 
 [[files]]
 file = "config/litematica.json"
-hash = "ba10f1ce6d017fd2617de1d334b66eecbaee433e995bfef56ad75b73135c9334"
+hash = "549a028a3f108127307794ae1e788ce1986f157b5124d7ad7587fd89a9bcd562"
 preserve = true
 
 [[files]]
@@ -213,6 +217,11 @@ hash = "a704303711d84707e58377f50f349bb5ede80f43a6a4a6d2af89dd00315cc115"
 metafile = true
 
 [[files]]
+file = "mods/copycats.pw.toml"
+hash = "65829ef6c2f2ecedd38339feecc2ccfa251b37cee6ed25873e9353ec8dba7de7"
+metafile = true
+
+[[files]]
 file = "mods/crafting-tweaks.pw.toml"
 hash = "85c7c943a4c1ced6e89c378162ccf873218f208eadf7e63c523b1b670371d044"
 metafile = true
@@ -220,6 +229,11 @@ metafile = true
 [[files]]
 file = "mods/create-connected.pw.toml"
 hash = "f6e500911e240a3b71b57a92df3f63c09787529ca86cc6b52e80e40e68cd4de4"
+metafile = true
+
+[[files]]
+file = "mods/create-deco.pw.toml"
+hash = "492652d7142a555ca41ee5429b5b447917dee0db09d95b00706511d36608fb91"
 metafile = true
 
 [[files]]

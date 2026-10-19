@@ -1,0 +1,621 @@
+{
+  id: "5A1E7DBA21991083",
+  group: "",
+  order_index: 13,
+  filename: "13_aether",
+  icon: {
+    id: "minecraft:glowstone"
+  },
+  default_quest_shape: "square",
+  default_hide_dependency_lines: true,
+  progression_mode: "flexible",
+  always_invisible: false,
+  hide_quest_details_until_startable: false,
+  hide_quest_until_deps_complete: false,
+  hide_quest_until_deps_visible: false,
+  hide_text_until_complete: false,
+  require_sequential_tasks: false,
+  quests: [
+    {
+      id: "5F8B96359A22E136",
+      icon: {
+        id: "minecraft:glowstone"
+      },
+      x: 0.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "aether:enter_aether",
+          criterion: "",
+          id: "07460AE1561C5100",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "5C9BE009C0FDA8B5",
+          type: "toast",
+          icon: {
+            id: "minecraft:glowstone"
+          },
+          description: "Comienza tu expedición entre las islas."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "6617FD74ED84CDE0",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "4936C15A6485BB62",
+      icon: {
+        id: "aether:book_of_lore"
+      },
+      x: 3.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "aether:loreception",
+          criterion: "",
+          id: "57B32E5EE3C3E3B0",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "537C56C031265CE4",
+      icon: {
+        id: "aether:ambrosium_torch"
+      },
+      x: 6.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "49D82946631E1EE9",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "718F50D92D3F24FF",
+      icon: {
+        id: "aether:skyroot_pickaxe"
+      },
+      x: 9.0d,
+      y: 0.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "item",
+          item: {
+            id: "aether:skyroot_pickaxe"
+          },
+          count: 1,
+          consume_items: false,
+          only_from_crafting: false,
+          match_components: "none",
+          task_screen_only: false,
+          id: "6904C71F1A5C1320",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "7AD0F58D176AE2B1",
+      icon: {
+        id: "aether:zanite_gemstone"
+      },
+      x: 0.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "item",
+          item: {
+            id: "aether:zanite_gemstone"
+          },
+          count: 1,
+          consume_items: false,
+          only_from_crafting: false,
+          match_components: "none",
+          task_screen_only: false,
+          id: "7F8560369F15EDE9",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "1783983D941337F4",
+      icon: {
+        id: "aether:altar"
+      },
+      x: 3.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "2C6ABCD3EC3CD70E",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "5D9CC0F615B3DF43",
+          type: "toast",
+          icon: {
+            id: "aether:altar"
+          },
+          description: "Completaste un proceso del Altar."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "4EFF480CA8A81429",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "192E8F82BE534337",
+      icon: {
+        id: "aether:freezer"
+      },
+      x: 6.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "78C3F37FB3452B91",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "07957E445F10B8E0",
+      icon: {
+        id: "aether:incubator"
+      },
+      x: 9.0d,
+      y: 2.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "aether:incubate_moa",
+          criterion: "",
+          id: "611EA38E3481EBF7",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "4640123F069EBB72",
+          type: "toast",
+          icon: {
+            id: "aether:incubator"
+          },
+          description: "Tu huevo de moa ha sido incubado."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "5F7BF0EA5ABD2E53",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "124AF947B9CC99D4",
+      icon: {
+        id: "aether:cold_aercloud"
+      },
+      x: 0.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "3E357E2D95A876E6",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "1FB939D01DF1D0B1",
+      icon: {
+        id: "aether:zanite_ring"
+      },
+      x: 3.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "4342EA434783093B",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "6505ABD2F3406271",
+      icon: {
+        id: "aether:bronze_dungeon_key"
+      },
+      x: 6.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "structure",
+          structure: "aether:bronze_dungeon",
+          id: "1FD516F7E09B5ED9",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "3A66FF5115F17287",
+      icon: {
+        id: "aether:silver_dungeon_key"
+      },
+      x: 9.0d,
+      y: 4.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "structure",
+          structure: "aether:silver_dungeon",
+          id: "0462FA6221993F8C",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "10C8CBAE84CCF671",
+      icon: {
+        id: "aether:gold_dungeon_key"
+      },
+      x: 0.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "structure",
+          structure: "aether:gold_dungeon",
+          id: "181ACF19C84DAFA2",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "5F8E2EF4EB5B2673",
+      icon: {
+        id: "aether:skyroot_planks"
+      },
+      x: 3.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.0d,
+      disable_toast: false,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "checkmark",
+          id: "52494747022CE96B",
+          disable_toast: true
+        }
+      ],
+      rewards: []
+    },
+    {
+      id: "06EBF04D1A6DF71C",
+      icon: {
+        id: "aether:bronze_dungeon_key"
+      },
+      x: 6.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "aether:bronze_dungeon",
+          criterion: "",
+          id: "1073785781F5457F",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "69A0B753D38D7543",
+          type: "toast",
+          icon: {
+            id: "aether:bronze_dungeon_key"
+          },
+          description: "Superaste el encuentro de Slider."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "1E561B9D2AA01A13",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "18EBFEA30C616003",
+      icon: {
+        id: "aether:silver_dungeon_key"
+      },
+      x: 9.0d,
+      y: 6.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "aether:silver_dungeon",
+          criterion: "",
+          id: "31C54D3996799978",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "2AA08CE576B93FEF",
+          type: "toast",
+          icon: {
+            id: "aether:silver_dungeon_key"
+          },
+          description: "Superaste el encuentro de Valkyrie Queen."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "234619E79C5A222A",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    },
+    {
+      id: "623AAD262B5DE113",
+      icon: {
+        id: "aether:gold_dungeon_key"
+      },
+      x: 0.0d,
+      y: 8.0d,
+      shape: "square",
+      size: 1.2d,
+      disable_toast: true,
+      dependencies: [],
+      hide_until_deps_visible: false,
+      hide_until_deps_complete: false,
+      invisible: false,
+      progression_mode: "flexible",
+      hide_text_until_complete: false,
+      hide_details_until_startable: false,
+      tasks: [
+        {
+          type: "advancement",
+          advancement: "aether:gold_dungeon",
+          criterion: "",
+          id: "2DFF902CA633286D",
+          disable_toast: true
+        }
+      ],
+      rewards: [
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "46F7B27D30895BED",
+          type: "toast",
+          icon: {
+            id: "aether:gold_dungeon_key"
+          },
+          description: "Superaste el encuentro de Sun Spirit."
+        },
+        {
+          auto: "invisible",
+          team_reward: false,
+          id: "58845404BC892668",
+          type: "command",
+          command: "playsound minecraft:ui.toast.challenge_complete players @s ~ ~ ~ 0.55 1",
+          permission_level: 2,
+          silent: true,
+          feedback_message: ""
+        }
+      ]
+    }
+  ],
+  quest_links: [],
+  images: []
+}
