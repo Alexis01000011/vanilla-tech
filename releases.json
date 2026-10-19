@@ -1,8 +1,8 @@
 {
  "aliases": {
-  "stable": "0.7.0",
+  "stable": "0.7.1-alpha.1",
   "staging": "0.7.1-alpha.1",
-  "server": "0.7.0"
+  "server": "0.7.1-alpha.1"
  },
  "releases": [
   {

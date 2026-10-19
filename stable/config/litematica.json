@@ -1,4 +1,7 @@
 {
+  "Generic": {
+    "toolItem": "minecraft:wooden_axe"
+  },
   "InfoOverlays": {
     "blockInfoOverlayEnabled": false
   }
