@@ -52,6 +52,9 @@ client:cirrus->yet_another_config_lib_v3	3.8.2+1.21.1-neoforge	[3.8.1,)	required
 client:controlling->neoforge	21.1.257	[21.1.94,)	required
 client:controlling->minecraft	1.21.1	[1.21.1]	required
 client:controlling->searchables	1.0.2	[1.0.1,)	required
+client:copycats->neoforge	21.1.257	[21.1.200,)	required
+client:copycats->minecraft	1.21.1	[1.21.1,1.22)	required
+client:copycats->create	6.0.10	[6.0.8,)	required
 client:craftingtweaks->neoforge	21.1.257	[21-beta,)	required
 client:craftingtweaks->minecraft	1.21.1	[1.21,)	required
 client:craftingtweaks->balm	21.0.66	[21.0.48,)	required
@@ -60,6 +63,9 @@ client:create_connected->minecraft	1.21.1	[1.21.1,1.22)	required
 client:create_connected->create	6.0.10	[6.0.10,)	required
 client:sablecompanion->neoforge	21.1.257	[21.1.80,)	required
 client:sablecompanion->minecraft	1.21.1	[1.21.1,)	required
+client:createdeco->neoforge	21.1.257	[21.1.209,)	required
+client:createdeco->minecraft	1.21.1	[1.21.1]	required
+client:createdeco->create	6.0.10	[6.0.7,6.1.0)	required
 client:create_ultimate_factory->neoforge	21.1.257	[21.1.65,)	required
 client:create_ultimate_factory->minecraft	1.21.1	[1.21.1]	required
 client:create->neoforge	21.1.257	[21.1.219,)	required
@@ -325,6 +331,9 @@ server:charginggadgets->neoforge	21.1.257	[21.0,)	required
 server:charginggadgets->minecraft	1.21.1	[1.21,1.22)	required
 server:chunky->neoforge	21.1.257	[21.0-beta,)	required
 server:chunky->minecraft	1.21.1	[1.21,1.22)	required
+server:copycats->neoforge	21.1.257	[21.1.200,)	required
+server:copycats->minecraft	1.21.1	[1.21.1,1.22)	required
+server:copycats->create	6.0.10	[6.0.8,)	required
 server:craftingtweaks->neoforge	21.1.257	[21-beta,)	required
 server:craftingtweaks->minecraft	1.21.1	[1.21,)	required
 server:craftingtweaks->balm	21.0.66	[21.0.48,)	required
@@ -333,6 +342,9 @@ server:create_connected->minecraft	1.21.1	[1.21.1,1.22)	required
 server:create_connected->create	6.0.10	[6.0.10,)	required
 server:sablecompanion->neoforge	21.1.257	[21.1.80,)	required
 server:sablecompanion->minecraft	1.21.1	[1.21.1,)	required
+server:createdeco->neoforge	21.1.257	[21.1.209,)	required
+server:createdeco->minecraft	1.21.1	[1.21.1]	required
+server:createdeco->create	6.0.10	[6.0.7,6.1.0)	required
 server:create_ultimate_factory->neoforge	21.1.257	[21.1.65,)	required
 server:create_ultimate_factory->minecraft	1.21.1	[1.21.1]	required
 server:create->neoforge	21.1.257	[21.1.219,)	required

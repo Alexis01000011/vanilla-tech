@@ -115,6 +115,12 @@
     "vanilla_structure_pieces": []
   },
   {
+    "mod": "Create: Copycats+",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
     "mod": "Crafting Tweaks",
     "worldgen_paths": [],
     "vanilla_overrides": [],
@@ -122,6 +128,12 @@
   },
   {
     "mod": "Create: Connected",
+    "worldgen_paths": [],
+    "vanilla_overrides": [],
+    "vanilla_structure_pieces": []
+  },
+  {
+    "mod": "Create Deco",
     "worldgen_paths": [],
     "vanilla_overrides": [],
     "vanilla_structure_pieces": []

@@ -2,7 +2,7 @@
 """Canonicalize packwiz export; route options.txt, client-only mod configs and shader settings to client-only overrides."""
 import hashlib,json,pathlib,tomllib,zipfile
 from common import ROOT
-CLIENT_ONLY=('options.txt','config/litematica.json')   # the server never reads them
+CLIENT_ONLY=('options.txt','config/litematica.json','config/cirrus-client.json')   # the server never reads them
 p=tomllib.loads((ROOT/'pack.toml').read_text());out=ROOT/'releases'/('vanilla-tech-'+p['version']+'.mrpack')
 with zipfile.ZipFile(ROOT/'.cache/export.mrpack') as src:
  entries={n:src.read(n) for n in src.namelist() if not n.endswith('/')}

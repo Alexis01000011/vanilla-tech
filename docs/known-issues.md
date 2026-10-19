@@ -1,6 +1,6 @@
 # Problemas conocidos y pruebas pendientes
 
-Estado a 2026-10-15, release **0.7.0** (estable). El servidor real corre 0.6.3-alpha.2 desde el 2026-10-13, hasta el deploy de 0.7.0.
+Estado a 2026-10-18, release **0.7.1-alpha.1** (estable: 0.7.0, que corre en el servidor real desde el 2026-10-15).
 
 ## Pruebas pendientes
 
@@ -47,6 +47,8 @@ Estado a 2026-10-15, release **0.7.0** (estable). El servidor real corre 0.6.3-a
 | P40 | **Nature's Compass**: craftearla (4 retoños + 4 troncos + brújula) y buscar un bioma del Overworld, uno del Aether y uno del Otherside. El HUD debe mostrar coordenadas y distancia, y debe funcionar *buscar el siguiente*. Revisar `spark tps` en el servidor durante una búsqueda larga (por ejemplo, un bioma raro). | En el servidor se registra el ítem (`VT_NATURESCOMPASS_ITEM`) y genera su config. La búsqueda y la GUI necesitan un jugador. |
 | P41 | **Ping Wheel** (dos jugadores): marcar un bloque y un mob con el botón 5 del mouse; el otro jugador ve la marca, y con **Tab** se ve quién la hizo. En una laptop sin ese botón, reasignar *Ping Location* en *Opciones → Controles* (cada jugador; el pack no toca las teclas). | En el servidor carga el mod y crea `pingwheel.server.json` (canal automático, límite de 5 marcas por segundo). Las marcas solo se ven con jugadores. |
 | P42 | **Create: Ultimate Factory**: en JEI aparecen sus recetas (p. ej. buscar *diamond* o *tuff* y ver la de la prensa). En el juego: toba con adoquín + lava en una prensa sobre basin; diamante con 9 bloques de carbón + lava en una prensa **calentada** (blaze burner); hielo azul lavando hielo compacto con un ventilador sobre agua. | En el servidor se cuentan las recetas cargadas y se revisa que ninguna falle al leerse. Las máquinas y JEI se ven con un jugador. |
+| P43 | **Copycats+ y la migración desde Create: Connected** (lo más importante antes del deploy): en un mundo de un jugador con 0.7.0, colocar copycats de Create: Connected (slab, beam, vertical step, board, block) con material; actualizar a 0.7.1-alpha.1 y volver a entrar. En el servidor de prueba se convirtieron a Copycats+ pero **vacíos**: perdieron el material. Comprobar si en un mundo de un jugador pasa lo mismo, y que el juego no crashee al cargar esa zona (#430). Probar también rellenar con Alt izquierdo y romperlos. | En el servidor se prueba la conversión con comandos (ver el json de la prueba). El render y el crash #430 solo se ven en el cliente. |
+| P44 | **Arreglos de cliente**: (a) al dormir, el cielo salta directo a la mañana, sin la animación de Cirrus; (b) en una instancia **nueva**, la herramienta de Litematica es el hacha de madera (marca esquinas o mueve la colocación) y el palo vuelve a ser un ítem normal. | Solo cliente. |
 | P19 | **Jade**: el HUD muestra el bloque que se mira y la información de AE2 y Create. | Solo cliente; en el servidor ya cargan los plugins de AE2, Extended AE, Waystones, GraveStone y Balm (rc.5). |
 
 ## Problemas conocidos

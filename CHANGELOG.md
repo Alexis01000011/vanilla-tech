@@ -11,7 +11,37 @@ Cada versión tiene una etiqueta git `v<versión>`. `bash scripts/build.sh` sobr
 - **0.6.x**: + libro de misiones (FTB Quests), Fresh Animations y la receta de la manzana dorada encantada, sobre 0.5. Rama `release/0.6`. Última estable: 0.6.2. El servidor real corrió 0.6.2 desde el 2026-10-11 y 0.6.3-alpha.2 desde el 2026-10-13. Las alphas pueden agregar y quitar mods entre sí; los mundos locales de prueba son desechables (ver *Versiones y ramas* en el README).
 - **0.6.1-alpha.1 / 0.6.2-alpha.1**: libro V2; luego elevadores (ElevatorMod), Time in a Bottle, AmbientSounds y Cirrus. Ambas quedaron incluidas en 0.6.2.
 - **0.6.3-alpha.1 / 0.6.3-alpha.2**: Litematica (Forgematica), Nature's Compass y Ping Wheel, sobre 0.6.2. alpha.2 apaga por defecto la ventana de info de bloque de Litematica. alpha.2 se desplegó directo al servidor real por decisión del usuario.
-- **0.7.x**: + Create: Ultimate Factory (recetas de Create que hacen renovables muchos recursos), sobre 0.6.3-alpha.2. Rama `release/0.7`. **Estable actual: 0.7.0.**
+- **0.7.x**: + Create: Ultimate Factory (recetas de Create que hacen renovables muchos recursos), sobre 0.6.3-alpha.2. Rama `release/0.7`. **Estable actual: 0.7.0.** En pruebas: 0.7.1-alpha.N (Create Deco, Create: Copycats+, arreglos de Cirrus y Litematica).
+
+## 0.7.1-alpha.1 — 2026-10-18
+- **Agregado**:
+  - **Create Deco 2.1.3** (cliente y servidor): decoración industrial al estilo de Create, como pasarelas, barandales, barrotes, carteles, puertas, ventanas, lámparas de jaula, contenedores de carga, ladrillos de las piedras de Create y monedas. Unos 390 bloques y 1719 recetas, muchas de cortapiedras. No genera nada en el mundo, no pisa recetas vanilla y no asigna teclas. MIT.
+  - **Create: Copycats+ 3.0.9** (cliente y servidor): decenas de formas de copycat (losas, escalones, vigas, paneles, puertas, trampillas, botones, palancas…) que copian la textura del bloque que les pongas.
+- **Copycats de Create: Connected → Copycats+ (migración de un solo sentido)**:
+  - Con Copycats+ instalado, Create: Connected convierte sus propios copycats (block, slab, beam, vertical step, stairs, fence, fence gate, wall, board) en los de Copycats+. Se conservan la orientación y el material.
+  - Los bloques nuevos ya se colocan como Copycats+. Los que estaban en el mundo se convierten cuando carga su chunk o reciben una actualización de bloque (config común de Create: Connected, ambas opciones activas por defecto). Al romperlos sueltan el ítem de Copycats+.
+  - **Probado en el servidor: la conversión pierde el material.** Los 7 copycats de prueba (slab, beam, vertical step, board, block, stairs, wall, cada uno con un material) quedaron como copycat de Copycats+ **vacío** (`create:copycat_base`), y el ítem que tenían dentro desapareció. Hay que volver a ponerles el material. El usuario dice que en el mundo real casi no hay copycats de Create: Connected y acepta perderlos.
+  - Los ítems guardados se convierten con 18 recetas sin forma (un ítem viejo da uno nuevo).
+  - **Si algún día se quita Copycats+, los copycats convertidos desaparecen del mundo.**
+- **Problemas abiertos de Copycats+ (revisados el 2026-10-18)**:
+  - [#430](https://github.com/copycats-plus/copycats/issues/430): crash del cliente al renderizar ciertas losas copycat ya colocadas, en 3.0.9 y con otros mods de por medio.
+  - [#414](https://github.com/copycats-plus/copycats/issues/414): crash al cargar un esquema de Create que contenga copycats. **No metas copycats en esquemas de Create** (Schematic Table / Schematicannon).
+- **Arreglos**:
+  - **Cirrus: se quita la animación al despertar.** Era su opción *Smooth Time Transitions*: cuando el tiempo salta más de 40 ticks (dormir, `/time set`), el cielo pasaba de noche a día en unos 9 s. El pack trae `config/cirrus-client.json` con `sky.smoothTimeTransitions = false`, así que el cielo salta directo a la mañana, como en vanilla.
+    - Va solo al cliente y **sin `preserve`**: llega una vez a todas las instancias. Cirrus completa el resto con sus valores por defecto, así que cualquier otro ajuste de Cirrus vuelve a su valor original esa vez.
+    - Después no se toca hasta que el pack cambie el archivo.
+  - **Litematica: la herramienta pasa del palo al hacha de madera** (`Generic.toolItem = minecraft:wooden_axe` en `config/litematica.json`). Mientras sostienes la herramienta activa, el clic izquierdo y el derecho van a Litematica: no puedes talar, minar, pegar ni abrir cofres con el hacha de madera en la mano (ni en la mano secundaria).
+    - Para usarla como hacha normal hay que apagar la herramienta: opción `toolItemEnabled` en *Configuración → Genérico*. El atajo *toolEnabledToggle* (M+T) choca con el mapa de Xaero en M.
+    - El archivo sigue con `preserve`, así que las instancias que ya lo tienen conservan el palo. Ahí se cambia a mano: *M → Configuration menu (M+C) → Generic → toolItem* = `minecraft:wooden_axe`, con el prefijo.
+  - `package.py` envía también `config/cirrus-client.json` a `client-overrides/`.
+- **Teclas: `options.txt` sin cambios.** Copycats+ registra *Fill Copycat* en **Alt izquierdo**, la misma tecla que la habilidad del Slider Eye de Deep Aether en `options.txt`. Las dos solo actúan en su contexto (al rellenar un copycat o con ese accesorio puesto). Se deja así por la regla de no tocar teclas; se cambia en *Opciones → Controles*. Create Deco no registra teclas.
+- **Probado** (servidor):
+  - Migración en el mundo de prueba de 0.7.0 (`docs/0.7.1-alpha.1-copycats-place.json` y `docs/0.7.1-alpha.1-copycats-migration.json`): 7/7 copycats convertidos, pero sin material (ver arriba). Un copycat nuevo de Copycats+ y dos bloques de Create Deco se colocan bien.
+  - Integración en mundo nuevo (`docs/0.7.1-alpha.1-integration.json`): 13/13 checks, recetas 6127 → 7906, libro con 203 misiones, TPS 20 y los mismos 28 `locate` y errores conocidos que 0.7.0.
+  - Un error nuevo e inofensivo: la receta `createdeco:placard` (teñir un cartel con tinte blanco para volver al cartel de Create) no se puede leer, porque Create Deco escribe mal un ingrediente (`id` en vez de `item`). Solo falta esa receta.
+  - Falta el cliente: P43 y P44 de `known-issues.md`.
+- **Servidor real**: sigue en 0.7.0. El deploy es de impacto alto (dos mods de servidor nuevos que agregan bloques) y espera la prueba del usuario.
+- 97 artefactos (96 en el cliente, 62 en el servidor). `sha256 f894f80047417151036a0a30d61b2fd9f1cfe8b1169f58bf273445d85b55ca96`
 
 ## 0.7.0 — 2026-10-15 (estable)
 - **Agregado: Create: Ultimate Factory 2.2.4** (cliente y servidor). Es solo de datos, sin bloques ni ítems: trae 33 recetas activas de Create (prensa, mezcla, lavado, encantado con fuego de almas y triturado) que hacen renovables muchos recursos. Entre ellas:
