@@ -656,6 +656,36 @@
     ]
   },
   {
+    "id": "copycats",
+    "version": "3.0.9+mc.1.21.1-neoforge",
+    "jar": "copycats-3.0.9+mc.1.21.1-neoforge.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "mandatory": true,
+        "versionRange": "[21.1.200,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "mandatory": true,
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "create",
+        "mandatory": true,
+        "versionRange": "[6.0.8,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
     "id": "craftingtweaks",
     "version": "21.1.11",
     "jar": "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
@@ -733,6 +763,36 @@
         "modId": "minecraft",
         "type": "required",
         "versionRange": "[1.21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ]
+  },
+  {
+    "id": "createdeco",
+    "version": "2.1.3",
+    "jar": "createdeco-2.1.3.jar",
+    "side": "both",
+    "loader": "javafml",
+    "dependencies": [
+      {
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.209,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "modId": "create",
+        "type": "required",
+        "versionRange": "[6.0.7,6.1.0)",
         "ordering": "NONE",
         "side": "BOTH"
       }
